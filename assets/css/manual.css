@@ -1,0 +1,34 @@
+.folio-item__thumb-link > img {
+    width: 100%;
+}
+
+body {
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight            : 400;
+    font-variant-ligatures : common-ligatures;
+    text-rendering         : geometricPrecision;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .folio-list .brick {
+        float : none;
+        width : 100%;
+    }
+
+}

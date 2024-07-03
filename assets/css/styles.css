@@ -175,7 +175,7 @@
     /* preloader
      */
     --color-preloader-bg           : var(--color-gray-19);
-    --color-loader                 : var(--color-1);
+    --color-loader                 : var(--color-2);
     --color-loader-light           : rgba(255, 255, 255, 0.1);
 
     /* others

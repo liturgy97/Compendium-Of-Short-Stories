@@ -1,3 +1,10 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+
 .stop-scrolling {
   height: 100%;
   overflow: hidden;

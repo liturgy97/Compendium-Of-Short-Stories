@@ -51,7 +51,7 @@ function loadStoryList() {
               <svg style="width:1.5rem; height: 1.6rem;" class="StoryPlayIcon position-absolute-centered transition03s" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="transition03s" d="M13.094 6.52922C14.3508 7.25486 14.3508 9.06895 13.094 9.79459L3.19636 15.509C1.93952 16.2346 0.368469 15.3276 0.368469 13.8763L0.36847 2.44751C0.36847 0.996234 1.93952 0.0891892 3.19636 0.814827L13.094 6.52922Z" fill="var(--color-2-light)"/>
               </svg></div>
-            <div class="padless" style="height:5rem; width: 5rem;"><img class="story-button-img" src="assets/images/Stories/${getStoryFolder(story)}/base/cover1-1.jpg" /></div>
+            <div class="padless" style="height:5rem; width: 5rem;"><img class="story-button-img" src="assets/images/stories/${getStoryFolder(story)}/base/cover1-1.jpg" /></div>
             <div class="story-button-name truncate-ellipse gray9 Satoshi font-weight-400 flex-column padless style="">
                 <span class="gray9 font-weight-400 font-size-16" style="line-height: 1.6;">${story.name}</span>
                 ${getStorySubtitle(story)? `<span class="truncate-ellipse gray14 font-weight-300 font-size-14" style="line-height: 1.6; ">${getStorySubtitle(story)}</span>` 
@@ -194,7 +194,7 @@ function loadStoryList() {
 
   const SmallImage = document.createElement('img');
   SmallImage.className = 'ShowcaseSmallImage';
-  SmallImage.src = `assets/images/Stories/${getStoryFolder(story)}/base/cover1-1.jpg`;
+  SmallImage.src = `assets/images/stories/${getStoryFolder(story)}/base/cover1-1.jpg`;
 
   container2.appendChild(SmallImage);
 
@@ -211,7 +211,7 @@ function loadStoryList() {
   const ShowcaseWideImage = document.createElement('img');
 
   ShowcaseWideImage.className = 'ShowcaseWideImage';
-  ShowcaseWideImage.src = `assets/images/Stories/${getStoryFolder(story)}/base/cover3-2.jpg`;
+  ShowcaseWideImage.src = `assets/images/stories/${getStoryFolder(story)}/base/cover3-2.jpg`;
 
   container4.appendChild(ShowcaseWideImage);
 

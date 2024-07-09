@@ -25,7 +25,7 @@ function loadStory(story) {
     } 
   
   
-    const baseImagesFolder = `assets/images/Stories/${story.folder}/Chapters/${chapter.num}${isVariant? `/${variant.num}` : ``}/`;
+    const baseImagesFolder = `assets/images/stories/${story.folder}/Chapters/${chapter.num}${isVariant? `/${variant.num}` : ``}/`;
   
     const baseScriptFolder = `assets/library/${story.folder}/`;
   

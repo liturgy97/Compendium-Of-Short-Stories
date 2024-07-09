@@ -389,7 +389,7 @@ const ssFormSubmission = function(customForm, onCompletion) {
 
   function hasError(field) {
       if (field.disabled || field.type === 'file' || field.type === 'reset' || field.type === 'submit' || field.type === 'button') {
-        console.log("ssFormSubmission didn't validate")
+
         return;
       } 
 

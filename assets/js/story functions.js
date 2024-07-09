@@ -171,7 +171,7 @@ function showStoryNewIcon(datastory) {
     if (!datastory.isSeen && sub != "Coming Soon" ) {
         show = true;
     }
-    if (show) console.log(datastory, "subtitleis", sub)
+    
 
     return show;
 }

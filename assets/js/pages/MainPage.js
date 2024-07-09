@@ -177,9 +177,7 @@ function loadStoryList() {
   } else {
     var entries = recommendedStories();
     if (entries.length == 0) {
-      console.log(arrayDifference(storyNames, ["Hammer", "The Hanging Man"]))
       entries = arrayDifference(storyNames, ["Hammer", "The Hanging Man"]);
-      console.log(arrayDifference(storyNames, ["Hammer", "The Hanging Man"]))
     }
     
     let randomIndex = Math.floor(Math.random() * entries.length);
@@ -309,7 +307,6 @@ function filterMainPageStoryButtons(filter) {
     const x = '.story-button-'+ story.num;
     const storyButton = container.querySelector(x);
     if (!storyButton) {
-      console.log(name, filter)
       return
 
     }

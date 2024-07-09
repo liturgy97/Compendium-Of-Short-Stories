@@ -330,7 +330,6 @@
         ssOffCanvas();
         ssMasonry();
 
-        console.log(localStorage.getItem("data0"))
 
         if (resetGame) {
 
@@ -357,7 +356,6 @@
 
         window.addEventListener('resize', setLandingpageIntroHeight);
 
-        console.log(localStorage.getItem("data0"))
 
 
     })();

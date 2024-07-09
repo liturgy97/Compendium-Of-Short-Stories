@@ -74,7 +74,6 @@ class Story {
     
     constructor(name) {
       
-      console.log(name)
       this.name = name;
       var origin= achievements[name];
       

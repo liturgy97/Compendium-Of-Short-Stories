@@ -232,13 +232,7 @@
 
 
 
-@media screen and (max-width: 650px) {
-    .removableBox2 {
-        display: none;
-    }
 
-
-}
 
 /* 
 @media screen and (max-width: 470px) {
@@ -352,6 +346,16 @@
     
 }
 
+@media screen and (max-width: 670px) {
+    .removableBox2 {
+        display: none;
+    }
+
+
+    
+}
+
+
 
 
 /* @media screen and (max-width: 585px) {
@@ -454,6 +458,10 @@
         left: 0; 
         transform: translate(100%, -50%);
       }
+
+      .removableBox1 {
+        display: none;
+      }
       
 
     
@@ -492,8 +500,22 @@
         max-width: 23rem;
     }
 
+    .chapter-row-right-side .BigIcon  {
+        width: 2rem;
+      }
+
     
 
+
+}
+
+@media screen and (max-width: 425px) {
+    .removable-ellipse-1 {
+        display: none;
+    }
+
+
+    
 
 
 }

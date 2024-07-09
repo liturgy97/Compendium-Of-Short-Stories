@@ -17,7 +17,7 @@ function loadStory(storyName) {
     StoryLeftSide.innerHTML = `
       <div class="StoryInfo">
         <div class="StoryTitle1">${story.name}</div>
-        <div class="Storysmalldetails">
+        <div class="Storysmalldetails flex-row" style="flex-wrap: wrap">
           <div class="StorySubtitle">Severity: ${getStorySeverity(story)}</div>
           <div class="Ellipse"></div>
           <div class="StorySubtitle">${story.chapters.length} chapter${(story.chapters.length > 1) ? 's' : ''} </div>
@@ -26,8 +26,8 @@ function loadStory(storyName) {
           ${(storydur > 3599) ? `${Math.floor(storydur / 3600)} hr ${(storydur/60) % 60} min` : `${Math.floor(storydur / 60)} min ${storydur % 60} sec`}
           </div>
           ${getStorySubtitle(story)? 
-            `<div class="Ellipse"></div>
-            <div class="StorySubtitle">
+            `<div class="Ellipse removable-ellipse-1" ></div>
+            <div class="StorySubtitle story-sub-1">
               ${getStorySubtitle(story)}
             </div>`
             

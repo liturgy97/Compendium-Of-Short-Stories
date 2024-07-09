@@ -71,7 +71,7 @@ const trialFormSubmission = function(customForm, onCompletion) {
 
         if (field.value.length == 0) return 'Please enter your Patreon code.'; 
   
-        if (field.value == "patreontrial0707") return;
+        if (field.value.toLowerCase() == "patreontrial0707") return;
   
         
         // If all else fails, return a generic catchall error

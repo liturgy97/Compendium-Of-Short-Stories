@@ -1,0 +1,595 @@
+.h-lg-1 {
+    flex  : none;
+    height : 8.33333%;
+}
+
+.h-lg-2 {
+    flex  : none;
+    height : 16.66666%;
+}
+
+.h-lg-3 {
+    flex  : none;
+    height : 25%;
+}
+
+.h-lg-4 {
+    flex  : none;
+    height : 33.33333%;
+}
+
+.h-lg-5 {
+    flex  : none;
+    height : 41.66666%;
+}
+
+.h-lg-6 {
+    flex  : none;
+    height : 50%;
+}
+
+.h-lg-7 {
+    flex  : none;
+    height : 58.33333%;
+}
+
+.h-lg-8 {
+    flex  : none;
+    height : 66.66666%;
+}
+
+.h-lg-9 {
+    flex  : none;
+    height : 75%;
+}
+
+.h-lg-10 {
+    flex  : none;
+    height : 83.33333%;
+}
+
+.h-lg-11 {
+    flex  : none;
+    height : 91.66666%;
+}
+
+.h-lg-12 {
+    flex  : none;
+    height : 100%;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .h-tab-1 {
+        flex  : none;
+        height : 8.33333%;
+    }
+
+    .h-tab-2 {
+        flex  : none;
+        height : 16.66666%;
+    }
+
+    .h-tab-3 {
+        flex  : none;
+        height : 25%;
+    }
+
+    .h-tab-4 {
+        flex  : none;
+        height : 33.33333%;
+    }
+
+    .h-tab-5 {
+        flex  : none;
+        height : 41.66666%;
+    }
+
+    .h-tab-6 {
+        flex  : none;
+        height : 50%;
+    }
+
+    .h-tab-7 {
+        flex  : none;
+        height : 58.33333%;
+    }
+
+    .h-tab-8 {
+        flex  : none;
+        height : 66.66666%;
+    }
+
+    .h-tab-9 {
+        flex  : none;
+        height : 75%;
+    }
+
+    .h-tab-10 {
+        flex  : none;
+        height : 83.33333%;
+    }
+
+    .h-tab-11 {
+        flex  : none;
+        height : 91.66666%;
+    }
+
+    .h-tab-12 {
+        flex  : none;
+        height : 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .h-mob-1 {
+        flex  : none;
+        height : 8.33333%;
+    }
+
+    .h-mob-2 {
+        flex  : none;
+        height : 16.66666%;
+    }
+
+    .h-mob-3 {
+        flex  : none;
+        height : 25%;
+    }
+
+    .h-mob-4 {
+        flex  : none;
+        height : 33.33333%;
+    }
+
+    .h-mob-5 {
+        flex  : none;
+        height : 41.66666%;
+    }
+
+    .h-mob-6 {
+        flex  : none;
+        height : 50%;
+    }
+
+    .h-mob-7 {
+        flex  : none;
+        height : 58.33333%;
+    }
+
+    .h-mob-8 {
+        flex  : none;
+        height : 66.66666%;
+    }
+
+    .h-mob-9 {
+        flex  : none;
+        height : 75%;
+    }
+
+    .h-mob-10 {
+        flex  : none;
+        height : 83.33333%;
+    }
+
+    .h-mob-11 {
+        flex  : none;
+        height : 91.66666%;
+    }
+
+    .h-mob-12 {
+        flex  : none;
+        height : 100%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .story-button-slot-3 {
+        display: none ;
+    }
+
+    .removableBox3 {
+        display: none;
+    }
+    .s-header__menu-toggle-2 {
+        right: 1rem;
+    }
+
+    #s-header {
+        padding-left: 1rem;
+    }
+
+    
+
+
+}
+
+
+@media screen and (max-width: 1100px) {
+    .story-button-slot-2 {
+        display: none ;
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    .removableBox2 {
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 650px) {
+    .removableBox2 {
+        display: none;
+    }
+
+
+}
+
+/* 
+@media screen and (max-width: 470px) {
+    .Title1 {
+        width: 25rem;
+    }
+
+    .Chaptername {
+        width: 25rem;
+    }
+
+
+
+}
+
+@media screen and (max-width: 400) {
+    .Title1 {
+        width: 15rem;
+    }
+
+    .Chaptername {
+        width: 15rem;
+    }
+
+
+
+} */
+
+
+
+
+
+
+@media screen and (max-width: 970px) {
+    #filtersBar {
+        gap: 0 !important;
+        justify-content: space-between !important;
+        
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 900px) {
+    .story-button-slot-1 {
+        display: none ;
+    }
+    
+
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    .story-button-slot-1 {
+        display: flex ;
+    }
+
+
+    .story-button-slot-2 {
+        display: none ;
+    }
+
+
+    .removableBox2 {
+        display: flex;
+    }
+
+    #Showcase {
+        margin: 0 0;
+        margin-bottom: 3rem;
+    }
+
+    .Chaptercover {
+        padding: 3rem 3rem;
+    }
+
+    /* .Title1 {
+        width: 30rem;
+    }
+
+    .Chaptername {
+        width: 30rem;
+    } */
+
+
+
+}
+
+@media screen and (max-width: 757px) {
+    .saveBox {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .SavePanel {
+        width: 100%;
+    }
+
+    .SavePicContainer {
+        padding-left: 0;
+    }
+
+
+    
+}
+
+
+
+/* @media screen and (max-width: 585px) {
+    html {
+        font-size: 8px;
+    }
+
+
+    
+} */
+
+@media screen and (max-width: 620px) {
+    #Achievements {
+
+        display : flex;
+        flex-direction: column;
+        width:fit-content;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0 0;
+    }
+    .AchievementItem {
+        padding-left: 0;
+        margin-bottom: 3rem;
+    }
+    .AchievementItem:hover .achievement-tooltip {
+        width: 30rem;
+        top: 50%; 
+        left: 100%; 
+        transform: translateY(-50%);
+        position: absolute;
+        display: inline;
+        background: var(--color-black);
+        border-radius: 0.5rem;
+        margin-left: 1rem;
+        margin-top: 0;
+      
+      }
+      
+      
+      .AchievementItem:hover .achievement-tooltip::after{
+        content: " ";
+        position: absolute;
+        top: 50%;
+        left: -1rem; /* Move the arrow to the left of the tooltip */
+        transform: translateY(-50%) rotate(-90deg);;
+        border-width: 1rem;
+        border-style: solid;
+        border-color: transparent transparent var(--color-black) transparent;
+        
+
+      
+      }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .story-button-slot-1 {
+        display: none ;
+    }
+
+    .story-button-duration {
+        width: auto !important;
+    }
+
+    .achievement-tooltip {
+        max-width: 25rem;
+    }
+
+
+    
+}
+
+
+@media screen and (max-width: 500px) {
+    .hideAt500px {
+        display: none;
+    }
+
+    .story-button-name {
+        max-width: 15rem;
+    }
+
+
+    button.tooltip-button:hover .tooltip-text {
+        transform: translate(0, -50%);
+      }
+
+
+      button.tooltip-button .tooltip-text {
+        left: 100%; 
+        top: 50%; 
+        opacity: 0;
+      }
+
+      button.tooltip-button .tooltip-text::before {
+        content: '';
+        position: absolute;
+        top: 50%; 
+        left: 0; 
+        transform: translate(100%, -50%);
+      }
+      
+
+    
+
+    
+}
+
+@media screen and (max-width: 490px) {
+
+    .achievement-image{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .achievement-tooltip {
+        max-width: 25rem;
+    }
+
+
+    
+}
+
+
+@media screen and (max-width: 450px) {
+    .story-button-slot-2 {
+        display: none ;
+    }
+
+
+    .achievement-image{
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .achievement-tooltip {
+        max-width: 23rem;
+    }
+
+    
+
+
+
+}
+
+
+
+@media screen and (max-width: 417px) {
+    .story-button-slot-1 {
+        display: none ;
+    }
+
+    .story-button-name {
+        max-width: 10rem;
+    }
+
+
+}
+
+@media screen and (max-width: 412px) {
+    .removableEllipse412 {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .story-button-slot-1 {
+        display: none ;
+    }
+
+
+
+}
+
+@media screen and (max-width: 400px) {
+  
+    .SavePicContainer {
+        width: 150px;
+
+        height: 150px;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 380px) {
+
+
+    .achievement-image{
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .achievement-tooltip {
+        max-width: 20rem;
+    }
+
+    
+
+
+
+}
+
+
+@media screen and (max-width: 350px) {
+    .story-button-duration {
+        display: none ;
+    }
+
+    .story-button-name {
+        max-width: 15rem;
+    }
+
+    .newStoryIcon {
+        display: none;
+    }
+
+
+    .AchievementItem:hover .achievement-tooltip {
+        display: none;
+      
+      }
+      
+      
+      .AchievementItem:hover .achievement-tooltip::after{
+        display: none;
+        
+
+      
+      }
+
+}
+
+
+
+
+

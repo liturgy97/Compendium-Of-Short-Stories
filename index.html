@@ -15,10 +15,19 @@
 
     <!-- CSS
     ================================================== -->
+    
+
     <link rel="stylesheet" href="assets/css/vendor.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+
     <link rel="stylesheet" href="assets/css/manual.css">
+    <link rel="stylesheet" href="assets/css/main-page.css">
+
+    <link rel="stylesheet" href="assets/css/front-page.css">
+
+    <link rel="stylesheet" href="assets/css/mobile.css">
 
     <!-- favicons
     ================================================== -->
@@ -26,6 +35,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon-16x16.png">
     <link rel="manifest" href="assets/site.webmanifest">
+
+    <style id="scrollbarHeadStyleElement"></style>
 
 </head>
 
@@ -48,14 +59,14 @@
 
         <!-- # site header 
         ================================================== -->
-        <header class="s-header">
+        <header id= "s-header" class="s-header">
 
-            <div class="s-header__logo">
+            <div id="s-header__logo" class="s-header__logo">
                 <a class="logo" href="https://www.compendiumofshortstories.com/">
                     <img src="assets/images/logo.svg" alt="Homepage">
                 </a>
             </div>
-
+ 
             <a class="s-header__menu-toggle" href="#0" class="">
                 <span class="s-header__menu-text">Menu</span>
                 <span class="s-header__menu-icon"></span>
@@ -66,11 +77,11 @@
                 <a href="#0" class="s-header__nav-close-btn" title="close"><span>Close</span></a>
                 <h3>Compendium</h3>
 
-                <ul class="s-header__nav-list">
+                <ul id="s-header__nav-list" class="s-header__nav-list">
                     <li><a href="#intro" class="smoothscroll">Intro</a></li>
                     <li><a href="#about" class="smoothscroll">About</a></li>
                     <li><a href="#portfolio" class="smoothscroll">Showcase</a></li>
-                    <li><a href="#contact" class="smoothscroll">Thank you</a></li>
+                    <li><a href="#thanks" class="smoothscroll">Thank you</a></li>
                 </ul>
 
                 
@@ -97,13 +108,16 @@
 
                         <h3 class="s-intro__pretitle" style="margin-bottom: 0">Liturgy's</h3>
                         
-                        <h1 class="s-intro__title" style="margin-bottom: 80px">
-                        Compendium<br>Of Short Stories
-                        </h1>	
+                        <h1 class="s-intro__title" style="margin: 0 0;">
+                        Compendium
+                        </h1>
+                        <h1 class="s-intro__title" style="margin: 0 0; margin-bottom: 80px">
+                        Of Short Stories
+                        </h1>		
                         
-                        <div class="s-intro__more">
-                            <a class="smoothscroll btn btn--stroke s-intro__more-btn" href="#about">
-                                Coming Soon
+                        <div id="trial-button-area" class="s-intro__more">
+                            <a id="trial-button" class="smoothscroll btn btn--stroke s-intro__more-btn" href="#">
+                                Early Trial
                             </a>
                         </div>	
                     </div> <!-- s-intro__content-inner -->
@@ -141,292 +155,453 @@
 
             </section> <!-- end s-intro -->
 
-
-            <!-- about
+            <section id = "OuterPage">
+                <!-- about
             ----------------------------------------------- -->
-            <section id="about" class="s-about target-section">
+                <section id="about" class="s-about target-section">
 
-                <div class="row s-about__content" data-animate-block>
-                    <div class="column lg-12">
-                        <h2 class="text-pretitle" data-animate-el>What is the compendium?</h2>
-                        <p class="s-about__desc" data-animate-el>
-                            The <span>Compendium</span> is a collection of experimentations in the erotic and the mundane. From the creator of the 
-                            Hangman series.
-                        </p>
-                    </div> <!-- end column  -->
-                </div> <!-- end s-about__content  -->
+                    <div class="row s-about__content" data-animate-block>
+                        <div class="column lg-12">
+                            <h2 class="text-pretitle" data-animate-el>What is the compendium?</h2>
+                            <p class="s-about__desc" data-animate-el>
+                                The <span>Compendium</span> is a collection of experimentations in the erotic and the mundane. From the creator of the 
+                                Hangman series.
+                            </p>
+                        </div> <!-- end column  -->
+                    </div> <!-- end s-about__content  -->
 
-            </section> <!-- end about -->
+                </section> <!-- end about -->
 
 
-            <!-- services
+                <!-- services
+                
+
+                ----------------------------------------------- -->
+                <section id="portfolio" class="s-portfolio">
+
+                    <div class="s-portfolio__header">
+
+                        <div class="row narrow section-header section-header--dark has-bottom-sep">
+                            <div class="column lg-12">
+                                
+                                <h3 class="text-pretitle">Showcase</h3>
+                                <h1 class="text-display-title">Our Featured Stories.</h1>
+                                
+                                <p class="lead">
+                                These are the 10 stories expected to be released in Issue #1.
+                                </p>
+                                
+                            </div> <!-- end column -->
+                        </div> <!-- end section header -->
+
+                    </div> <!-- end s-portfolio__header -->
+
+                    <div class="row s-portfolio__content" data-animate-block>
+                        <div class="column lg-12">
+
+                            <div class="folio-list bricks">
             
+                                <div class="brick folio-item"   data-animate-el>
 
-            ----------------------------------------------- -->
-            <section id="portfolio" class="s-portfolio">
+                                    <div class="folio-item__thumb">
+                                        <a class="folio-item__thumb-link" href="assets/images/stories/1 Growing Mommys Dick/base/cover3-2.jpg" Title="Growing Mommy's Dick" data-size="1050x700">
+                                            <img src="assets/images/stories/1 Growing Mommys Dick/base/cover4-5.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="folio-item__info">
+                                        <div class="folio-item__cat">Story #1</div>
+                                        <h4 class="folio-item__title">Growing Mommy's Dick</h4>
+                                    </div>
+                                    <div class="folio-item__caption">
+                                        <p>Your mom complains from the hardships of life so you tell her to grow some balls. Next day she goes under surgery. Now it's your fault she has a dick and you have to nurture the tiny little thing until it grows into a healthy, full-fledged, throbbing cock.</p>
+                                    </div>
+                                    
+                                </div> <!-- end brick-->
+            
+                                <div class="brick folio-item" data-animate-el>
 
-                <div class="s-portfolio__header">
+                                    <div class="folio-item__thumb">
+                                        <a class="folio-item__thumb-link" href="assets/images/stories/5 Mr Wolf/base/cover3-2.jpg" Title="Mr. Wolf" data-size="1050x700">
+                                            <img src="assets/images/stories/5 Mr Wolf/base/cover1-1.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="folio-item__info">
+                                        <div class="folio-item__cat">Story #5</div>
+                                        <h4 class="folio-item__title">Mr. Wolf</h4>
+                                    </div>
+                                    <div class="folio-item__caption">
+                                        <p>Mr. Wolf meets a little girl in the woods.</p>
+                                    </div>
 
-                    <div class="row narrow section-header section-header--dark has-bottom-sep">
+                                </div> <!-- end brick-->
+            
+                                <div class="brick folio-item" data-animate-el>
+
+                                    <div class="folio-item__thumb">
+                                        <a class="folio-item__thumb-link" href="assets/images/stories/8 Daddy Im Scawwed/base/cover3-2.jpg" Title="Daddy I'm Scawwed" data-size="1050x700">
+                                            <img src="assets/images/stories/8 Daddy Im Scawwed/base/cover1-1.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="folio-item__info">
+                                        <div class="folio-item__cat">Story #8</div>
+                                        <h4 class="folio-item__title">Daddy I'm Scawwed</h4>
+                                    </div>
+                                    <div class="folio-item__caption">
+                                        <p>A dad daughter conundrum.</p>
+                                    </div>
+
+                                </div> <!-- end brick-->
+
+                                <div class="brick folio-item" data-animate-el>
+
+                                    <div class="folio-item__thumb">
+                                        <a class="folio-item__thumb-link" href="assets/images/stories/12 Game Night/base/cover3-2.jpg" Title="Game Night" data-size="1050x700">
+                                            <img src="assets/images/stories/12 Game Night/base/cover1-1.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="folio-item__info">
+                                        <div class="folio-item__cat">Story #12</div>
+                                        <h4 class="folio-item__title">Game Night</h4>
+                                    </div>
+                                    <div class="folio-item__caption">
+                                        <p>I joined Mom and Dad's stupid game for once.</p>
+                                    </div>
+
+                                </div> <!-- end brick-->
+
+
+
+                                <div class="brick folio-item" data-animate-el>
+
+                                    <div class="folio-item__thumb">
+                                        <a class="folio-item__thumb-link" href="assets/images/stories/14 Emma/base/cover3-2.jpg" Title="Emma" data-size="1050x700">
+                                            <img src="assets/images/stories/14 Emma/base/cover4-5.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="folio-item__info">
+                                        <div class="folio-item__cat">Story #14</div>
+                                        <h4 class="folio-item__title">Emma</h4>
+                                    </div>
+                                    <div class="folio-item__caption">
+                                        <p>The grand entrance hall of the Hastings estate was a testament to Lady Arabella Hastings' refined tastes and the family's wealth. Tall windows with heavy velvet drapes let in slivers of the late afternoon sun, casting long shadows across the marbled floor. Arabella stood near the grand staircase, her dark eyes assessing the young woman who had just been shown in by the butler.</p>
+                                    </div>
+
+                                </div> <!-- end brick-->
+
+                                
+
+                                <div class="brick folio-item" data-animate-el>
+
+                                    <div class="folio-item__thumb">
+                                        <a class="folio-item__thumb-link" href="assets/images/stories/17 Nungerie/base/cover3-2.jpg" Title="Nungerie" data-size="1050x700">
+                                            <img src="assets/images/stories/17 Nungerie/base/cover1-1.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="folio-item__info">
+                                        <div class="folio-item__cat">Story #17</div>
+                                        <h4 class="folio-item__title">Nungerie</h4>
+                                    </div>
+                                    <div class="folio-item__caption">
+                                        <p>In a desperate attempt to revive a dying religion, 25-year old Alistair Everhart has been elected the Bishop of Sancta Celestia Cathedral, the last church in the world, due to his otherworldly talent in marketing and brand strategy. His first decree was to force nuns and pastorettes into wearing more revealing clothes to attract more customers of God.</p>
+                                    </div>
+
+                                </div> <!-- end brick-->
+
+                                
+
+                                <div class="brick folio-item" data-animate-el>
+
+                                    <div class="folio-item__thumb">
+                                        <a class="folio-item__thumb-link" href="assets/images/stories/18 God Bless Estrogen Pills/base/cover3-2.jpg" Title="God Bless Estrogen Pills" data-size="1050x700">
+                                            <img src="assets/images/stories/18 God Bless Estrogen Pills/base/cover1-1.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="folio-item__info">
+                                        <div class="folio-item__cat">Story #18</div>
+                                        <h4 class="folio-item__title">God Bless Estrogen Pills</h4>
+                                    </div>
+                                    <div class="folio-item__caption">
+                                        <p></p>
+                                    </div>
+
+                                </div> <!-- end brick-->
+
+                                <div class="brick folio-item" data-animate-el>
+
+                                    <div class="folio-item__thumb">
+                                        <a class="folio-item__thumb-link" href="assets/images/stories/19 Protecting A Femboy/base/cover3-2.jpg" Title="Protecting A Femboy" data-size="1050x700">
+                                            <img src="assets/images/stories/19 Protecting A Femboy/base/cover4-5.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="folio-item__info">
+                                        <div class="folio-item__cat">Story #19</div>
+                                        <h4 class="folio-item__title">Protecting A Femboy</h4>
+                                    </div>
+                                    <div class="folio-item__caption">
+                                        <p></p>
+                                    </div>
+
+                                </div> <!-- end brick-->
+
+                                
+
+                                <div class="brick folio-item" data-animate-el>
+
+                                    <div class="folio-item__thumb">
+                                        <a class="folio-item__thumb-link" href="assets/images/stories/20 Hammer/base/cover3-2.jpg" Title="Hammer" data-size="1050x700">
+                                            <img src="assets/images/stories/20 Hammer/base/cover1-1.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="folio-item__info">
+                                        <div class="folio-item__cat">Story #20</div>
+                                        <h4 class="folio-item__title">Hammer</h4>
+                                    </div>
+                                    <div class="folio-item__caption">
+                                        <p></p>
+                                    </div>
+                                    
+                                </div> <!-- end brick-->
+
+                                <div class="brick folio-item" data-animate-el>
+
+                                    <div class="folio-item__thumb">
+                                        <a class="folio-item__thumb-link" href="assets/images/stories/21 The Hanging Man/base/cover3-2.jpg" Title="The Hanging Man" data-size="1050x700">
+                                            <img src="assets/images/stories/21 The Hanging Man/base/cover1-1.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="folio-item__info">
+                                        <div class="folio-item__cat">Story #21</div>
+                                        <h4 class="folio-item__title">The Hanging Man</h4>
+                                    </div>
+                                    <div class="folio-item__caption">
+                                        <p></p>
+                                    </div>
+
+                                </div> <!-- end brick-->
+
+                                
+
+
+
+
+                            </div> <!-- end folio-list, bricks -->
+
+                        </div> <!-- end column  -->
+                    </div> <!-- end s-portfolio__content -->
+
+                    
+
+                </section> <!-- end portfolio -->
+
+                <!-- thanks
+                ----------------------------------------------- -->
+                <section id="thanks" class="s-thanks target-section">
+
+                    <div class="row section-header section-header--dark">
                         <div class="column lg-12">
                             
-                            <h3 class="text-pretitle">Showcase</h3>
-                            <h1 class="text-display-title">Our Featured Stories.</h1>
-                            
-                            <p class="lead">
-                            These are the 10 stories expected to be released in Issue #1.
-                            </p>
-                            
-                        </div> <!-- end column -->
-                    </div> <!-- end section header -->
-
-                </div> <!-- end s-portfolio__header -->
-
-                <div class="row s-portfolio__content" data-animate-block>
-                    <div class="column lg-12">
-
-                        <div class="folio-list bricks">
-         
-                            <div class="brick folio-item"   data-animate-el>
-
-                                <div class="folio-item__thumb">
-                                    <a class="folio-item__thumb-link" href="assets/images/stories/1 Growing Mommys Dick/base/cover3-2.jpg" Title="Growing Mommy's Dick" data-size="1050x700">
-                                        <img src="assets/images/stories/1 Growing Mommys Dick/base/cover4-5.jpg">
-                                    </a>
-                                </div>
-                                <div class="folio-item__info">
-                                    <div class="folio-item__cat">Story #1</div>
-                                    <h4 class="folio-item__title">Growing Mommy's Dick</h4>
-                                </div>
-                                <div class="folio-item__caption">
-                                    <p>Your mom complains from the hardships of life so you tell her to grow some balls. Next day she goes under surgery. Now it's your fault she has a dick and you have to nurture the tiny little thing until it grows into a healthy, full-fledged, throbbing cock.</p>
-                                </div>
-                                
-                             </div> <!-- end brick-->
-         
-                            <div class="brick folio-item" data-animate-el>
-
-                                <div class="folio-item__thumb">
-                                    <a class="folio-item__thumb-link" href="assets/images/stories/5 Mr Wolf/base/cover3-2.jpg" Title="Mr. Wolf" data-size="1050x700">
-                                        <img src="assets/images/stories/5 Mr Wolf/base/cover1-1.jpg">
-                                    </a>
-                                </div>
-                                <div class="folio-item__info">
-                                    <div class="folio-item__cat">Story #5</div>
-                                    <h4 class="folio-item__title">Mr. Wolf</h4>
-                                </div>
-                                <div class="folio-item__caption">
-                                    <p>Mr. Wolf meets a little girl in the woods.</p>
-                                </div>
-
-                            </div> <!-- end brick-->
-         
-                            <div class="brick folio-item" data-animate-el>
-
-                                <div class="folio-item__thumb">
-                                    <a class="folio-item__thumb-link" href="assets/images/stories/8 Daddy Im Scawwed/base/cover3-2.jpg" Title="Daddy I'm Scawwed" data-size="1050x700">
-                                        <img src="assets/images/stories/8 Daddy Im Scawwed/base/cover1-1.jpg">
-                                    </a>
-                                </div>
-                                <div class="folio-item__info">
-                                    <div class="folio-item__cat">Story #8</div>
-                                    <h4 class="folio-item__title">Daddy I'm Scawwed</h4>
-                                </div>
-                                <div class="folio-item__caption">
-                                    <p>A dad daughter conundrum.</p>
-                                </div>
-
-                            </div> <!-- end brick-->
-
-                            <div class="brick folio-item" data-animate-el>
-
-                                <div class="folio-item__thumb">
-                                    <a class="folio-item__thumb-link" href="assets/images/stories/12 Game Night/base/cover3-2.jpg" Title="Game Night" data-size="1050x700">
-                                        <img src="assets/images/stories/12 Game Night/base/cover1-1.jpg">
-                                    </a>
-                                </div>
-                                <div class="folio-item__info">
-                                    <div class="folio-item__cat">Story #12</div>
-                                    <h4 class="folio-item__title">Game Night</h4>
-                                </div>
-                                <div class="folio-item__caption">
-                                    <p>I joined Mom and Dad's stupid game for once.</p>
-                                </div>
-
-                            </div> <!-- end brick-->
-
-
-
-                            <div class="brick folio-item" data-animate-el>
-
-                                <div class="folio-item__thumb">
-                                    <a class="folio-item__thumb-link" href="assets/images/stories/14 Emma/base/cover3-2.jpg" Title="Emma" data-size="1050x700">
-                                        <img src="assets/images/stories/14 Emma/base/cover4-5.jpg">
-                                    </a>
-                                </div>
-                                <div class="folio-item__info">
-                                    <div class="folio-item__cat">Story #14</div>
-                                    <h4 class="folio-item__title">Emma</h4>
-                                </div>
-                                <div class="folio-item__caption">
-                                    <p>The grand entrance hall of the Hastings estate was a testament to Lady Arabella Hastings' refined tastes and the family's wealth. Tall windows with heavy velvet drapes let in slivers of the late afternoon sun, casting long shadows across the marbled floor. Arabella stood near the grand staircase, her dark eyes assessing the young woman who had just been shown in by the butler.</p>
-                                </div>
-
-                            </div> <!-- end brick-->
-
-                            
-
-                            <div class="brick folio-item" data-animate-el>
-
-                                <div class="folio-item__thumb">
-                                    <a class="folio-item__thumb-link" href="assets/images/stories/17 Nungerie/base/cover3-2.jpg" Title="Nungerie" data-size="1050x700">
-                                        <img src="assets/images/stories/17 Nungerie/base/cover1-1.jpg">
-                                    </a>
-                                </div>
-                                <div class="folio-item__info">
-                                    <div class="folio-item__cat">Story #17</div>
-                                    <h4 class="folio-item__title">Nungerie</h4>
-                                </div>
-                                <div class="folio-item__caption">
-                                    <p>In a desperate attempt to revive a dying religion, 25-year old Alistair Everhart has been elected the Bishop of Sancta Celestia Cathedral, the last church in the world, due to his otherworldly talent in marketing and brand strategy. His first decree was to force nuns and pastorettes into wearing more revealing clothes to attract more customers of God.</p>
-                                </div>
-
-                            </div> <!-- end brick-->
-
-                            
-
-                            <div class="brick folio-item" data-animate-el>
-
-                                <div class="folio-item__thumb">
-                                    <a class="folio-item__thumb-link" href="assets/images/stories/18 God Bless Estrogen Pills/base/cover3-2.jpg" Title="God Bless Estrogen Pills" data-size="1050x700">
-                                        <img src="assets/images/stories/18 God Bless Estrogen Pills/base/cover1-1.jpg">
-                                    </a>
-                                </div>
-                                <div class="folio-item__info">
-                                    <div class="folio-item__cat">Story #18</div>
-                                    <h4 class="folio-item__title">God Bless Estrogen Pills</h4>
-                                </div>
-                                <div class="folio-item__caption">
-                                    <p></p>
-                                </div>
-
-                            </div> <!-- end brick-->
-
-                            <div class="brick folio-item" data-animate-el>
-
-                                <div class="folio-item__thumb">
-                                    <a class="folio-item__thumb-link" href="assets/images/stories/19 Protecting A Femboy/base/cover3-2.jpg" Title="Protecting A Femboy" data-size="1050x700">
-                                        <img src="assets/images/stories/19 Protecting A Femboy/base/cover4-5.jpg">
-                                    </a>
-                                </div>
-                                <div class="folio-item__info">
-                                    <div class="folio-item__cat">Story #19</div>
-                                    <h4 class="folio-item__title">Protecting A Femboy</h4>
-                                </div>
-                                <div class="folio-item__caption">
-                                    <p></p>
-                                </div>
-
-                            </div> <!-- end brick-->
-
-                            
-
-                            <div class="brick folio-item" data-animate-el>
-
-                                <div class="folio-item__thumb">
-                                    <a class="folio-item__thumb-link" href="assets/images/stories/20 Hammer/base/cover3-2.jpg" Title="Hammer" data-size="1050x700">
-                                        <img src="assets/images/stories/20 Hammer/base/cover1-1.jpg">
-                                    </a>
-                                </div>
-                                <div class="folio-item__info">
-                                    <div class="folio-item__cat">Story #20</div>
-                                    <h4 class="folio-item__title">Hammer</h4>
-                                </div>
-                                <div class="folio-item__caption">
-                                    <p></p>
-                                </div>
-                                
-                            </div> <!-- end brick-->
-
-                            <div class="brick folio-item" data-animate-el>
-
-                                <div class="folio-item__thumb">
-                                    <a class="folio-item__thumb-link" href="assets/images/stories/21 The Hanging Man/base/cover3-2.jpg" Title="The Hanging Man" data-size="1050x700">
-                                        <img src="assets/images/stories/21 The Hanging Man/base/cover1-1.jpg">
-                                    </a>
-                                </div>
-                                <div class="folio-item__info">
-                                    <div class="folio-item__cat">Story #21</div>
-                                    <h4 class="folio-item__title">The Hanging Man</h4>
-                                </div>
-                                <div class="folio-item__caption">
-                                    <p></p>
-                                </div>
-
-                            </div> <!-- end brick-->
-
-                            
-
-
-
-
-                        </div> <!-- end folio-list, bricks -->
-
-                    </div> <!-- end column  -->
-                </div> <!-- end s-portfolio__content -->
-
-                
-
-            </section> <!-- end portfolio -->
-
-            <!-- contact
-            ----------------------------------------------- -->
-            <section id="contact" class="s-contact target-section">
-
-                <div class="row section-header section-header--dark">
-                    <div class="column lg-12">
-                        
-                        <h3 class="text-pretitle">Thank you</h3>
-                        <h1 class="text-display-title">
-                            The Compendium is nearly here, teetering on the edge of existence.
-                        </h1>
-                        <h1 class="text-display-title">
-                            Our gratitude goes to the wild souls on <span style="color: var(--color-1-light)">Patreon</span> who fueled this madness.
-                        </h1>
-                        <h1 class="text-display-title">
-                            Join us on the new page for free to catch the latest status updates as soon as they spill out.
-                        </h1>
-                        <br>
-                        <a href="https://www.patreon.com/Liturgy97" target="_blank" rel="noopener noreferrer" title="" class="swiper-slide clients__slide"><?xml version="1.0" encoding="utf-8"?>
-                                <!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080; width: 100; height: 100;" xml:space="preserve">
-                                <style type="text/css">
-                                    .st0{fill:#FFFFFF;}
-                                </style>
-                                <path class="st0" d="M1033.05,324.45c-0.19-137.9-107.59-250.92-233.6-291.7c-156.48-50.64-362.86-43.3-512.28,27.2
-                                    C106.07,145.41,49.18,332.61,47.06,519.31c-1.74,153.5,13.58,557.79,241.62,560.67c169.44,2.15,194.67-216.18,273.07-321.33
-                                    c55.78-74.81,127.6-95.94,216.01-117.82C929.71,603.22,1033.27,483.3,1033.05,324.45z"/>
-                                </svg></a>
-        
+                            <h3 class="text-pretitle">Thank you</h3>
+                            <h1 class="text-display-title">
+                                The Compendium is nearly here, teetering on the edge of existence.
+                            </h1>
+                            <h1 class="text-display-title">
+                                Our gratitude goes to the wild souls on <span style="color: var(--color-1-light)">Patreon</span> who fueled this madness.
+                            </h1>
+                            <h1 class="text-display-title">
+                                Join us on the new page for free to catch the latest status updates as soon as they spill out.
+                            </h1>
+                            <br>
+                            <a href="https://www.patreon.com/Liturgy97" target="_blank" rel="noopener noreferrer" title="" class="swiper-slide clients__slide"><?xml version="1.0" encoding="utf-8"?>
+                                    <!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080; width: 100; height: 100;" xml:space="preserve">
+                                    <style type="text/css">
+                                        .st0{fill:#FFFFFF;}
+                                    </style>
+                                    <path class="st0" d="M1033.05,324.45c-0.19-137.9-107.59-250.92-233.6-291.7c-156.48-50.64-362.86-43.3-512.28,27.2
+                                        C106.07,145.41,49.18,332.61,47.06,519.31c-1.74,153.5,13.58,557.79,241.62,560.67c169.44,2.15,194.67-216.18,273.07-321.33
+                                        c55.78-74.81,127.6-95.94,216.01-117.82C929.71,603.22,1033.27,483.3,1033.05,324.45z"/>
+                                    </svg></a>
+            
                         </div> <!-- end column -->
                     </div> <!-- end clients-outer -->
-                </div> <!-- end clients-block -->
+
+                    
+                    
+
+                </section> <!-- end thanks -->
+
+
+                
+
+            </section>
+            
+            <!-- end Outer Section -->
+
+
+            <section id="MainSection">
+
+                
+
+                
+
+                <div id="MainPage" class="rowContainer">
+                    <div id="storyList" class="swiper-container column padless lg-8 tab-12" style="gap: 3rem;" data-animate-block>
+        
+                        <div id="filtersBar" class="Satoshi font-size-14 font-weight-400 gray14 flex-row">
+
+                        </div>
+        
+                        <div id="storyListInner" class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+
+                                <h5 class="storyListTitle">Available Stories</h5>
+                                
+                                <div id="Available-Stories" class="StoriesList">
+                                    
+                                    
+                                </div>
+    
+
+                            </div> 
+
+                            <div class="swiper-slide">
+
+                                <h5 class="storyListTitle">Unread Stories</h5>
+                                
+                                <div id="Unread-Stories" class="StoriesList">
+                                    
+                                    
+                                </div>
+    
+
+                            </div> 
+
+                            <div class="swiper-slide">
+
+                                <h5 class="storyListTitle">Favorites</h5>
+                                
+                                <div id="Favorite-Stories" class="StoriesList">
+                                    
+                                    
+                                </div>
+    
+
+                            </div> 
+
+                            <div class="swiper-slide">
+
+                                <h5 class="storyListTitle">Hidden Stories</h5>
+                                
+                                <div id="Hidden-Stories" class="StoriesList">
+                                    
+                                    
+                                </div>
+    
+
+                            </div> 
+
+                            <div class="swiper-slide">
+
+                                <h5 class="storyListTitle">All Stories</h5>
+                                
+                                <div id="All-Stories" class="StoriesList">
+                                    
+                                    
+                                </div>
+    
+
+                            </div> 
+
+            
+                            
+        
+                        </div> <!-- end swiper-wrapper -->
+        
+                            
+        
+                    </div> <!-- end swiper-container -->
+
                         
-                    </div> <!-- end column -->
-                </div> <!-- end section header -->
+
+                        <!-- Add Showcase here -->
+        
+
+
+                    <div id="Showcase" class="column lg-4 tab-12" data-animate-block>
+                        <div class="ShowcaseTop">
+                            <div id="ShowcaseTitle" class="Satoshi gray9 font-size-20 font-weight-500">Showcase</div>
+                            <div id="Showcasefirst">
+                                <div class="Showcaseimagecontainer">
+                                    <div class="SmallRectangle1"></div>
+                                    <div id="ShowcaseImageCover">
+                                    </div>
+                                </div>
+    
+                                <div class="Showcasetopshadow"></div>
+                                <div id="Showcasetitle2"></div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end Main Page -->
+
+
+
+                <div id="StoryHolder" class="row" style="padding: 3.6rem 2rem; justify-content: space-between;">
+                    <div id="StoryLeftSide" class="column lg-8 tab-12">
+                    </div>
+
+
+
+                    <div id="StoryRightSide" class="column lg-3 tab-12">
+
+                    </div>
+                </div>
+                
+                <div id="AchievementsPage" class="column rowContainer"></div>
+
+
+                <div id="SavesPage" class="column lg-12"></div>
 
                 
 
 
-            </section> <!-- end contact -->
+                
+
+
+
+
+                
+
+                <div id="AchievementArea"></div>
+
+                <div id="MessageArea"></div>
+
+            </section> <!-- end Main Section -->
+
+
+            
 
         </section> 
+
+
+            
+            
+
+       
+
+            
+
+            
         <!-- end s-content -->
 
 
 
     </div> <!-- end s-pagewrap -->
+
+    
 
 
     <!-- photoswipe background
@@ -471,7 +646,35 @@
     <!-- Java Script
     ================================================== -->
     <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/SimpleCrypto.min.js"></script>
+    
+
+    <script src="assets/js/script.js"></script>
+
+
+
+
+    
+    <script src="assets/js/story functions.js"></script>
+    <script src="assets/js/methods.js"></script>
+    <script src="assets/js/classes.js"></script>
+    <script src="assets/js/stories.js"></script>
+    <script src="assets/js/achievements.js"></script>
+    
+    
+
+    
+
+    <script src="assets/js/pages/FrontPage.js"></script>
+    <script src="assets/js/pages/MainPage.js"></script>
+    <script src="assets/js/pages/StoryOverview.js"></script>
+    <script src="assets/js/pages/AchievementsPage.js"></script>
+    <script src="assets/js/pages/SavesPage.js"></script>
+
+    
+
     <script src="assets/js/main.js"></script>
+
 
 </body>
 </html>

@@ -55,9 +55,9 @@
  *      ## portfolio list
  *      ## testimonials
  *      ## clients
- * # CONTACT
- *      ## contact infos
- *      ## contact bottom
+ * # thanks
+ *      ## thanks infos
+ *      ## thanks bottom
  * # FOOTER
  *      ## copyright
  *      ## go top
@@ -128,18 +128,18 @@
      * Tint & Shade Generator 
      * (https://maketintsandshades.com/)
      */
-    --color-black                  : #000000;
+    --color-black                  : #060606;
     --color-gray-19                : #161616;
     --color-gray-18                : #2c2c2c;
     --color-gray-17                : #424342;
     --color-gray-16                : #585958;
     --color-gray-15                : #6e6f6f;
-    --color-gray-14                : #838585;
+    --color-gray-14                : #898989;
     --color-gray-13                : #999b9b;
     --color-gray-12                : #afb2b1;
     --color-gray-11                : #c5c8c7;
     --color-gray-10                : #dbdedd;
-    --color-gray-9                 : #dfe1e0;
+    --color-gray-9                 : #E0E0E0;
     --color-gray-8                 : #e2e5e4;
     --color-gray-7                 : #e6e8e7;
     --color-gray-6                 : #e9ebeb;
@@ -152,10 +152,10 @@
 
     /* text
      */
-    --color-text                   : var(--color-gray-19);
+    --color-text                   : var(--color-gray-9);
     --color-text-dark              : var(--color-black);
-    --color-text-light             : var(--color-gray-13);
-    --color-placeholder            : var(--color-gray-13);
+    --color-text-light             : var(--color-gray-9);
+    --color-placeholder            : var(--color-gray-9);
 
     /* buttons
      */
@@ -180,7 +180,7 @@
 
     /* others
      */
-    --color-body                   : white;
+    --color-body                   : var(--color-black);
     --color-border                 : rgba(0, 0, 0, .08);
     --border-radius                : 3px;
 }
@@ -256,6 +256,25 @@
     /* default button height
      */
     --vspace-btn       : var(--vspace-2);
+}
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    box-sizing: border-box;
+	font: inherit;
+
 }
 
 /* on mobile devices below 600px, change the value of '--multiplier' 
@@ -598,6 +617,14 @@ textarea {
 
 /* row 
  */
+ .rowContainer {
+    width     : 92%;
+    max-width : var(--width-grid-max);
+    margin    : 0 auto;
+    display   : flex;
+    flex-flow : row wrap;
+}
+
 .row {
     width     : 92%;
     max-width : var(--width-grid-max);
@@ -676,9 +703,14 @@ textarea {
     width : 8.33333%;
 }
 
+.lg-1-5 {
+    flex  : none;
+    width : 13.833333%;
+}
+
 .lg-2 {
     flex  : none;
-    width : 16.66667%;
+    width : 16.6666%;
 }
 
 .lg-3 {
@@ -693,7 +725,7 @@ textarea {
 
 .lg-5 {
     flex  : none;
-    width : 41.66667%;
+    width : 41.66666%;
 }
 
 .lg-6 {
@@ -708,7 +740,7 @@ textarea {
 
 .lg-8 {
     flex  : none;
-    width : 66.66667%;
+    width : 66.66666%;
 }
 
 .lg-9 {
@@ -723,7 +755,7 @@ textarea {
 
 .lg-11 {
     flex  : none;
-    width : 91.66667%;
+    width : 91.66666%;
 }
 
 .lg-12 {
@@ -738,7 +770,7 @@ textarea {
 
 .block-lg-one-sixth>.column {
     flex  : none;
-    width : 16.66667%;
+    width : 16.66666%;
 }
 
 .block-lg-one-fifth>.column {
@@ -777,7 +809,7 @@ textarea {
 
     .md-2 {
         flex  : none;
-        width : 16.66667%;
+        width : 16.66666%;
     }
 
     .md-3 {
@@ -792,7 +824,7 @@ textarea {
 
     .md-5 {
         flex  : none;
-        width : 41.66667%;
+        width : 41.66666%;
     }
 
     .md-6 {
@@ -807,7 +839,7 @@ textarea {
 
     .md-8 {
         flex  : none;
-        width : 66.66667%;
+        width : 66.66666%;
     }
 
     .md-9 {
@@ -822,7 +854,7 @@ textarea {
 
     .md-11 {
         flex  : none;
-        width : 91.66667%;
+        width : 91.66666%;
     }
 
     .md-12 {
@@ -837,7 +869,7 @@ textarea {
 
     .block-md-one-sixth>.column {
         flex  : none;
-        width : 16.66667%;
+        width : 16.66666%;
     }
 
     .block-md-one-fifth>.column {
@@ -881,7 +913,7 @@ textarea {
 
     .tab-2 {
         flex  : none;
-        width : 16.66667%;
+        width : 16.66666%;
     }
 
     .tab-3 {
@@ -896,7 +928,7 @@ textarea {
 
     .tab-5 {
         flex  : none;
-        width : 41.66667%;
+        width : 41.66666%;
     }
 
     .tab-6 {
@@ -911,7 +943,7 @@ textarea {
 
     .tab-8 {
         flex  : none;
-        width : 66.66667%;
+        width : 66.66666%;
     }
 
     .tab-9 {
@@ -926,7 +958,7 @@ textarea {
 
     .tab-11 {
         flex  : none;
-        width : 91.66667%;
+        width : 91.66666%;
     }
 
     .tab-12 {
@@ -941,7 +973,7 @@ textarea {
 
     .block-tab-one-sixth>.column {
         flex  : none;
-        width : 16.66667%;
+        width : 16.66666%;
     }
 
     .block-tab-one-fifth>.column {
@@ -996,7 +1028,7 @@ textarea {
 
     .mob-2 {
         flex  : none;
-        width : 16.66667%;
+        width : 16.66666%;
     }
 
     .mob-3 {
@@ -1011,7 +1043,7 @@ textarea {
 
     .mob-5 {
         flex  : none;
-        width : 41.66667%;
+        width : 41.66666%;
     }
 
     .mob-6 {
@@ -1026,7 +1058,7 @@ textarea {
 
     .mob-8 {
         flex  : none;
-        width : 66.66667%;
+        width : 66.66666%;
     }
 
     .mob-9 {
@@ -1041,7 +1073,7 @@ textarea {
 
     .mob-11 {
         flex  : none;
-        width : 91.66667%;
+        width : 91.66666%;
     }
 
     .mob-12 {
@@ -1056,7 +1088,7 @@ textarea {
 
     .block-mob-one-sixth>.column {
         flex  : none;
-        width : 16.66667%;
+        width : 16.66666%;
     }
 
     .block-mob-one-fifth>.column {
@@ -2739,7 +2771,7 @@ img.u-pull-left {
 /* ------------------------------------------------------------------- 
  * ## swiper overrides
  * ------------------------------------------------------------------- */
-.swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
+/* .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
     margin : 0 1.2rem;
 }
 
@@ -2753,7 +2785,7 @@ img.u-pull-left {
 .swiper-container .swiper-pagination-bullet-active {
     background : black;
     opacity    : 1;
-}
+} */
 
 /* ------------------------------------------------------------------- 
  * ## section header
@@ -2904,7 +2936,7 @@ img.u-pull-left {
 }
 
 .s-header__logo img {
-    width          : 40px;
+    width          : 4rem;
     margin         : 0;
     vertical-align : bottom;
 }
@@ -3158,7 +3190,7 @@ img.u-pull-left {
     bottom              : 0;
     width               : 100%;
     height              : 100%;
-    background-image    : url(../images/hero-bg.jpg);
+    background-image    : url(../images/main-cover.jpg);
     background-repeat   : no-repeat;
     background-position : center 30%;
     background-size     : cover;
@@ -3234,16 +3266,16 @@ img.u-pull-left {
 }
 
 .s-intro__more-btn {
-    border : 2px solid white;
-    color  : white;
-    margin : 0;
+    border : 2px solid white  !important;
+    color  : white  !important;
+    margin : 0  !important;
 }
 
 .s-intro__more-btn:focus,
 .s-intro__more-btn:hover {
     background-color : white !important;
-    border           : 2px solid white;
-    color            : black;
+    border           : 2px solid white  !important;
+    color            : black  !important;
 }
 
 /* --------------------------------------------------------------------
@@ -3970,15 +4002,15 @@ img.u-pull-left {
 
 
 /* ===================================================================
- * # CONTACT
+ * # thanks
  *
  *
  * ------------------------------------------------------------------- */
-.s-contact {
+.s-thanks {
     --color-border      : rgba(255, 255, 255, .05);
 
     background-color    : var(--color-gray-19);
-    background-image    : url(../images/contact-bg.jpg);
+    background-image    : url(../images/stars-bg.jpg);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
@@ -3987,18 +4019,18 @@ img.u-pull-left {
     position            : relative;
 }
 
-.s-contact h5 {
+.s-thanks h5 {
     margin-top    : 0;
     margin-bottom : var(--vspace-1);
     color         : rgba(255, 255, 255, 0.25);
 }
 
-.s-contact h5.with-top-line {
+.s-thanks h5.with-top-line {
     padding-top : var(--vspace-0_75);
     border-top  : 1px solid var(--color-border);
 }
 
-.s-contact::before {
+.s-thanks::before {
     content        : "";
     display        : block;
     background     : black;
@@ -4013,18 +4045,18 @@ img.u-pull-left {
     opacity        : .75;
 }
 
-.s-contact .section-header {
+.s-thanks .section-header {
     max-width : 1020px;
 }
 
-.s-contact .section-header a {
+.s-thanks .section-header a {
     color : var(--color-1);
 }
 
 /* ------------------------------------------------------------------- 
- * ## contact infos
+ * ## thanks infos
  * ------------------------------------------------------------------- */
-.s-contact__infos {
+.s-thanks__infos {
     margin-top  : var(--vspace-3_5);
     font-family : var(--font-2);
     font-weight : 400;
@@ -4034,32 +4066,32 @@ img.u-pull-left {
     position    : relative;
 }
 
-.s-contact__infos [class*="s-contact__block"] {
+.s-thanks__infos [class*="s-thanks__block"] {
     padding-bottom : var(--vspace-1);
 }
 
-.s-contact__list {
+.s-thanks__list {
     list-style  : none;
     margin-left : 0;
 }
 
-.s-contact__list a {
+.s-thanks__list a {
     color : white;
 }
 
-.s-contact__list a:focus,
-.s-contact__list a:hover {
+.s-thanks__list a:focus,
+.s-thanks__list a:hover {
     color : var(--color-1);
 }
 
-.s-contact__list li {
+.s-thanks__list li {
     padding-left : 0;
 }
 
 /* ------------------------------------------------------------------- 
- * ## contact bottom
+ * ## thanks bottom
  * ------------------------------------------------------------------- */
-.s-contact__bottom {
+.s-thanks__bottom {
     --btn-input-height : var(--vspace-2);
     margin-top         : var(--vspace-0_5);
     position           : relative;
@@ -4067,12 +4099,12 @@ img.u-pull-left {
 
 /* mail button block
  */
-.s-contact__mail-block {
+.s-thanks__mail-block {
     padding-top : calc(var(--vspace-0_875) + var(--vspace-1));
     position    : relative;
 }
 
-.s-contact__mail-block::before {
+.s-thanks__mail-block::before {
     content          : "";
     display          : block;
     width            : 200px;
@@ -4098,24 +4130,24 @@ img.u-pull-left {
 
 /* subscription form
  */
-.s-contact__subscribe {
+.s-thanks__subscribe {
     --input-height : var(--btn-input-height);
     --btn-width    : 180px;
 }
 
-.s-contact__subscribe form {
+.s-thanks__subscribe form {
     display       : flex;
     flex-flow     : row wrap;
     margin-bottom : 0;
 }
 
-.s-contact__subscribe input[type="email"],
-.s-contact__subscribe input[type="submit"],
-.s-contact__subscribe .ms-status {
+.s-thanks__subscribe input[type="email"],
+.s-thanks__subscribe input[type="submit"],
+.s-thanks__subscribe .ms-status {
     flex : none;
 }
 
-.s-contact__subscribe input[type="email"] {
+.s-thanks__subscribe input[type="email"] {
     width            : calc(100% - var(--btn-width));
     background-color : rgba(255, 255, 255, 0.05);
     font-size        : var(--text-sm);
@@ -4126,7 +4158,7 @@ img.u-pull-left {
     margin           : 0;
 }
 
-.s-contact__subscribe input[type="submit"] {
+.s-thanks__subscribe input[type="submit"] {
     --btn-height     : var(--btn-input-height);
     background-color : var(--color-1);
     border           : 2px solid var(--color-1);
@@ -4135,7 +4167,7 @@ img.u-pull-left {
     margin           : 0;
 }
 
-.s-contact__subscribe .mc-status {
+.s-thanks__subscribe .mc-status {
     width       : 100%;
     margin-top  : var(--vspace-0_75);
     font-family : var(--font-2);
@@ -4145,14 +4177,14 @@ img.u-pull-left {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * contact
+ * thanks
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 800px) {
-    .s-contact__mail-block {
+    .s-thanks__mail-block {
         padding-top : 0;
     }
 
-    .s-contact__mail-block::before {
+    .s-thanks__mail-block::before {
         display : none;
     }
 
@@ -4163,48 +4195,48 @@ img.u-pull-left {
 }
 
 @media screen and (max-width: 600px) {
-    .s-contact .text-display-title {
+    .s-thanks .text-display-title {
         --text-multiplier : .6;
     }
 
-    .s-contact__subscribe form {
+    .s-thanks__subscribe form {
         display : block;
     }
 
-    .s-contact__subscribe input[type="email"],
-    .s-contact__subscribe input[type="submit"],
-    .s-contact__subscribe .mc-status {
+    .s-thanks__subscribe input[type="email"],
+    .s-thanks__subscribe input[type="submit"],
+    .s-thanks__subscribe .mc-status {
         width : 100%;
     }
 
-    .s-contact__subscribe input[type="email"] {
+    .s-thanks__subscribe input[type="email"] {
         text-align    : center;
         margin-bottom : var(--vspace-0_5);
     }
 
-    .s-contact__subscribe .mc-status {
+    .s-thanks__subscribe .mc-status {
         text-align : center;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .s-contact .text-display-title {
+    .s-thanks .text-display-title {
         --text-multiplier : .55;
     }
 
-    .s-contact h5 {
+    .s-thanks h5 {
         font-size     : calc(var(--text-size) * 1.1111);
         margin-bottom : var(--vspace-0_375);
     }
 
-    .s-contact__infos {
+    .s-thanks__infos {
         font-size   : var(--text-lg);
         line-height : calc(1.375 * var(--space));
     }
 }
 
 @media screen and (max-width: 400px) {
-    .s-contact .text-display-title {
+    .s-thanks .text-display-title {
         font-size : var(--text-xl);
     }
 }

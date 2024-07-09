@@ -1,0 +1,443 @@
+/* Change intro */
+
+
+.btn.btn--custom,
+button.btn--custom,
+input[type="submit"].btn--custom,
+input[type="reset"].btn--custom,
+input[type="button"].btn--custom {
+    background   : transparent !important;
+    border-color : var(--color-2-light);
+    color        : var(--color-gray-9);
+}
+
+.btn.btn--custom:focus,
+button.btn--custom:focus,
+input[type="submit"].btn--custom:focus,
+input[type="reset"].btn--custom:focus,
+input[type="button"].btn--custom:focus,
+.btn.btn--custom:hover,
+button.btn--custom:hover,
+input[type="submit"].btn--custom:hover,
+input[type="reset"].btn--custom:hover,
+input[type="button"].btn--custom:hover {
+    background   : var(--color-2-light) !important;
+    border-color : var(--color-2-light);
+    color        : var(--color-gray-9);
+}
+
+
+
+.s-intro__bg {
+    background-image    : url(../images/main-cover.jpg);
+}
+
+
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  height: 10px; /* Height of the scrollbar (for horizontal scrollbars) */
+  
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3a3d41; /* Background color of the scrollbar thumb */
+  border-radius: 6px; /* Roundness of the scrollbar thumb */
+  border: 2px solid #1e1e1e; /* Border around the scrollbar thumb (creates padding) */
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #505354; /* Background color when hovering over the scrollbar thumb */
+}
+
+
+div::-webkit-scrollbar, section::-webkit-scrollbar {
+  display: none;
+}
+
+div, section {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+
+
+/* html,div, section {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+} */
+
+
+/* div::-webkit-scrollbar, section::-webkit-scrollbar {
+  display: none;
+} */
+
+
+
+
+
+#MainSection {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: none;
+}
+
+.saveBox {
+  
+
+  margin-bottom: 3rem;
+  
+}
+
+.SavesButtonArea {
+  
+  margin-top: 1rem;
+}
+
+.SavesButtonArea .btn {
+  padding: 1rem 2rem;
+  height: auto;
+  line-height: 1;
+
+  margin-right: 1rem;
+}
+
+.new-btn {
+  padding: 1rem 2rem;
+  height: auto;
+  line-height: 1;
+
+  margin-right: 1rem;
+}
+
+.save-click-button {
+  background-color: var(--color-2-light) !important;
+  border-color: var(--color-2-light) !important;
+  
+}
+
+
+.Satoshi {
+    font-family: "Satoshi", sans-serif;
+}
+
+.content-box-sizing {
+  box-sizing: content-box;
+}
+
+.border-box-sizing {
+  box-sizing: border-box;
+}
+
+
+
+.font-weight-300 {
+    font-weight: 300;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.font-size-14 {
+    font-size: 1.4rem;
+}
+
+.font-size-16 {
+    font-size: 1.6rem;
+}
+
+.font-size-18 {
+  font-size: 1.8rem;
+}
+
+.font-size-20 {
+  font-size: 2rem;
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+
+.line-height-1-6 {
+  line-height: 1.6;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.font-inherit {
+    font: inherit;
+    color: inherit;
+}
+
+.transitionall03s {
+  transition: all 0.3s ease;
+}
+
+
+.transition03s {
+    transition: color 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.fill-height {
+    height: 100%;
+}
+
+.fill-width {
+    width: 100%;
+}
+
+.gray9 {
+    color: var(--color-gray-9);
+}
+
+
+.gray14 {
+    color: var(--color-gray-14);
+}
+
+.display-none {
+
+  display: none !important;
+}
+
+
+.padless {
+    padding: 0 0;
+}
+
+.marginless {
+    margin: 0 0;
+}
+
+.filterButton {
+    padding-left: 0.65rem; padding-right: 0.65rem; 
+
+    
+  }
+
+
+
+  .filterButton:hover {
+    color: var(--color-gray-9); 
+  }
+
+
+  .blank-pagination {
+    width: auto; height: auto;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+
+  .flex-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .flex-column {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+  }
+
+  .swiper-pagination-bullet {
+    box-sizing: border-box;
+  }
+
+  .flex-centered {
+    justify-content: center; align-items: center; display: flex;
+}
+
+  #filtersBar .swiper-pagination-bullet {
+    justify-content: center; align-items: center; display: flex; flex-direction: row;
+    
+
+    width: auto; height: auto;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+    cursor: default;
+    height: 6rem;
+    margin: 0;
+    padding: 0.65rem;
+  }
+
+  #filtersBar .swiper-pagination-bullet:hover {
+    
+    color: var(--color-gray-9);
+  }
+
+  #filtersBar .swiper-pagination-bullet-active {
+    color: var(--color-gray-9);
+    border-bottom: 0.2rem var(--color-2-light) solid; 
+  }
+
+  
+
+
+  .story-button {
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.5rem; border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+
+  }
+
+  .newStoryIcon {
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: var(--color-2-light);
+    color: var(--color-gray-5);
+    font-weight: 400;
+    height: auto;
+    line-height: 1;
+    display: inline-block;
+    border-radius: 0.2rem;
+
+  }
+
+  .story-button-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+    
+  }
+
+  .story-button-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+  }
+
+  .story-button-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+  }
+
+  .StoryPlayIcon {
+    width: 1.5rem;
+    height: 1.6rem;
+    display: none;
+  }
+
+
+  .story-button:hover {
+    background: rgba(136.68, 136.68, 136.68, 0.10);
+  }
+
+  .story-button:hover .StoryNum {
+    display: none;
+  } 
+
+  .story-button:hover .StoryPlayIcon {
+    display: flex;
+  } 
+
+  .story-button  * {
+    cursor: default;
+  }
+
+  .BigIcon {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .story-button-name {
+    font-size: 1.6rem;
+    max-width: 20rem;
+
+  }
+
+  .truncate-ellipse {
+    white-space: nowrap;     
+    overflow: hidden;            
+    text-overflow: ellipsis; 
+  }
+
+  .position-absolute {
+    position: absolute;
+  }
+
+  .position-relative {
+    position: relative;
+  }
+
+  .position-absolute-horizontally-centered {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .position-absolute-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .overflow-y-hidden {
+    overflow-y: hidden;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+
+#filtersBar {
+  gap: 5rem; padding: 0 1.5rem;
+}
+
+
+
+.SaveEllipse {
+  margin-top: auto; margin-bottom: auto; width: 0.3rem; height: 0.3rem; background: var(--color-gray-14); border-radius: 9999px;
+}
+
+.save-form {
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.new-container {
+  padding-top: var(--vspace-5);
+  padding-bottom: var(--vspace-4);
+  position: absolute;
+}
+

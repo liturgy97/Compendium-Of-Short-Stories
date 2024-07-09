@@ -193,47 +193,7 @@
 
    /* swiper
     * ------------------------------------------------------ */ 
-    const ssSwiper = function() {
-
-        const clientsSwiper = new Swiper('.clients', {
-
-            slidesPerView: 3,
-            spaceBetween: 6,
-            slideClass: 'clients__slide',
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                // when window width is > 500px
-                501: {
-                    slidesPerView: 4,
-                    spaceBetween: 16
-                },
-                // when window width is > 900px
-                901: {
-                    slidesPerView: 5,
-                    spaceBetween: 32
-                },
-                // when window width is > 1200px
-                1201: {
-                    slidesPerView: 6,
-                    spaceBetween: 40
-                }
-            }
-        });
-
-        const testimonialsSwiper = new Swiper('.testimonial-slider', {
-
-            slidesPerView: 1,
-            effect: 'slide',
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            }
-        });
-
-    }; // end ssSwiper
+    
 
 
     /* photoswipe
@@ -342,56 +302,21 @@
 
     }; // end ssBackToTop
 
-
-
-   /* smoothscroll
-    * ------------------------------------------------------ */
-    const ssMoveTo = function() {
-
-        const siteBody    = document.querySelector('body');
-
-        const easeFunctions = {
-            easeInQuad: function (t, b, c, d) {
-                t /= d;
-                return c * t * t + b;
-            },
-            easeOutQuad: function (t, b, c, d) {
-                t /= d;
-                return -c * t* (t - 2) + b;
-            },
-            easeInOutQuad: function (t, b, c, d) {
-                t /= d/2;
-                if (t < 1) return c/2*t*t + b;
-                t--;
-                return -c/2 * (t*(t-2) - 1) + b;
-            },
-            easeInOutCubic: function (t, b, c, d) {
-                t /= d/2;
-                if (t < 1) return c/2*t*t*t + b;
-                t -= 2;
-                return c/2*(t*t*t + 2) + b;
-            }
-        }
-
-        const triggers = document.querySelectorAll('.smoothscroll');
+    function setLandingpageIntroHeight() {
+        const introSection = document.getElementById('intro');
+    
+        introSection.style.height = `${window.innerHeight}px`;
         
-        const moveTo = new MoveTo({
-            tolerance: 0,
-            duration: 1200,
-            easing: 'easeInOutCubic',
-            container: window,
-            callback: function (target) {
-                if (siteBody.classList.contains('menu-is-open')) {
-                    siteBody.classList.remove('menu-is-open');
-                }
-            }
-        }, easeFunctions);
+        // const MainSection = document.getElementById('MainSection');
+        
+        // MainSection.style.height = `${window.innerHeight}px`;
+    }
 
-        triggers.forEach(function(trigger) {
-            moveTo.registerTrigger(trigger);
-        });
+    
 
-    }; // end ssMoveTo
+    
+
+    
 
 
    /* Initialize
@@ -404,31 +329,56 @@
         ssAnimateOnScroll();
         ssOffCanvas();
         ssMasonry();
-        ssSwiper();
+
+        console.log(localStorage.getItem("data0"))
+
+        if (resetGame) {
+
+            removeAllSaves();
+
+            init();
+
+            activateTrialButton();
+
+        } else {
+
+            updateGameStartButton();
+        }
+
+
         ssPhotoswipe();
         ssAlertBoxes();
         ssBackToTop();
         ssMoveTo();
 
+        
+
+        setLandingpageIntroHeight();
+
+        window.addEventListener('resize', setLandingpageIntroHeight);
+
+        console.log(localStorage.getItem("data0"))
+
+
     })();
+    
+
+// New Functions
+
+
+
+
+
+
+  // Adjust the height on window resize
+
+
+
+
+
+
 
 })(document.documentElement);
 
 
 
-
-
-// New Functions
-
-function setLandingpageIntroHeight() {
-    const introSection = document.getElementById('intro');
-    const root = document.documentElement;
-
-    root.style.setProperty('--main-color', 'green');
-    introSection.style.height = `${window.innerHeight}px`;
-  }
-
-setLandingpageIntroHeight();
-
-  // Adjust the height on window resize
-window.addEventListener('resize', setLandingpageIntroHeight);

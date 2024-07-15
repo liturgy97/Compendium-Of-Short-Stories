@@ -399,8 +399,9 @@ if (pageNum == 1) {
         </div>
         <div class="timeline-middle"><div class="timeline-circle"></div></div>
         <div class="timeline-date-container-right"><p class="timeline-date-right">July 22: Day 177 (Planned)</p></div>
-        <p style="margin-top: 5rem; font-size: 2rem"><a class="appendLink" href="#" >Seriously?</a></p>
+        
     </div> 
+    <p style="margin-top: 5rem; font-size: 2rem"><a class="appendLink" href="#" >Seriously?</a></p>
     `;
 
     const section5 = appendSection(5, '');

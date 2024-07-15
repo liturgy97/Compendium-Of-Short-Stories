@@ -44,6 +44,7 @@ function loadStoryList() {
         if(sty) {
           button.style.background = sty;
         }
+
       button.innerHTML = `
         <div class="marginless story-button-left">
             <div class="position-relative gray14 Satoshi font-weight-400 flex-centered padless transition03s" style="font-size: 1.6rem; width: 4.2rem; height: 4.2rem">
@@ -51,7 +52,7 @@ function loadStoryList() {
               <svg style="width:1.5rem; height: 1.6rem;" class="StoryPlayIcon position-absolute-centered transition03s" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="transition03s" d="M13.094 6.52922C14.3508 7.25486 14.3508 9.06895 13.094 9.79459L3.19636 15.509C1.93952 16.2346 0.368469 15.3276 0.368469 13.8763L0.36847 2.44751C0.36847 0.996234 1.93952 0.0891892 3.19636 0.814827L13.094 6.52922Z" fill="var(--color-2-light)"/>
               </svg></div>
-            <div class="padless" style="height:5rem; width: 5rem;"><img class="story-button-img" src="assets/images/stories/${getStoryFolder(story)}/base/cover1-1.jpg" /></div>
+            <div class="padless" style="height:5rem; width: 5rem;"><img class="story-button-img" src="assets/images/stories/${story.num}/base/cover1-1.jpg" /></div>
             <div class="story-button-name truncate-ellipse gray9 Satoshi font-weight-400 flex-column padless style="">
                 <span class="gray9 font-weight-400 font-size-16" style="line-height: 1.6;">${story.name}</span>
                 ${getStorySubtitle(story)? `<span class="truncate-ellipse gray14 font-weight-300 font-size-14" style="line-height: 1.6; ">${getStorySubtitle(story)}</span>` 
@@ -111,6 +112,17 @@ function loadStoryList() {
             <path class="transition03s" d="M14.0692 2.56854L12.2054 4.37449L10.3415 2.56855C8.38718 0.674873 5.25203 0.779429 3.42817 2.7991C1.65841 4.75888 1.41476 7.69429 3.01732 9.79299C3.21426 10.0509 3.40789 10.2979 3.59217 10.524C4.75861 11.9549 7.30362 14.4539 8.57876 15.7949C9.52085 16.7857 10.3677 17.6121 11.0057 18.214C11.6794 18.8496 12.7193 18.8357 13.3943 18.2014C14.5707 17.0961 16.3746 15.3743 17.6453 14.0379C18.9204 12.6969 19.6521 11.9549 20.8186 10.524C21.0028 10.2979 21.1965 10.0509 21.3934 9.79299C22.996 7.69429 22.7523 4.75888 20.9826 2.7991C19.1587 0.779429 16.0236 0.674871 14.0692 2.56854Z" fill="var(--color-2-light)" stroke="var(--color-2-light)" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
          `;
+
+
+        const completionIcon = document.createElement('svg');
+        const completionSlot = button.querySelector('.story-button-slot-2')
+        completionSlot.appendChild(completionIcon);
+        completionIcon.innerHTML = `<svg style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 2rem; height: 2rem;" width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="11.227" cy="11.0811" r="11" fill="var(--color-2-light)"></circle>
+              <path d="M6.97833 11.5811L9.97833 14.5811L15.4783 9.08105" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>`;
+
+
   
 
         const lockIcon = actionButton.querySelector('.lockIcon');
@@ -121,12 +133,18 @@ function loadStoryList() {
   
         const likedIcon = actionButton.querySelector('.likedIcon');
 
+
+
         
         mainPageStoryButtons[story.name].newStoryIcon[filter] = newStoryNotif;
         mainPageStoryButtons[story.name].lockIcons[filter] = lockIcon;
         mainPageStoryButtons[story.name].hiddenIcons[filter] = hiddenIcon;
         mainPageStoryButtons[story.name].notLikedIcons[filter] = notLikedIcon;
         mainPageStoryButtons[story.name].likedIcons[filter] = likedIcon;
+
+        mainPageCompletionIcons[story.name].completionIcon[filter] = completionIcon;
+
+        if(!story.isComplete) completionIcon.style.display = "none";
   
         
 
@@ -194,7 +212,7 @@ function loadStoryList() {
 
   const SmallImage = document.createElement('img');
   SmallImage.className = 'ShowcaseSmallImage';
-  SmallImage.src = `assets/images/stories/${getStoryFolder(story)}/base/cover1-1.jpg`;
+  SmallImage.src = `assets/images/stories/${story.num}/base/cover1-1.jpg`;
 
   container2.appendChild(SmallImage);
 
@@ -211,7 +229,7 @@ function loadStoryList() {
   const ShowcaseWideImage = document.createElement('img');
 
   ShowcaseWideImage.className = 'ShowcaseWideImage';
-  ShowcaseWideImage.src = `assets/images/stories/${getStoryFolder(story)}/base/cover3-2.jpg`;
+  ShowcaseWideImage.src = `assets/images/stories/${story.num}/base/cover3-2.jpg`;
 
   container4.appendChild(ShowcaseWideImage);
 
@@ -348,11 +366,15 @@ function refreshMainPageStoryButton(storyname) {
   notLikedIcon = mainPageStoryButtons[storyname].notLikedIcons[filter];
   likedIcon = mainPageStoryButtons[storyname].likedIcons[filter];
 
+  completionIcon = mainPageCompletionIcons[storyname].completionIcon[filter];
+
   newStoryNotif.style.display = "none";
   lockIcon.style.display = "none";
   hiddenIcon.style.display = "none";
   notLikedIcon.style.display = "none";
   likedIcon.style.display = "none";
+
+  completionIcon.style.display = "none"
 
   if(showStoryNewIcon(story)) {
     newStoryNotif.style.display = "";
@@ -374,6 +396,8 @@ function refreshMainPageStoryButton(storyname) {
       notLikedIcon.style.opacity = 1;
     }
   }
+
+  if (story.isComplete) completionIcon.style.display = "";
 
 
   })

@@ -74,22 +74,48 @@
 /* ------------------------------------------------------------------- 
  * ## fonts 
  * ------------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
     --font-1 : "Lora", serif;
     /* --font-2 : "Inter", sans-serif; */
     --font-2 : "Satoshi", sans-serif;
 
+    --font-3: "Source Sans 3", sans-serif;
+
     /* monospace
     */
     --font-mono : Consolas, "Andale Mono", Courier, "Courier New", monospace;
+
 }
 
 /* ------------------------------------------------------------------- 
  * ## colors
  * ------------------------------------------------------------------- */
 :root {
+
+    /* Old
+    --scrollbar-track-color: #1E1E1E;
+    --scrollbar-base-color: #1E1E1E;
+    --scrollbar-thumb-color: rgba(58, 61, 65, 0.75);
+    --scrollbar-thumb-hover: #505354;
+    --scrollbar-annotation-color: #898989;
+    --scrollbar-opacity: 1; */
+
+    /* New 
+
+    --scrollbar-track-color: #79797933;
+    --scrollbar-base-color: #79797933;
+    --scrollbar-thumb-color: #bfbfbf66;
+    --scrollbar-thumb-hover: #646464b3;
+    --scrollbar-annotation-color: #fcff5b;
+    --scrollbar-opacity: 1; */
+
+    --scrollbar-track-color: #1E1E1E;
+    --scrollbar-base-color: #1E1E1E;
+    --scrollbar-thumb-color: #bfbfbf66;
+    --scrollbar-thumb-hover: #505354;
+    --scrollbar-annotation-color: #898989;
+    --scrollbar-opacity: 1;
 
     /* color-1(#F9A828)
      * color-2(#07617D)
@@ -1312,6 +1338,7 @@ textarea {
 .u-pull-right {
     float : right;
 }
+
 
 /* ===================================================================
  * # TYPOGRAPHY 
@@ -2727,6 +2754,8 @@ td:last-child {
 [data-animate-el] {
     opacity : 0;
 }
+
+
 
 .basicLightbox iframe {
     width        : 880px;

@@ -14,7 +14,7 @@ class Story {
         this.chapters.push(new Chapter(this.name, origin.chapters[i]));
           }
         
-      this.CurrentChapter = this.chapters[0];
+      this.currentChapter = this.chapters[0];
       
       this.isSeen = false;
       this.isAvailable = true;

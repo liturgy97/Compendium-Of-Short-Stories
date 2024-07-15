@@ -181,6 +181,7 @@ function loadSaveButtons() {
 
         yesanchor.addEventListener('click', ()=> {
           loadSave(i);
+          startGame();
           loadSavesPage();
         })
 
@@ -486,6 +487,7 @@ const ssFormSubmission = function(customForm, onCompletion) {
 
 const onSuccussfulPaste = function() {
   var i = currentSave;
+  startGame();
   loadSavesPage();
   const area = document.getElementById("SavesButtonTempArea" + i);
   area.innerHTML = "";

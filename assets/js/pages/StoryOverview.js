@@ -116,7 +116,7 @@ function loadStory(storyName) {
     var StoryRightSide = document.getElementById('StoryRightSide');
   
     StoryRightSide.innerHTML = `
-      <img class="Chaptercover lg-12" src="assets/images/stories/${getStoryFolder(story)}/base/cover1-1.jpg" />
+      <img class="Chaptercover lg-12" src="assets/images/stories/${story.num}/base/cover1-1.jpg" />
       <div id="ChapterGenreBox">
         
       </div>
@@ -132,7 +132,7 @@ function loadStory(storyName) {
       if (getStorySubtitle(story) != "Coming Soon") document.getElementById("StoryLikeButtonContainer").style.display = "none";
     }
 
-    if (story.isLocked) {
+    if (story.isLocked || story.isRead) {
       document.getElementById("StorySkipButton").style.display = "none";
     }
 
@@ -193,7 +193,7 @@ function loadStory(storyName) {
           updateStoryObj(story);
           
           filterAllMainPageStoryButtons();
-          SwitchToPage("MainPage");
+          switchToPage("MainPage");
         }
         refreshMainPageStoryButton(story.name);
     });
@@ -286,7 +286,7 @@ function loadStory(storyName) {
         charbox.className = 'Character';
     
         charbox.innerHTML = `
-              <img class="CharacterImg" src="assets/images/stories/${getStoryFolder(story)}/base/${getStoryCharacters(story)[i]}.jpg" />
+              <img class="CharacterImg" src="assets/images/stories/${story.num}/base/${getStoryCharacters(story)[i]}.jpg" />
               <div class="CharacterName">${getStoryCharacters(story)[i]}</div>
         `;
     
@@ -312,7 +312,7 @@ function loadStory(storyName) {
         
         button.addEventListener('click', () => {
   
-      loadStory(story);
+      openStory(story);
       });}
       
   
@@ -331,7 +331,7 @@ function showStory(storyName) {
 
 
   loadStory(storyName);
-  SwitchToPage("StoryHolder");
+  switchToPage("StoryHolder");
   refreshMainPageStoryButton(storyName);
 
 }
@@ -341,6 +341,6 @@ function PlayStory(storyName) {
   data.CurrentlyReading = storyName;
   story= data.StoryObj[storyName];
   story.inProgress= true;
-  loadAndExecuteScript(`assets/library/${getStoryFolder(story)}/${story.currentPassage}.js`);
+  loadAndExecuteScript(`assets/library/${story.num}/${story.currentPassage}.js`);
 
 }

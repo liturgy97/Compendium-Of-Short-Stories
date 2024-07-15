@@ -1,10 +1,42 @@
+function devLoad() {
+  openStory(data.StoryObj["Elf"]);
+}
+
+
 const siteBody = document.querySelector('body');
 
 const keyV1 = "liturgy97+gen93696";
 
 const CryptoV1 = new SimpleCrypto(keyV1);
 
+const typography = {
+  openingSingleQuote : "&lsquo;", 
+  closingSingleQuote : "&rsquo;", 
+  openingDoubleQuote : "&ldquo;",
+  closingDoubleQuote : "&rdquo;"
+}
+
+var storyImageAddress;
+
+var baseScriptFolder = "";
+
+var baseImagesFolder = "";
+
+var passagePath = "";
+
+var loadPage;
+
 const wordsPerSecond = 4;
+
+var currentContainer;
+
+var currentScenery;
+
+var currentChapter = null;
+
+var currentStory= null;
+
+var loadedScripts = [];
 
 var data = {};
 
@@ -46,7 +78,7 @@ const MainPageFilters = ["Available", "Unread", "Favorites", "Hidden", "All Stor
 
 const totalSavesCount = 6;
 
-const gamePages = ["MainPage", "StoryHolder", "AchievementsPage", "SavesPage"];
+const gamePages = ["MainPage", "StoryHolder", "AchievementsPage", "SavesPage", "StoryPage"];
 
 
 
@@ -82,9 +114,12 @@ function init() {
 
 
 function HideIntroBannerUponScrollingAway() {
-  window.addEventListener('scroll', function () {
+  window.addEventListener('scroll', HideIntroBanner);
+}
 
-    let loc = window.scrollY;
+function HideIntroBanner() {
+
+  let loc = window.scrollY;
 
     let triggerHeight = document.getElementById("intro").offsetHeight-1;
 
@@ -96,10 +131,17 @@ function HideIntroBannerUponScrollingAway() {
         
       document.getElementById("s-header__logo").style.display = "none";
       }
-    }
 
-});
+      window.removeEventListener('scroll', HideIntroBanner);
+
+    }
+ 
 }
 
+function showIntroBanner() {
+  document.getElementById("intro").style.display = "none";
+  HideIntroBannerUponScrollingAway();
+
+}
 
 

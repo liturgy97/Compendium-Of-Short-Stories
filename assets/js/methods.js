@@ -93,9 +93,63 @@ function getTextBeforeSymbol(inputString, symbol) {
 
 //});
 
+function isScriptLoaded(script) {
 
+    const scriptUrl = script.src;
+
+    const headScripts = document.head.getElementsByTagName('script');
+
+    for (let i = 0; i < headScripts.length; i++) {
+    if (headScripts[i].src === scriptUrl) {
+        return true;
+    }
+    }
+
+    return false;
+
+}
+
+function isScriptURLLoaded(scriptUrl) {
+
+    const headScripts = document.head.getElementsByTagName('script');
+
+    for (let i = 0; i < headScripts.length; i++) {
+    if (headScripts[i].src === scriptUrl) {
+        return true;
+    }
+    }
+
+    return false;
+
+}
+
+function returnLoadedScript(scriptUrl) {
+
+    const headScripts = document.head.getElementsByTagName('script');
+
+    for (let i = 0; i < headScripts.length; i++) {
+    if (headScripts[i].src === scriptUrl) {
+        return headScripts[i];
+    }
+    }
+
+    return null;
+
+}
+
+function removeLoadedScriptURL(scriptUrl) {
+    const script = returnLoadedScript(scriptUrl);
+    if (script) {
+        document.head.removeChild(script);
+    }
+
+    loadedScripts = arrayDifference(loadedScripts, [scriptUrl]);
+
+}
 
 function loadAndExecuteScript(scriptUrl) {
+        removeLoadedScriptURL(scriptUrl)
+
         const script = document.createElement('script');
         script.src = scriptUrl;
         script.onload = () => {
@@ -106,21 +160,17 @@ function loadAndExecuteScript(scriptUrl) {
         };
         document.head.appendChild(script);
 
+        loadedScripts.push(scriptUrl);
+
+
 }
 
-function removeScript(scriptUrl) {
-    const script = loadedScripts[scriptUrl];
-    if (script) {
-        document.head.removeChild(script);
-        delete loadedScripts[scriptUrl];
-        console.log(`${scriptUrl} removed.`);
-    } else {
-        console.log(`${scriptUrl} is not loaded.`);
-    }
-}
 
-function clearScripts() {
-    loadedScripts = {};
+
+function clearLoadedScripts() {
+    loadedScripts.forEach(scriptUrl=> {
+        removeLoadedScriptURL(scriptUrl);
+    })
 }
 
 
@@ -310,7 +360,7 @@ function getElementByIDWithinDiv(parent, childId) {
 }
 
 
-function SwitchToPageSlow(id2) {
+function switchToPageSlow(id2) {
     const id1 = currentPage;
     currentPage = id2;
     const container1 = document.getElementById(id1);
@@ -352,7 +402,7 @@ function SwitchToPageSlow(id2) {
             }
         })
 
-        if (version == "24.07a") {
+        if (version == "24.07a" && data.StoryObj["Elf"].isComplete) {
             EarnAchievement("Founder");
         }
           
@@ -361,7 +411,7 @@ function SwitchToPageSlow(id2) {
 
 }
 
-function SwitchToPage(id2) {
+function switchToPage(id2) {
     const id1 = currentPage;
     currentPage = id2;
     const container1 = document.getElementById(id1);
@@ -378,7 +428,13 @@ function SwitchToPage(id2) {
 
     if (id2 == "MainPage") filterAllMainPageStoryButtons();
 
-    moveToIDInstantly("MainSection");
+    if (id2 == "StoryPage")  {
+        moveToIDInstantly("top");
+    } else {
+        moveToIDInstantly("MainSection");
+    }
+
+    
 
     const pagesToHide = arrayDifference(gamePages, [currentPage]);
         
@@ -446,7 +502,7 @@ function showTempArea(oldID, newID) {
   }
 
 
-function updateStoryObj(story) {
+function updateStoryObj(story=currentStory) {
     data.StoryObj[story.name] = story;
     AutoSave(data);
 }
@@ -684,4 +740,271 @@ function hideScrollbar() {
 function showScrollbar() {
     const style = document.getElementById('scrollbarHeadStyleElement');
     style.innerHTML = ``;
+}
+
+function removeChild(containerID, childID) {
+    const container = document.getElementById(containerID);
+    const child = document.getElementById(childID);
+    if (container && child && container.contains(child)) container.removeChild(child);
+}
+
+function newSection() {
+    return document.createElement('section');
+}
+
+function newRowSection() {
+    const sec = newSection();
+    sec.className = "row";
+    return sec
+}
+
+function addRowSection(id=null, scenery="", mode="") {
+    const sec = newRowSection();
+    if (id) sec.id = 'section' + id;
+    if (mode == "mode1") {
+        sec.innerHTML = `<div class="column lg-3 md-12"><h3>${changeScenery(scenery)}</h3></div>`;
+    } 
+    currentContainer.appendChild(sec)
+    return sec
+}
+
+function appendRowSection(id=null, scenery="", mode="") {
+    const sec = newRowSection();
+    if (id) sec.id = 'section' + id;
+    if (mode == "mode1") {
+        sec.innerHTML = `<div class="column lg-3 md-12"><h3>${changeScenery(scenery)}</h3></div>`;
+    } 
+    sec.style.display = "none";
+    currentContainer.appendChild(sec)
+    return sec
+}
+
+function appendSection(id=null, scenery="", mode="") {
+    const sec = newSection();
+    if (id) sec.id = 'section' + id;
+    if (mode == "mode1") {
+        sec.innerHTML = `<div class="column lg-3 md-12"><h3>${changeScenery(scenery)}</h3></div>`;
+    } 
+    sec.style.display = "none";
+    currentContainer.appendChild(sec)
+    return sec
+}
+
+
+
+function getContainer(id) {
+    currentContainer = document.getElementById(id)
+    return currentContainer;
+}
+
+function changeScenery(scenery) {
+    currentScenery = scenery;
+    return currentScenery;
+}
+
+function activateAppendLink(section1, section2, id=null,) {
+    var link = section1.querySelector('.appendLink');
+    if (id) link = section1.querySelector('#' + id);
+    link.addEventListener('click', ()=> {
+        if (Array.isArray(section2)) {
+            section2.forEach(i=> {
+                i.style.display= "";
+                currentChapter.sectionPath.push(i.id);
+            })
+            moveToID(section2[0].id);
+
+            
+        } else {
+            section2.style.display = "";
+            currentChapter.sectionPath.push(section2.id)
+            moveToID(section2.id);
+            
+        }
+        updateStoryObj(currentStory);
+        AutoSave();
+        console.log(currentChapter.sectionPath)
+        console.log(data.StoryObj[currentStory.name].chapters[currentChapter.num-1].sectionPath)
+        moveToID(section2.id);
+        link.remove();
+    })
+
+}   
+
+
+function fadeTransition(container, timeout=300) {
+    
+    container.style.opacity = 0;
+    setTimeout(()=> {container.style.opacity = 1;}, timeout)
+}
+
+
+function annotateScrollbar(marks=null) {
+    if (!marks) {
+        marks = []; 
+        var sections = getDirectChildren(currentContainer, 'section');
+        for(let i=0; i< sections.length; i++) {
+            var section = sections[i];
+            marks[i] = getContainerTopPercentage(section);
+        }
+        if (marks) {
+            annotateScrollbar(marks);
+        } else {
+            console.log("Couldn't find marks")
+        }
+    } else {
+
+        var track_color = `linear-gradient(to bottom`
+    
+    for(let i=0; i < marks.length; i++) {
+        track_color += `, #1E1E1E ${marks[i]}%, #898989 ${marks[i]}%, #898989 ${marks[i]+1}%, #1E1E1E ${marks[i]+1}%`
+    }
+
+    track_color += `)`;
+    console.log("ok")
+    changeScrollbarTrack(track_color);
+    }
+
+
+    
+
+}
+
+function resetScrollbar() {
+    setRootVar('--scrollbar-track-color', '#1E1E1E');
+    showScrollbar();
+}
+
+function showScrollbar() {
+    setRootVar('--scrollbar-opacity', 1);
+}
+function hideScrollbar() {
+    setRootVar('--scrollbar-opacity', 0);
+}
+
+function changeScrollbarTrack(val) {
+    setRootVar('--scrollbar-track-color', val);
+    console.log(getRootVar('--scrollbar-track-color'))
+}
+
+var scrollTimer = null;
+
+function getViewPortHeight() {
+    return window.innerHeight;
+}
+
+function getDocumentHeight() {
+    return document.documentElement.scrollHeight;
+}
+
+function getScrollProgress() {
+    window.addEventListener('scroll', function() {
+    var viewportHeight = getViewPortHeight(),
+        documentHeight = getDocumentHeight(),
+        scrollbarHeight = viewportHeight / documentHeight * viewportHeight,
+        scrollTop = window.scrollY,
+        progress;
+
+    if (documentHeight > viewportHeight) {
+        progress = scrollTop / (documentHeight - viewportHeight)
+    } else {
+        progress = 1;
+    }
+    
+    progressPercentage = Math.round(progress * 100);
+
+});
+
+}
+
+
+// var scrollTimer = null;
+
+// $(window).scroll(function() {
+//    var viewportHeight = $(this).height(),
+//        scrollbarHeight = viewportHeight / $(document).height() * viewportHeight,
+//        progress = $(this).scrollTop() / ($(document).height() - viewportHeight),
+//        distance = progress * (viewportHeight - scrollbarHeight) + scrollbarHeight / 2 - $('#scrollbubble').height() / 2
+//        ;
+ 
+//     $('#scrollbubble')
+//         .css('top', distance)
+//         .text('Progress (' + Math.round(progress * 100) + '%)')
+//         .fadeIn(100)  
+//     ;
+
+//     // Fade out the annotation after 1 second of no scrolling.
+//     if (scrollTimer !== null) {
+//         clearTimeout(scrollTimer);
+//     }
+//     scrollTimer = setTimeout(function() {
+//         $('#scrollbubble').fadeOut();
+//     }, 500);
+// });
+
+function getDirectChildren(container, selector) {
+    return container.querySelectorAll(':scope > ' + selector)
+}
+
+function setRootVar(varname, value) {
+    document.documentElement.style.setProperty(varname, value);
+}
+
+function getRootVar(varname) {
+    const rootStyles = getComputedStyle(document.documentElement);
+    return rootStyles.getPropertyValue(varname);
+}
+
+function getTriggerTop(container, triggerRatio=0) {
+    return (container.getBoundingClientRect().top + window.scrollY + (getViewPortHeight() * triggerRatio)) - getViewPortHeight();
+}
+
+function getContainerTopPercentage(container) {
+    return Math.round((container.getBoundingClientRect().top + getViewPortHeight())/getDocumentHeight() * 100) 
+}
+
+function getBlockHeight(container) {
+    return container.offsetHeight;
+}
+
+function getBlockSpace(container, triggerRatio=0) {
+    return getTriggerTop(container, triggerRatio) + getBlockHeight(container);
+}
+
+function inView(container, triggerRatio=0) {
+    return (getTriggerTop(container, triggerRatio) < window.scrollY && window.scrollY <= getBlockSpace(container, triggerRatio));
+}
+
+
+function loadSectionPath() {
+    if (!currentChapter.hasOwnProperty('sectionPath') || !currentChapter.sectionPath) {
+        currentChapter.sectionPath = ['section1'];
+        
+    } else {
+        for (let i=0; i < currentChapter.sectionPath.length; i++) {
+            const section = currentContainer.querySelector('#' + currentChapter.sectionPath[i])
+            if (!section) console.log('#' + currentChapter.sectionPath[i] + " was not found.")
+            section.style.display="";
+            if (i < currentChapter.sectionPath.length - 1) {
+                section.querySelectorAll('.appendLink').forEach(link=>{
+                    link.style.display="none";
+                })
+            }
+       
+        };
+
+    }
+    document.getElementById("intro-button").href = "#" + currentChapter.sectionPath[currentChapter.sectionPath.length-1];
+}
+
+
+function displayCompletionCheck() {
+    
+}
+
+function hideNav() {
+    document.querySelector('.s-header__menu-toggle').style.display="none";
+}
+
+function showNav() {
+    document.querySelector('.s-header__menu-toggle').style.display="";
 }

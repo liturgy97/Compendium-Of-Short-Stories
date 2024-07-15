@@ -1,0 +1,161 @@
+:root {
+    --story-background: transparent;
+    --story-color: white;
+    --story-text-size: 16px;
+    --story-h1-size: 45px;
+    --story-h3-size: 32px;
+    --story-char-weight-1: 500;
+    --story-char-weight-2: 400;
+}
+
+#StoryPage {
+    position: relative;
+}
+
+#StoryPage [data-animate-block] {
+    opacity : 0;
+}
+
+#StoryPage [data-animate-block-left] {
+    opacity : 0;
+}
+
+#StoryPage [data-animate-block-right] {
+    opacity : 0;
+}
+
+#story-content {
+    transition: all 0.3s ease;
+}
+
+#story-content a {
+    text-decoration: underline;
+}
+
+#story-content a:focus,
+#story-content a:hover {
+    color : var(--color-1);
+    text-decoration: none;
+} 
+
+#story-content {
+    background: var(--story-background);
+    color: var(--story-color);
+
+}
+
+#story-content > section {
+    margin-bottom: 5rem;
+
+}
+
+#story-content * {
+    color: inherit;
+    font-family: 'Source Sans 3', 'Inter', sans-serif;
+    line-height: 1.5;
+}
+
+
+/* #StoryPage h1 {
+    font-size: var(--story-h1-size);
+} 
+
+
+#StoryPage h2 {
+    font-size: var(--story-h2-size);
+}  */
+
+.margin-top-lg-70 {
+    margin-top: 7rem;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .margin-top-md-0 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .margin-top-tab-0 {
+        margin-top: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .margin-top-mob-0 {
+        margin-top: 0;
+    }
+
+}
+
+
+.story-dialogue {
+    font-weight: var(--story-char-weight-2);
+}
+
+.appendLink {
+    font-size: 2rem;
+}
+
+
+ul.disc.custom-timeline-GMD li::before {
+    background     : #4E6E81;
+}
+
+
+
+.GMD-Jake {
+    color: #FF0303 !important;
+    /* Red #FF0000 */
+    /* Tomato Red #FF6347!  */
+    /* Old Blue #32A4E3 */
+    /* Vibrant yellow #FFD700 */
+    font-weight: var(--story-char-weight-2);
+}
+
+.GMD-Bailey {
+    color: #FFCF96 !important;
+    font-weight: var(--story-char-weight-2);
+}
+
+.ELF-Elf {
+    background-color: #BEF487;
+    background-image: linear-gradient(to right, #D4FC79 0%, #BEF487 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 500;
+}
+
+.ELF-You {
+    color: #F85032 !important;
+    font-weight: 500;
+}
+
+.story-elf-1 p {
+    font-weight: 400;
+}
+
+.custom-story-button {
+    font-size: 20px;
+    line-height: calc(var(--btn-height) - 4px);
+    height: var(--btn-height);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    text-decoration: none !important;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+

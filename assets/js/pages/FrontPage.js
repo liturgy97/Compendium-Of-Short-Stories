@@ -158,21 +158,10 @@ const trialFormSubmission = function(customForm, onCompletion) {
     document.getElementById("s-header").querySelector('.logo').href= "#";
 
     document.getElementById("s-header").querySelector('.logo').addEventListener('click', ()=> {
-      SwitchToPage("MainPage");
+      switchToPage("MainPage");
     });
 
-    if (window.innerWidth <= 1200) {
-      switchToNewHeader();
-      
-
-
-      // window.addEventListener('resize', () => {
-      //   if (window.innerWidth > 1200 && currentHeaderMode == "Old") switchToNewHeader();
-      //   else if (window.innerWidth <= 1200 && currentHeaderMode == "New") switchToOldHeader();
-      // });
-
-    }
-
+    
     
 
   }
@@ -196,12 +185,12 @@ const trialFormSubmission = function(customForm, onCompletion) {
 
     document.getElementById("MainSection").style.display = "block";
 
-    document.getElementById("OuterPage").style.display = "none";
+    removeChild("content", "OuterPage");
 
     currentPage = "MainPage";
 
     
-    SwitchToPageSlow("MainPage");
+    switchToPageSlow("MainPage");
 
   }
 
@@ -213,6 +202,8 @@ const startGame = function() {
     data.version = version;
 
     gameLoaded = true;
+
+
     
     updateNav();
 
@@ -224,25 +215,37 @@ const startGame = function() {
     HideIntroBannerUponScrollingAway();
 
     document.getElementById("MenuHomeLink").addEventListener('click', ()=> {
-        SwitchToPage("MainPage");
+        switchToPage("MainPage");
     });
 
     document.getElementById("MenuAchievementsLink").addEventListener('click', ()=> {
-        SwitchToPage("AchievementsPage");
+        switchToPage("AchievementsPage");
     });
     
     document.getElementById("MenuSavesLink").addEventListener('click', ()=> {
-        SwitchToPage("SavesPage");
+        switchToPage("SavesPage");
     });
 
     
     ssSwiper();
 
+    if(!data.StoryObj["Elf"].isComplete) {
+
+      openStory(data.StoryObj["Elf"]);
+
+    }
+    
+    
+
+    // devLoad();
+
   }
 
 
   function loadGameData() {
-        
+    
+    checkForUpdates();
+
     loadStoryList();
 
     loadAchievementsPage();

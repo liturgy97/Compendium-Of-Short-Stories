@@ -205,9 +205,7 @@
     #s-header {
         padding-left: 1rem;
     }
-
     
-
 
 }
 
@@ -314,14 +312,10 @@
         padding: 3rem 3rem;
     }
 
-    /* .Title1 {
-        width: 30rem;
+    #MainPage {
+        
+        margin-top: 6rem;
     }
-
-    .Chaptername {
-        width: 30rem;
-    } */
-
 
 
 }

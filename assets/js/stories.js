@@ -24,11 +24,12 @@
 var stories = {};
 
 
-const storyNames= ["Growing Mommy's Dick", "Mr. Wolf", "Daddy I'm Scawwed", "Game Night", "Emma", "Nungerie", "God Bless Estrogen Pills",
+const storyNames= ["Elf", "Growing Mommy's Dick", "Mr. Wolf", "Daddy I'm Scawwed", "Game Night", "Emma", "Nungerie", "God Bless Estrogen Pills",
   "Protecting A Femboy", "Hammer", "The Hanging Man", 
 ];
 
-const mainPageStoryButtons = {};
+var mainPageStoryButtons = {};
+var mainPageCompletionIcons = {};
 
 storyNames.forEach(name => {
   mainPageStoryButtons[name] = {};
@@ -40,6 +41,10 @@ storyNames.forEach(name => {
   mainPageStoryButtons[name].hiddenIcons ={};
   mainPageStoryButtons[name].notLikedIcons ={};
   mainPageStoryButtons[name].likedIcons ={};
+
+
+  mainPageCompletionIcons[name] = {};
+  mainPageCompletionIcons[name].completionIcon ={};
   
 })
 
@@ -50,23 +55,43 @@ const lockedStoryNames = ['The Hanging Man', ];
 
 
 
+stories["Elf"]= {
+  num: 0,
+  overview: "Fat miserable you picked up a weird-looking container from a garage sale to use as a cookie jar. While washing it in your kitchen sink, you unintentionally broke the seal and freed the sexy elf inside.",
+  severity: "D",
+  genre: [],
+  characters: ["Elf", "You" ],
+  chapters: [
+       {
+          name: "1001 Experimental Stories",
+          num : 1,
+          wordCount: 1059,
+          isPatreon: false,
+          isComingSoon: false,
+          variants: {},
+          sections: [],
+          subtitle: "Coming Soon",
+      }, 
 
+    ]
+    
+    }
+
+
+;
 
 
 stories["Growing Mommy's Dick"]= {
   num: 1,
-  folder: "1 Growing Mommys Dick",
-  overview: "Your mom complains from the hardships of life so you tell her to grow some balls. Next day she goes under surgery. Now it's your fault she has a dick and you have to nurture the tiny little thing until it grows into a healthy, full-fledged, throbbing cock.",
+  overview: "Your mom complains from the hardships of life so you tell her to suck it up and grow some balls. Next day she goes under surgery. Now it's your fault she has a dick and you have to nurture the tiny little thing until it grows into a healthy, full-fledged, throbbing cock.",
   severity: "D",
-  subtitle: "Coming Soon",
-  background: "rgba(226.31, 13.20, 25.99, 0.37)",
   genre: ["Transexual", "Virtual Pet"],
   characters: ["Bailey", "Jake" ],
   chapters: [
        {
           name: "Hardships Of Life",
           num : 1,
-          wordCount: 5030,
+          wordCount: 8301,
           isPatreon: false,
           isComingSoon: false,
           variants: {},
@@ -83,7 +108,6 @@ stories["Growing Mommy's Dick"]= {
 
 stories["Mr. Wolf"] = {
     num: 5,
-    folder: "5 Mr Wolf",
     overview: "Mr. Wolf meets a little girl in the woods.",
     severity: "D",
     subtitle: "Coming Soon",
@@ -98,6 +122,7 @@ stories["Mr. Wolf"] = {
             isComingSoon: false,
             variants: {},
             sections: [],
+            subtitle: "Coming Soon",
         }, 
   
       ]
@@ -108,7 +133,6 @@ stories["Mr. Wolf"] = {
   
   stories["Daddy I'm Scawwed"] = {
     num: 8,
-    folder: "8 Daddy Im Scawwed",
     overview: "A dad-daughter conundrum.",
     severity: "D",
     subtitle: "Coming Soon",
@@ -119,11 +143,13 @@ stories["Mr. Wolf"] = {
             name: "Pee",
             num : 1,
             wordCount: 1062,
+            subtitle: "Coming Soon",
         }, 
         {
           name: "Ralf",
           num: 2,
           wordCount: 0,
+          subtitle: "Coming Soon",
       }
     ],
     
@@ -131,7 +157,6 @@ stories["Mr. Wolf"] = {
   
   stories["Game Night"] = {
     num: 12,
-    folder: "12 Game Night",
     overview: "I joined Mom and Dad's stupid game for once.",
     severity: "D",
     subtitle: "Coming Soon",
@@ -142,6 +167,7 @@ stories["Mr. Wolf"] = {
             name: "Contest!",
             num : 1,
             wordCount: 423,
+            subtitle: "Coming Soon",
         }, 
     ]
   
@@ -150,7 +176,6 @@ stories["Mr. Wolf"] = {
   
   stories["Emma"] = {
     num: 14,
-    folder: "14 Emma",
     overview: "The grand entrance hall of the Hastings estate was a testament to Lady Arabella Hastings' refined tastes and the family's wealth. Tall windows with heavy velvet drapes let in slivers of the late afternoon sun, casting long shadows across the marbled floor. Arabella stood near the grand staircase, her dark eyes assessing the young woman who had just been shown in by the butler.",
     severity: "D",
     subtitle: "Coming Soon",
@@ -162,12 +187,14 @@ stories["Mr. Wolf"] = {
             name: "Perfume",
             num : 1,
             wordCount: 3598,
+            subtitle: "Coming Soon",
         }, 
 
         {
           name: "Finally, something",
           num : 2,
           wordCount: 0,
+          subtitle: "Coming Soon",
           subtitle: "Coming Soon",
       }, 
     ]
@@ -177,7 +204,6 @@ stories["Mr. Wolf"] = {
   
   stories["Nungerie"] = {
     num: 17,
-    folder: "17 Nungerie",
     overview: "In a desperate attempt to revive a dying religion, 25-year old Alistair Everhart has been elected the Bishop of Sancta Celestia Cathedral, the last church in the world, due to his otherworldly talent in marketing and brand strategy. His first decree was to force nuns and pastorettes into wearing more revealing clothes to attract more customers of God.",
     severity: "D",
     subtitle: "Coming Soon",
@@ -188,6 +214,7 @@ stories["Mr. Wolf"] = {
             name: "Prologue",
             num : 1,
             wordCount: 942,
+            subtitle: "Coming Soon",
         }, 
     ]
   
@@ -196,7 +223,6 @@ stories["Mr. Wolf"] = {
   
   stories["God Bless Estrogen Pills"] = {
     num: 18,
-    folder: "18 God Bless Estrogen Pills",
     overview: "Cum... That's lots of cum. Wait. Did I just cum?!!!!",
     severity: "D",
     subtitle: "Coming Soon",
@@ -207,6 +233,7 @@ stories["Mr. Wolf"] = {
             name: "God Bless Estrogen Pills",
             num: 1,
             wordCount: 191,
+            subtitle: "Coming Soon",
         }, 
     ]
   
@@ -215,7 +242,6 @@ stories["Mr. Wolf"] = {
   
   stories["Protecting A Femboy"] = {
     num: 19,
-    folder: "19 Protecting A Femboy",
     overview: "A short story about two boys.",
     severity: "D",
     subtitle: "Coming Soon",
@@ -227,6 +253,7 @@ stories["Mr. Wolf"] = {
             name: "Jaime",
             num: 1,
             wordCount: 2028,
+            subtitle: "Coming Soon",
         }, 
     ]
   
@@ -235,7 +262,6 @@ stories["Mr. Wolf"] = {
   
   stories["Hammer"] = {
     num: 20,
-    folder: "20 Hammer",
     overview: "Overview unavailable.",
     buttonStyle: "",
     severity: "B",
@@ -248,12 +274,14 @@ stories["Mr. Wolf"] = {
             name: "Hammer",
             num: 1,
             wordCount: 1030,
+            subtitle: "Coming Soon",
         }, 
   
         {
           name: "Sunlight",
           num: 2,
           wordCount: 3277,
+          subtitle: "Coming Soon",
       }, 
     ]
 
@@ -261,7 +289,6 @@ stories["Mr. Wolf"] = {
 
   stories["The Hanging Man"] = {
     num: 21,
-    folder: "21 The Hanging Man",
     overview: "You need to read 9 stories to unlock this story.",
     severity: "B",
     subtitle: "Coming Soon",
@@ -273,7 +300,7 @@ stories["Mr. Wolf"] = {
             name: "The Hanging Man",
             num: 1,
             wordCount: 0,
-            subtitle: "Coming Soon"
+            subtitle: "Coming Soon",
         }, 
   
     ]
@@ -285,10 +312,59 @@ function initStories() {
   
     storyNames.forEach(i => {
 
-      data.StoryObj[i]= new Story(i);
+      initStory(i);
     
 
   });
 
 
+}
+
+function initStory(storyName) {
+
+    data.StoryObj[storyName]= new Story(storyName);
+    if (storyName == "Elf") console.log(new Story("Growing Mommy's Dick"))
+
+
+}
+
+function checkForUpdates() {
+  storyNames.forEach(storyName => {
+    if (!data.StoryObj[storyName]) {
+      initStory(storyName);
+  }
+  // check for errors, reset stroy
+  if (data.StoryObj[storyName].chapters.length > stories[storyName].chapters.length) initStory(storyName);
+  const story = data.StoryObj[storyName];
+  for(let i =0; i< stories[story.name].chapters.length; i++) {
+    const chapter = story.chapters[i];
+    if (!chapter) {
+      story.chapters.push(new Chapter(story.name, stories[story.name].chapters[i]));
+    } else {
+      
+      const chapterOrigin = stories[story.name].chapters[0];
+      if (chapter.subtitle == "Comig Soon" && (!chapterOrigin.hasOwnProperty('subtitle') || chapterOrigin.subitle!="Coming Soon")) {
+        chapter = new Chapter(story.name, chapterOrigin);
+        console.log("New Chapter Added, ", chapter)
+        story.chapters[chapter.num] = chapter;
+        story.isSeen = false;
+        story.isRead = false;
+        story.isComplete = false;
+      }
+    }
+    
+
+  }
+  updateStoryObj(story);
+});
+}
+
+
+function getChapterObjByNum(num, storyName) {
+  const story = data.StoryObj[storyName];
+  if (num>= story.chapters.length) return null;
+  story.chapters.forEach(chapter => {
+    if (chapter.num == num) return chapter;
+  })
+  return null;
 }

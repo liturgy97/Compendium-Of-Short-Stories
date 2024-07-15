@@ -75,7 +75,7 @@ function incompleteStories() {
 }
 
 function recommendedStories() {
-    var arr = arrayDifference(availableUnreadStories(), ["Hammer", "The Hanging Man"]);
+    var arr = arrayDifference(availableUnreadStories(), ["Elf", "Hammer", "The Hanging Man"]);
     if (arr) return arr;
     return arrayDifference(storyNames, ["Hammer", "The Hanging Man"]);
 }
@@ -99,9 +99,10 @@ function wordCountToDuration(wordcount) {
 
 function getChapterOrigin(datach) {
     var ch = null;
-    const charlist = stories[datach.storyName].chapters
-    for(let i=0; i < charlist.length; i++) {
-      if (datach.num == charlist[i].num) ch = charlist[i];
+    if (!stories[datach.storyName]) console.log(datach)
+    const chaptersList = stories[datach.storyName].chapters
+    for(let i=0; i < chaptersList.length; i++) {
+      if (datach.num == chaptersList[i].num) ch = chaptersList[i];
     }
     return ch
 }
@@ -115,7 +116,7 @@ function getChapterDuration(datach) {
 function getStoryDuration(datastory) {
 
     var length = 0;
-
+    console.log()
     const chapters = datastory.chapters;
     
     chapters.forEach(ch => {
@@ -132,9 +133,8 @@ function getStoryButtonStyle(datastory) {
     return sty;
 }
 
-function getStoryFolder(datastory) {
-    if (!datastory) console.log()
-    return stories[datastory.name].folder;
+function getStoryTitle(datastory) {
+    return datastory.name.replace(/'/g, '&rsquo;');
 }
 
 function getStorySubtitle(datastory) {
@@ -181,4 +181,39 @@ function getStorySeverity(datastory) {
     var sev = "D";    
     if (origin.hasOwnProperty('severity')) sev = origin.severity;
     return sev;
+}
+
+function getStoryBackground(datastory) {
+    if (!datastory) console.log(datastory)
+    const origin = stories[datastory.name];
+    var bcg = "";
+    if (origin.hasOwnProperty('background')) bcg = origin.background;
+    return bcg;
+}
+
+function getStoryColor(datastory) {
+    const origin = stories[datastory.name];
+    var clr = "";
+    if (origin.hasOwnProperty('color')) clr = origin.color;
+    return clr;
+}
+
+function storyImage(src, fig="", cl="", sty="") {
+    var img;
+    var classtext = ``;
+    if (cl) classtext = `class="${cl}"`;
+    var styletext = ``;
+    if (sty) styletext = `style="${sty}"`;
+    img = `<img src="${src}" ${classtext} ${styletext} data-animate-block>`;
+    if (fig) {
+        img = `
+    <figure>
+        ${img}
+
+        <figcaption>
+            ${fig}
+        </figcaption>
+    </figure>`;
+    } 
+    return img;
 }

@@ -237,7 +237,7 @@ const startGame = function() {
     
     
 
-    // devLoad();
+    devLoad();
 
   }
 

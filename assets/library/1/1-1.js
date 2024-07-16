@@ -680,7 +680,7 @@ if (pageNum == 1) {
            
 
 
-            <p><a id="Complete-Story" class="btn btn--primary custom-story-button" href="#">To be continued</a></p>
+            <p><a id="End-Story" class="btn btn--primary custom-story-button" href="#">To be continued</a></p>
 
         </div>
     
@@ -692,7 +692,7 @@ if (pageNum == 1) {
 }
 
 
-document.getElementById("Complete-Story").addEventListener('click', ()=> {
+document.getElementById("End-Story").addEventListener('click', ()=> {
     currentStory.isRead = true;
     currentStory.isRead = true;
     currentStory.isComplete= true;

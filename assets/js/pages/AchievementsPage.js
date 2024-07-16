@@ -54,10 +54,10 @@ function loadAchievementsPage() {
     } else {
       desc = x.preDescription;
     }
-    var sil = "";
-    if (!x.isEarned) sil = "-sil";
+    var base = "base";
+    if (!x.isEarned) base = "sil";
 
-    const imgurl = `assets/images/achievements/` + x.filename + sil + `.png`;
+    const imgurl = `assets/images/achievements/` + x.num + "-" + x.filename + "/" + base + ".png";
 
     var str1 = x.dateStr;
 

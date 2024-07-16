@@ -110,7 +110,7 @@ stories["Mr. Wolf"] = {
     num: 5,
     overview: "Mr. Wolf meets a little girl in the woods.",
     severity: "D",
-    subtitle: "Coming Soon",
+    background: "rgba(81, 108, 41, 0.14)",
     genre: ["Parody", ],
     characters: ["Mr. Wolf", "Girl in the woods" ],
     chapters: [
@@ -135,15 +135,14 @@ stories["Mr. Wolf"] = {
     num: 8,
     overview: "A dad-daughter conundrum.",
     severity: "D",
-    subtitle: "Coming Soon",
-    genre: ["Incest", "Ageplay", "Mostly Text", "Open"],
+    background: "rgba(216, 140, 140, 0.14)",
+    genre: ["Incest", "Ageplay", "Mostly Text",],
     characters: ["Joshua", "Birdie", "Teddy"],
     chapters: [
         {
             name: "Pee",
             num : 1,
             wordCount: 1062,
-            subtitle: "Coming Soon",
         }, 
         {
           name: "Ralf",
@@ -159,15 +158,14 @@ stories["Mr. Wolf"] = {
     num: 12,
     overview: "I joined Mom and Dad's stupid game for once.",
     severity: "D",
-    subtitle: "Coming Soon",
+    background: "rgba(41, 108, 103.98, 0.14)",
     genre: ["Incest",],
     characters: [],
     chapters: [
         {
             name: "Contest!",
             num : 1,
-            wordCount: 423,
-            subtitle: "Coming Soon",
+            wordCount: 505,
         }, 
     ]
   

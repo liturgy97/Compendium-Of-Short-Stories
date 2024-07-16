@@ -1,14 +1,7 @@
 loadPage = function() {
-
-
     if(!currentStory.isComplete) hideNav();
 
-    hideNav()
-
-var container = getContainer('story-content');
-
-fadeTransition(container);
-container.innerHTML = '';
+    prepareStory();
 
 const section1 = addRowSection(1, '', "mode1");
 
@@ -91,7 +84,7 @@ section1.innerHTML += `
 <p><span class="ELF-Elf">Elf:</span> &ldquo;Five hundred. Final offer.&rdquo;</p>
 
 
-<a id="Complete-Story" class="btn btn--primary custom-story-button" href="#">
+<a id="End-Story" class="btn btn--primary custom-story-button" href="#">
 Double it
 </a>
 
@@ -101,16 +94,17 @@ Double it
 
 `;
 
-document.getElementById("Complete-Story").addEventListener('click', ()=> {
+document.getElementById("End-Story").addEventListener('click', ()=> {
 currentStory.isRead = true;
 currentStory.isRead = true;
 currentStory.isComplete= true;
 
 updateStoryObj(currentStory);
 clearLoadedScripts();
-showNav();
+
 refreshMainPageStoryButton(currentStory.name);
 switchToPage("MainPage")
+showNav();
 EarnAchievement("Founder");
 });
 

@@ -9,18 +9,7 @@ function openStory(story) {
   
     var root = document.documentElement;
   
-    if (bcg) {
-    root.style.setProperty('--story-background', bcg);
-    } else {
-    root.style.setProperty('--story-background', 'transparent');
-    }
-
-    if (clr) {
-      root.style.setProperty('--story-color', clr);
-      } else {
-      root.style.setProperty('--story-color', "white");
-      }
-  
+    
   
     var chapter = story.currentChapter;
 
@@ -86,6 +75,19 @@ function openStory(story) {
     container.appendChild(ChapterBanner);
 
     switchToPage("StoryPage");
+
+    if (bcg) {
+        root.style.setProperty('--story-background', bcg);
+        } else {
+        root.style.setProperty('--story-background', 'transparent');
+        }
+    
+        if (clr) {
+          root.style.setProperty('--story-color', clr);
+          } else {
+          root.style.setProperty('--story-color', "white");
+        }
+      
 
     const storyContent = document.createElement('section');
 

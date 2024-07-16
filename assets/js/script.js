@@ -1,5 +1,4 @@
 function devLoad() {
-  openStory(data.StoryObj["Elf"]);
 }
 
 
@@ -23,6 +22,8 @@ var baseScriptFolder = "";
 var baseImagesFolder = "";
 
 var passagePath = "";
+
+var currentSectionID;
 
 var loadPage;
 

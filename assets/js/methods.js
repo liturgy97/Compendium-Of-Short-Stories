@@ -286,7 +286,7 @@ function displayAnimatedBox(name) {
     var x = document.getElementById("AchievementArea")
 
     x.innerHTML = `
-    <img id="AchievementImg" src="assets/images/achievements/${name}-ts.png"><div id="AchievementText">${name}</div>
+    <img id="AchievementImg" src="assets/images/achievements/${ach.num}-${ach.filename}/ts.png"><div id="AchievementText">${name}</div>
     `;
 
     x.className = "show";
@@ -294,6 +294,7 @@ function displayAnimatedBox(name) {
 
 
 }
+
 
 
 function AutoSave() {
@@ -419,6 +420,7 @@ function switchToPage(id2) {
     container1.style.display = "";
     container2.style.display = "";
     
+    document.documentElement.style.setProperty('--story-background', 'transparent');
 
     container1.style.opacity = 0;
     
@@ -760,7 +762,10 @@ function newRowSection() {
 
 function addRowSection(id=null, scenery="", mode="") {
     const sec = newRowSection();
-    if (id) sec.id = 'section' + id;
+    if (id) {
+        sec.id = 'section' + id;
+        currentSectionID = sec.id;
+    } 
     if (mode == "mode1") {
         sec.innerHTML = `<div class="column lg-3 md-12"><h3>${changeScenery(scenery)}</h3></div>`;
     } 
@@ -1007,4 +1012,38 @@ function hideNav() {
 
 function showNav() {
     document.querySelector('.s-header__menu-toggle').style.display="";
+}
+
+
+function prepareStory() {
+
+    const container = getContainer('story-content');
+    fadeTransition(container);
+    container.innerHTML = '';
+
+}
+
+function sectionHeader(scene="") {
+    return ``;
+}
+
+function endStory() {
+    currentStory.isRead = true;
+    currentStory.isRead = true;
+    currentStory.isComplete= true;
+
+    updateStoryObj(currentStory);
+    clearLoadedScripts();
+
+    refreshMainPageStoryButton(currentStory.name);
+    switchToPage("MainPage");
+}
+
+function activateEndButton() {
+    document.getElementById("End-Story").addEventListener('click', ()=> {
+        endStory();
+    });
+    ssMoveTo();
+
+    animateOnScrollStory();
 }

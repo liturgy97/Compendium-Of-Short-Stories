@@ -39,7 +39,6 @@
 } 
 
 #story-content {
-    background: var(--story-background);
     color: var(--story-color);
 
 }
@@ -106,22 +105,6 @@ ul.disc.custom-timeline-GMD li::before {
     background     : #4E6E81;
 }
 
-
-
-.GMD-Jake {
-    color: #FF0303 !important;
-    /* Red #FF0000 */
-    /* Tomato Red #FF6347!  */
-    /* Old Blue #32A4E3 */
-    /* Vibrant yellow #FFD700 */
-    font-weight: var(--story-char-weight-2);
-}
-
-.GMD-Bailey {
-    color: #FFCF96 !important;
-    font-weight: var(--story-char-weight-2);
-}
-
 .ELF-Elf {
     background-color: #BEF487;
     background-image: linear-gradient(to right, #D4FC79 0%, #BEF487 100%);
@@ -137,6 +120,55 @@ ul.disc.custom-timeline-GMD li::before {
 .ELF-You {
     color: #F85032 !important;
     font-weight: 500;
+}
+
+.GMD-Jake {
+    color: #FF0303 !important;
+    /* Red #FF0000 */
+    /* Tomato Red #FF6347!  */
+    /* Old Blue #32A4E3 */
+    /* Vibrant yellow #FFD700 */
+    font-weight: var(--story-char-weight-2);
+}
+
+.GMD-Bailey {
+    color: #FFCF96 !important;
+    font-weight: var(--story-char-weight-2);
+}
+
+.MW-Girl {
+    color: #44FFF4 !important;
+    font-weight: var(--story-char-weight-2);
+}
+
+.MW-Wolf {
+    color: #c96a32 !important;
+    font-weight: var(--story-char-weight-2);
+}
+
+.DIS-Birdie {
+    color: #0ED17C !important;
+    font-weight: 300;
+}
+
+.DIS-Joshua {
+    color: #f01414 !important;
+    font-weight: 300;
+}
+
+.GN-Tom {
+    color: #f77fc6 !important;
+    font-weight: 300;
+}
+
+.GN-Mom {
+    color: #27c3f3 !important;
+    font-weight: 300;
+}
+
+.GN-Dad {
+    color: #f7f169 !important;
+    font-weight: 300;
 }
 
 .story-elf-1 p {

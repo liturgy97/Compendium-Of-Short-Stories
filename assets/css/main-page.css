@@ -79,6 +79,7 @@ div, section {
 
 
 #MainSection {
+  background-color: var(--story-background);
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;

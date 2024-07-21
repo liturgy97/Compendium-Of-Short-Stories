@@ -503,6 +503,13 @@ function showTempArea(oldID, newID) {
     document.getElementById(newID).style.zIndex = 5;
   }
 
+  function updateChapterObj(chapter=currentChapter) {
+    const story = data.StoryObj[chapter.storyName]
+    story.chapters[chapter.num-1] = chapter;
+    data.StoryObj[story.name] = story;
+    AutoSave(data);
+}
+
 
 function updateStoryObj(story=currentStory) {
     data.StoryObj[story.name] = story;
@@ -750,50 +757,6 @@ function removeChild(containerID, childID) {
     if (container && child && container.contains(child)) container.removeChild(child);
 }
 
-function newSection() {
-    return document.createElement('section');
-}
-
-function newRowSection() {
-    const sec = newSection();
-    sec.className = "row";
-    return sec
-}
-
-function addRowSection(id=null, scenery="", mode="") {
-    const sec = newRowSection();
-    if (id) {
-        sec.id = 'section' + id;
-        currentSectionID = sec.id;
-    } 
-    if (mode == "mode1") {
-        sec.innerHTML = `<div class="column lg-3 md-12"><h3>${changeScenery(scenery)}</h3></div>`;
-    } 
-    currentContainer.appendChild(sec)
-    return sec
-}
-
-function appendRowSection(id=null, scenery="", mode="") {
-    const sec = newRowSection();
-    if (id) sec.id = 'section' + id;
-    if (mode == "mode1") {
-        sec.innerHTML = `<div class="column lg-3 md-12"><h3>${changeScenery(scenery)}</h3></div>`;
-    } 
-    sec.style.display = "none";
-    currentContainer.appendChild(sec)
-    return sec
-}
-
-function appendSection(id=null, scenery="", mode="") {
-    const sec = newSection();
-    if (id) sec.id = 'section' + id;
-    if (mode == "mode1") {
-        sec.innerHTML = `<div class="column lg-3 md-12"><h3>${changeScenery(scenery)}</h3></div>`;
-    } 
-    sec.style.display = "none";
-    currentContainer.appendChild(sec)
-    return sec
-}
 
 
 
@@ -802,41 +765,10 @@ function getContainer(id) {
     return currentContainer;
 }
 
-function changeScenery(scenery) {
-    currentScenery = scenery;
-    return currentScenery;
-}
-
-function activateAppendLink(section1, section2, id=null,) {
-    var link = section1.querySelector('.appendLink');
-    if (id) link = section1.querySelector('#' + id);
-    link.addEventListener('click', ()=> {
-        if (Array.isArray(section2)) {
-            section2.forEach(i=> {
-                i.style.display= "";
-                currentChapter.sectionPath.push(i.id);
-            })
-            moveToID(section2[0].id);
-
-            
-        } else {
-            section2.style.display = "";
-            currentChapter.sectionPath.push(section2.id)
-            moveToID(section2.id);
-            
-        }
-        updateStoryObj(currentStory);
-        AutoSave();
-        console.log(currentChapter.sectionPath)
-        console.log(data.StoryObj[currentStory.name].chapters[currentChapter.num-1].sectionPath)
-        moveToID(section2.id);
-        link.remove();
-    })
-
-}   
 
 
-function fadeTransition(container, timeout=300) {
+
+function fadeTransition(container=currentContainer, timeout=300) {
     
     container.style.opacity = 0;
     setTimeout(()=> {container.style.opacity = 1;}, timeout)
@@ -980,26 +912,7 @@ function inView(container, triggerRatio=0) {
 }
 
 
-function loadSectionPath() {
-    if (!currentChapter.hasOwnProperty('sectionPath') || !currentChapter.sectionPath) {
-        currentChapter.sectionPath = ['section1'];
-        
-    } else {
-        for (let i=0; i < currentChapter.sectionPath.length; i++) {
-            const section = currentContainer.querySelector('#' + currentChapter.sectionPath[i])
-            if (!section) console.log('#' + currentChapter.sectionPath[i] + " was not found.")
-            section.style.display="";
-            if (i < currentChapter.sectionPath.length - 1) {
-                section.querySelectorAll('.appendLink').forEach(link=>{
-                    link.style.display="none";
-                })
-            }
-       
-        };
 
-    }
-    document.getElementById("intro-button").href = "#" + currentChapter.sectionPath[currentChapter.sectionPath.length-1];
-}
 
 
 function displayCompletionCheck() {
@@ -1015,35 +928,31 @@ function showNav() {
 }
 
 
-function prepareStory() {
 
-    const container = getContainer('story-content');
-    fadeTransition(container);
-    container.innerHTML = '';
 
+
+
+function numToLetter(num) {
+    return String.fromCharCode(97 + num);
 }
 
-function sectionHeader(scene="") {
-    return ``;
+
+function hideNode(node) {
+    node.style.display= "none";
 }
 
-function endStory() {
-    currentStory.isRead = true;
-    currentStory.isRead = true;
-    currentStory.isComplete= true;
-
-    updateStoryObj(currentStory);
-    clearLoadedScripts();
-
-    refreshMainPageStoryButton(currentStory.name);
-    switchToPage("MainPage");
+function showNode(node) {
+    node.style.display = "";
 }
 
-function activateEndButton() {
-    document.getElementById("End-Story").addEventListener('click', ()=> {
-        endStory();
-    });
-    ssMoveTo();
+function invisibleNode(node) {
+    node.style.opacity = 0;
+}
 
-    animateOnScrollStory();
+function visibleNode(node) {
+    node.style.opacity = 1;
+}
+
+function isFunction(variable) {
+    return typeof variable === 'function';
 }

@@ -176,22 +176,19 @@ stories["Mr. Wolf"] = {
     num: 14,
     overview: "The grand entrance hall of the Hastings estate was a testament to Lady Arabella Hastings' refined tastes and the family's wealth. Tall windows with heavy velvet drapes let in slivers of the late afternoon sun, casting long shadows across the marbled floor. Arabella stood near the grand staircase, her dark eyes assessing the young woman who had just been shown in by the butler.",
     severity: "D",
-    subtitle: "Coming Soon",
-    background: "rgba(140, 216, 161.28, 0.14)",
     genre: ["Female Cuckoldery", ],
     characters: ["Arabella", "Emma", "Henry" ],
     chapters: [
         {
             name: "Perfume",
             num : 1,
-            wordCount: 3598,
-            subtitle: "Coming Soon",
+            wordCount: 4425,
         }, 
 
         {
           name: "Finally, something",
           num : 2,
-          wordCount: 0,
+          wordCount: 5707,
           subtitle: "Coming Soon",
           subtitle: "Coming Soon",
       }, 
@@ -334,6 +331,7 @@ function checkForUpdates() {
   // check for errors, reset stroy
   if (data.StoryObj[storyName].chapters.length > stories[storyName].chapters.length) initStory(storyName);
   const story = data.StoryObj[storyName];
+  if (!story.hasOwnProperty('vars')) story.vars = {};
   for(let i =0; i< stories[story.name].chapters.length; i++) {
     const chapter = story.chapters[i];
     if (!chapter) {

@@ -5,6 +5,8 @@ prepareStory();
 const section1 = addRowSection(1, 'INT. LIVING ROOM - EVENING', "mode1");
 
 section1.innerHTML += `
+
+
 <div id="section1-content" class="column lg-8 md-12 margin-top-lg-70 margin-top-md-0">
 <p class="story-dialogue"><span class="DIS-Birdie">BIRDIE</span><br/>Daddy, I'm scawwed.</p>
 <p class="story-dialogue"><span class="DIS-Joshua">JOSHUA</span><br>Scared of what, honey?</p>
@@ -43,9 +45,7 @@ section1.innerHTML += `
 <p class="story-dialogue"><span class="DIS-Birdie">BIRDIE</span><br>I'm pushing no pee pee.</p>
 <p class="story-dialogue"><span class="DIS-Joshua">JOSHUA</span><br>Maybe you're shy because I'm here. I-</p>
 <p>She grabbed my hand.</p>
-<figure style="max-width: 300px; margin-right:auto; margin-left:auto">
-<img src="${baseImagesFolder}/3.jpg" data-animate-block>
-</figure>
+<img width="300" height="300" class="u-pull-right" src="${baseImagesFolder}/3.jpg" data-animate-block>
 <p class="story-dialogue"><span class="DIS-Birdie">BIRDIE</span><br>No, please stay. We need you.</p>
 <p>She said it so innocently like she was truly scared. I felt bad for her.</p>
 <p>I sat down on my knees under the toilet, lifted her skirt and glanced at her crimson red pussy, then I put the skirt down to look at my baby's grumpy face. She's trying too hard but it's not coming.</p>

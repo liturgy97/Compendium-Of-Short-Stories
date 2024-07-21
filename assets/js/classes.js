@@ -35,6 +35,8 @@ class Story {
       this.isComplete = false;
   
       this.inProgress= false;
+
+      this.vars = {};
       
   
       
@@ -96,6 +98,19 @@ class Story {
       this.variantEarned = {};
       this.isPatreon= false;
       this.legacy= false;
+
+    }
+
+  }
+
+  class Link {
+    
+    constructor(id, text) {
+      
+      this.id = "" + id;
+      this.text = text;
+      this.isClicked = false
+
 
     }
 

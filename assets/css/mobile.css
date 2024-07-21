@@ -345,7 +345,18 @@
         display: none;
     }
 
-
+    .portrait-right {
+        float : initial;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    .portrait-left {
+        float : initial;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
 }
 

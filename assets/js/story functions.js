@@ -252,6 +252,7 @@ function prepareStory() {
     const container = getContainer('story-content');
     if (!currentChapter.hasOwnProperty('links')) {currentChapter.links = {}; updateChapterObj();}
     currentChapter.currentChoiceTree = 0;
+    currentStory.currentChapterNum = currentChapter.num;
     updateChapterObj();
     fadeTransition(container);
     container.innerHTML = '';
@@ -273,7 +274,7 @@ function menu(container, choiceList, func) {
         const a = document.createElement('a');
         a.innerHTML = linkText;
         p.appendChild(a);
-        if (linkActions == 'disable') {p.innerHTML = linkText; console.log(linkText)} 
+        if (linkActions == 'disable') {p.innerHTML = linkText;} 
         div.appendChild(p);
         if (links[choiceID].isClicked) a.style.color= 'purple';
         a.addEventListener('click', ()=> {
@@ -311,28 +312,93 @@ function showStoryIntro() {
     document.getElementById('StoryPage').querySelector('.s-intro').style.display = "";
 }
 
+function endChapter(chapter=currentChapter) {
+    
+    chapter.isRead = true;
+    checkChapterCompletion();
 
-
-function endStory() {
-    currentStory.isRead = true;
-    currentStory.isRead = true;
-    currentStory.isComplete= true;
-
-    updateStoryObj(currentStory);
     clearLoadedScripts();
 
-    refreshMainPageStoryButton(currentStory.name);
-    switchToPage("MainPage");
+    
+    if (nextChapter(chapter)) {
+        
+        switchToNextChapter(chapter);
+    } else {
+        switchToPage("MainPage");
+    }
+    
 }
 
-function activateEndButton(container=null) {
-    if (container) {
-        container.querySelector("#End-Story").addEventListener('click', ()=> {
-            endStory();
+function switchToNextChapter(chapter=currentChapter) {
+    const story = getStoryOfChapter(chapter);
+    if (nextChapter(chapter)) {
+        story.currentChapter = nextChapter(chapter);
+        story.currentChapter.isUnlocked = true;
+        updateStoryObj(story);
+
+    } else {
+        console.log("Next chapter of " + chapter.storyname + " not found.")
+    }
+
+    openStory(story);
+    
+}
+
+function getStoryOfChapter(chapter=currentChapter) {
+    return data.StoryObj[chapter.storyName]
+}
+
+function checkChapterCompletion(chapter=currentChapter) {
+    if (chapter.isRead) {
+        chapter.isComplete = true;
+    }
+    updateChapterObj();
+    checkStoryCompletion();
+}
+
+function checkStoryCompletion(story=currentStory) {
+    var read = true;
+    var complete = true;
+    story.chapters.forEach(chapter => {
+        if(!chapter.isRead) read = false;
+        if(!chapter.isComplete) complete = false;
+    })
+    if (read) {
+        if (!story.isRead) story.currentChapter = story.chapters[0]
+        story.isRead = true;
+    } story.isRead = true;
+    if (complete) {
+        if (!story.isComplete) story.currentChapter = story.chapters[0]
+        story.isComplete = true;
+    } 
+    updateStoryObj();
+    refreshMainPageStoryButton(currentStory.name);
+    
+    
+}
+
+function isChapterAvailable(chapter=currentChapter) {
+    const origin = stories[chapter.storyName].chapters;
+    var subtitle = "";
+    if(origin[chapter.num-1].hasOwnProperty('subtitle')) subtitle = origin[chapter.num-1].subtitle;
+    if (subtitle != 'Coming Soon' && subtitle != 'Patreon exclusive') return true;
+    return false;
+}
+
+function isThereNextChapter(chapter=currentChapter) {
+    var chapters = data.StoryObj[chapter.storyName].chapters;
+    return chapter.num < chapters.length && isChapterAvailable(chapters[chapter.num])
+    
+}
+
+function activateEndButton(container=currentContainer) {
+    if (container.querySelector("#End-Chapter")) {
+        container.querySelector("#End-Chapter").addEventListener('click', ()=> {
+            endChapter();
         });
     } else {
-        document.getElementById("End-Story").addEventListener('click', ()=> {
-        endStory();
+        document.getElementById("End-Chapter").addEventListener('click', ()=> {
+            endChapter();
     });
     }
 
@@ -391,11 +457,11 @@ function activateAppendLink(section1, section2, id=null, switchToSection = false
         }
 
         if (switchToSection) {
-            setTimeout(()=> {
-                hideStoryIntro();
-                hideNode(section1);
-                moveToIDInstantly("top")
-            }, 1200)
+            // setTimeout(()=> {
+            //     hideStoryIntro();
+            //     hideNode(section1);
+            //     moveToIDInstantly("top")
+            // }, 1200)
             
         }
         updateStoryObj(currentStory);
@@ -463,5 +529,28 @@ function linkOnClick(node, func) {
 
 function assignChoice(attribute, func) {
 
+}
+
+function storyVideo(src, isanimate= true, iscontrols= true, isloop= false, isautoplay= false) {
+    return `
+    <video class="story-vid"  ${iscontrols? `controls` : ``} ${isloop? `loop` : ``} ${isautoplay? `autoplay` : ``} ${isanimate? `data-animate-block` : ``}>
+        <source src="${baseImagesFolder}/${src}.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>`;
+}
+
+function appendLink(text) {
+    return `
+    <p><a class="appendLink" href="#">${text}</a></p>
+`;
+}
+
+function nextChapter(chapter=currentChapter) {
+    story=getStoryOfChapter(chapter);
+    if (isThereNextChapter(chapter)) {
+        return story.chapters[chapter.num]
+    }
+
+    return null
 }
 

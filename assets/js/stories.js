@@ -188,9 +188,7 @@ stories["Mr. Wolf"] = {
         {
           name: "Finally, something",
           num : 2,
-          wordCount: 5707,
-          subtitle: "Coming Soon",
-          subtitle: "Coming Soon",
+          wordCount: 5798,
       }, 
     ]
   

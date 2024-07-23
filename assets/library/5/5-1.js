@@ -32,7 +32,7 @@ section1.innerHTML += `
 <p>(20 minutes later)</p>
 <p><span class="MW-Girl">Girl:</span> &ldquo;Grandma, why do you have a big dick?&rdquo;</p>
 
-<a id="End-Story" class="btn btn--primary custom-story-button" href="#">
+<a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">
 The End</a>
 </div>`;
 

@@ -38,7 +38,7 @@ loadPage = function() {
 <p class="story-dialogue"><span class="GN-Tom">Me:</span> &ldquo;Come on, Mom, it&rsquo;s time for my lap dance.&rdquo;</p>
     
     
-    <a id="End-Story" class="btn btn--primary custom-story-button" href="#">
+    <a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">
     To be continued...</a>
     </div>`;
     

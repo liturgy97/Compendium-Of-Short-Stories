@@ -84,7 +84,7 @@ section1.innerHTML += `
 <p><span class="ELF-Elf">Elf:</span> &ldquo;Five hundred. Final offer.&rdquo;</p>
 
 
-<a id="End-Story" class="btn btn--primary custom-story-button" href="#">
+<a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">
 Double it
 </a>
 
@@ -94,16 +94,8 @@ Double it
 
 `;
 
-document.getElementById("End-Story").addEventListener('click', ()=> {
-currentStory.isRead = true;
-currentStory.isRead = true;
-currentStory.isComplete= true;
-
-updateStoryObj(currentStory);
-clearLoadedScripts();
-
-refreshMainPageStoryButton(currentStory.name);
-switchToPage("MainPage")
+document.getElementById("End-Chapter").addEventListener('click', ()=> {
+endChapter();
 showNav();
 EarnAchievement("Founder");
 });

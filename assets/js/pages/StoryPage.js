@@ -98,6 +98,7 @@ function openStory(story) {
   
     clearLoadedScripts();
     loadAndExecuteScript(passagePath);
+
     
   }
 

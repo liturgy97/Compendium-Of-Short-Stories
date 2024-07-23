@@ -89,7 +89,7 @@ section1.innerHTML += `
 <p class="story-dialogue"><span class="DIS-Birdie">BIRDIE</span><br>Teddy says thanks fo' killin' 'em all muddafuckin' monstaz!</p>
 <p>Fuck that teddy bear.</p>
 
-<a id="End-Story" class="btn btn--primary custom-story-button" href="#">
+<a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">
 To be continued...</a>
 </div>`;
 
@@ -110,7 +110,7 @@ activateEndButton();
 //     section1.innerHTML += `
 //     <div id="section1-content" class="column lg-8 md-12 margin-top-lg-70 margin-top-md-0">
     
-//     <a id="End-Story" class="btn btn--primary custom-story-button" href="#">
+//     <a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">
 //     The End</a>
 //     </div>`;
     

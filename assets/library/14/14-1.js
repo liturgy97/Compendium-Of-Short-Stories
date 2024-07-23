@@ -1,10 +1,9 @@
 loadPage = function() {
-    console.log(data.StoryObj[currentStory.name])
     prepareStory();
     
     const section1 = newSection(1);
     const row1 = storyRow('INT. HALL - AFTERNOON', 
-        `<p>(Dev Note: Currently not modified for replays, fixing asap. Ch.2 is finished, uploading very soon)</p>
+        `<p>(Dev Note: Needs fix for replays. Perfume path postponed)</p>
         <p>The new girl curtsied, her pale blue eyes meeting mine for the briefest moment before dropping demurely to the floor.</p>
 <p>She was a striking figure&mdash;blonde hair neatly pinned back, a slender frame accentuated by a narrow waist and a surprisingly full bosom. Her smooth skin glowed with youth and vitality. I had ordered for a new maid, not a new wife for my husband!</p>
 <p><span class="E-Arabella">&ldquo;So, you are the new girl,&rdquo;</span> I began, my tone cool and scrutinizing. <span class="E-Arabella">&ldquo;What is your name?&rdquo;</span></p>
@@ -227,7 +226,7 @@ ${storyCenterImage(8, false)}
 <p>At the sight of her naked crotch, my eyes watered and my mouth began to salivate.</p>
 <p><span class="E-Arabella">&ldquo;Clean-shaven?&rdquo;</span></p>
 <p><span class="E-Emma">&ldquo;A preference of mine, ma&rsquo;am.&rdquo;</span></p>
-<p>&ldquo;For what? For whom?&rdquo;</span></p>
+<p><span class="E-Arabella">&ldquo;For what? For whom?&rdquo;</span></p>
 <p><span class="E-Emma">&ldquo;For myself, ma&rsquo;am. I beg your pardon. It is very comfortable to be like this.&rdquo;</span></p>
 <p>Is it? Consistenet shaving is a chore. I remember my husband asking me to shave a couple of years back and I reacted so angrily at this ridiculous request. A mature lady trims, never shaves. Truth be told if I had fantastic lady parts like those clean petals, I wouldn&rsquo;t have minded the toil of tending to them. Oh, Henry must be revelling pounding that pussy!</p>
 <p>At the swift press of the tips of my fingers against Emma&rsquo;s pussy lips, Emma shivered.</p>
@@ -255,7 +254,7 @@ const section5 = appendSection(5, '');
 
 menu(row6.querySelector('.rowContent'), [
     ["Be cruel", ()=>{activateAppendLink(section4, section5)}, choice4a],
-    ["To be kind is nice sometimes (in development)", 'disable', choice4b],
+    ["To be kind is nice sometimes (Perfume path unavailable)", 'disable', choice4b],
 ], ()=> {})
 
 
@@ -283,8 +282,8 @@ ${storyImage(13)}
 <p><span class="E-Henry">&ldquo;Emma, like all our staff, is as diligent and honorable as one can be. She has labored tirelessly from dawn and, regrettably, did not have the chance to refresh herself or change attire before our event. This oversight is mine alone. Any ridicule directed at her is a slight against this household and, by extension, against me personally, which I shall not tolerate.&rdquo;</span></p>
 <p>The guests apologized for their behavior and their children&rsquo;s too. Gregory and some of the guests commended Henry for his ability in handling the situation and some even complimented his luck for getting a sweet spirit like Emma to be around. Henry responded to some compliments and apologies courteously, some he replied to rudely and disrespectfully. It was clear to the eye how impatient he was with the guests and how eager he was for this gathering to finish. The gathering came to an end shortly after dinner and all the guests left. I knew I was in for some serious talk. Henry aggressively demanded that I follow him to his study. Another devilish idea came to my mind. Before I went up to his study, I went to the kitchen and found poor Emma there, who had already changed her clothes and seemed to have gained some of her composure again. I told her to make two cups of tea and bring them to me and the lord in his study in exactly fifteen minutes.</p>
 
-<a id="End-Story" class="btn btn--primary custom-story-button" href="#">
-    To be continued...</a>
+<a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">
+    Chapter 2</a>
     </div>
 `
 )

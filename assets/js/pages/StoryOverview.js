@@ -238,7 +238,7 @@ function loadStory(storyName) {
               ` : ``}
               ${chapter.isComplete ?
               `
-                <svg class="CompleteIcon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 2rem; height: 2rem;" class="CompleteIcon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="11.4054" cy="11.4919" r="11" fill="var(--color-2-light)"/>
                   <path d="M7.15674 11.9919L10.1567 14.9919L15.6567 9.49194" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>

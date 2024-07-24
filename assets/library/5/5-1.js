@@ -1,11 +1,11 @@
 loadPage = function() {
 
-prepareStory();
+    prepareStory();
 
-const section1 = addRowSection(1, '', "mode1");
-
-section1.innerHTML += `
-<div id="section1-content" class="column lg-8 md-12 margin-top-lg-70 margin-top-md-0">
+const section1 = newSection(1);
+const row1 = storyRow(' ', 
+    
+    `
 
 <p><span class="MW-Girl">Girl:</span> &ldquo;Mr. Wolf! Mr. Wolf!&rdquo;</p>
 <p><span class="MW-Wolf">Wolf:</span> &ldquo;Yes?&rdquo;</p>
@@ -34,7 +34,9 @@ section1.innerHTML += `
 
 <a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">
 The End</a>
-</div>`;
+`);
+
+section1.appendChild(row1);
 
 }
 

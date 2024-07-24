@@ -1,11 +1,11 @@
 loadPage = function() {
 
     prepareStory();
-    
-    const section1 = addRowSection(1, '', "mode1");
-    
-    section1.innerHTML += `
-    <div id="section1-content" class="column lg-8 md-12 margin-top-lg-70 margin-top-md-0">
+
+    const section1 = newSection(1);
+    const row1 = storyRow(' ', 
+        
+        `
 <p class="story-dialogue"><span class="GN-Dad">Dad:</span> &ldquo;Contest! Staring contest.&rdquo;</p>
 <p>Dad and I had a staring contest. He won.</p>
 <p class="story-dialogue"><span class="GN-Dad">Dad:</span> &ldquo;Booya!&rdquo;</p>
@@ -40,7 +40,9 @@ loadPage = function() {
     
     <a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">
     To be continued...</a>
-    </div>`;
+    </div>`);
+
+section1.appendChild(row1);
     
     }
     

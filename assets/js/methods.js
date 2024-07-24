@@ -767,7 +767,7 @@ function getContainer(id) {
 
 
 
-function fadeTransition(container=currentContainer, timeout=300) {
+function fadeTransition(container=document.getElementById('MainSection'), timeout=300) {
     
     container.style.opacity = 0;
     setTimeout(()=> {container.style.opacity = 1;}, timeout)

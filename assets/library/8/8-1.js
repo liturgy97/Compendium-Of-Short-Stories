@@ -1,13 +1,13 @@
 loadPage = function() {
 
-prepareStory();
+    prepareStory();
 
-const section1 = addRowSection(1, 'INT. LIVING ROOM - EVENING', "mode1");
+const section1 = newSection(1);
+const row1 = storyRow('INT. LIVING ROOM - EVENING', 
+    
+    `
 
-section1.innerHTML += `
 
-
-<div id="section1-content" class="column lg-8 md-12 margin-top-lg-70 margin-top-md-0">
 <p class="story-dialogue"><span class="DIS-Birdie">BIRDIE</span><br/>Daddy, I'm scawwed.</p>
 <p class="story-dialogue"><span class="DIS-Joshua">JOSHUA</span><br>Scared of what, honey?</p>
 <p class="story-dialogue"><span class="DIS-Birdie">BIRDIE</span><br>Teddy says monsta in da bathtub.</p>
@@ -91,8 +91,9 @@ section1.innerHTML += `
 
 <a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">
 To be continued...</a>
-</div>`;
+</div>`);
 
+section1.appendChild(row1)
 }
 
 

@@ -300,7 +300,7 @@ function prepareStory() {
     currentChapter.currentChoiceTree = 0;
     currentStory.currentChapterNum = currentChapter.num;
     updateChapterObj();
-    fadeTransition(container);
+    fadeTransition();
     container.innerHTML = '';
 
 }

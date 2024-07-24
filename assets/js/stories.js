@@ -144,12 +144,7 @@ stories["Mr. Wolf"] = {
             num : 1,
             wordCount: 1062,
         }, 
-        {
-          name: "Ralf",
-          num: 2,
-          wordCount: 0,
-          subtitle: "Coming Soon",
-      }
+        
     ],
     
   };

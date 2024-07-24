@@ -506,8 +506,7 @@ function showTempArea(oldID, newID) {
   function updateChapterObj(chapter=currentChapter) {
     const story = data.StoryObj[chapter.storyName]
     story.chapters[chapter.num-1] = chapter;
-    data.StoryObj[story.name] = story;
-    AutoSave(data);
+    updateStoryObj(story)
 }
 
 
@@ -956,3 +955,12 @@ function visibleNode(node) {
 function isFunction(variable) {
     return typeof variable === 'function';
 }
+
+
+// function runOnAllChapters(func) {
+//     if (isFunction(func)) {
+//         stories.forEach(storyName => {
+//             if (storyN)
+//         })
+//     }
+// }

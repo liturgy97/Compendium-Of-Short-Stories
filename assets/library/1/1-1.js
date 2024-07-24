@@ -1,199 +1,169 @@
-var container = getContainer('story-content');
+
+loadPage = function() {
+    prepareStory();
+    const section1 = newSection(1);
+    const row1 = storyRow('INT. AFTERNOON <br> APARTMENT BUILDING 104', 
+`
+
+<p>He paused outside the familiar door, its faded number 307 barely visible. Clearing his throat, he fished out his keys from his pocket, only to realize he no longer had the key to this door. He thought he'd never need it again. With a sigh, he rang the doorbell.</p>
+
+<p>The door opened with a slight groan. Her head peeked out shyly at an angle from behind the door.</p>
 
 
+<p><span class="GMD-Bailey">&ldquo;Who's there?&rdquo;</span> she asked, her eyes squinting to see who was standing in the dimly lit hallway.</p>
 
+<p><span class="GMD-Jake">&ldquo;Jake, 
+<br>27 years old, 
+<br>Looking for some single hot lady action tonight.&rdquo;</span></p>
 
+<p><span class="GMD-Bailey">&ldquo;Jake! Oh, Jake!&rdquo;</span> Bailey exclaimed. Flinging the door open excitedly, she hurried over to him, her arms wrapping around him in 
+a tight embrace. Jake felt a wave of comfort wash over him, something he hadn't realized he missed so much.</p>
 
+<p><span class="GMD-Jake">&ldquo;Hey, Mom,&rdquo;</span> he murmured, hugging her back. <span class="GMD-Jake">&ldquo;It&rsquo;s good to see you.&rdquo;</span></p>
+<p>She pulled back, her eyes scanning his face, searching for any signs of how he was holding up. <span class="GMD-Bailey">&ldquo;How have you been doing?&rdquo;</span></p>
+<p>He chuckled softly. <span class="GMD-Jake">&ldquo;I&rsquo;m fine. I&rsquo;m actually here to check on you.&rdquo;</span></p>
+<p>She smiled, her eyes misting over as she noticed the luggage he brought with him. <span class="GMD-Bailey">&ldquo;Come in, come in!&rdquo;</span> She grabbed his hand and happily dragged him through the doorway into the living room.</p>
+<p>He wheeled his luggage behind him and carelessly let it roll to a stop in the middle of the hallway. Jake slumped into one of the worn-out chairs while his mother flopped onto the couch, eyeing him curiously.</p>
 
-loadPage = function(pageNum = 1) {
-    currentChapter.currentPage = 1; 
-    updateStoryObj();
-    fadeTransition(container);
-    container.innerHTML = '';
+<figure>
+<img src="${baseImagesFolder}/1.jpg" data-animate-block>
 
+<figcaption>
+    Jake slumped into one of the worn-out chairs while his mother flopped onto the couch, eyeing him curiously.
+</figcaption>
+</figure>
 
-if (pageNum == 1) {
-    const section1 = addRowSection(1, 'INT. AFTERNOON <br> APARTMENT BUILDING 104', "mode1");
-    // section1.innerHTML = ``;
+<p>She bombarded him with a dozen questions in rapid succession, barely giving him time to answer one before asking the next. He told her how he had been all these years, how he had been holding up, and what he had been doing. Though he was the one curious and eager to know about her, she gave him no space to talk about anything but himself. She was so happy to see him that she saved the most obvious and pressing question for last.</p>
+<p><span class="GMD-Bailey">&ldquo;And what the hell brought you back?&rdquo;</span> she finally asked, in her same-old playful spirit.</p>
+<p>Jake got up from the couch, spreading his arms wide, claiming as much space as possible in his new old home. <span class="GMD-Jake">&ldquo;I&rsquo;m back home,&rdquo;</span> he declared.</p>
+<p>Bailey sat there, almost speechless, her mouth slightly open in disbelief. He opened his bag and took out a box containing a bottle of champagne.</p>
+<p>Seeing it, Bailey cracked up laughing, then rose swiftly to snatch the bottle from his hand. She took it to the kitchen counter and nestled it into a bowl, which she then filled with ice. Bailey was a lover of fine wines. Jake had gone to great lengths to procure the most premium bottle he could afford before arriving in town.</p>
+<p>However, her unimpressed gaze made it clear that his selection had missed the mark. Without a word, she opened her cupboard and pulled out one of her own vintage treasures, pouring them both a glass.</p>
+<p><span class="GMD-Jake">&ldquo;I&rsquo;m staying with you,&rdquo;</span> he announced, feeling a bit of guilt for the hardships she endured because of him. She was ecstatic to hear that from him but she quickly turned sour when it became his turn asking questions.</p>
+<p><span class="GMD-Jake">&ldquo;Is it true?&rdquo;</span></p>
+<p><span class="GMD-Bailey">&ldquo;What&rsquo;s true?&rdquo;</span></p>
+<p><span class="GMD-Jake">&ldquo;That you&rsquo;re becoming a man?&rdquo;</span></p>
+<p><span class="GMD-Bailey">&ldquo;Yes, I should&rsquo;ve-&rdquo;</span></p>
+<p><span class="GMD-Jake">&ldquo;You should&rsquo;ve told me and asked me about it first. Why didn&rsquo;t you involve me?&rdquo;</span></p>
+<p><span class="GMD-Bailey">&ldquo;Why would you have an opinion in this, Jake? It&rsquo;s my choice, it&rsquo;s my body, it&rsquo;s my life.&rdquo;</span></p>
+<p><span class="GMD-Jake">&ldquo;I would&rsquo;ve stayed by your side and helped you go through this.&rdquo;</span></p>
+<p><span class="GMD-Bailey">&ldquo;I didn&rsquo;t think you would. I seriously thought you weren&rsquo;t going to talk to me again, and I&rsquo;ve been alone for a long time and life became really hard.&rdquo;</span></p>
+<p>She paused to pour more wine.</p>
+<p><span class="GMD-Bailey">&ldquo;I&rsquo;ve been thinking about transitioning for years and I never got the courage to actually do it and one day things became so hard, I didn&rsquo;t know what else to do.</p>
+<p><span class="GMD-Bailey">I couldn&rsquo;t live like a woman anymore. I don&rsquo;t know. I honestly thought you&rsquo;d stay angry at me no matter what I did, so I decided to keep it away from you.&rdquo;</span></p>
+<p><span class="GMD-Jake">&ldquo;Of course not, Mom! I mean... Dad-&rdquo;</span></p>
+<p><span class="GMD-Bailey">&ldquo;Ahahaha.&rdquo;</span></p>
+<p>She burst out laughing at his joke and it made him chuckle.</p>
+<p><span class="GMD-Bailey">&ldquo;Oh God, I missed you so much, Jake! Please don&rsquo;t ever leave me again.&rdquo;</span></p>
+<p>Things became emotional pretty quickly. Jake told her he wasn&rsquo;t gonna leave her anytime soon, which he knew was true because he needed some time to get back on his feet again.</p>
+<p>Six months ago, he was laid off, and since then he&rsquo;s been swimming in the sea of unemployment. He tried to make ends meet through various side hustles, but none bore fruit.</p>
+<p>Now, he&rsquo;s teetering on the brink of broke, with no money to pay the rent. His girlfriend left him, and for the past month, he&rsquo;s been leeching off a friend who&rsquo;s now on the verge of kicking him out if he doesn&rsquo;t start chipping in for the bills.</p>
+<p>A week ago, his uncle called. Jake confided in him about his troubles and his desperate quest for a job. His uncle sympathized, offered to help him find work, only after reprimanding him for not supporting his mother through her transition.</p>
+<p>Jake was stunned to learn of his mom&rsquo;s transition. Their last conversation in January over the phone ended in a fight, and as his life plummeted shortly after, he wasn&rsquo;t eager to reach out to anyone beyond his immediate circle, which excluded family. He was ashamed of the mess he&rsquo;d become.</p>
+<p>To discover that his mother had decided to transition and had intentionally kept this from him was a shock beyond belief. But here he is, sitting next to her, wondering if she truly has a cock between her legs.</p>
+<p><span class="GMD-Jake">&ldquo;You know? When people tell you to grow balls, they don&rsquo;t usually mean it literally.&rdquo;</span></p>
+<p>She laughed again, her face and body flushed from the alcohol, though it wasn&rsquo;t truly a joke. During their last call, she had sheepishly and frustratingly complained about how hard life was. Unable to hold back, he snapped, <span class="GMD-Jake">&ldquo;Grow some fucking balls, Mom, and live with it!&rdquo;</span> He didn&rsquo;t mean it literally, of course, or in any sense.</p>
+<p>Back then, Jake was as frustrated with his life as much as Bailey was with hers, and he took it out on her. Their phone call erupted into a fight, bringing up old grievances and airing long-held grudges.</p>
+<p>When his uncle told him she had undergone the first surgery on January 27, the day after that call, Jake thought it was some kind of sick joke, but it wasn&rsquo;t truly a joke.</p>
+<p><span class="GMD-Bailey">&ldquo;It wasn&rsquo;t because of you.&rdquo;</span></p>
+<p><span class="GMD-Jake">&ldquo;Then why did you do it?&rdquo;</span></p>
+
+<p><a class="appendLink" href="#">Section 2 - Memories</a></p>
     
-    /* <div class="column lg-3 mob-12"></div>
-    <div class="column lg-3 mob-12"></div> */
-    
-    section1.innerHTML += `
-        <div id="section1-content" class="column lg-8 md-12 margin-top-lg-70 margin-top-md-0">
-    
-            <p>He paused outside the familiar door, its faded number 307 barely visible. Clearing his throat, he fished out his keys from his pocket, only to realize he no longer had the key to this door. He thought he'd never need it again. With a sigh, he rang the doorbell.</p>
-    
-            <p>The door opened with a slight groan. Her head peeked out shyly at an angle from behind the door.</p>
-    
-    
-            <p><span class="GMD-Bailey">&ldquo;Who's there?&rdquo;</span> she asked, her eyes squinting to see who was standing in the dimly lit hallway.</p>
-    
-            <p><span class="GMD-Jake">&ldquo;Jake, 
-            <br>27 years old, 
-            <br>Looking for some single hot lady action tonight.&rdquo;</span></p>
-            
-            <p><span class="GMD-Bailey">&ldquo;Jake! Oh, Jake!&rdquo;</span> Bailey exclaimed. Flinging the door open excitedly, she hurried over to him, her arms wrapping around him in 
-            a tight embrace. Jake felt a wave of comfort wash over him, something he hadn't realized he missed so much.</p>
-    
-            <p><span class="GMD-Jake">&ldquo;Hey, Mom,&rdquo;</span> he murmured, hugging her back. <span class="GMD-Jake">&ldquo;It&rsquo;s good to see you.&rdquo;</span></p>
-            <p>She pulled back, her eyes scanning his face, searching for any signs of how he was holding up. <span class="GMD-Bailey">&ldquo;How have you been doing?&rdquo;</span></p>
-            <p>He chuckled softly. <span class="GMD-Jake">&ldquo;I&rsquo;m fine. I&rsquo;m actually here to check on you.&rdquo;</span></p>
-            <p>She smiled, her eyes misting over as she noticed the luggage he brought with him. <span class="GMD-Bailey">&ldquo;Come in, come in!&rdquo;</span> She grabbed his hand and happily dragged him through the doorway into the living room.</p>
-            <p>He wheeled his luggage behind him and carelessly let it roll to a stop in the middle of the hallway. Jake slumped into one of the worn-out chairs while his mother flopped onto the couch, eyeing him curiously.</p>
-            
-            <figure>
-                <img src="${baseImagesFolder}/1.jpg" data-animate-block>
-    
-                <figcaption>
-                    Jake slumped into one of the worn-out chairs while his mother flopped onto the couch, eyeing him curiously.
-                </figcaption>
-            </figure>
-            
-            <p>She bombarded him with a dozen questions in rapid succession, barely giving him time to answer one before asking the next. He told her how he had been all these years, how he had been holding up, and what he had been doing. Though he was the one curious and eager to know about her, she gave him no space to talk about anything but himself. She was so happy to see him that she saved the most obvious and pressing question for last.</p>
-            <p><span class="GMD-Bailey">&ldquo;And what the hell brought you back?&rdquo;</span> she finally asked, in her same-old playful spirit.</p>
-            <p>Jake got up from the couch, spreading his arms wide, claiming as much space as possible in his new old home. <span class="GMD-Jake">&ldquo;I&rsquo;m back home,&rdquo;</span> he declared.</p>
-            <p>Bailey sat there, almost speechless, her mouth slightly open in disbelief. He opened his bag and took out a box containing a bottle of champagne.</p>
-            <p>Seeing it, Bailey cracked up laughing, then rose swiftly to snatch the bottle from his hand. She took it to the kitchen counter and nestled it into a bowl, which she then filled with ice. Bailey was a lover of fine wines. Jake had gone to great lengths to procure the most premium bottle he could afford before arriving in town.</p>
-            <p>However, her unimpressed gaze made it clear that his selection had missed the mark. Without a word, she opened her cupboard and pulled out one of her own vintage treasures, pouring them both a glass.</p>
-            <p><span class="GMD-Jake">&ldquo;I&rsquo;m staying with you,&rdquo;</span> he announced, feeling a bit of guilt for the hardships she endured because of him. She was ecstatic to hear that from him but she quickly turned sour when it became his turn asking questions.</p>
-            <p><span class="GMD-Jake">&ldquo;Is it true?&rdquo;</span></p>
-            <p><span class="GMD-Bailey">&ldquo;What&rsquo;s true?&rdquo;</span></p>
-            <p><span class="GMD-Jake">&ldquo;That you&rsquo;re becoming a man?&rdquo;</span></p>
-            <p><span class="GMD-Bailey">&ldquo;Yes, I should&rsquo;ve-&rdquo;</span></p>
-            <p><span class="GMD-Jake">&ldquo;You should&rsquo;ve told me and asked me about it first. Why didn&rsquo;t you involve me?&rdquo;</span></p>
-            <p><span class="GMD-Bailey">&ldquo;Why would you have an opinion in this, Jake? It&rsquo;s my choice, it&rsquo;s my body, it&rsquo;s my life.&rdquo;</span></p>
-            <p><span class="GMD-Jake">&ldquo;I would&rsquo;ve stayed by your side and helped you go through this.&rdquo;</span></p>
-            <p><span class="GMD-Bailey">&ldquo;I didn&rsquo;t think you would. I seriously thought you weren&rsquo;t going to talk to me again, and I&rsquo;ve been alone for a long time and life became really hard.&rdquo;</span></p>
-            <p>She paused to pour more wine.</p>
-            <p><span class="GMD-Bailey">&ldquo;I&rsquo;ve been thinking about transitioning for years and I never got the courage to actually do it and one day things became so hard, I didn&rsquo;t know what else to do.</p>
-            <p><span class="GMD-Bailey">I couldn&rsquo;t live like a woman anymore. I don&rsquo;t know. I honestly thought you&rsquo;d stay angry at me no matter what I did, so I decided to keep it away from you.&rdquo;</span></p>
-            <p><span class="GMD-Jake">&ldquo;Of course not, Mom! I mean... Dad-&rdquo;</span></p>
-            <p><span class="GMD-Bailey">&ldquo;Ahahaha.&rdquo;</span></p>
-            <p>She burst out laughing at his joke and it made him chuckle.</p>
-            <p><span class="GMD-Bailey">&ldquo;Oh God, I missed you so much, Jake! Please don&rsquo;t ever leave me again.&rdquo;</span></p>
-            <p>Things became emotional pretty quickly. Jake told her he wasn&rsquo;t gonna leave her anytime soon, which he knew was true because he needed some time to get back on his feet again.</p>
-            <p>Six months ago, he was laid off, and since then he&rsquo;s been swimming in the sea of unemployment. He tried to make ends meet through various side hustles, but none bore fruit.</p>
-            <p>Now, he&rsquo;s teetering on the brink of broke, with no money to pay the rent. His girlfriend left him, and for the past month, he&rsquo;s been leeching off a friend who&rsquo;s now on the verge of kicking him out if he doesn&rsquo;t start chipping in for the bills.</p>
-            <p>A week ago, his uncle called. Jake confided in him about his troubles and his desperate quest for a job. His uncle sympathized, offered to help him find work, only after reprimanding him for not supporting his mother through her transition.</p>
-            <p>Jake was stunned to learn of his mom&rsquo;s transition. Their last conversation in January over the phone ended in a fight, and as his life plummeted shortly after, he wasn&rsquo;t eager to reach out to anyone beyond his immediate circle, which excluded family. He was ashamed of the mess he&rsquo;d become.</p>
-            <p>To discover that his mother had decided to transition and had intentionally kept this from him was a shock beyond belief. But here he is, sitting next to her, wondering if she truly has a cock between her legs.</p>
-            <p><span class="GMD-Jake">&ldquo;You know? When people tell you to grow balls, they don&rsquo;t usually mean it literally.&rdquo;</span></p>
-            <p>She laughed again, her face and body flushed from the alcohol, though it wasn&rsquo;t truly a joke. During their last call, she had sheepishly and frustratingly complained about how hard life was. Unable to hold back, he snapped, <span class="GMD-Jake">&ldquo;Grow some fucking balls, Mom, and live with it!&rdquo;</span> He didn&rsquo;t mean it literally, of course, or in any sense.</p>
-            <p>Back then, Jake was as frustrated with his life as much as Bailey was with hers, and he took it out on her. Their phone call erupted into a fight, bringing up old grievances and airing long-held grudges.</p>
-            <p>When his uncle told him she had undergone the first surgery on January 27, the day after that call, Jake thought it was some kind of sick joke, but it wasn&rsquo;t truly a joke.</p>
-            <p><span class="GMD-Bailey">&ldquo;It wasn&rsquo;t because of you.&rdquo;</span></p>
-            <p><span class="GMD-Jake">&ldquo;Then why did you do it?&rdquo;</span></p>
-    
-            <p><a class="appendLink" href="#">Section 2 - Memories</a></p>
-    
-        </div>
-    
-    `;
-    
+    `);
+    section1.appendChild(row1)
     
     
     const section2 = appendSection(2, '');
     
     activateAppendLink(section1, section2,);
+    section2. innerHTML += `${storyWideImage('2')}`;
     
+const row2 = storyRow('Memories', 
     
-    section2.innerHTML += `
-    <img src="${baseImagesFolder}/2.jpg" class="lg-12" data-animate-block>
-    
-    <div class="row">
-        <div class="column lg-3 md-12"><h3>${changeScenery('Memories')}</h3></div>
-    
-        <div id="section2-content" class="column lg-8 md-12 margin-top-lg-70 margin-top-md-0">
-            <p>The room was silent, save for the occasional tick of the clock on the mantelpiece. Bailey glanced over at the empty armchair, once her husband&rsquo;s favorite spot, and felt a pang of guilt. The house felt hollow without his presence, yet she knew the emptiness had started long before he physically left.</p>
-            <p>For years, Bailey had felt the walls closing in around her, her husband James&rsquo; stern gaze and controlling demeanor stifling her every move.</p>
-            <p>He dictated what she wore, where she went, and who she spoke to. It was as if she lived in a cage, beautiful but suffocating.</p>
-            <p>The breaking point had come one night when she dared to voice her own dreams and aspirations. His harsh words still echoed in her mind, a reminder of why they had to part ways.</p>
-            <p><span style="color: #A8A196">&ldquo;You&rsquo;re being selfish, Bailey. Think about our son,&rdquo;</span> he had said, his face masked with cold fury.</p>
-            <p>And think about their son, she did. Jake, their bright and sensitive teenager, who had once adored her. But her decision to break her family apart had shattered that bond.</p>
-            <p>The day his father packed his bags, Jake stood in the doorway, his eyes filled with betrayal.</p>
-            <p><span class="GMD-Jake">&ldquo;How could you, Dad? How could you just walk away?&rdquo;</span> he had shouted, his emotion cracking his voice.</p>
-            <p>His father had tried to explain, but his words fell on deaf ears, at least he thought back then, but they truly weren&rsquo;t.</p>
-            <p>Bailey and James divorced. Bailey, who was far more successful than her ex-husband, won custody of Michael, while his father vanished, abandoning them without a backward glance or a word ever again.</p>
-            <p>Jake rained his mother with blame, words etched deep in his mind by his father&rsquo;s bitter narratives. His father&rsquo;s voice echoed in his mind, convincing him that Bailey had ruined the marriage, dismantling their family. He loved his mom truly and deeply. They were very close to each other. If you heard them talk, you&rsquo;d think they were friends, not mother and son. But his father was even closer to him, and he left after he couldn&rsquo;t fight with Bailey anymore.</p>
-            <p>Months passed. And then months turned into years. Bailey thought Jake had forgiven her, but soon after he graduated from college, he left her and chose to live alone, proving he still held that old grudge against her. The day Jake packed his bags, she stood in the doorway, her eyes filled with a woman&rsquo;s fury.</p>
-            <p><span class="GMD-Bailey">BAILEY</span> <em>(voice trembling with anger)</em><br><span class="story-dialogue">I can&rsquo;t believe this, Jake. After everything I&rsquo;ve done for you, you&rsquo;re just going to walk out of here like I don&rsquo;t matter.</span></p>
-            <p>Jake sighed and tried to push his mother to the side gently by her shoulder. She wouldn&rsquo;t budge.</p>
-            <p><span class="GMD-Jake">JAKE</span><br><span class="story-dialogue">Mom, we&rsquo;ve talked about this. I need to find my own path. This isn&rsquo;t about you.</span></p>
-            <p><span class="GMD-Bailey">BAILEY</span> <em>(voice rising)</em><br><span class="story-dialogue">Not about me? I&rsquo;ve spent the last twenty-two years fighting your battles, paying for your welfare, your education. Do you have any idea how much I sacrificed for you?</span></p>
-            <p><span class="GMD-Jake">JAKE</span> <em>(frustrated, finally showing aggression)</em><br><span class="story-dialogue">I know, Mom. I appreciate everything you&rsquo;ve done, but I need to do this on my own. I can&rsquo;t stay here forever.</span></p>
-            <p><span class="GMD-Bailey">BAILEY</span> <em>(sarcastic)</em><br><span class="story-dialogue">Oh, how noble of you. After leeching off me for years, now you suddenly want independence? Where was this drive when I was paying for your tuition, your rent, your food?</span></p>
-            <p><span class="GMD-Jake">JAKE</span> <em>(angry)</em><br><span class="story-dialogue">That&rsquo;s not fair. You offered to help. You said you wanted me to have a good start in life. Now you&rsquo;re throwing it back in my face?</span></p>
-            <p><span class="GMD-Bailey">BAILEY</span> <em>(voice breaking)</em><br><span class="story-dialogue">Because I thought you&rsquo;d care, Jake. I thought you&rsquo;d be grateful, that you&rsquo;d stay and help me. But no, you&rsquo;re just like your father. You take and take, demand and demand and then leave when I start challenging you.</span></p>
-            <p><span class="GMD-Jake">JAKE</span> <em>(hurt)</em><br><span class="story-dialogue">First of all, don&rsquo;t ever compare me to Dad. I&rsquo;m nothing like him. This isn&rsquo;t about taking advantage. I love you, but I can&rsquo;t stay here and be the person you want me to be. I need to figure out who I am without you hovering over me.</span></p>
-            <p><span class="GMD-Bailey">BAILEY</span> <em>(desperation creeping in)</em><br><span class="story-dialogue">Hovering? Is that what you call it? Caring for you, worrying about you, making sure you had everything you needed? That&rsquo;s hovering?</span></p>
-            <p><span class="GMD-Jake">JAKE</span> <em>(softly)</em><br><span class="story-dialogue">No, Mom. That&rsquo;s love. But love can be smothering. I need space to grow.</p>
-            <p><span class="GMD-Bailey">BAILEY</span> <em>(bitterly)</em><br><span class="story-dialogue">Fine. Go then. But don&rsquo;t come crawling back when you realize the world doesn&rsquo;t care about you like I do.</span></p>
-            <p><span class="GMD-Jake">JAKE</span> <em>(firmly)</em><br><span class="story-dialogue">I won&rsquo;t.</span></p>
-            <p><span class="GMD-Bailey">BAILEY</span> <em>(tears welling up)</em><br><span class="story-dialogue">You ungrateful child! After everything I&rsquo;ve done, this is how you repay me? You leave me?</span></p>
-            <p><span class="GMD-Jake">JAKE</span><br><span class="story-dialogue">I&rsquo;m not leaving you, Mom. I&rsquo;m just-</span></p>
-            <p><span class="GMD-Bailey">BAILEY</span> <em>(sobbing)</em><br><span class="story-dialogue">Get out. If you&rsquo;re so eager to leave, just go.</span></p>
-            <p>She stepped aside, turning her back to him. Jake hesitated, wanting to say more, but knowing it will only escalate the fight, he picked up his bag, looked at his mother, let out his usual discontented sigh and walked towards the door. Bailey stopped him again.</p>
-            <p><span class="GMD-Bailey">&ldquo;No! You&rsquo;re not gonna leave me now! Give me that bag!&rdquo;</span></p>
-            <p>She tried to snatch the bag from him but he held to it tightly. His free hand slapped her forearm viciously, grabbing it and yanking it back, bending her arm by the elbow in front of her. Bailey screamed. <span class="GMD-Jake">&ldquo;Don&rsquo;t you put your hand on me,&rdquo;</span> he growled menacingly in her face.</p>
-            <p><span class="GMD-Bailey">&ldquo;Are you crazy? You&rsquo;re gonna hit your own mother?!&rdquo;</span></p>
-            <p><span class="GMD-Jake">&ldquo;No, but don&rsquo;t make me do it!&rdquo;</span></p>
-            <p>She tried to wrestle herself free from his grip but he overpowered her and twisted her arm behind her.</p>
-            <p>Her second cry pierced his ears, genuinely frightening him; he released his mother at once. Pausing, he wondered if he had pushed it too far, only to see her sprint towards the kitchen. With a sudden, frantic motion, she grabbed a handful of dishes from the counter and hurled them through the air. He shielded his face with one arm, but none of the plates touched him. Instead, one by one, they shattered against the wall behind him and the floor beneath, their crashing drowned out by his mother&rsquo;s metallic screams.</p>
-            <p><span class="GMD-Bailey">&ldquo;Leave! Leave! Leaaaave! You pathetic, spineless, useless motherfucker! Leave me just when I need you. You&rsquo;re my only man, god damn it. Leaaaaave! I don&rsquo;t need a man anymore. I&rsquo;ve carried you and your father before you, I&rsquo;m better off without youuuuu!&rdquo;</span></p>
-            <p>When the plates were all broken, she swept the remaining kitchenware off the counter in a manic rage, sending them clattering to the floor. Exhausted from her tirade, she collapsed, burying her head between her knees and wailing over her miserable state.</p>
-            <p>Jake couldn&rsquo;t bear to witness his mother&rsquo;s mental meltdown a moment longer. He picked up his bag once more and stepped towards the door, muttering a simple but crushing blow as he went.</p>
-            <p><span class="GMD-Jake">&ldquo;Now I understand why Dad left.&rdquo;</span></p>
-            <p>Months passed, as they inevitably do.</p>
-            <p>Years passed too.</p>
-            <p>Every holiday, every birthday slipped by in painful silence. Bailey sent messages, left voicemails, and even wrote letters, but Jake rarely responded. He would ghost her for long periods, only to eventually succumb to her persistent outreach. When he did respond, it was always cordially and cheerfully, joking and trying to lift his miserably cranky mother&rsquo;s spirits, but always cautiously and briefly, steering clear of her notorious mood swings. He knew his mother was emotionally unstable and craved opportunities to unleash her emotions, but he couldn&rsquo;t bear her emotional baggage on his shoulders.</p>
-            <p>He would have avoided her entirely if he could, but he loved her too much, and he enjoyed their conversations when she was in a good mood. After a string of pleasant phone calls during last Christmas, he opened up to her. He shared his dissatisfactions and worries about his relationship, his problems at work, and how heavy life was beginning to feel. She, in turn, opened up to him, but while he spoke for twenty minutes, she lectured him for two hours. She compared his trivial troubles to her own, dictating how he should act&mdash;find a better girl, get a better job, learn to overcome his feelings.</p>
-            <p>He listened as she pressed him down and emasculated him, not daring to hang up on her as she held this mental grip over him. Finally, he broke out in frustration, and they had their last fight.</p>
-        
-            <p><a class="appendLink" href="#">Section 3 - Essence Replacement Therapy</a></p>
-            </div>
-    
-    </div>
-    
-    `;
+    `
+<p>The room was silent, save for the occasional tick of the clock on the mantelpiece. Bailey glanced over at the empty armchair, once her husband&rsquo;s favorite spot, and felt a pang of guilt. The house felt hollow without his presence, yet she knew the emptiness had started long before he physically left.</p>
+<p>For years, Bailey had felt the walls closing in around her, her husband James&rsquo; stern gaze and controlling demeanor stifling her every move.</p>
+<p>He dictated what she wore, where she went, and who she spoke to. It was as if she lived in a cage, beautiful but suffocating.</p>
+<p>The breaking point had come one night when she dared to voice her own dreams and aspirations. His harsh words still echoed in her mind, a reminder of why they had to part ways.</p>
+<p><span style="color: #A8A196">&ldquo;You&rsquo;re being selfish, Bailey. Think about our son,&rdquo;</span> he had said, his face masked with cold fury.</p>
+<p>And think about their son, she did. Jake, their bright and sensitive teenager, who had once adored her. But her decision to break her family apart had shattered that bond.</p>
+<p>The day his father packed his bags, Jake stood in the doorway, his eyes filled with betrayal.</p>
+<p><span class="GMD-Jake">&ldquo;How could you, Dad? How could you just walk away?&rdquo;</span> he had shouted, his emotion cracking his voice.</p>
+<p>His father had tried to explain, but his words fell on deaf ears, at least he thought back then, but they truly weren&rsquo;t.</p>
+<p>Bailey and James divorced. Bailey, who was far more successful than her ex-husband, won custody of Michael, while his father vanished, abandoning them without a backward glance or a word ever again.</p>
+<p>Jake rained his mother with blame, words etched deep in his mind by his father&rsquo;s bitter narratives. His father&rsquo;s voice echoed in his mind, convincing him that Bailey had ruined the marriage, dismantling their family. He loved his mom truly and deeply. They were very close to each other. If you heard them talk, you&rsquo;d think they were friends, not mother and son. But his father was even closer to him, and he left after he couldn&rsquo;t fight with Bailey anymore.</p>
+<p>Months passed. And then months turned into years. Bailey thought Jake had forgiven her, but soon after he graduated from college, he left her and chose to live alone, proving he still held that old grudge against her. The day Jake packed his bags, she stood in the doorway, her eyes filled with a woman&rsquo;s fury.</p>
+<p><span class="GMD-Bailey">BAILEY</span> <em>(voice trembling with anger)</em><br><span class="story-dialogue">I can&rsquo;t believe this, Jake. After everything I&rsquo;ve done for you, you&rsquo;re just going to walk out of here like I don&rsquo;t matter.</span></p>
+<p>Jake sighed and tried to push his mother to the side gently by her shoulder. She wouldn&rsquo;t budge.</p>
+<p><span class="GMD-Jake">JAKE</span><br><span class="story-dialogue">Mom, we&rsquo;ve talked about this. I need to find my own path. This isn&rsquo;t about you.</span></p>
+<p><span class="GMD-Bailey">BAILEY</span> <em>(voice rising)</em><br><span class="story-dialogue">Not about me? I&rsquo;ve spent the last twenty-two years fighting your battles, paying for your welfare, your education. Do you have any idea how much I sacrificed for you?</span></p>
+<p><span class="GMD-Jake">JAKE</span> <em>(frustrated, finally showing aggression)</em><br><span class="story-dialogue">I know, Mom. I appreciate everything you&rsquo;ve done, but I need to do this on my own. I can&rsquo;t stay here forever.</span></p>
+<p><span class="GMD-Bailey">BAILEY</span> <em>(sarcastic)</em><br><span class="story-dialogue">Oh, how noble of you. After leeching off me for years, now you suddenly want independence? Where was this drive when I was paying for your tuition, your rent, your food?</span></p>
+<p><span class="GMD-Jake">JAKE</span> <em>(angry)</em><br><span class="story-dialogue">That&rsquo;s not fair. You offered to help. You said you wanted me to have a good start in life. Now you&rsquo;re throwing it back in my face?</span></p>
+<p><span class="GMD-Bailey">BAILEY</span> <em>(voice breaking)</em><br><span class="story-dialogue">Because I thought you&rsquo;d care, Jake. I thought you&rsquo;d be grateful, that you&rsquo;d stay and help me. But no, you&rsquo;re just like your father. You take and take, demand and demand and then leave when I start challenging you.</span></p>
+<p><span class="GMD-Jake">JAKE</span> <em>(hurt)</em><br><span class="story-dialogue">First of all, don&rsquo;t ever compare me to Dad. I&rsquo;m nothing like him. This isn&rsquo;t about taking advantage. I love you, but I can&rsquo;t stay here and be the person you want me to be. I need to figure out who I am without you hovering over me.</span></p>
+<p><span class="GMD-Bailey">BAILEY</span> <em>(desperation creeping in)</em><br><span class="story-dialogue">Hovering? Is that what you call it? Caring for you, worrying about you, making sure you had everything you needed? That&rsquo;s hovering?</span></p>
+<p><span class="GMD-Jake">JAKE</span> <em>(softly)</em><br><span class="story-dialogue">No, Mom. That&rsquo;s love. But love can be smothering. I need space to grow.</p>
+<p><span class="GMD-Bailey">BAILEY</span> <em>(bitterly)</em><br><span class="story-dialogue">Fine. Go then. But don&rsquo;t come crawling back when you realize the world doesn&rsquo;t care about you like I do.</span></p>
+<p><span class="GMD-Jake">JAKE</span> <em>(firmly)</em><br><span class="story-dialogue">I won&rsquo;t.</span></p>
+<p><span class="GMD-Bailey">BAILEY</span> <em>(tears welling up)</em><br><span class="story-dialogue">You ungrateful child! After everything I&rsquo;ve done, this is how you repay me? You leave me?</span></p>
+<p><span class="GMD-Jake">JAKE</span><br><span class="story-dialogue">I&rsquo;m not leaving you, Mom. I&rsquo;m just-</span></p>
+<p><span class="GMD-Bailey">BAILEY</span> <em>(sobbing)</em><br><span class="story-dialogue">Get out. If you&rsquo;re so eager to leave, just go.</span></p>
+<p>She stepped aside, turning her back to him. Jake hesitated, wanting to say more, but knowing it will only escalate the fight, he picked up his bag, looked at his mother, let out his usual discontented sigh and walked towards the door. Bailey stopped him again.</p>
+<p><span class="GMD-Bailey">&ldquo;No! You&rsquo;re not gonna leave me now! Give me that bag!&rdquo;</span></p>
+<p>She tried to snatch the bag from him but he held to it tightly. His free hand slapped her forearm viciously, grabbing it and yanking it back, bending her arm by the elbow in front of her. Bailey screamed. <span class="GMD-Jake">&ldquo;Don&rsquo;t you put your hand on me,&rdquo;</span> he growled menacingly in her face.</p>
+<p><span class="GMD-Bailey">&ldquo;Are you crazy? You&rsquo;re gonna hit your own mother?!&rdquo;</span></p>
+<p><span class="GMD-Jake">&ldquo;No, but don&rsquo;t make me do it!&rdquo;</span></p>
+<p>She tried to wrestle herself free from his grip but he overpowered her and twisted her arm behind her.</p>
+<p>Her second cry pierced his ears, genuinely frightening him; he released his mother at once. Pausing, he wondered if he had pushed it too far, only to see her sprint towards the kitchen. With a sudden, frantic motion, she grabbed a handful of dishes from the counter and hurled them through the air. He shielded his face with one arm, but none of the plates touched him. Instead, one by one, they shattered against the wall behind him and the floor beneath, their crashing drowned out by his mother&rsquo;s metallic screams.</p>
+<p><span class="GMD-Bailey">&ldquo;Leave! Leave! Leaaaave! You pathetic, spineless, useless motherfucker! Leave me just when I need you. You&rsquo;re my only man, god damn it. Leaaaaave! I don&rsquo;t need a man anymore. I&rsquo;ve carried you and your father before you, I&rsquo;m better off without youuuuu!&rdquo;</span></p>
+<p>When the plates were all broken, she swept the remaining kitchenware off the counter in a manic rage, sending them clattering to the floor. Exhausted from her tirade, she collapsed, burying her head between her knees and wailing over her miserable state.</p>
+<p>Jake couldn&rsquo;t bear to witness his mother&rsquo;s mental meltdown a moment longer. He picked up his bag once more and stepped towards the door, muttering a simple but crushing blow as he went.</p>
+<p><span class="GMD-Jake">&ldquo;Now I understand why Dad left.&rdquo;</span></p>
+<p>Months passed, as they inevitably do.</p>
+<p>Years passed too.</p>
+<p>Every holiday, every birthday slipped by in painful silence. Bailey sent messages, left voicemails, and even wrote letters, but Jake rarely responded. He would ghost her for long periods, only to eventually succumb to her persistent outreach. When he did respond, it was always cordially and cheerfully, joking and trying to lift his miserably cranky mother&rsquo;s spirits, but always cautiously and briefly, steering clear of her notorious mood swings. He knew his mother was emotionally unstable and craved opportunities to unleash her emotions, but he couldn&rsquo;t bear her emotional baggage on his shoulders.</p>
+<p>He would have avoided her entirely if he could, but he loved her too much, and he enjoyed their conversations when she was in a good mood. After a string of pleasant phone calls during last Christmas, he opened up to her. He shared his dissatisfactions and worries about his relationship, his problems at work, and how heavy life was beginning to feel. She, in turn, opened up to him, but while he spoke for twenty minutes, she lectured him for two hours. She compared his trivial troubles to her own, dictating how he should act&mdash;find a better girl, get a better job, learn to overcome his feelings.</p>
+<p>He listened as she pressed him down and emasculated him, not daring to hang up on her as she held this mental grip over him. Finally, he broke out in frustration, and they had their last fight.</p>
+${appendLink('Section 3 - Essence Replacement Therapy')}
+
+    `);
+    section2.appendChild(row2)
     
     const section3 = appendSection(3, '');
     
     activateAppendLink(section2, section3);
     
     
-    section3.innerHTML += `
     
+    const row3 = storyRow('Essence Replacement Therapy', 
     
-    <div class="row">
-        <div class="column lg-3 md-12"><h3>${changeScenery('Essence Replacement Therapy')}</h3></div>
+    `
     
-        <div id="section3-content" class="column lg-8 md-12 margin-top-lg-70 margin-top-md-0">
-    
-            ${storyImage(baseImagesFolder + "/3.jpg", fig='<span class="GMD-Bailey">Better than ever...</span>')}
-                
-            <p><span class="GMD-Bailey">&ldquo;I was already seeing a therapist for a number of years now and she was supporting me in the idea, pushing me for it even. And then one day, I just did it.&rdquo;</span></p>
-            <p><span class="GMD-Jake">&ldquo;Are things going well?&rdquo;</span></p>
-            <p><span class="GMD-Bailey">&ldquo;Yeah. Of course... Better than ever.&rdquo;</span></p>
-            <p><span class="GMD-Jake">&ldquo;Really? You don&rsquo;t seem so sure about it.&rdquo;</span></p>
-            <p><span class="GMD-Bailey">&ldquo;I don&rsquo;t know. It&rsquo;s tougher than you think.&rdquo; </span></p>
-            <p><span class="GMD-Jake">&ldquo;You look great by the way.&rdquo; </span></p>
-            <p><span class="GMD-Bailey">&ldquo;Really? Do I look any different?&rdquo; </span></p>
-            <p><span class="GMD-Jake">&ldquo;You don&rsquo;t look like someone who&rsquo;s transitioning at all to be honest. I swear you look younger and hotter than ever.&rdquo; </span></p>
-            <p><span class="GMD-Bailey">&ldquo;Ahahaha. Yeah, that&rsquo;s one of the benefits. It&rsquo;s the testosterone and growth hormone injections. It makes my skin more elastic and firmer, and... what&rsquo;s the word, uhh, hydration, the hormones help with water retention so my skin looks more supple. I think overall, it does make me look slightly younger.&nbsp;</span></p>
-            <p><span class="GMD-Bailey">The testosterone makes my skin oily though. And ughh the acne, oh God, I&rsquo;m lucky I don&rsquo;t have any on my face right now, but my back is so full of them.&rdquo;</span></p>
-            <p><span class="GMD-Jake">&ldquo;Mmhm.&rdquo;</span></p>
-            <p><span class="GMD-Bailey">&ldquo;It makes me feel so much better too. Suddenly I&rsquo;m more confident and energetic than ever. I feel like I only started living recently. Honestly, best decision of my life.&rdquo; </span></p>
-            <p><span class="GMD-Jake">&ldquo;Great!&rdquo; </span></p>
-            <p>Bailey nodded, then poured herself another glass. Jake noticed she looked a bit attached.</p>
-            <p><span class="GMD-Jake">&ldquo;Tell me more about it. How did it all go through.&rdquo; </span></p>
-            <p>Bailey took a moment to collect herself then spilled all the details about her <a class="appendLink" href="#">transition.</a></p>
-    
-        </div>
-    
-    </div>
-    
-    `;
+${storyImage(3, fig='<span class="GMD-Bailey">Better than ever...</span>')}
+
+<p><span class="GMD-Bailey">&ldquo;I was already seeing a therapist for a number of years now and she was supporting me in the idea, pushing me for it even. And then one day, I just did it.&rdquo;</span></p>
+<p><span class="GMD-Jake">&ldquo;Are things going well?&rdquo;</span></p>
+<p><span class="GMD-Bailey">&ldquo;Yeah. Of course... Better than ever.&rdquo;</span></p>
+<p><span class="GMD-Jake">&ldquo;Really? You don&rsquo;t seem so sure about it.&rdquo;</span></p>
+<p><span class="GMD-Bailey">&ldquo;I don&rsquo;t know. It&rsquo;s tougher than you think.&rdquo; </span></p>
+<p><span class="GMD-Jake">&ldquo;You look great by the way.&rdquo; </span></p>
+<p><span class="GMD-Bailey">&ldquo;Really? Do I look any different?&rdquo; </span></p>
+<p><span class="GMD-Jake">&ldquo;You don&rsquo;t look like someone who&rsquo;s transitioning at all to be honest. I swear you look younger and hotter than ever.&rdquo; </span></p>
+<p><span class="GMD-Bailey">&ldquo;Ahahaha. Yeah, that&rsquo;s one of the benefits. It&rsquo;s the testosterone and growth hormone injections. It makes my skin more elastic and firmer, and... what&rsquo;s the word, uhh, hydration, the hormones help with water retention so my skin looks more supple. I think overall, it does make me look slightly younger.&nbsp;</span></p>
+<p><span class="GMD-Bailey">The testosterone makes my skin oily though. And ughh the acne, oh God, I&rsquo;m lucky I don&rsquo;t have any on my face right now, but my back is so full of them.&rdquo;</span></p>
+<p><span class="GMD-Jake">&ldquo;Mmhm.&rdquo;</span></p>
+<p><span class="GMD-Bailey">&ldquo;It makes me feel so much better too. Suddenly I&rsquo;m more confident and energetic than ever. I feel like I only started living recently. Honestly, best decision of my life.&rdquo; </span></p>
+<p><span class="GMD-Jake">&ldquo;Great!&rdquo; </span></p>
+<p>Bailey nodded, then poured herself another glass. Jake noticed she looked a bit attached.</p>
+<p><span class="GMD-Jake">&ldquo;Tell me more about it. How did it all go through.&rdquo; </span></p>
+<p>Bailey took a moment to collect herself then spilled all the details about her <a class="appendLink" href="#">transition.</a></p>
+
+
+    `);
+
+    section3.appendChild(row3)
     
     const section4 = appendSection(4, '');
     
@@ -408,13 +378,10 @@ if (pageNum == 1) {
     
     activateAppendLink(section4, section5);
     
-    section5.className = "design-section"
+    const row5 = storyRow(' ', 
 
-    section5.innerHTML = `
-    <div class="row">
-        <div class="column lg-3 md-12"><h3></h3></div>
-    
-        <div id="section5-content" class="column lg-8 md-12 margin-top-lg-70 margin-top-md-0">
+ `
+
 <p><span class="GMD-Jake">"Wow. You transitioned in six months?"</span></p>
 <p><span class="GMD-Bailey">"Yeah. I was supposed to have fully transitioned a month ago or something but I'm having troubles still."</span></p>
 <p>Jake saw Bailey come undone faster than a button on a too-tight shirt. Months? This mess should&rsquo;ve taken years. But in an age where you can get your eyes zapped and see clearer than your future in five damn minutes, this wasn't that impressive. Progress, they call it. Jake, though, couldn&rsquo;t wrap his booze-soaked brain around any of it.</p>
@@ -515,26 +482,17 @@ if (pageNum == 1) {
 
             <p><a class="appendLink" href="#">What a mess.</a></p>
 
-        </div>
     
-    </div>
-    
-    `;
-    
+    `);
+    section5.appendChild(row5)
 
     const section6 = appendSection(6, '');
     
     activateAppendLink(section5, section6);
     
-    section6.className = "design-section"
-
-    section6.innerHTML = `
-    <div class="row">
-        <div class="column lg-3 md-12"><h3>${changeScenery("INT. BATHROOM EVENING")}</h3></div>
-    
-        <div id="section6-content" class="column lg-8 md-12 margin-top-lg-70 margin-top-md-0">
-                
-           <p>The faucet squeaked and Bailey dipped her head into the sink, letting the cold water drench her hair. Two minutes of icy clarity later, she rose and faced her reflection. Red eyes stared back,<span class="GMD-Bailey">"We are soooo very drunk right now, Jake,"</span> she slurred to herself. Her hand slid down, caressing the faint bruise on her thigh, right where Jake's fingers had dug in, trying to pry her open. Why did he want to see her cock so badly?</p>
+    const row6 = storyRow('INT. BATHROOM EVENING"', 
+    `
+<p>The faucet squeaked and Bailey dipped her head into the sink, letting the cold water drench her hair. Two minutes of icy clarity later, she rose and faced her reflection. Red eyes stared back,<span class="GMD-Bailey">"We are soooo very drunk right now, Jake,"</span> she slurred to herself. Her hand slid down, caressing the faint bruise on her thigh, right where Jake's fingers had dug in, trying to pry her open. Why did he want to see her cock so badly?</p>
 <p>She took her dress and underwear off and stood naked in front of the mirror, gazing at her her newly earned penis and testicles.</p>
 <p>That freaky tiny faulty cock they gave her. So many nights she'd cried herself to sleep, questioning her decision to transition, cursing herself for being neither here nor there, neither woman nor man. How could she have traded her womanhood for this ugly thing? She'd begged the doctor to undo it, to turn her back, but they told her she had to wait. Two more months at least before any more invasive surgeries. The doctor insisted on patience and suggested they keep pushing for better results. But Bailey knew better. She was a hopeless case.</p>
 <p>And then Jake showed up.</p>
@@ -545,25 +503,18 @@ if (pageNum == 1) {
 
             <p><a class="appendLink" href="#">20 minutes later</a></p>
 
-        </div>
-    
-    </div>
 
 
-    `;
+    `);
 
-
+    section6.appendChild(row6)
     const section7 = appendSection(7, '');
     
     activateAppendLink(section6, section7);
     
-    section7.className = "design-section"
-
-    section7.innerHTML = `
-    <div class="row">
-        <div class="column lg-3 md-12"><h3>${changeScenery("INT. BEDROOM EVENING")}</h3></div>
+    const row7 = storyRow('INT. BEDROOM EVENING', 
     
-        <div id="section7-content" class="column lg-8 md-12 margin-top-lg-70 margin-top-md-0">
+    `
 <p>The door to Bailey's room opened with a creak. Jake was there, perched on the edge of Bailey's bed, his head in his hands, looking completely drunk and dizzy. Jake raised his head slowly. He might've not heard the door open but he smelled his mother's familiar lavendar soap as she walked into the room. She smelt fresh and clean. Wearing only a chemise with a towel wrapped around her waist, her face washed and clear of makeup, except for her lips being smeared with pink lipstick, she closed the door behind her and walked over to Jake at the edge of her bed. Shyly, she stood in front of him, and asked</p>
 <p><span class="GMD-Bailey">"Do you wanna see it?"</span></p>
 <p><span class="GMD-Jake">"Drop the towel,"</span> he responded, impatiently.</p>
@@ -682,69 +633,22 @@ if (pageNum == 1) {
 
             <p><a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">To be continued</a></p>
 
-        </div>
-    
-    </div>
 
+    `);
 
-    `;
-
-}
-
-
-activateEndButton();
+    section7.appendChild(row7)
 
 
 
 
-// if (pageNum == 2) {
-//     const section1 = addRowSection(1, 'INT. LATE AFTERNOON <br> LIVNG ROOM', "mode1");
-//     section1.innerHTML += `
-//         <div id="section1-content" class="column lg-8 md-12 margin-top-lg-70 margin-top-md-0">
-            
-        
-//         </div>`;
+activateEndButton(section7);
 
-//     // const section2 = appendSection(2, '');
-
-//     // activateAppendLink(section1, section2,);
-// }
-
-
-// if (pageNum!=1) {
-//     moveToID('section1')
-//     currentChapter.sectionPath = null;
-//     currentChapter.currentPage = pageNum;
-// } 
-
-
-loadSectionPath();
-
-ssMoveTo();
-
-animateOnScrollStory();
+    }
 
 
 
-}
+
+storyPostLoad();
 
 
-if (!currentChapter.hasOwnProperty('currentPage') || !currentChapter.currentPage) {
-    loadPage(1);
-} else {
-    loadPage(currentChapter.currentPage)
-}
 
-
-// if (pageNum == 2) {
-//     const section1 = addRowSection(1, 'INT. AFTERNOON <br> LIVNG ROOM', "mode1");
-//     section1.innerHTML += `
-//         <div id="section1-content" class="column lg-8 md-12 margin-top-lg-70 margin-top-md-0">
-            
-        
-//         </div>`;
-
-//     const section2 = appendSection(2, '');
-
-//     activateAppendLink(section1, section2,);
-// }

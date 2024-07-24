@@ -126,7 +126,6 @@ function HideIntroBanner() {
 
     if (document.querySelector('.s-intro')) {
       let triggerHeight2 = document.querySelector('.s-intro').offsetHeight-1;
-      console.log("story banner done")
 
       if (loc > triggerHeight2) {
         document.querySelector('.s-intro').style.display = "none";

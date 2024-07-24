@@ -89,11 +89,11 @@ ${storyVideo('v1')}
 <p>I couldn't resist teasing him further, bending down to suck on Emma's nipple right in front of him. His cock strained against his pants, threatening to burst free.</p>
 <p><span class= "E-Arabella">"Oh yeah, look at that big fucking cock begging to come out and play,"</span> I taunted him, relishing in the way he reacted. <span class= "E-Arabella">&ldquo;He likes what he&rsquo;s seeing.&rdquo;</span></p>
 <p>Emma stood there anxiously. She saw Henry and I in a form she wasn&rsquo;t used to, dirty and unfiltered when private to ourselves. It must&rsquo;ve scared her, unsure what we were going to do with her and probably unable to wrap her simple mind around the whole situation, yet her arousal was evident in every inch of her flushed skin.</p>
-<p><span class= "E-Henry">"Listen here, Emma. I am a married man, and that means I can't enjoy myself with a pretty little thing like yourself, and thus release your yearnings," Henry sneered, his gaze never leaving her body. "But since you couldn't resist spying on us like some dirty little voyeur, I'll give you a show. My wife and I will fuck right here in front of you and you can watch if you want. I know she won't mind, in fact she might even enjoy it. Ain't that right, Arabella?"</span></p>
+<p><span class= "E-Henry">"Listen here, Emma. I am a married man, and that means I can't enjoy myself with a pretty little thing like yourself, and thus release your yearnings,"</span> Henry sneered, his gaze never leaving her body. <span class= "E-Henry">"But since you couldn't resist spying on us like some dirty little voyeur, I'll give you a show. My wife and I will fuck right here in front of you and you can watch if you want. I know she won't mind, in fact she might even enjoy it. Ain't that right, Arabella?"</span></p>
 <p><span class= "E-Arabella">&ldquo;Hell yes! Make her watch,&rdquo;</span> I responded eagerly. <span class= "E-Arabella">&ldquo;Emma, you'll stay here and watch Henry fuck the life out of me while you stand there like some horny little puppy.&rdquo;</span></p>
 <p>Emma froze, unable to respond, but I could see the ecstasy in her eyes.</p>
 <p><span class= "E-Arabella">&ldquo;You can touch yourself too, doll. We won&rsquo;t judge,&rdquo;</span> I purred with the smoothest voice I ever had.</p>
-<p>I turned to Henry. &ldquo;Get over here, you bastard, and fuck me like you&rsquo;ve never fucked anyone before.&rdquo;</p>
+<p>I turned to Henry. <span class= "E-Arabella">&ldquo;Get over here, you bastard, and fuck me like you&rsquo;ve never fucked anyone before.&rdquo;</span></p>
 <p><span class= "E-Arabella">&ldquo;Right here. I want her to watch very closely.&rdquo;</span> I motioned for Henry to join us at the edge of the couch.</p>
 
 ${storyImage(5)}
@@ -366,10 +366,7 @@ ${storyImage(13)}
 <p><span class= "E-Henry">"She can have the servants' quarters tonight."</span> Henry declared with a dismissive wave of his hand.</p>
 <p>Emma hopped happily, ran to collect the rubble of her clothes on the ground, and skipped out of the room naked, carelessly, her titters filling the air.</p>
     
-    <a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">
-    The End</a>
-    </div>
-    `);
+${storyEndButton()}    `);
 section12.appendChild(row12);
 
 activateEndButton(section12);
@@ -377,50 +374,4 @@ activateEndButton(section12);
 }
 
 
-
-// const sectionx = appendSection(x, '',);
-// activateAppendLink(sectionx, sectiony, null, true)
-
-// row3 = storyRow(' ', 
-//     `${storyImage('x')}
-   
-//     ${storyVideo('x')}
-    
-//     ${appendLink('x')}
-//     `);
-// sectionx.appendChild(rowx);
-
-
-
-
-
-
-
-
-
-
-
-
-// const section3 = appendSection(3, '');
-
-// // activateAppendLink(section2, section3,); 
-
-// const row4 = storyRow('INT. HALL - MORNING', 
-// `
-
-// `
-// )
-
-// section3.appendChild(row3);
-
-
-    
-    
-    loadPage();
-    
-    ssMoveTo();
-
-    animateOnScrollStory();
-
-    
-    // activateEndButton();
+storyPostLoad();

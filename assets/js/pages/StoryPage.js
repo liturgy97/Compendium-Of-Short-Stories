@@ -6,7 +6,8 @@ function openStory(story) {
 
     const bcg = getStoryBackground(story);
     const clr = getStoryColor(story);
-  
+    const fontWeight = getStoryFontWeight(story);
+
     var root = document.documentElement;
   
     
@@ -82,12 +83,19 @@ function openStory(story) {
         root.style.setProperty('--story-background', 'transparent');
         }
     
-        if (clr) {
-          root.style.setProperty('--story-color', clr);
-          } else {
-          root.style.setProperty('--story-color', "white");
-        }
-      
+    if (clr) {
+        root.style.setProperty('--story-color', clr);
+        } else {
+        root.style.setProperty('--story-color', "white");
+    }
+
+    if (fontWeight) {
+        root.style.setProperty('--story-font-weight', fontWeight);
+        } else {
+        root.style.setProperty('--story-font-weight', 300);
+    }
+
+    
 
     const storyContent = document.createElement('section');
 

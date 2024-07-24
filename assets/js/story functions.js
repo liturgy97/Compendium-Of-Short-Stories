@@ -194,8 +194,22 @@ function getStoryBackground(datastory) {
 function getStoryColor(datastory) {
     const origin = stories[datastory.name];
     var clr = "";
-    if (origin.hasOwnProperty('color')) clr = origin.color;
+    if (origin.hasOwnProperty('textColor')) clr = origin.textColor;
     return clr;
+}
+
+function getStoryFont(datastory) {
+    const origin = stories[datastory.name];
+    var fnt = 'Source Sans 3';
+    if (origin.hasOwnProperty('font')) fnt = origin.font;
+    return fnt;
+}
+
+function getStoryFontWeight(datastory) {
+    const origin = stories[datastory.name];
+    var fnt = 0;
+    if (origin.hasOwnProperty('fontWeight')) fnt = origin.fontWeight;
+    return fnt;
 }
 
 function storyImage(src, fig="", cl="", sty="") {
@@ -220,28 +234,60 @@ function storyImage(src, fig="", cl="", sty="") {
 }
 
 
-function sceneryHeader(scenery) {
-    return `<div class="column lg-3 md-12"><h3>${changeScenery(scenery)}</h3></div>`;
+function sceneryHeader(scenery=null) {
+    if (scenery) return `<div class="column lg-3 md-12"><h3>${changeScenery(scenery)}</h3></div>`;
+
+    return `<div class="column lg-12 marginless"></div>`;
 }
 
 function contentClass() {
     return 'column lg-8 md-12 margin-top-lg-70 margin-top-md-0';
 }
 
+function fullRowContentClass() {
+    return 'column lg-12 margin-top-lg-70 margin-top-md-0';
+}
+
+function centered8RowContentClass() {
+    return 'column lg-8 md-12 margin-sides-auto margin-top-lg-70 margin-top-md-0';
+}
 
 
 function storyRow(headerText=null, innerText) {
     const row= document.createElement('div')
     row.className = 'row';
-    if (headerText) {
+    if (headerText && headerText!= "fullRow" && headerText!= "centered8Row" ) {
         if (headerText == "Empty") headerText = "";
+        var contentclass = contentClass();
         row.innerHTML = `    
-    ${sceneryHeader(headerText)}
-    <div class="rowContent ${contentClass()}">
+        ${sceneryHeader(headerText)}
+    
+    <div class="rowContent ${contentclass} ">
         ${innerText}
     </div>`;
     } else {
+        var contentclass = contentClass();
         row.innerHTML = innerText;
+        if (headerText=="fullRow") {
+            contentclass = fullRowContentClass();
+            row.innerHTML = `    
+            ${sceneryHeader()}
+        
+            <div class="rowContent ${contentclass} margin-vertical-none">
+                ${innerText}
+            </div>`;
+        }
+        if (headerText=="centered8Row") {
+            contentclass = centered8RowContentClass();
+            row.innerHTML = `    
+            ${sceneryHeader()}
+        
+            <div class="rowContent ${contentclass} margin-vertical-none">
+                ${innerText}
+            </div>`;
+        }
+        
+        
     }
     return row;
     
@@ -315,6 +361,7 @@ function showStoryIntro() {
 function endChapter(chapter=currentChapter) {
     
     chapter.isRead = true;
+    chapter.sectionPath= [];
     checkChapterCompletion();
 
     clearLoadedScripts();
@@ -411,7 +458,8 @@ function activateEndButton(container=currentContainer) {
 }
 
 function loadSectionPath() {
-    if (!currentChapter.hasOwnProperty('sectionPath') || !currentChapter.sectionPath) {
+    if (!currentChapter.hasOwnProperty('sectionPath') || currentChapter.sectionPath.length == 0) {
+        console.log()
         currentChapter.sectionPath = ['section1'];
         
     } else {
@@ -439,7 +487,11 @@ function changeScenery(scenery) {
 function activateAppendLink(section1, section2, id=null, switchToSection = false) {
     var link = section1.querySelector('.appendLink');
     if (id) link = section1.querySelector('#' + id);
-    if (!currentChapter.hasOwnProperty('sectionPath')) currentChapter.sectionPath = [];
+    if (!currentChapter.hasOwnProperty('sectionPath') || currentChapter.sectionPath.length == 0) 
+        {currentChapter.sectionPath = ['section1'];
+        console.log(currentChapter.sectionPath);
+        }
+    
     link.addEventListener('click', ()=> {
         if (Array.isArray(section2)) {
             section2.forEach(i=> {
@@ -464,8 +516,7 @@ function activateAppendLink(section1, section2, id=null, switchToSection = false
             // }, 1200)
             
         }
-        updateStoryObj(currentStory);
-        AutoSave();
+        updateChapterObj();
         console.log(currentChapter.sectionPath)
         console.log(data.StoryObj[currentStory.name].chapters[currentChapter.num-1].sectionPath)
         moveToID(section2.id);
@@ -554,3 +605,18 @@ function nextChapter(chapter=currentChapter) {
     return null
 }
 
+function storyEndButton(text='The End') {
+    return `<a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">
+    ${text}</a>`
+}
+
+function storyPostLoad() {
+    loadPage();
+
+    loadSectionPath();
+
+    ssMoveTo();
+
+    animateOnScrollStory();
+
+}

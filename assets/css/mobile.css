@@ -349,6 +349,7 @@
         float : initial;
         margin-left: auto;
         margin-right: auto;
+        display: block;
     
     }
     
@@ -356,6 +357,7 @@
         float : initial;
         margin-left: auto;
         margin-right: auto;
+        display: block;
     }
     
 }

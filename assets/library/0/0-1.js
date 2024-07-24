@@ -3,10 +3,10 @@ loadPage = function() {
 
     prepareStory();
 
-const section1 = addRowSection(1, '', "mode1");
-
-section1.innerHTML += `
-<div id="section1-content" class="story-elf-1 column lg-8 md-12 margin-top-lg-70 margin-top-md-0">
+const section1 = newSection(1);
+const row1 = storyRow(' ', 
+    
+    `
 
 <p><span class="ELF-Elf">Elf:</span> &ldquo;Ahoy there, young wanderer!&rdquo;</p>
 <p><span class="ELF-You">You:</span> &ldquo;Ahoy?&rdquo;</p>
@@ -84,15 +84,12 @@ section1.innerHTML += `
 <p><span class="ELF-Elf">Elf:</span> &ldquo;Five hundred. Final offer.&rdquo;</p>
 
 
-<a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">
-Double it
-</a>
+${storyEndButton('Double It')}
 
 
-</div>
+`);
 
-
-`;
+section1.appendChild(row1)
 
 document.getElementById("End-Chapter").addEventListener('click', ()=> {
 endChapter();

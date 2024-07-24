@@ -49,9 +49,9 @@ const choice1c = `<p>I let her to her chores and went on with my day.</p>
 const section2 = appendSection(2, '');
 
 menu(row1.querySelector('.rowContent'), [
-    ["Ask her to kiss your hand.", ()=>{currentStory.vars.kissType = "hand"}, choice1a],
-    ["Ask her to kiss your cheek.", ()=>{currentStory.vars.kissType = "cheek"}, choice1b],
-    ["Let her be.", ()=>{currentStory.vars.kissType = ""}, choice1c],
+    ["Ask her to kiss your hand", ()=>{currentStory.vars.kissType = "hand"}, choice1a],
+    ["Ask her to kiss your cheek", ()=>{currentStory.vars.kissType = "cheek"}, choice1b],
+    ["Let her be", ()=>{currentStory.vars.kissType = ""}, choice1c],
 ], ()=> {activateAppendLink(section1, section2)})
 
 // section2.innerHTML = storyWideImage(2);

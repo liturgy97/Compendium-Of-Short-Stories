@@ -152,3 +152,11 @@
   src: url('../fonts/Inter.ttf') format('truetype');
 }
 
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('../fonts/SpaceGrotesk.ttf') format('truetype');
+}
+

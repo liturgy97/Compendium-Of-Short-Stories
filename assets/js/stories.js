@@ -199,7 +199,6 @@ stories["Mr. Wolf"] = {
     num: 17,
     overview: "In a desperate attempt to revive a dying religion, 25-year old Alistair Everhart has been elected the Bishop of Sancta Celestia Cathedral, the last church in the world, due to his otherworldly talent in marketing and brand strategy. His first decree was to force nuns and pastorettes into wearing more revealing clothes to attract more customers of God.",
     severity: "D",
-    subtitle: "Coming Soon",
     genre: ["Religion", "Corruption", "Strategy"],
     characters: ["Alistair Everhart", "Pristine Rivers", "Father Gregory" ],
     chapters: [
@@ -207,7 +206,6 @@ stories["Mr. Wolf"] = {
             name: "Prologue",
             num : 1,
             wordCount: 942,
-            subtitle: "Coming Soon",
         }, 
     ]
   
@@ -218,7 +216,7 @@ stories["Mr. Wolf"] = {
     num: 18,
     overview: "Cum... That's lots of cum. Wait. Did I just cum?!!!!",
     severity: "D",
-    subtitle: "Coming Soon",
+    background: '#da504d',
     genre: ["Lustcraze", "Sissification"],
     characters: [],
     chapters: [
@@ -226,7 +224,6 @@ stories["Mr. Wolf"] = {
             name: "God Bless Estrogen Pills",
             num: 1,
             wordCount: 191,
-            subtitle: "Coming Soon",
         }, 
     ]
   
@@ -258,24 +255,19 @@ stories["Mr. Wolf"] = {
     overview: "Overview unavailable.",
     buttonStyle: "",
     severity: "B",
-    NTR: "Exclusive",
-    subtitle: "Coming Soon",
-    genre: ["Agony", ],
+    background: '#f5f5ef',
+    textColor: 'black',
+    font: 'Space Grotesk',
+    fontWeight: 400,
+    genre: ["", ],
     characters: [],
     chapters: [
         {
             name: "Hammer",
             num: 1,
-            wordCount: 1030,
-            subtitle: "Coming Soon",
+            wordCount: 4307,
         }, 
   
-        {
-          name: "Sunlight",
-          num: 2,
-          wordCount: 3277,
-          subtitle: "Coming Soon",
-      }, 
     ]
 
   };

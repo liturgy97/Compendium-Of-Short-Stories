@@ -504,9 +504,10 @@ function showTempArea(oldID, newID) {
   }
 
   function updateChapterObj(chapter=currentChapter) {
-    const story = data.StoryObj[chapter.storyName]
+    const story = data.StoryObj[chapter.storyName];
+    if (story.currentChapter.name == chapter.name) story.currentChapter = chapter;
     story.chapters[chapter.num-1] = chapter;
-    updateStoryObj(story)
+    updateStoryObj(story);
 }
 
 
@@ -767,43 +768,13 @@ function getContainer(id) {
 
 
 
-function fadeTransition(container=document.getElementById('MainSection'), timeout=300) {
+function fadeTransition(container=document.getElementById('MainSection'), timeout=300, func =()=> {}) {
     
     container.style.opacity = 0;
+    func();
     setTimeout(()=> {container.style.opacity = 1;}, timeout)
 }
 
-
-function annotateScrollbar(marks=null) {
-    if (!marks) {
-        marks = []; 
-        var sections = getDirectChildren(currentContainer, 'section');
-        for(let i=0; i< sections.length; i++) {
-            var section = sections[i];
-            marks[i] = getContainerTopPercentage(section);
-        }
-        if (marks) {
-            annotateScrollbar(marks);
-        } else {
-            console.log("Couldn't find marks")
-        }
-    } else {
-
-        var track_color = `linear-gradient(to bottom`
-    
-    for(let i=0; i < marks.length; i++) {
-        track_color += `, #1E1E1E ${marks[i]}%, #898989 ${marks[i]}%, #898989 ${marks[i]+1}%, #1E1E1E ${marks[i]+1}%`
-    }
-
-    track_color += `)`;
-    console.log("ok")
-    changeScrollbarTrack(track_color);
-    }
-
-
-    
-
-}
 
 function resetScrollbar() {
     setRootVar('--scrollbar-track-color', '#1E1E1E');
@@ -938,6 +909,10 @@ function numToLetter(num) {
 
 function hideNode(node) {
     node.style.display= "none";
+}
+
+function clearNode(node) {
+    node.innerHTML= "";
 }
 
 function showNode(node) {

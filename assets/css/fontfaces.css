@@ -160,3 +160,9 @@
   src: url('../fonts/SpaceGrotesk.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Playwrite Argentina';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('../fonts/PlaywriteArgentina.ttf') format('truetype');
+}

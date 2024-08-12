@@ -2,7 +2,7 @@ loadPage = function() {
 prepareStory();
 
 const section1 = newSection(1);
-const row1 = storyRow('INT. STUDY - LATE AFTERNOON', 
+const row1 = storyRow('1','INT. STUDY - LATE AFTERNOON', 
 `
 <p>I joined Henry in his study.</p>
 <p><span class= "E-Henry">&ldquo;What the fuck was that, Arabella?&rdquo;</span> he snarled, his words slurring and violent.</p>
@@ -64,22 +64,21 @@ ${storyImage(3)}
 <p><span class= "E-Arabella">"Yes, sir?"</span> I quickly took my hands away from between my legs and hurried to Henry's side. He seemed surprised at my uncharacteristic eagerness but it was much to his liking.</p>
 <p><span class= "E-Henry">"Take off the maid's damn dress,"</span> he demanded, gesturing towards Emma.</p>
 
-<p><a class="appendLink" href="#">Help Emma take her dress off</a></p>
+${appendLink(`Help Emma take her dress off`, 'section2')}
 `
 )
     
     section1.appendChild(row1)
 
-const section2 = appendSection(2, '',);
+const section2 = newSection(2);
 
-activateAppendLink(section1, section2, null, true)
 
 
 // section2.innerHTML = storyWideImage(2);
     
-const row2 = storyRow(' ', 
+const row2 = storyRow('2',' ', 
 `
-${storyVideo('v1')}
+${storyVideo('v1', false)}
 <p>I practically leapt at the chance, turning her around and helping her peel off her moist garment. She blushed furiously, but I could see the fire of anticipation burning in her eyes.</p>
 <p><span class= "E-Arabella">"Don't be shy now, Emma. Your lord wants to inspect every inch of you,"</span> I cooed, running my hands over her body as if it were my own.</p>
 <p><span class= "E-Henry">"I-I can't help but tremble,"</span> she admitted with a shaky voice.</p>
@@ -115,7 +114,7 @@ ${storyVideo('v2')}
 <p><span class= "E-Henry">&ldquo;Arabella, you don&rsquo;t mind?&rdquo;</span> Henry asked, his face lit with ecstasy.</p>
 <p><span class= "E-Arabella">&ldquo;On the contrary, my dear Henry, I would love it!&rdquo;</span> I exclaimed while going back to work on his cock.</p>
 
-${appendLink(`Share Henry's cock with Emma`)}
+${appendLink(`Share Henry's cock with Emma`, 'section3')}
 
 `
 
@@ -123,12 +122,11 @@ ${appendLink(`Share Henry's cock with Emma`)}
 
 section2.appendChild(row2);
 
-const section3 = appendSection(3, '',);
-activateAppendLink(section2, section3, null, true)
+const section3 = newSection(3);
 
-const row3 = storyRow(' ', 
+const row3 = storyRow('3',' ', 
 `
-${storyVideo('v3')}
+${storyVideo('v3', false)}
 <p>Emma shyly approached Henry&rsquo;s throbbing member and kissed it gently. He moaned with pleasure at her soft sensual touch. We teamed on Henry&rsquo;s impressive size, which was more than enough to satisfy both of us simultaneously.</p>
 <p>It brought me immense pleasure to watch her tend to his cock. She was so inexperienced and cautious, afraid to take any more than just the head inside her mouth. But she would kiss it, lick it, and suck on it like a curious little girl playing with a lollipop. She clearly had no idea how to handle a man&rsquo;s hard cock, yet she did it all with such eagerness and passion that her tongue and lips were dripping wet, leaving traces of her saliva behind for me to eagerly clean up with my own tongue whenever she took a break.</p>
 <p>Each of her touches hit Henry with great effect, who had his eyes only on Emma and reacted to her only. I watched on with a mix of envy and arousal, but I wasn&rsquo;t going to let her have all the fun - I pushed her off him whenever possible, eager to show off my own skills in handling a hefty piece of meat.</p>
@@ -165,17 +163,16 @@ ${storyVideo('v3')}
 <p>Henry beckoned to me with a demand that reeked of disrespect. I was stunned by his callousness, especially in front of Emma. Henry impatiently headed to the couch, sat and stroked his cock, not taking his eyes off Emma. Emma stood there, with her right index finger between her teeth, twisting her hips left and right before his lordship seductively, although she clearly didn&rsquo;t mean it to be seductive, as she had little knowledge of womanly arts. Her body betrayed her, revealing her desires. It twisted and turned subtly, begging for Henry&rsquo;s attention. She couldn&rsquo;t keep her eyes on him for long and they would drop to the floor, only for a few moments, her wanting for the stud on the couch stung her again and her eyes raced to him again, and the cycle repeated.</p>
 <p>The air crackled with tension, and I stood there in the midst of it all, knowing full well what would unfold.</p>
 <p>Little did they know, I would be the one to unleash their forbidden passion, but not before having my way with Henry first.</p>
-${appendLink(`Ride Henry's Cock`)}
+${appendLink(`Ride Henry's Cock`, 'section4')}
 
 `);
 
 section3.appendChild(row3);
 
-const section4 = appendSection(4, '',);
-activateAppendLink(section3, section4, null, true)
+const section4 = newSection(4);
 
-const row4 = storyRow(' ', 
-    `${storyImage(6)}
+const row4 = storyRow('4',' ', 
+    `${storyImageNonAnimate(6)}
     <p>I let Henry's slip of tongue slide for the moment, saving my wrath for later. As he commanded, I made my way to the couch and straddled him eagerly.</p>
 <p><span class= "E-Emma">&ldquo;Master, be careful. That&rsquo;s the wrong hole!&rdquo;</span> Emma gasped, taken aback by the sight of her lord&rsquo;s cock going towards my anus.</p>
 <p><span class= "E-Henry">&ldquo;Don&rsquo;t worry about her,&rdquo;</span> Henry reassured her with a sly grin. <span class= "E-Henry">&ldquo;She&rsquo;s quite accustomed to taking it there.&rdquo;</span></p>
@@ -189,14 +186,13 @@ const row4 = storyRow(' ',
 
     ${storyVideo('v4')}
     
-    ${appendLink(`Emma's turn now`)}
+    ${appendLink(`Emma's turn now`, 'section5')}
     `);
     section4.appendChild(row4);
 
-    const section5 = appendSection(5, '',);
-    activateAppendLink(section4, section5, null, true)
+    const section5 = newSection(5);
     
-    const row5 = storyRow(' ', 
+    const row5 = storyRow('5',' ', 
         `<p><span class= "E-Arabella">&ldquo;Come here girl,&rdquo;</span> I demanded as I dismounted from Henry&rsquo;s lap. <span class= "E-Arabella">&ldquo;It&rsquo;s your turn now.&rdquo;</span></p>
 <p><span class= "E-Emma">&ldquo;Do what, madam?&rdquo;</span> The maid asked completley shocked.</p>
 <p><span class= "E-Arabella">&ldquo;Get on your lord&rsquo;s cock,&rdquo;</span> I commanded.</p>
@@ -213,18 +209,17 @@ const row4 = storyRow(' ',
 <p><span class= "E-Emma">"I don't dare to call you that, ma'am. I meant lord's cock must be stinking after coming out of your ass."</span></p>
 <p><span class= "E-Henry">"She's right, Arabella. She's too good for that. Come and suck my cock clean now!"</span></p>
 ${storyVideo('v5')}
-<p><span class= "E-Arabella">"There, it's ready for you now, Emma,"</span> I said after sucking Henry's cock clean. "Ride that cock!"</p>
-${appendLink('Emma rides Henry')}
+<p><span class= "E-Arabella">"There, it's ready for you now, Emma,"</span> I said after sucking Henry's cock clean. <span class= "E-Arabella">"Ride that cock!"</span></p>
+${appendLink(`Emma rides Henry`, 'section6')}
         `);
 
 section5.appendChild(row5);
     
-const section6 = appendSection(6, '',);
-activateAppendLink(section5, section6, null, true)
+const section6 = newSection(6);
 
-const row6 = storyRow(' ', 
+const row6 = storyRow('6',' ', 
     `
-    ${storyVideo('v6')}
+    ${storyVideo('v6', false)}
     <p>Emma obediently approached her master and straddled him, while I lay on the head of the couch above them. As she lowered herself onto Henry's swollen cock, he couldn't contain himself any longer and thrust into her with a fierce urgency. Emma cried out loud.</p>
 <p><span class= "E-Henry">"Oh, fuck yes!"</span> Henry yelled intensely as he pounded Emma, while she drowned the room in ecstatic keening. She wailed and moaned like it was her first time.</p>
 <p>Poor Emma cried like she&rsquo;d never taken a cock before, begged, and pleaded for mercy as Henry drilled her. But he didn't care. The bastard enjoyed breaking her apart, fucking her with a ferocity I had never seen before.</p>
@@ -237,53 +232,49 @@ const row6 = storyRow(' ',
 <p>My heart felt heavy - they were enjoying each other while I was just an unwanted spectator. I felt sick and began regretting orchestrating the whole affair, but it was too late to go back now.</p>
 <p><span class= "E-Henry">"Stay wet for me, Emma,"</span> Henry shouted as he spread my asscheeks wide. <span class= "E-Henry">"Come here. Arabella will keep you wet."</span> Grunting with every thrust, he added, <span class= "E-Henry">"That's a good use of that fucking mouth."</span></p>
 
-${appendLink('Take it in your ass')}
+${appendLink(`Take it in your ass`, 'section7')}
 
     `);
 section6.appendChild(row6);
 
-const section7 = appendSection(7, '',);
-activateAppendLink(section6, section7, null, true)
+const section7 = newSection(7);
 
-const row7 = storyRow(' ', 
+const row7 = storyRow('7',' ', 
     `
-    ${storyVideo('v7')}
-    ${appendLink(`Suck your ass slime off Henry's cock and clean it for Emma`)}
+    ${storyVideo('v7', false)}
+    ${appendLink(`Suck your ass slime off Henry's cock and clean it for Emma`, 'section8')}
 
     
     `);
 section7.appendChild(row7);
 
-const section8 = appendSection(8, '',);
-activateAppendLink(section7, section8, null, true)
+const section8 = newSection(8);
 
-const row8 = storyRow(' ', 
+const row8 = storyRow('8',' ', 
     `
-    ${storyVideo('v8')}
-    ${appendLink(`Wait for him to fuck Emma`)}
+    ${storyVideo('v8', false)}
+    ${appendLink(`Wait for him to fuck Emma`, 'section9')}
 
     
     `);
 section8.appendChild(row8);
 console.log(section8)
 
-const section9 = appendSection(9, '',);
-activateAppendLink(section8, section9, null, true)
+const section9 = newSection(9);
 
-const row9 = storyRow(' ', 
+const row9 = storyRow('9',' ', 
     `
-    ${storyVideo('v9')}
-    ${appendLink(`Make Henry fuck her ass`)}
+    ${storyVideo('v9', false)}
+    ${appendLink(`Make Henry fuck her up her ass`, 'section10')}
 
     
     `);
 section9.appendChild(row9);
 
-const section10 = appendSection(10, '',);
-activateAppendLink(section9, section10, null, true)
+const section10 = newSection(10);
 
-const row10 = storyRow(' ', 
-    `${storyImage(7)}
+const row10 = storyRow('10',' ', 
+    `${storyImageNonAnimate(7)}
     <p><span class= "E-Arabella">"Put it in her ass, Henry,"</span> I sneered, feeling a surge of power as I watched him hesitate.</p>
 <p><span class= "E-Emma">"No, no, no!"</span> Emma cried out, covering her asshole with her hand. "Don't sodomize me, Lord Henry."</p>
 <p><span class= "E-Henry">"Shhhh. Relax, Emma,"</span> Henry hissed as he pinned her hand down. <span class= "E-Henry">"You're in good hands."</span></p>
@@ -297,16 +288,15 @@ const row10 = storyRow(' ',
     ${storyVideo('v10')}
 <p>I enjoyed watching Henry slam Emma, but then I wanted some too. I tried to assert my dominance over the situation, made Emma lick my old crusty cunt while she was getting plowed, called out loud commanding Henry to fuck her good and hard, which he was doing heartily anyway. Frustration grew as she got all his attention while I, the old hag, uselessly existed around. I suggested sandwiching with her so Henry would alternate fucking us. Hoping to get my own turn with Henry&rsquo;s cock.</p>
 
-    ${appendLink(`Sandwich with Emma`)}
+    ${appendLink(`Sandwitch with Emma`, 'section11')}
 
     
     `);
 section10.appendChild(row10);
 
-const section11 = appendSection(11, '',);
-activateAppendLink(section10, section11, null, true)
+const section11 = newSection(11);
 
-const row11 = storyRow(' ', 
+const row11 = storyRow('11',' ', 
     `<p><span class= "E-Arabella">&ldquo;Don&rsquo;t you forget about me, Henry.&rdquo;</span></p>
 <p>Henry&nbsp;gave no attention. He kept slamming into Emma on top of me like a wild animal.</p>
 <p><span class= "E-Arabella">&ldquo;What about me, Henry? Can&rsquo;t you spare some attention for your wife?&rdquo;</span> I whined.</p>
@@ -322,7 +312,7 @@ const row11 = storyRow(' ',
 <p><span class= "E-Arabella">&ldquo;What?! No way in hell you&rsquo;re gonna impregnate her!&rdquo;</span> I snapped, not about to let my husband knock up another woman. They went insane!</p>
 <p>But then he paused, still keeping his dick deep inside her.</p>
 ${storyImage(8)}
-<p><span class= "E-Emma">&ldquo;I&rsquo;ll take it, sir. Let me take your cum, sir. I want to carry your child. Breed me, Lord Henry! Please, please, please, Lord.&rdquo;</span> The maid pleaded in an ecstatic frenzy. Henry trapped her in a tight hug, shoved his cock deeper into Emma, impaling her with a final thrust. He kept his cock deep inside her, balls deep, and sunk his teeth into her shoulder. He hugged her tightly, trying to contain her frantic episode, as she shook and begged for him to breed her. He held her for a long minute and she must&rsquo;ve orgasmed 5 times while he held her like that. Even after she began to calm down, he still had his cock inside her. Ridiculous as it was, I imagined him contemplating shooting inside the fertile Emma and I imagined the maid walking around the house with a fat belly, carrying Henry&rsquo;s child. My heart was sent pounding in my chest like crazy. I was scared shitless that in the heat of their passion, Henry would accidentally cum inside Emma.</p>
+<p><span class= "E-Emma">&ldquo;I&rsquo;ll take it, sir. Let me take your cum, sir. I want to carry your child. Breed me, Lord Henry! Please, please, please, Lord.&rdquo;</span> The maid pleaded in an ecstatic frenzy. Henry trapped Emma in a tight hug, shoved his cock deeper inside her, impaling her with a final thrust. He kept his cock deep inside her, balls deep, and sank his teeth into her shoulder. He hugged her tightly, trying to contain her frantic episode, as she shook and begged for him to breed her. He held her for a long minute and she must&rsquo;ve orgasmed 5 times while he held her like that, holding her tighter with each trembling orgasm. Even after she began to calm down, he still had his cock inside her. Ridiculous as it was, I imagined him contemplating shooting inside the fertile Emma and I imagined the maid walking around the house with a fat belly, carrying Henry&rsquo;s child. My heart was sent pounding in my chest like crazy. I was scared shitless that in the heat of their passion, Henry would accidentally cum inside Emma.</p>
 <p><span class= "E-Arabella">&ldquo;What the fuck are you doing?! Let go of her!&rdquo;</span> I yelled as I pushed Emma away from us and got up from the couch.</p>
 <p><span class= "E-Arabella">&ldquo;Give it to me, Henry. Shoot it all inside me.&rdquo;</span></p>
 ${storyImage(9)}
@@ -338,15 +328,14 @@ ${storyImage(10)}
 <p><span class= "E-Henry">&ldquo;Alright then, front door it is,&rdquo;</span> Henry agreed with a sneer. <span class= "E-Henry">&ldquo;It&rsquo;s been what, a year since we&rsquo;ve done it that way?&rdquo;</span></p>
 <p><span class= "E-Arabella">&ldquo;Just fill me up, Henry,&rdquo;</span> I pleaded desperately. <span class= "E-Arabella">&ldquo;Please.&rdquo;</span></p>
     
-    ${appendLink('Take it in the front door')}
+    ${appendLink(`Take it in the front door`, 'section12')}
     `);
 section11.appendChild(row11);
 
-const section12 = appendSection(12, '',);
-activateAppendLink(section11, section12, null, true)
+const section12 = newSection(12);
 
-const row12 = storyRow(' ', 
-    `${storyVideo('v12')}
+const row12 = storyRow('12',' ', 
+    `${storyVideo('v12', false)}
 <p>Henry slammed his dick inside me, not giving a damn about my pleasure. I faked loud moans like a cheap whore as he thrust into me. But then the unexpected happened - some trapped air escaped from my vagina, making an embarrassing bubbling sound. Emma couldn&rsquo;t contain her laughter. <span class= "E-Emma">&ldquo;Looks like Lady Arabella&rsquo;s got a bit of gas inside there,&rdquo;</span> she joked. <span class= "E-Emma">&ldquo;Quite the breezy welcome, wouldn&rsquo;t you agree, ma&rsquo;am?&rdquo;</span></p>
 <p>I felt mortified and tried to play it off with a nervous chuckle. <span class= "E-Arabella">&ldquo;Just some pussy-bubbles, dear,&rdquo;</span> I stammered out.</p>
 <p>But Henry was not amused - <span class= "E-Henry">&ldquo;What a fucking turn off,&rdquo;</span> he grumbled before turning his attention to Emma. <span class= "E-Henry">&ldquo;Bring it back to life, Emma. Make it feel something again.&rdquo;</span></p>
@@ -366,12 +355,30 @@ ${storyImage(13)}
 <p><span class= "E-Henry">"She can have the servants' quarters tonight."</span> Henry declared with a dismissive wave of his hand.</p>
 <p>Emma hopped happily, ran to collect the rubble of her clothes on the ground, and skipped out of the room naked, carelessly, her titters filling the air.</p>
     
-${storyEndButton()}    `);
+${storyEndButton()}    
+`);
 section12.appendChild(row12);
 
-activateEndButton(section12);
 
 }
 
 
-storyPostLoad();
+setChapterIndex = ()=> {
+    currentChapterIndex.innerHTML= '';
+
+    addToChapterIndex('Section 1', 'section1') 
+    addToChapterIndex('Section 2', 'section2') 
+    addToChapterIndex('Section 3', 'section3') 
+    addToChapterIndex('Section 4', 'section4') 
+    addToChapterIndex('Section 5', 'section5') 
+    addToChapterIndex('Section 6', 'section6') 
+    addToChapterIndex('Section 7', 'section7') 
+    addToChapterIndex('Section 8', 'section8') 
+    addToChapterIndex('Section 9', 'section9') 
+    addToChapterIndex('Section 10', 'section10') 
+    addToChapterIndex('Section 11', 'section11') 
+    addToChapterIndex('Section 12', 'section12')
+    }
+    
+
+    storyLoad();

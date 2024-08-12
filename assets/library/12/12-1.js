@@ -3,7 +3,7 @@ loadPage = function() {
     prepareStory();
 
     const section1 = newSection(1);
-    const row1 = storyRow(' ', 
+    const row1 = storyRow('1', ' ', 
         
         `
 <p class="story-dialogue"><span class="GN-Dad">Dad:</span> &ldquo;Contest! Staring contest.&rdquo;</p>
@@ -37,16 +37,13 @@ loadPage = function() {
 <p>And then I slid my hand up her leg, rubbed her inner thigh and tapped it gently.</p>
 <p class="story-dialogue"><span class="GN-Tom">Me:</span> &ldquo;Come on, Mom, it&rsquo;s time for my lap dance.&rdquo;</p>
     
+${storyEndButton('To be continued...')}
     
-    <a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">
-    To be continued...</a>
-    </div>`);
+    
+    `);
 
 section1.appendChild(row1);
     
     }
     
-    
-    loadPage();
-    
-    activateEndButton();
+    storyLoad();

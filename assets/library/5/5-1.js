@@ -3,7 +3,7 @@ loadPage = function() {
     prepareStory();
 
 const section1 = newSection(1);
-const row1 = storyRow(' ', 
+const row1 = storyRow('1', ' ', 
     
     `
 
@@ -32,8 +32,7 @@ const row1 = storyRow(' ',
 <p>(20 minutes later)</p>
 <p><span class="MW-Girl">Girl:</span> &ldquo;Grandma, why do you have a big dick?&rdquo;</p>
 
-<a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">
-The End</a>
+${storyEndButton()}
 `);
 
 section1.appendChild(row1);
@@ -41,6 +40,4 @@ section1.appendChild(row1);
 }
 
 
-loadPage();
-
-activateEndButton();
+storyLoad();

@@ -15,6 +15,14 @@ const typography = {
   closingDoubleQuote : "&rdquo;"
 }
 
+var sections;
+
+var rows;
+
+var setChapterIndex = ()=>{}
+
+var currentChapterIndex;
+
 var storyImageAddress;
 
 var baseScriptFolder = "";
@@ -22,8 +30,6 @@ var baseScriptFolder = "";
 var baseImagesFolder = "";
 
 var passagePath = "";
-
-var currentSectionID;
 
 var loadPage;
 
@@ -157,3 +163,33 @@ function showIntroBanner() {
 }
 
 
+function saveCleanup() {
+  storyNames.forEach( storyName => {
+    const story = data.StoryObj[storyName]; 
+    if (story.hasOwnProperty('CurrentChapter')) delete story.CurrentChapter;
+    if (story.hasOwnProperty('currentSectionID')) delete story.currentSectionID;
+    if (!story.hasOwnProperty('currentChapter')) story.currentChapter = story.chapters[0];
+
+    story.chapters.forEach(ch=> {
+      if (ch.hasOwnProperty('CurrentSection')) {
+        delete ch.CurrentSection;
+
+      }
+      if (!ch.hasOwnProperty('currentSectionID') || !ch.currentSectionID) {
+        ch.currentSectionID = 'section1';
+
+      if (!ch.hasOwnProperty('isSeen')) {
+        ch.isSeen = false;
+        if (ch.isRead) ch.isSeen = true;
+
+      }
+
+      if (!ch.hasOwnProperty('sections')) currentChapter.sections = {};
+
+        
+    }
+    updateChapterObj(ch);
+    })
+    updateStoryObj(story);
+  })
+}

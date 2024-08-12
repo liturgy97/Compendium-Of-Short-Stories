@@ -4,7 +4,7 @@ loadPage = function() {
     prepareStory();
 
 const section1 = newSection(1);
-const row1 = storyRow(' ', 
+const row1 = storyRow('1', ' ', 
     
     `
 
@@ -84,21 +84,17 @@ const row1 = storyRow(' ',
 <p><span class="ELF-Elf">Elf:</span> &ldquo;Five hundred. Final offer.&rdquo;</p>
 
 
-${storyEndButton('Double It')}
+${storyEndButton('Double It', ()=>{showNav(); EarnAchievement("Founder");})}
 
 
 `);
 
 section1.appendChild(row1)
 
-document.getElementById("End-Chapter").addEventListener('click', ()=> {
-endChapter();
-showNav();
-EarnAchievement("Founder");
-});
 
-ssMoveTo();
+
 
 }
 
-loadPage();
+storyLoad();
+

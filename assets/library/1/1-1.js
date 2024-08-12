@@ -2,7 +2,7 @@
 loadPage = function() {
     prepareStory();
     const section1 = newSection(1);
-    const row1 = storyRow('INT. AFTERNOON <br> APARTMENT BUILDING 104', 
+    const row1 = storyRow('1', 'INT. AFTERNOON <br> APARTMENT BUILDING 104', 
 `
 
 <p>He paused outside the familiar door, its faded number 307 barely visible. Clearing his throat, he fished out his keys from his pocket, only to realize he no longer had the key to this door. He thought he'd never need it again. With a sigh, he rang the doorbell.</p>
@@ -68,20 +68,19 @@ a tight embrace. Jake felt a wave of comfort wash over him, something he hadn't 
 <p><span class="GMD-Bailey">&ldquo;It wasn&rsquo;t because of you.&rdquo;</span></p>
 <p><span class="GMD-Jake">&ldquo;Then why did you do it?&rdquo;</span></p>
 
-<p><a class="appendLink" href="#">Section 2 - Memories</a></p>
+${appendLink('Section 2 - Memories', 'section2')}
     
     `);
     section1.appendChild(row1)
     
     
-    const section2 = appendSection(2, '');
+    const section2 = newSection(2);
     
-    activateAppendLink(section1, section2,);
-    section2. innerHTML += `${storyWideImage('2')}`;
     
-const row2 = storyRow('Memories', 
+const row2 = storyRow('2', 'Memories', 
     
     `
+${storyImageNonAnimate(2)}
 <p>The room was silent, save for the occasional tick of the clock on the mantelpiece. Bailey glanced over at the empty armchair, once her husband&rsquo;s favorite spot, and felt a pang of guilt. The house felt hollow without his presence, yet she knew the emptiness had started long before he physically left.</p>
 <p>For years, Bailey had felt the walls closing in around her, her husband James&rsquo; stern gaze and controlling demeanor stifling her every move.</p>
 <p>He dictated what she wore, where she went, and who she spoke to. It was as if she lived in a cage, beautiful but suffocating.</p>
@@ -126,22 +125,18 @@ const row2 = storyRow('Memories',
 <p>Every holiday, every birthday slipped by in painful silence. Bailey sent messages, left voicemails, and even wrote letters, but Jake rarely responded. He would ghost her for long periods, only to eventually succumb to her persistent outreach. When he did respond, it was always cordially and cheerfully, joking and trying to lift his miserably cranky mother&rsquo;s spirits, but always cautiously and briefly, steering clear of her notorious mood swings. He knew his mother was emotionally unstable and craved opportunities to unleash her emotions, but he couldn&rsquo;t bear her emotional baggage on his shoulders.</p>
 <p>He would have avoided her entirely if he could, but he loved her too much, and he enjoyed their conversations when she was in a good mood. After a string of pleasant phone calls during last Christmas, he opened up to her. He shared his dissatisfactions and worries about his relationship, his problems at work, and how heavy life was beginning to feel. She, in turn, opened up to him, but while he spoke for twenty minutes, she lectured him for two hours. She compared his trivial troubles to her own, dictating how he should act&mdash;find a better girl, get a better job, learn to overcome his feelings.</p>
 <p>He listened as she pressed him down and emasculated him, not daring to hang up on her as she held this mental grip over him. Finally, he broke out in frustration, and they had their last fight.</p>
-${appendLink('Section 3 - Essence Replacement Therapy')}
+${appendLink('Section 3 - Essence Replacement Therapy', 'section3')}
 
     `);
     section2.appendChild(row2)
     
-    const section3 = appendSection(3, '');
+    const section3 = newSection(3);
     
-    activateAppendLink(section2, section3);
-    
-    
-    
-    const row3 = storyRow('Essence Replacement Therapy', 
+    const row3 = storyRow('3', 'Essence Replacement Therapy', 
     
     `
     
-${storyImage(3, fig='<span class="GMD-Bailey">Better than ever...</span>')}
+${storyImageNonAnimate(3, fig='<span class="GMD-Bailey">Better than ever...</span>')}
 
 <p><span class="GMD-Bailey">&ldquo;I was already seeing a therapist for a number of years now and she was supporting me in the idea, pushing me for it even. And then one day, I just did it.&rdquo;</span></p>
 <p><span class="GMD-Jake">&ldquo;Are things going well?&rdquo;</span></p>
@@ -158,17 +153,15 @@ ${storyImage(3, fig='<span class="GMD-Bailey">Better than ever...</span>')}
 <p><span class="GMD-Jake">&ldquo;Great!&rdquo; </span></p>
 <p>Bailey nodded, then poured herself another glass. Jake noticed she looked a bit attached.</p>
 <p><span class="GMD-Jake">&ldquo;Tell me more about it. How did it all go through.&rdquo; </span></p>
-<p>Bailey took a moment to collect herself then spilled all the details about her <a class="appendLink" href="#">transition.</a></p>
+<p>Bailey took a moment to collect herself then spilled all the details about her ${appendLinkInline('transition.', 'section4')}</p>
 
 
     `);
 
     section3.appendChild(row3)
     
-    const section4 = appendSection(4, '');
-    
-    activateAppendLink(section3, section4);
-    
+    const section4 = newSection(4);
+
     section4.className = "design-section"
     
     section4.innerHTML = `
@@ -371,14 +364,12 @@ ${storyImage(3, fig='<span class="GMD-Bailey">Better than ever...</span>')}
         <div class="timeline-date-container-right"><p class="timeline-date-right">July 22: Day 177 (Planned)</p></div>
         
     </div> 
-    <p style="margin-top: 5rem; font-size: 2rem"><a class="appendLink" href="#" >Seriously?</a></p>
+    <p style="margin-top: 5rem; font-size: 2rem">${appendLinkInline('Seriously?', 'section5')}</p>
     `;
 
-    const section5 = appendSection(5, '');
+    const section5 = newSection(5);
     
-    activateAppendLink(section4, section5);
-    
-    const row5 = storyRow(' ', 
+    const row5 = storyRow('4', ' ', 
 
  `
 
@@ -480,17 +471,16 @@ ${storyImage(3, fig='<span class="GMD-Bailey">Better than ever...</span>')}
            
 
 
-            <p><a class="appendLink" href="#">What a mess.</a></p>
+            ${appendLink('What a mess', 'section6')}
 
     
     `);
     section5.appendChild(row5)
 
-    const section6 = appendSection(6, '');
+    const section6 = newSection(6);
     
-    activateAppendLink(section5, section6);
     
-    const row6 = storyRow('INT. BATHROOM EVENING"', 
+    const row6 = storyRow('5', 'INT. BATHROOM EVENING"', 
     `
 <p>The faucet squeaked and Bailey dipped her head into the sink, letting the cold water drench her hair. Two minutes of icy clarity later, she rose and faced her reflection. Red eyes stared back,<span class="GMD-Bailey">"We are soooo very drunk right now, Jake,"</span> she slurred to herself. Her hand slid down, caressing the faint bruise on her thigh, right where Jake's fingers had dug in, trying to pry her open. Why did he want to see her cock so badly?</p>
 <p>She took her dress and underwear off and stood naked in front of the mirror, gazing at her her newly earned penis and testicles.</p>
@@ -500,19 +490,17 @@ ${storyImage(3, fig='<span class="GMD-Bailey">Better than ever...</span>')}
 <p>Staring at her red, watery eyes in the mirror, with her head heavy and her hair soaked wet, she whispered to herself.</p>
 <p><span class="GMD-Bailey">"We are soooo... very... drunk... right now."</span></p>
 
-
-            <p><a class="appendLink" href="#">20 minutes later</a></p>
+            ${appendLink('20 minutes later', 'section7')}
 
 
 
     `);
 
     section6.appendChild(row6)
-    const section7 = appendSection(7, '');
+    const section7 = newSection(7);
     
-    activateAppendLink(section6, section7);
     
-    const row7 = storyRow('INT. BEDROOM EVENING', 
+    const row7 = storyRow('6', 'INT. BEDROOM EVENING', 
     
     `
 <p>The door to Bailey's room opened with a creak. Jake was there, perched on the edge of Bailey's bed, his head in his hands, looking completely drunk and dizzy. Jake raised his head slowly. He might've not heard the door open but he smelled his mother's familiar lavendar soap as she walked into the room. She smelt fresh and clean. Wearing only a chemise with a towel wrapped around her waist, her face washed and clear of makeup, except for her lips being smeared with pink lipstick, she closed the door behind her and walked over to Jake at the edge of her bed. Shyly, she stood in front of him, and asked</p>
@@ -601,7 +589,7 @@ ${storyImage(3, fig='<span class="GMD-Bailey">Better than ever...</span>')}
 <p><span class="GMD-Bailey">"Ahhhh! Ah Ah Ah Ah Ahhhhh!"</span></p>
 <p>Bailey suddenly pulled herself away, Jake's teeth grazing against her earlobe as she got off his lap and stood up at the edge of the bed. A massive surge of heat circulating in her stomach and her crotch was so hot at this point, she knew she was on the edge of orgasm. And for the first time ever she felt her little cock tense up and she stood there to make sense of all those feelings going inside her until that heat dropped and collected at the base of her spine, flowing down through her testicles, then rising through her tiny penis. For a moment there she gazed at her penis anticipating the moment of orgasm. Her sensations heightened and built to a climax point at the base of her penis and then a full-body orgasm was released, and as Bailey shook and shivered to the orgasm, a thin stream of milky fluid leaked from her penis.</p>
 <video loop autoplay muted>
-        <source src="${baseImagesFolder}/11.mp4" data-animate-block type="video/mp4">
+        <source src="${baseImagesFolder}/11.webm" data-animate-block type="video/webm">
         Your browser does not support the video tag.
 </video>
 <p>She stood a full minute silent in awe of what she'd just experienced</p>
@@ -631,7 +619,7 @@ ${storyImage(3, fig='<span class="GMD-Bailey">Better than ever...</span>')}
            
 
 
-            <p><a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">To be continued</a></p>
+            ${storyEndButton('To be continued...')}
 
 
     `);
@@ -647,8 +635,19 @@ activateEndButton(section7);
 
 
 
-
-storyPostLoad();
-
+    setChapterIndex = ()=> {
+        currentChapterIndex.innerHTML= '';
+    
+        addToChapterIndex('Section 1', 'section1') 
+        addToChapterIndex('Section 2', 'section2') 
+        addToChapterIndex('Section 3', 'section3') 
+        addToChapterIndex('Section 4', 'section4') 
+        addToChapterIndex('Section 5', 'section5') 
+        addToChapterIndex('Section 6', 'section6') 
+        addToChapterIndex('Section 7', 'section7')    
+        }
+        
+    
+        storyLoad();
 
 

@@ -92,10 +92,7 @@ stories["Growing Mommy's Dick"]= {
           name: "Hardships Of Life",
           num : 1,
           wordCount: 8301,
-          isPatreon: false,
-          isComingSoon: false,
-          variants: {},
-          sections: [],
+          index: true,
       }, 
 
     ]
@@ -178,12 +175,14 @@ stories["Mr. Wolf"] = {
             name: "Perfume",
             num : 1,
             wordCount: 4425,
+            index: true,
         }, 
 
         {
           name: "Finally, something",
           num : 2,
           wordCount: 5798,
+          index: true,
       }, 
     ]
   
@@ -194,6 +193,9 @@ stories["Mr. Wolf"] = {
     num: 17,
     overview: "In a desperate attempt to revive a dying religion, 25-year old Alistair Everhart has been elected the Bishop of Sancta Celestia Cathedral, the last church in the world, due to his otherworldly talent in marketing and brand strategy. His first decree was to force nuns and pastorettes into wearing more revealing clothes to attract more customers of God.",
     severity: "D",
+    background: "white",
+    textColor: "black",
+    fontWeight: 400,
     genre: ["Religion", "Corruption", "Strategy"],
     characters: ["Alistair Everhart", "Pristine Rivers", "Father Gregory" ],
     chapters: [
@@ -219,6 +221,7 @@ stories["Mr. Wolf"] = {
             name: "God Bless Estrogen Pills",
             num: 1,
             wordCount: 191,
+            
         }, 
     ]
   
@@ -227,19 +230,39 @@ stories["Mr. Wolf"] = {
   
   stories["Protecting A Femboy"] = {
     num: 19,
-    overview: "A short story about two boys.",
+    overview: "A short story about two boys.",      
     severity: "D",
-    subtitle: "Coming Soon",
     background: "rgba(13.20, 149.59, 226.31, 0.14)",
-    genre: ["Exhibitionism", "Gay", "Voyeurism"],
+    genre: ["Exhibitionism", "Voyeurism", ],
     characters: ["Drew", "Damian", "Jaime"],
     chapters: [
         {
             name: "Jaime",
             num: 1,
             wordCount: 2028,
-            subtitle: "Coming Soon",
+            index: true,
         }, 
+
+        {
+          name: "Sexy Boy",
+          num: 2,
+          wordCount: 11127,
+          index: true,
+      }, 
+
+      {
+        name: "Cum Is Thicker Than Blood",
+        num: 3,
+        wordCount: 13267,
+        subtitle: "Coming Soon",
+    }, 
+
+    {
+      name: "The Arsonist",
+      num: 4,
+      wordCount: 0,
+      subtitle: "Coming Soon",
+  }, 
     ]
   
   
@@ -247,14 +270,14 @@ stories["Mr. Wolf"] = {
   
   stories["Hammer"] = {
     num: 20,
-    overview: "Overview unavailable.",
+    overview: "On my knees<br />In the dry puddle of my tears</br>On the floor<br/>His fingers pierce my scalp and his thumbs gouge my eyes",
     buttonStyle: "",
     severity: "B",
     background: '#f5f5ef',
     textColor: 'black',
     font: 'Space Grotesk',
     fontWeight: 400,
-    genre: ["", ],
+    genre: [ "Abuse", "Text Only",],
     characters: [],
     chapters: [
         {
@@ -277,11 +300,34 @@ stories["Mr. Wolf"] = {
     characters: [],
     chapters: [
         {
-            name: "The Hanging Man",
+            name: "Randomly Accessed Memories",
             num: 1,
             wordCount: 0,
             subtitle: "Coming Soon",
         }, 
+
+        {
+          name: "Heel Turn 2",
+          num: 2,
+          wordCount: 0,
+          subtitle: "Coming Soon",
+      }, 
+
+      {
+        name: "Battle Royale",
+        num: 3,
+        wordCount: 0,
+        subtitle: "Coming Soon",
+     }, 
+
+
+     {
+      name: "Abduction, Adoption, Praise",
+      num: 4,
+      wordCount: 0,
+      subtitle: "Coming Soon",
+   }, 
+
   
     ]
 

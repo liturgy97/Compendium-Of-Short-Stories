@@ -1,4 +1,10 @@
 
+function openStoryName(storyName) {
+
+    openStory(data.StoryObj[storyName]);
+}
+
+
 function openStory(story) {
     
   
@@ -57,7 +63,7 @@ function openStory(story) {
 
                         
                         <div id="trial-button-area" class="s-intro__more">
-                            <a id="intro-button" class="smoothscroll btn btn--stroke s-intro__more-btn" href="#section1">
+                            <a id="intro-button" class="smoothscroll btn btn--stroke s-intro__more-btn" href="#${chapter.currentSectionID}">
                                 ${chapter.name}
                             </a>
                         </div>	
@@ -100,6 +106,25 @@ function openStory(story) {
     const storyContent = document.createElement('section');
 
     storyContent.id = "story-content"
+
+    if (hasIndex()) {
+        console.log(true)
+        
+    const storyIndexTitle = document.createElement('div');
+    storyIndexTitle.className = 'row';
+    storyIndexTitle.innerHTML =`
+
+                    <div class="lg-12 column">
+                        <h3 class='index-title'>Index</h3>
+                    </div>`
+    container.appendChild(storyIndexTitle);
+    currentChapterIndex = document.createElement('div');
+    currentChapterIndex.className='row';
+    currentChapterIndex.id='chapter-index';
+
+    container.appendChild(currentChapterIndex);
+    }
+
 
     container.appendChild(storyContent);
   

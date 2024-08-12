@@ -3,7 +3,7 @@ loadPage = function() {
     prepareStory();
 
 const section1 = newSection(1);
-const row1 = storyRow('INT. LIVING ROOM - EVENING', 
+const row1 = storyRow('1', 'INT. LIVING ROOM - EVENING', 
     
     `
 
@@ -89,35 +89,11 @@ const row1 = storyRow('INT. LIVING ROOM - EVENING',
 <p class="story-dialogue"><span class="DIS-Birdie">BIRDIE</span><br>Teddy says thanks fo' killin' 'em all muddafuckin' monstaz!</p>
 <p>Fuck that teddy bear.</p>
 
-<a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">
-To be continued...</a>
-</div>`);
+${storyEndButton('To be continued...')}
+`);
 
 section1.appendChild(row1)
 }
 
 
-loadPage();
-
-activateEndButton();
-
-
-// loadPage = function() {
-
-//     prepareStory();
-    
-//     const section1 = addRowSection(1, 'INT. LIVING ROOM - EVENING', "mode1");
-    
-//     section1.innerHTML += `
-//     <div id="section1-content" class="column lg-8 md-12 margin-top-lg-70 margin-top-md-0">
-    
-//     <a id="End-Chapter" class="btn btn--primary custom-story-button" href="#">
-//     The End</a>
-//     </div>`;
-    
-//     }
-    
-    
-//     loadPage();
-    
-//     activateEndButton();
+storyLoad();

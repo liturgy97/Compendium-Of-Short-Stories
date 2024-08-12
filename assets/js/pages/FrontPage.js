@@ -239,6 +239,8 @@ const startGame = function() {
 
     devLoad();
 
+    saveCleanup();
+
   }
 
 

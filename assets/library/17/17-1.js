@@ -3,7 +3,7 @@ loadPage = function() {
     
     const section1 = newSection(1);
     section1.style.paddingTop = '6.4rem';
-    const row1a = storyRow('fullRow', 
+    const row1a = storyRow('1a', 'fullRow', 
     `
         ${storyLeftImage(0)}
 <p>In the heart of <strong>Rome</strong>, among the charming chaos of ice cream parlors and ancient ruins, lay the grandeur of <strong><em>Sancta Celestia Cathedral</em></strong>. Within its consecrated halls, hymns intertwined with the fragrance of incense and the quiet voices of its few remaining faithful.</p>
@@ -11,10 +11,10 @@ loadPage = function() {
 <p>Sancta Celestia stood as the final church on Earth, a symbol of Christianity's waning influence. Once vibrant, now it resonates with the prayers of just a few thousand believers, the last remaining faithful in the entire world, their numbers dwindling with each passing year. Its majestic architecture and historic artworks reminisced of an era when milions worshipped with its walls. Today, it stands as a reminder of a faith in decline, yet still holding onto the echoes of its storied past.</p>
 `)
 
-const row1b = storyRow('fullRow', 
+const row1b = storyRow('1b', 'fullRow', 
     `<p>Amidst the sea of useless cardinals and ministers, one figure stood out: <span class="N-Pristine">Pristine Rivers</span>. At just twenty-four, she exuded wisdom beyond her years, a humility that charmed everyone, and a faith that could light up a room&mdash;figuratively speaking, of course, though there were those who swore the sanctuary seemed a bit brighter whenever she spoke.</p>`);
 
-const row1c = storyRow('fullRow', 
+const row1c = storyRow('1c', 'fullRow', 
     `
 ${storyRightImage(1)}
 <p><span class="N-Pristine">Pristine</span> was a woman unlike any other. She possessed the prestige of a seasoned theologian and the charm of a playful cherub. With a twinkle in her eye and a gift for witty banter, she was both revered and adored by the congregation.</p>
@@ -22,7 +22,7 @@ ${storyRightImage(1)}
 <p>It was <span class="N-Pristine">Pastorette Pristine</span> who called for the journey of change. She swore to kick the Vatican's doors open, inviting believers from all walks of life. Under her guidance,<em><strong> Sancta Celestia</strong></em> will undergo a transformation unlike any other. Gone will be the days of somber sermons and stoic silence; in their place will stand a vibrant community filled with laughter, song, and the occasional game of Vatican Bingo.</p>
 `);
 
-const row1d = storyRow('fullRow', 
+const row1d = storyRow('1d', 'fullRow', 
     `
 <p>"We need to embrace fun!" <span class="N-Pristine">Reverendess Pristine</span> declared, waving her old Bible like a flag of innovation. "We must bring the flock back to the pews!"</p>
 ${storyLeftImage(2)}
@@ -32,14 +32,14 @@ ${storyLeftImage(2)}
 
 `);
 
-const row1e = storyRow('fullRow', 
+const row1e = storyRow('1e', 'fullRow', 
     `
 ${storyRightImage(3)}
 <p>Slowly but surely, the wounds of the Church started to heal. The once-mysterious Vatican now stood as a symbol of hope and renewal, all thanks to one young woman's unholy approach to realising miracles. The Vatican suddenly buzzed with a fresh energy. From the high offices to the small parishes, <span class="N-Pristine">Pristine</span>'s message of love and inclusion touched the hearts of hundreds of sinners in the heart of Rome, reigniting their passion for <span style="color: #B22222;">Christ</span>'s teachings.</p>
 <p>And in a moment of sheer audacity, <span class="N-Pristine">Pristine</span> pleaded for the momentum to be maintained. She inisisted on the unification of the three denominations into a "Trinity of Faiths". A new pontiff must be appointed, a spiritual guide, a chosen conduit to the divine, to lead them Christianity to its former glory. With a playful wink and a flourish of her robe, announced her readiness to assume the mantle of leadership, her laughter echoing through the rafters as she promised to lead with equal parts wisdom and whimsy.</p>
     `);
 
-const row1f = storyRow('centered8Row', 
+const row1f = storyRow('1f', 'centered8Row', 
 `
 
 
@@ -55,11 +55,8 @@ section1.appendChild(row1c);
 section1.appendChild(row1d);
 section1.appendChild(row1e);
 section1.appendChild(row1f);
-activateEndButton();
+
 
 }
-storyPostLoad();
 
-
-// const row1c = storyRow('fullRow', 
-// ``);
+storyLoad();

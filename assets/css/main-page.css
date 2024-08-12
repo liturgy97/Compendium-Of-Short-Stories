@@ -361,6 +361,14 @@ div, section {
     display: flex;
   } 
 
+  .unlockedChapter:hover .Chapternum {
+    display: none;
+  } 
+
+  .unlockedChapter:hover .StoryPlayIcon {
+    display: flex;
+  } 
+
   .story-button  * {
     cursor: default;
   }

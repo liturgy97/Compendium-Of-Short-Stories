@@ -62,12 +62,13 @@ class Story {
         if (this.num == 1) {
         this.isUnlocked = true;
         }
+        this.isSeen = false;
         this.isRead = false;
         this.isComplete = false;
         
         
 
-        this.CurrentSection = "section1";
+        this.currentSection = "section1";
         
     }
   }

@@ -23,7 +23,7 @@ function loadStory(storyName) {
           <div class="StorySubtitle">${story.chapters.length} chapter${(story.chapters.length > 1) ? 's' : ''} </div>
           <div class="Ellipse"></div>
           <div class="StorySubtitle">
-          ${(storydur > 3599) ? `${Math.floor(storydur / 3600)} hr ${(storydur/60) % 60} min` : `${Math.floor(storydur / 60)} min ${storydur % 60} sec`}
+          ${(storydur > 3599) ? `${Math.floor(storydur / 3600)} hr ${Math.floor((storydur/60) % 60)} min` : `${Math.floor(storydur / 60)} min ${Math.floor(storydur % 60)} sec`}
           </div>
           ${getStorySubtitle(story)? 
             `<div class="Ellipse removable-ellipse-1" ></div>
@@ -209,10 +209,15 @@ function loadStory(storyName) {
       const chdur = getChapterDuration(chapter);
       const button = document.createElement('div');
       button.className = 'Chapter';
+      if (chapter.isUnlocked) button.className = 'Chapter unlockedChapter';
       button.innerHTML = `
             <div class="chapter-row-left-side">
-              <div class="Chapternum">${chapter.num}</div>
-              <div class="Chaptername">${chapter.name}</div>
+              <div class="position-relative gray14 Satoshi font-weight-400 flex-centered padless transition03s" style="font-size: 1.6rem; width: 4.2rem; height: 4.2rem">
+              <span class="Chapternum position-absolute-centered transition03s">${chapter.num}</span>
+              <svg style="width:1.5rem; height: 1.6rem;" class="StoryPlayIcon position-absolute-centered transition03s" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="transition03s" d="M13.094 6.52922C14.3508 7.25486 14.3508 9.06895 13.094 9.79459L3.19636 15.509C1.93952 16.2346 0.368469 15.3276 0.368469 13.8763L0.36847 2.44751C0.36847 0.996234 1.93952 0.0891892 3.19636 0.814827L13.094 6.52922Z" fill="var(--color-2-light)"/>
+              </svg></div>
+              <div class="Chaptername flex-centered">${chapter.name}</div>
             
             </div>
 
@@ -256,6 +261,12 @@ function loadStory(storyName) {
             
             
         `;
+        if (chapter.isUnlocked) button.addEventListener('click', ()=>{
+          story.currentChapter = chapter; 
+          updateChapterObj(chapter);
+          openStory(story);
+
+        });
         ChapterContainer.appendChild(button);
     };
 

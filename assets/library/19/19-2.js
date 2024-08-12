@@ -487,19 +487,25 @@ ${storyImageNonAnimate('jaime_fuck1/j5')}
 <p><span class="PAF-Jaime">JAIME</span><br>Holy shit, Drew. You&rsquo;re an artist? Get outta here!</p>
 
 <p>She&nbsp;was flipping through his notebook,&nbsp;eyes twinkling like someone who&rsquo;s just been told a secret.</p>
+${storyImage('jaime_fuck1/j2')}
 <p><span class="PAF-Jaime">JAIME</span><br>Damn, I never thought you were so cool, Drew. It&rsquo;s like I&rsquo;m just discovering you now.</p>
 <p>They once got into this back-and-forth about their opinions about avant-garde dance. Drew&rsquo;s not one to back down, and when he won the debate&nbsp;and promised to take her to a live show to prove his point, she was practically purring, teasing him with a laugh that&rsquo;s all sex and no innocence.&nbsp;</p>
 ${storyImage('jaime_fuck1/j4')}
 <p><span class="PAF-Jaime">JAIME</span><br>Wow, he&rsquo;s serious! Where has this Drew been my whole life?</p>
 <p>He would passionately rant about Mom and Dad in front of her. Jaime always held the thought he was laidback, but the more they talke, the more he let his guard down, showing her that edge, the part of him that&rsquo;s got teeth.</p>
 <p><span class="PAF-Jaime">JAIME</span><br>Look at you all riled up now. You talk about how disgusting they are, but I bet you&rsquo;re just as dirty in bed.</p>
+${storyImage('jaime_fuck1/jx5')}
 <p>That&rsquo;s her, all fire and gasoline when Mom and Dad were brought up.</p>
 <p><span class="PAF-Drew">Drew</span><br>No, I&rsquo;m a lover.</p>
-${storyImage('jaime_fuck1/j3')}
+
+${storyImage('jaime_fuck1/jx1')}
 <p><span class="PAF-Jaime">JAIME</span><br>Liar. You say that, but deep down, you know you want to ravage women.</p>
+${storyImage('jaime_fuck1/jx2')}
 <p>The sexual tension between them became unbearable. They would often lock eyes, to the sound of Mom and Dad&rsquo;s filthy moans and grunts, silently judging them.</p>
 <p>She would tease him, move sensually around him, in her way that made his blood boil. And when his gaze lingered on her lips or dropped to her hips, she would scold him with nothing but a look.</p>
+${storyImage('jaime_fuck1/jx4')}
 <p>Every time their hands brushed, every accidental touch on dinner sent a shock through him. But she feels it too, he sees it in her eyes.</p>
+${storyImage('jaime_fuck1/jx3')}
 <p>They had many unspoken conversations, and that was Drew&rsquo;s favorite kind. He had never felt so intimate with someone doing things so simple. He had never felt so understood. Because he had never been in love before.</p>
 <p>He worshipped her in his mind. He&rsquo;d obsess about her.</p>
 <p>He confronted Mom and Dad and demanded they stop their incessant fucking in front of them. Jaime would treat him like a hero. When he told her they&rsquo;d finally consider concealing themselves from them while having sex, Jaime practically jumped with Joy.</p>

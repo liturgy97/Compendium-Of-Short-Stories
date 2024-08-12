@@ -230,7 +230,7 @@ stories["Mr. Wolf"] = {
   
   stories["Protecting A Femboy"] = {
     num: 19,
-    overview: "A short story about two boys.",      
+    overview: "A short story about two boys.<br>(Note: Chapter 3 hasn't been uploaded yet.)",      
     severity: "D",
     background: "rgba(13.20, 149.59, 226.31, 0.14)",
     genre: ["Exhibitionism", "Voyeurism", ],

@@ -184,7 +184,7 @@ function saveCleanup() {
 
       }
 
-      if (!ch.hasOwnProperty('sections')) currentChapter.sections = {};
+      if (!ch.hasOwnProperty('sections')) ch.sections = {};
 
         
     }

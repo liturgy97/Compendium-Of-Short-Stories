@@ -33,6 +33,14 @@ class Story {
       this.isSeen = false;
       this.isRead = false;
       this.isComplete = false;
+
+      this.completionReq = null;
+      if (origin.hasOwnProperty('paths')) {
+        this.completionReq = {};
+        for(i=0; i<paths.length; i++) {
+          this.completionReq[paths[i]] = false;
+        }
+      } 
   
       this.inProgress= false;
 
@@ -79,26 +87,11 @@ class Story {
       
       this.name = name;
       var origin= achievements[name];
-      
       this.num = origin.num;
-      this.filename= origin.filename;
-
-      this.preDescription = origin.preDescription;
-      this.postDescription = origin.postDescription;
-      this.requirement = origin.requirement;
-      this.rarity = origin.rarity;
-      this.isHidden = origin.hidden;
-      this.hasVariants = false;
-      this.variants = origin.variants;
-      if (this.variants) this.hasVariants = true;
-
-
-      this.date = null
-      this.dateStr = "";
+      this.date = null;
       this.isEarned = false;
-      this.variantEarned = {};
-      this.isPatreon= false;
-      this.legacy= false;
+      this.isHidden= false;
+      if (origin.hasOwnProperty('isHidden')) this.isHidden= origin.isHidden;
 
     }
 

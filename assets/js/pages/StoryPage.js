@@ -20,6 +20,8 @@ function openStory(story) {
   
     var chapter = story.currentChapter;
 
+    // if (!chapter.hasOwnProperty('currentSectionID') || !chapter.currentSectionID) chapter.currentSectionID = 'section1';
+
     if (!chapter) {
       story.currentChapter = story.chapters[0];
       chapter = story.currentChapter;
@@ -108,7 +110,6 @@ function openStory(story) {
     storyContent.id = "story-content"
 
     if (hasIndex()) {
-        console.log(true)
         
     const storyIndexTitle = document.createElement('div');
     storyIndexTitle.className = 'row';

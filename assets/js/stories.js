@@ -66,11 +66,7 @@ stories["Elf"]= {
           name: "1001 Experimental Stories",
           num : 1,
           wordCount: 1059,
-          isPatreon: false,
-          isComingSoon: false,
-          variants: {},
-          sections: [],
-          subtitle: "Coming Soon",
+
       }, 
 
     ]
@@ -115,11 +111,7 @@ stories["Mr. Wolf"] = {
             name: "Girl",
             num : 1,
             wordCount: 248,
-            isPatreon: false,
-            isComingSoon: false,
-            variants: {},
-            sections: [],
-            subtitle: "Coming Soon",
+
         }, 
   
       ]
@@ -230,7 +222,7 @@ stories["Mr. Wolf"] = {
   
   stories["Protecting A Femboy"] = {
     num: 19,
-    overview: "A short story about two boys.<br>(Note: Chapter 3 hasn't been uploaded yet.)",      
+    overview: "A short story about two boys.",      
     severity: "D",
     background: "rgba(13.20, 149.59, 226.31, 0.14)",
     genre: ["Exhibitionism", "Voyeurism", ],
@@ -253,8 +245,9 @@ stories["Mr. Wolf"] = {
       {
         name: "Cum Is Thicker Than Blood",
         num: 3,
-        wordCount: 13267,
-        subtitle: "Coming Soon",
+        wordCount: 16602,
+        index: true,
+        paths: ['blood_path', 'junkies_path']
     }, 
 
     {
@@ -292,7 +285,7 @@ stories["Mr. Wolf"] = {
 
   stories["The Hanging Man"] = {
     num: 21,
-    overview: "You need to read 9 stories to unlock this story.",
+    overview: "Story production on hold.",
     severity: "B",
     subtitle: "Coming Soon",
     NTR: "Exclusive",
@@ -307,7 +300,7 @@ stories["Mr. Wolf"] = {
         }, 
 
         {
-          name: "Heel Turn 2",
+          name: "Rotpunkt",
           num: 2,
           wordCount: 0,
           subtitle: "Coming Soon",
@@ -349,12 +342,12 @@ function initStories() {
 function initStory(storyName) {
 
     data.StoryObj[storyName]= new Story(storyName);
-    if (storyName == "Elf") console.log(new Story("Growing Mommy's Dick"))
 
 
 }
 
 function checkForUpdates() {
+  checkForNewAchievements();
   storyNames.forEach(storyName => {
     if (!data.StoryObj[storyName]) {
       initStory(storyName);
@@ -362,15 +355,19 @@ function checkForUpdates() {
   // check for errors, reset stroy
   if (data.StoryObj[storyName].chapters.length > stories[storyName].chapters.length) initStory(storyName);
   const story = data.StoryObj[storyName];
-  if (!story.hasOwnProperty('vars')) story.vars = {};
-  for(let i =0; i< stories[story.name].chapters.length; i++) {
+  const current_total_chapters_num = stories[story.name].chapters.length
+  for(let i =0; i< current_total_chapters_num; i++) {
     const chapter = story.chapters[i];
-    if (!chapter) {
+    if (i+1 > story.chapters.length) {
       story.chapters.push(new Chapter(story.name, stories[story.name].chapters[i]));
+      story.isSeen = false;
+      story.isRead = false;
+      story.isComplete = false;
+
     } else {
       
-      const chapterOrigin = stories[story.name].chapters[0];
-      if (chapter.subtitle == "Comig Soon" && (!chapterOrigin.hasOwnProperty('subtitle') || chapterOrigin.subitle!="Coming Soon")) {
+      const chapterOrigin = getChapterOrigin(chapter);
+      if (chapter.subtitle == "Coming Soon" && (!chapterOrigin.hasOwnProperty('subtitle') || chapterOrigin.subitle!="Coming Soon")) {
         chapter = new Chapter(story.name, chapterOrigin);
         console.log("New Chapter Added, ", chapter)
         story.chapters[chapter.num] = chapter;

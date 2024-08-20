@@ -1,3 +1,6 @@
+const emptyFuncStr='()=>{}'
+
+
 function readStories() {
     var arr = [];
     storyNames.forEach(storyName => {
@@ -86,7 +89,9 @@ function recommendedStories() {
 function visibleAchievements() {
     var arr= [];
     achievementNames.forEach(ach=> {
-        if (!data.AchievementObj[ach].isHidden) arr.push(ach)
+        if (!data.AchievementObj[ach].isHidden) {
+            arr.push(ach)
+        } 
     })
 
     return arr;
@@ -110,6 +115,12 @@ function getChapterOrigin(datach) {
 function getChapterDuration(datach) {
     
     return wordCountToDuration(getChapterOrigin(datach).wordCount)
+  }
+
+  function getChapterSubtitle(datach) {
+    const org = getChapterOrigin(datach)
+    if (org.hasOwnProperty('subtitle')) return org.subtitle;
+    return ''
   }
 
 
@@ -273,6 +284,12 @@ function centered8RowContentClass() {
     return 'column lg-8 md-12 margin-sides-auto margin-top-lg-70 margin-top-md-0';
 }
 
+function storyPart(partID, innerText) {
+parts[partID] = innerText;
+return `<div id='${partID}'>${innerText}</div>`;
+
+}
+
 
 function storyRow(rowID, headerText=null, innerText) {
     const row= document.createElement('div')
@@ -320,6 +337,7 @@ function prepareStory() {
     sections = {};
     sectionsList = [];
     rows = {};
+    parts = {};
     const container = getContainer('story-content');
 
     
@@ -360,8 +378,8 @@ function menu(container, choiceList, func) {
     animateOnScrollStory();
 }
 
-function storyWideImage(filename, animate=true) {
-    return `<img src="${baseImagesFolder}/${filename}.jpg" class="lg-12" ${animate? `data-animate-block` : ``} >`;
+function storyWideImage(filename, animate=true,  extension='jpg') {
+    return `<img src="${baseImagesFolder}/${filename}.${extension}" class="lg-12" ${animate? `data-animate-block` : ``} >`;
 }
 
 function storyLeftImage(filename, animate=true) {
@@ -388,8 +406,8 @@ function showStoryIntro() {
 function endChapter(chapter=currentChapter) {
     
     chapter.isRead = true;
-    chapter.currentSection = 'section1';
-    chapter.sectionPath= [];
+    chapter.currentSectionID = 'section1';
+    currentChapter.currentSectionID = 'section1';
     updateChapterObj(chapter);
     checkChapterCompletion();
 
@@ -400,6 +418,10 @@ function endChapter(chapter=currentChapter) {
         
         switchToNextChapter(chapter);
     } else {
+
+        checkStoryCompletion();
+        story.currentChapter = story.chapters[0]
+
         switchToPage("MainPage");
     }
     
@@ -425,22 +447,33 @@ function getStoryOfChapter(chapter=currentChapter) {
 }
 
 function checkChapterCompletion(chapter=currentChapter) {
-    if (chapter.isRead) {
+    var x= true;
+
+    if (chapter.hasOwnProperty('completionReq')) {
+        for (let key in chapter.competionReq) {
+            if (!chapter.competionReq[key]) x = false;
+        }
+    }
+    if (chapter.isRead && x) {
         chapter.isComplete = true;
     }
     updateChapterObj();
-    checkStoryCompletion();
+    
 }
 
 function checkStoryCompletion(story=currentStory) {
+
     var read = true;
     var complete = true;
     story.chapters.forEach(chapter => {
-        if(!chapter.isRead) read = false;
+        if (isChapterAvailable(chapter)) {
+            if(!chapter.isRead) read = false;
         if(!chapter.isComplete) complete = false;
+        }
+        
     })
     if (read) {
-        if (!story.isRead) story.currentChapter = story.chapters[0]
+       
         story.isRead = true;
     } story.isRead = true;
     if (complete) {
@@ -454,9 +487,9 @@ function checkStoryCompletion(story=currentStory) {
 }
 
 function isChapterAvailable(chapter=currentChapter) {
-    const origin = stories[chapter.storyName].chapters;
+    const origin = getChapterOrigin(chapter);
     var subtitle = "";
-    if(origin[chapter.num-1].hasOwnProperty('subtitle')) subtitle = origin[chapter.num-1].subtitle;
+    if(origin.hasOwnProperty('subtitle')) subtitle = getChapterSubtitle(chapter);
     if (subtitle != 'Coming Soon' && subtitle != 'Patreon exclusive') return true;
     return false;
 }
@@ -486,43 +519,26 @@ function activateEndButton(container=currentContainer) {
     animateOnScrollStory();
 }
 
-function loadSectionPath() {
-    if (!currentChapter.hasOwnProperty('sectionPath') || currentChapter.sectionPath.length == 0) {
-        console.log()
-        currentChapter.sectionPath = ['section1'];
-        
-    } else {
-        for (let i=0; i < currentChapter.sectionPath.length; i++) {
-            const section = currentContainer.querySelector('#' + currentChapter.sectionPath[i])
-            if (!section) console.log('#' + currentChapter.sectionPath[i] + " was not found.")
-            section.style.display="";
-            if (i < currentChapter.sectionPath.length - 1) {
-                section.querySelectorAll('.appendLink').forEach(link=>{
-                    link.style.display="none";
-                })
-            }
-       
-        };
-
-    }
-    document.getElementById("intro-button").href = "#" + currentChapter.sectionPath[currentChapter.sectionPath.length-1];
-}
 
 function changeScenery(scenery) {
     currentScenery = scenery;
     return currentScenery;
 }
 
-function appendLink(text, jumpedtosectionid, func=()=>{}) {
-    return `<p><a class="appendLink" href="#" onclick="switchToSection('${jumpedtosectionid}'); ${func}">${text}</a></p>`;
+function appendLink(text, jumpedtosectionid, func=()=>{}, delayedFunc=()=>{}) {
+    return `<p><a class="appendLink" href="#" onclick="${func}; switchToSection('${jumpedtosectionid}'); ${delayedFunc}">${text}</a></p>`;
 }
 
-function appendLinkInline(text, jumpedtosectionid, func=()=>{}) {
-    return `<a class="appendLink" href="#" onclick="switchToSection('${jumpedtosectionid}'); ${func}">${text}</a>`;
+function appendLinkInline(text, jumpedtosectionid, func=()=>{}, delayedFunc=()=>{}) {
+    return `<a class="appendLink" href="#" onclick=" ${func}; switchToSection('${jumpedtosectionid}'); ${delayedFunc}">${text}</a>`;
 }
 
-function appendLinkRow(text, jumpedtoRowID, isSwitch=false) {
-    return `<p><a class="appendLink" href="#" onclick="switchToRow('${jumpedtoRowID}', ${isSwitch})">${text}</a></p>`;
+function appendLinkRow(text, jumpedtoRowID, isSwitch=false, func=()=>{}, id='', delayedFunc=()=>{}) {
+    return `<p><a ${id? 'id="'+id+'"' : ''} class="appendLink" href="#" onclick="${func}; switchToRow('${jumpedtoRowID}', ${isSwitch}); ${delayedFunc}">${text}</a></p>`;
+}
+
+function appendLinkRowInline(text, jumpedtoRowID, isSwitch=false, func=()=>{}, delayedFunc=()=>{}) {
+    return `<a class="appendLink" href="#" onclick="${func}; switchToRow('${jumpedtoRowID}', ${isSwitch}); ${delayedFunc}">${text}</a>`;
 }
 
 function switchToSection(sectionID) {
@@ -540,6 +556,7 @@ function switchToSection(sectionID) {
             currentChapter.sections['section1'] = true;
         }
         currentChapter.sections[sectionID] = true;
+        if(sections[sectionID].querySelector('#audio')) playStoryAudio();
         setChapterIndex();
         updateChapterObj();
         ssMoveTo();
@@ -550,6 +567,7 @@ function switchToSection(sectionID) {
 
 }
 
+
 function switchToRow(rowID, isSwitch=false) {
     if (!currentChapter.currentSectionID) console.log(currentChapter.currentSectionID)
     const container=document.getElementById(currentChapter.currentSectionID);
@@ -557,21 +575,25 @@ function switchToRow(rowID, isSwitch=false) {
          
         fadeTransition(document.getElementById('MainSection'), timeout=300, func =()=> {
             clearNode(container); 
-             
+            
             container.appendChild(rows[rowID])
             ssMoveTo();
             animateOnScrollStory();
             moveToID(rowID)  
+            if(rows[rowID].querySelector('#audio')) playStoryAudio();
             
 
     })}
 
     else {
         container.appendChild(rows[rowID])
+        rows[rowID].innerHTML = rows[rowID].innerHTML;
         ssMoveTo();
         animateOnScrollStory();
-        moveToID(row.id)
+        moveToID(rowID)
+        if(rows[rowID].querySelector('#audio')) playStoryAudio();
     }
+
         
         
 
@@ -580,54 +602,6 @@ function switchToRow(rowID, isSwitch=false) {
 
 }
 
-function activateAppendLink(section1, section2, id=null) {
-    var link = section1.querySelector('.appendLink');
-    if (id) link = section1.querySelector('#' + id);
-    if (!currentChapter.hasOwnProperty('sectionPath') || currentChapter.sectionPath.length == 0) 
-        {currentChapter.sectionPath = ['section1'];
-        console.log(currentChapter.sectionPath);
-        }
-    
-    link.addEventListener('click', ()=> {
-
-        if (Array.isArray(section2)) {
-            section2.forEach(i=> {
-                i.style.display= "";
-                currentChapter.sectionPath.push(i.id);
-            })
-            moveToID(section2[0].id);
-
-            
-        } else {
-            section2.style.display = "";
-            currentChapter.sectionPath.push(section2.id)
-            moveToID(section2.id);
-            
-        }
-
-        if (switchToSection) {
-            const container=document.getElementById('MainSection')
-            console.log('switching to', section2.id, 'and hiding', section1.id)
-            container.style.opacity = 0;
-            hideStoryIntro();
-            hideNode(section1);
-            clearNode(section1);
-            moveToIDInstantly("top")
-            setTimeout(()=> {container.style.opacity = 1;}, 500)
-        }
-        
-              
-               
-            
-        
-        updateChapterObj();
-        console.log(currentChapter.sectionPath)
-        console.log(data.StoryObj[currentStory.name].chapters[currentChapter.num-1].sectionPath)
-        moveToID(section2.id);
-        link.remove();
-    })
-
-}   
 
 
 function newSection(id) {
@@ -695,6 +669,21 @@ function storyVideo(src, isanimate= true, iscontrols= true, isloop= false, isaut
     </video>`;
 }
 
+function storyAudio(src, id='audio', isLoop=true) {
+    return `
+    <audio id="${id}" src="${baseImagesFolder}/${src}.mp3" ${isLoop? 'loop' : ''}></audio>
+    `;
+    
+}
+
+function storyVideoCenter(src, isanimate= true, iscontrols= true, isloop= false, isautoplay= false) {
+    return `
+    <video class="story-vid portrait-center"  ${iscontrols? `controls` : ``} ${isloop? `loop` : ``} ${isautoplay? `autoplay` : ``} ${isanimate? `data-animate-block` : ``}>
+        <source src="${baseImagesFolder}/${src}.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>`;
+}
+
 
 
 function nextChapter(chapter=currentChapter) {
@@ -707,14 +696,13 @@ function nextChapter(chapter=currentChapter) {
 }
 
 function storyEndButton(text='The End', func=()=>{}) {
-    return `<a id="End-Chapter" class="btn btn--primary custom-story-button" href="#" onclick="endChapter(); ${func()}">
+    return `<a id="End-Chapter" class="btn btn--primary custom-story-button" href="#" onclick="${func}; endChapter()">
     ${text}</a>`
 }
 
 function storyPostLoad() {
     loadPage();
 
-    loadSectionPath();
 
     ssMoveTo();
 
@@ -755,7 +743,7 @@ function addToChapterIndex(sectionName, linkedSectionID, func=()=>{}) {
     var unlocked = false;
 
     if (!currentChapter.hasOwnProperty('sections')) currentChapter.sections = {'section1' : true};
-
+    currentChapter.sections['section1'] = true;
     if (linkedSectionID in currentChapter.sections) {
         unlocked = currentChapter.sections[linkedSectionID];
     } else {
@@ -767,7 +755,8 @@ function addToChapterIndex(sectionName, linkedSectionID, func=()=>{}) {
 
 
     if (unlocked && currentChapter.currentSectionID != linkedSectionID) {
-       currentChapterIndex.innerHTML+=    `<div class="lg-3 tab-6 mob-12 column">
+        
+       currentChapterIndex.innerHTML+=    `<div class="lg-3 tab-6 mob-6 column">
             <p id='index-${linkedSectionID}'><a class="appendLink" href="#" onclick="switchToSection('${linkedSectionID}'); ${func}">${sectionName}</a></p>
 
         </div>`; 
@@ -775,7 +764,7 @@ function addToChapterIndex(sectionName, linkedSectionID, func=()=>{}) {
     else {
         var x = '';
         if (currentChapter.currentSectionID == linkedSectionID) x= 'style="color : var(--color-1);"'
-        currentChapterIndex.innerHTML+=    `<div class="lg-3 tab-6 mob-12 column">
+        currentChapterIndex.innerHTML+=    `<div class="lg-3 tab-6 mob-6 column">
            <p id='index-${linkedSectionID}' ${x}>${sectionName} </p>
 
         </div>`; 
@@ -790,4 +779,39 @@ function hasIndex(chapter=currentChapter) {
     const chOrigin = getChapterOrigin(currentChapter);
     if (chOrigin.hasOwnProperty('index') && chOrigin.index == true) return true;
     return false;
+}
+
+function hideAppendLinksInID(id) {
+    document.getElementById(id).querySelectorAll('.appendLink').forEach(li=>{
+        hideNode(li);
+    })
+}
+
+function setPart(boolVal, partID, rowID) {
+        const textDiv = rows[rowID].querySelector('#'+ partID);
+        if (boolVal) {
+            textDiv.innerHTML = parts[partID];
+        } else {
+            textDiv.innerHTML = ''
+        }
+       
+}
+
+function reSetChapterIndex() {
+
+
+currentChapterIndex.innerHTML='';
+
+}
+    
+function endPath(pathName) {
+    if (currentChapter.hasOwnProperty('completionReq')) {
+        currentChapter.completionReq[pathName] = true;
+        updateChapterObj();
+    }
+}
+function playStoryAudio() {
+    currentAudioNode = document.getElementById('audio')
+    
+    playAudio();
 }

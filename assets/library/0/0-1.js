@@ -84,7 +84,11 @@ const row1 = storyRow('1', ' ',
 <p><span class="ELF-Elf">Elf:</span> &ldquo;Five hundred. Final offer.&rdquo;</p>
 
 
-${storyEndButton('Double It', ()=>{showNav(); EarnAchievement("Founder");})}
+${storyEndButton('Double It', `end1()`)}
+
+
+
+
 
 
 `);
@@ -98,3 +102,7 @@ section1.appendChild(row1)
 
 storyLoad();
 
+function end1() {
+    showNav(); 
+    earnAchievement("Founder");
+}

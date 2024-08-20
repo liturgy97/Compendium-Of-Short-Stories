@@ -204,7 +204,9 @@ const MonthStr = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
 
 function getDateStr(dateObj) {
 
-    const currentDate = dateObj;
+    var currentDate = dateObj;
+
+    if ((typeof currentDate === "string")) currentDate = new Date(currentDate)
 
     const year = currentDate.getFullYear();
     const month = currentDate.getMonth();
@@ -242,24 +244,14 @@ return formattedTime;
 
 }
 
-function EarnAchievement(name, variantName=null) {
+function earnAchievement(name) {
     if (name in data.AchievementObj) {
-        const obj = data.AchievementObj[name];
+        const obj = data.AchievementObj[name]; 
+        if (getAchievementVariant(name) && isAchievementEarned(getAchievementVariant(name))) return;
         if (!obj.isEarned) {
             obj.isEarned = true;
+            obj.isHidden = false;
             obj.date = new Date();
-            obj.dateStr = getDateStr(obj.date);
-            if (variantName) {
-                obj.variantEarned = achievements[name].variants[variantName];
-                obj.name = obj.variantEarned.name;
-                obj.filename = obj.variantEarned.filename;
-                obj.postDescription = obj.variantEarned.postDescription;
-                obj.requirement = obj.variantEarned.requirement;
-
-            }
-
-            console.log(data)
-
 
             updateAchievementObj(name);
 
@@ -283,10 +275,12 @@ function EarnAchievement(name, variantName=null) {
 
 function displayAnimatedBox(name) {
     const ach = data.AchievementObj[name];
+    const achOrigin = achievements[name]
     var x = document.getElementById("AchievementArea")
+    console.log(name, ach)
 
     x.innerHTML = `
-    <img id="AchievementImg" src="assets/images/achievements/${ach.num}-${ach.filename}/ts.png"><div id="AchievementText">${name}</div>
+    <img id="AchievementImg" src="assets/images/achievements/${ach.num}-${achOrigin.filename}/ts.png"><div id="AchievementText">${name}</div>
     `;
 
     x.className = "show";
@@ -404,7 +398,7 @@ function switchToPageSlow(id2) {
         })
 
         if (version == "24.07a" && data.StoryObj["Elf"].isComplete) {
-            EarnAchievement("Founder");
+            earnAchievement("Founder");
         }
           
 
@@ -911,6 +905,10 @@ function hideNode(node) {
     node.style.display= "none";
 }
 
+function hideID(nodeID) {
+    document.getElementById(nodeID).style.display= "none";
+}
+
 function clearNode(node) {
     node.innerHTML= "";
 }
@@ -939,3 +937,27 @@ function isFunction(variable) {
 //         })
 //     }
 // }
+
+function playAudio(audio=currentAudioNode) {
+    audio.play();
+    // audioPlaying=true;
+  }
+
+  function pauseAudio(audio=currentAudioNode) {
+    audio.pause();
+    // audioPlaying=false;
+  }
+
+
+  function playAudioPersistent(audio=currentAudio) {
+    audio.play();
+    audioPlaying=true;
+  }
+
+  function pauseAudioPersistent(audio=currentAudio) {
+    audio.pause();
+    audioPlaying=false;
+  }
+
+
+

@@ -20,7 +20,7 @@ const row1b = storyRow('1b', 'EXT. COMMON AREA<br>PAST NOON',
 ${storyImage(2)}
 
 <p>They were in the same class, and since their chat yesterday, Drew had been sneaking glances at him, when no one was looking. Damian had this way about him&mdash;light, delicate, like he could float away if the wind blew too hard. Drew would find a bit of pleasure in Damian&rsquo;s cute face or when he heard his melodic voice. His delightful manners and strange joy intrigued him. It was off to see a boy look and act so girly-like. In an all-boys schoold, it was particularly odd and attention-grabbing. Drew would always look away the moment he realized he was staring, and he did that now, but he couldn&rsquo;t shake the grim look on Damian&rsquo;s face.</p>
-<p>He wondered if the guy with Damian was the same one he&rsquo;d been caught with that morning. Yeah, Drew had heard the rumors too, about how Damian might get in deep shit, maybe even expelled. Drew didn&rsquo;t really care, except for the part where he felt a twisted relief at the thought of Damian being gone. It would would take away that gnawing anxiety that crept in when Damian was around, a feeling he couldn&rsquo;t justify. But even then, Drew found himself unable to focus on his notebook for long, his eyes drawn back to Damian and Alex, like a moth to a flame. He chuckled to himself, clicked his pen, flipped to a fresh page, and scrawled in large type.</p>
+<p>He wondered if the guy with Damian was the same one he&rsquo;d been caught with that morning. Yeah, Drew had heard the rumors too, about how Damian might get in deep shit, maybe even expelled. Drew didn&rsquo;t really care, except for the part where he felt a twisted relief at the thought of Damian being gone. It would would take away that gnawing anxiety that crept in when Damian was in the peripheral, a feeling he couldn&rsquo;t justify. But even then, Drew found himself unable to focus on his notebook for long, his eyes drawn back to Damian and Alex, like a moth to a flame. He chuckled to himself, clicked his pen, flipped to a fresh page, and scrawled in large type.</p>
 <p>I watch people too.</p>
 <p>I guess it&rsquo;s what we do.</p>
 ${chapterStars()}
@@ -67,7 +67,7 @@ const row2 = storyRow('2', 'INT. HALLWAY - EVENING',
 ${storyVideo('jaime_fuck1/enter_home', animate=false)}
 <p><span class="PAF-Drew">&ldquo;I&rsquo;m home,&rdquo;</span> He called out as he walked through the door. In a deviant house like his, you&rsquo;d assume there was no sense for simple greetings. But he and Jaime tried their best to pretend they had a normal life, so he always called out when he entered the door - especially if he knew she was inside.</p>
 <p>His voice trailed off in the sounds of deep growls and loud sultry moans, interrupted by the sweetest of cackles.</p>
-<p>The growls were familiar to him - Dad&rsquo;s usual music while fucking Mom mercilessly - but the moans that drowned out everything else were too sweet to belong to her.</p>
+<p>The growls were familiar to him-Dad&rsquo;s usual music while fucking Mom mercilessly-but the moans that drowned out everything else were too sweet to belong to her.</p>
 <p>With slow, scared steps, Drew made his way toward Jaime&rsquo;s room, where the sounds came from. His heart pounded so violently in his chest that it felt like it could burst at any moment, yet he couldn&rsquo;t stop himself from moving closer to his worst nightmare. Jaime&rsquo;s door was wide open, a rarity in this house. Drew stepped over and peeked through the open door.</p>
 
 ${storyVideo('jaime_fuck1/10')}
@@ -103,7 +103,7 @@ ${storyImage('Jaime/7')}
 <p>An ethereal presence, untouchable.</p>
 ${storyImage('Jaime/10')}
 
-<p>A few ago ago, Drew saw Jaime poised on her neglected ballet bar, dressed in one of her old ballet costumes. She didn't 
+<p>A few days ago, Drew saw Jaime poised on her neglected ballet bar, dressed in one of her old ballet costumes. She didn't 
 notice him, absorbed in a reminiscient reverie. He watched her behind the wall, not wanting to distract her. It reminded him of 
 when he used to hide behind the couch as a child and gawk at his older sister while she was training. He&rsquo;d wonder if she was real.</p>
 
@@ -130,14 +130,13 @@ ${storyCenterImage('Jaime/8')}
 <p>Jaime was four years his senior. She'd always held the impression Drew was a shy and timid child and they didn't spend much time together.</p>
 <p>Drew was a boy of peculiar inclinations, a creature of solitude who savored the quietude that others found oppressive. 
 He cherished being alone and spoke only to shut people up, and that made him a target for bullies, who wanted to demistify his enigmatic presence.</p>
-<p>Jaime was four years his senior. She&rsquo;d always held the impression Drew was a shy and timid child and they didn&rsquo;t spend much time together.</p>
 ${storyImage('Buck/park')}
 <p>At the tender age of twelve, as the light of the afternoon sun filtered through the leaves in the town&rsquo;s central park, Drew found himself besieged. He had been lost in the intricate patterns of his thoughts, sketching them with artistic precision, when a group of boys from his school&mdash;less boys, really, or half-formed men, more like wild dogs&mdash;incomprehencibly descended upon him, all fists and fury. Their cruelty was swift and brutal, yet Drew, all skinny limbs and nerves, somehow managed to shove them off and sprinted away, his heart pounding and legs burning as he weaved his escape.</p>
 ${storyImage('Buck/shop')}
 <p>That&rsquo;s when he found himself at Sam&rsquo;s shop, still trembling.</p>
 <p>Sam was a military veteran who owned a convenience store downtown. He was quite loved by people in Drew&rsquo;s neighborhoud but a kid once told him Sam was a dirty criminal and a drug dealer.</p>
 <p>When a little buck walked into Sam&rsquo;s store with a deathly stare on his face and asked for a knife, Sam asked with a fatherly smile <span class="PAF-Sam">&ldquo;What kind of knife?&rdquo;</span></p>
-<p><span class="PAF-Drew">&ldquo;One that could kill,&rdquo;</span>Drew said, dead serious.</p>
+<p><span class="PAF-Drew">&ldquo;One that could kill,&rdquo;</span> Drew said, dead serious.</p>
 ${storyImage('Buck/1')}
 <p>Sam burst out laughing. Drew was right. A dangerous man who sold drugs knew how to get weapons, and might as well sell them. He didn&rsquo;t know that Sam would be reluctant to sell a weapon to a child before giving him a real hard time for it.</p>
 ${storyImage('Buck/2')}
@@ -165,6 +164,7 @@ ${storyImage('Buck/4', fig="", cl="", sty="", 'png')}
 <p>Over and over, until that specific motion to have it open was muscle memory, second nature.</p>
 ${storyImage('Buck/5', fig="", cl="", sty="", 'png')}
 <p>By his 14th birthday, after thousands of hours of practice, countless repetitions, Drew had worn down its resistance and finally tamed the stubborn blade. It became no longer a question of if it would open, but how quickly, how precisely. He&rsquo;d still never rely on it completely. He&rsquo;d keep that&nbsp;superstition that if he expected it to open, it won&rsquo;t. Yet it never failed him since then. Friends came and went, relationships started and ended. 110, however, never&nbsp;let him down.</p>
+<p>And when he was 16, when he saw Jaime crying over some asshole she used to date in college who abused her, that blade found its purpose.</p>
 <p>Drew went after the guy, cornered him in an alley. He beat the hell out of him, and when he had him on the ground, he pressed that blade under his chin and promised him that if he ever touched Jaime again, he&rsquo;d finish him. The guy didn&rsquo;t need much convincing. A little bitch with a silver spoon up his ass. He was shaking like a leaf under Drew's knife, all his swagger gone, replaced by pure fear.</p>
 <p>That guy wasn&rsquo;t going to take his beating and sleep on it. He paid some thugs to teach Drew a lesson. Offered them a grand for every tooth they knocked out of Drew's mouth.</p>
 <p>Drew would find himself cornered this time. Three towering, muscular black thugs surrounding him in the same damn alley he attacked that motherfucker in.</p>
@@ -281,7 +281,7 @@ ${appendLink('Tiptoeing...', 'section5')}
 const section5 = newSection(5);
     const row5 = storyRow('5', ' ', 
 `
-${storyCenterImage('jaime_gallery/1', true, 'jpeg')}
+${storyCenterImage('jaime_gallery/1', false, 'jpeg')}
 <p>Suddenly, Jaime enters the room, on her tiptoes. In steps light and seductive, she struts in wearing only sheer black lingerie and panties.</p>
 ${storyImage('jaime_gallery/j1')}
 <p>Dad&rsquo;s eyes narrow in anger as he remembers telling her not to prance around the house naked or else he would fuck her. Jaime leans against the wall, crosses her arms in front of her definatly, challenging him to do something about it.</p>
@@ -388,7 +388,7 @@ ${appendLink('Continue Scene', 'section6')}
     const row6a = storyRow('6a', 'Dad, Jaime<br>Part 1', 
 `<p><span class="PAF-Dean">&ldquo;You little fucking brat!&rdquo;</span> Dad shouts as he barges into Jaime&rsquo;s room. Jaime's&nbsp;wiggling her hips on the bed in a new set of lingerie, grinding her tailbone against the mattress, slowly, sensually, her back arched in a semicircle and her&nbsp;legs parted wide in a side split only a ballerina could hold.&nbsp;One hand claws the mattress behind her head, the other strokes her clit through the sheer fabric.</p>
 <p>Dad approaches the little tease on the bed peacefully, she whimpers and closes her legs when he&rsquo;s inches away. Although she wants him, she instinctively pulls away at his extraordinary lustful gaze. Dad pulls her back by her neck...</p>
-${storyVideo('jaime_fuck1/1')}
+${storyVideo('jaime_fuck1/1', false)}
 ${chapterStars()}
 ${storyImage('jaime_fuck1/j1')}
 <p><span class="PAF-Dean">DAD</span> (pulls out of Jaime's mouth)<br>You can&rsquo;t walk around the house naked. You won&rsquo;t like what I&rsquo;m gonna do to you.</p>
@@ -415,6 +415,7 @@ const row6b = storyRow('6b', 'Dad, Jaime<br>(Fellatio)',
 ${storyVideo('jaime_fuck1/2', animate=false)}
 ${appendLinkRow('Part3', '6c', isSwitch=true)}`
 )
+
     
 const row6c = storyRow('6c', 'Dad, Jaime<br>(Quick Cum)', 
 `
@@ -460,7 +461,6 @@ ${appendLink('Enter Drew', 'section7')}`
     
 const section7 = newSection(7);
 
-// activateAppendLink(row6i, section7, id=null, switchToSection = true)
 
     const row7 = storyRow('7', 'Dad, Jaime<br>(Enter Drew)', 
 `
@@ -600,7 +600,7 @@ ${storyVideo('jaime_fuck1/12')}
 <p>Drew threw the magazine away and rushed to his computer. His legs still won&rsquo;t stop shaking from the adrenaline.</p>
 <p>When his windows finally loaded, he saw that he had received a message on his messenger. With eager anticipation, he opened the chat only to find a message from an unfamiliar user.</p>
 
-${appendLink('He says...', 'section10')}
+${appendLink('He says...', 'section10',)}
 
 `
 
@@ -613,7 +613,8 @@ ${appendLink('He says...', 'section10')}
 const section10 = newSection(10);
     const row10 = storyRow('10', `INT. DREW'S ROOM - EVENING`, 
 `
-${storyImage('damian_chat')}
+${storyAudio('jaime_fuck1/sound')}
+${storyImageNonAnimate('damian_chat')}
 
 <p><span class="PAF-Damian">Damian says:</span><br>Hey you.</p>
 <p><span class="PAF-Damian">Damian says:</span><br>Asshole.</p>
@@ -670,7 +671,7 @@ ${storyImage('jaime_fuck1/jc2')}
 ${storyImage('jaime_fuck1/jc3', fig="", cl="", sty="", 'png')}
 <p>She doesn't leave a single bit.</p>
 ${storyImage('jaime_fuck1/jc4', fig="", cl="", sty="", 'png')}
-<p>Like a true cumslut, she sweeps, and licks and swallows every drop of cum that scattered around, on her skin, the table, and the floor. If she notices the tiny droplets that&nbsp;scattered on Drew and Mom&rsquo;s plates, she&nbsp;might devour&nbsp;them too.</p>
+<p>Like a true cumslut, she sweeps and licks and swallows every drop of cum that scattered around, on her skin, the table, and the floor. If she notices the tiny droplets that&nbsp;scattered on Drew and Mom&rsquo;s plates, she&nbsp;might devour&nbsp;them too.</p>
 ${storyImage('jaime_fuck1/jc5', fig="", cl="", sty="", 'png')}
 <p>Drew felt a hole in his chest. It felt like his heart ceased beating and become one consistent ache. The sight in front of hit was so jarring and disturbing, it could have triggered him a heart attack.</p>
 ${storyImage('jaime_fuck1/jc6', fig="", cl="", sty="", 'png')}
@@ -784,7 +785,7 @@ ${storyImage('nightclub')}
 <p><span class="PAF-Damian">&ldquo;Ahahaha. What the hell do you call that?&rdquo;</span> Damian imitated and mocked Drew&rsquo;s stiff moves. <span class="PAF-Damian">&ldquo;Just dance, Drew!&rdquo;</span></p>
 <p><span class="PAF-Drew">&ldquo;I&rsquo;m trying, man.&rdquo;</span></p>
 <p><span class="PAF-Damian">&ldquo;You look like a wooden log trying to balance itself!&rdquo;</span></p>
-<p>Drew tried to justify his awkward dancing. &ldquo;I&rsquo;m just not used to this... kind of music.&rdquo;</p>
+<p>Drew tried to justify his awkward dancing. <span class="PAF-Drew">&ldquo;I&rsquo;m just not used to this... kind of music.&rdquo;;</span></p>
 <p>Damian cackled innocently like a child. <span class="PAF-Damian">&ldquo;You&rsquo;re hopeless, but I love it!&rdquo;</span></p>
 <p>They danced together. Damian danced effiminatively and seductively, like a girl, except that he danced so smoothly and so hotly he&rsquo;d put all the girls in the club to shame.</p>
 <p>He pulled and moved Drew with him effortlessly and Drew was beginning to catch a rhythm.</p>
@@ -795,7 +796,14 @@ ${storyImage('nightclub_girl')}
 <p><span class="PAF-Drew">&ldquo;Hey, can you play wingman?&rdquo;</span> Drew asked Damian, tilting his head in the direction of the girls.</p>
 <p><span class="PAF-Damian">&ldquo;Sure! Let&rsquo;s dance you and I first. They&rsquo;re not going anywhere.&rdquo;</span></p>
 <p><span class="PAF-Drew">&ldquo;Ok.&rdquo;</span></p>
-<p>And then suddenly the lights in the club turn off and the music stops. Then flashes of purple, green and yellow lights light the club in pulsating rhythm as the music plays again with a slowly building up beat.</p>
+<p>And then suddenly the lights in the club turn off and the music ${appendLinkRowInline('stops', '12c', false)}.</p>
+`
+    )
+
+   const row12c = storyRow('12c', `Sexy Boy`, 
+`
+${storyAudio('night-in-a-secret-world')}
+<p>Then flashes of purple, green and yellow lights light the club in pulsating rhythm as the music plays again with a slowly building up beat.</p>
 <p>Drew was thrown off guard by the sudden darkness, but Damian hasn't missed a beat, never stopped dancing, as if it was his thing to dance in the dark.</p>
 <p>The strobe lights flicker, casting his silhouette in and out of focus, but he remains fluid, his body a living contradiction&mdash;his movements carry a blend of masculine strength and feminine elegance. He starts with a slow, deliberate sway of his hips, rolling them in wide, sensual circles, the motion hypnotic and almost otherworldly to the viewer. His arms are soft, wrists bent delicately as his fingers trail through the air like they're painting invisible patterns.</p>
 <p>His steps are light, almost floating above the ground, and every movement is precise, controlled, as though he's performing a ballet on the dance floor. He twirls with a natural finesse, his legs crossing over each other with a dancer's poise, the fabric of his shirt fluttering lightly with each spin. His head tilts to the side, eyes half-closed, lost in the rhythm, lips curled into a faint, knowing smile.</p>
@@ -806,19 +814,17 @@ ${storyImage('nightclub_girl')}
 ${chapterStars()}
 <p>In the flashes between light and darkness, Damian in front of him was indistinguishable from an exotic dancer. In that enchanting atmosphere, Drew was caught in a trance. He was captivated by Damian&rsquo;s seductive, dirty dancing. Maybe he was too drunk to notice he was a boy anymore, or maybe he was too drunk to have any reservations and released himself to the attractions of good feeling. Drew felt good.</p>
 <p>Damian&nbsp;pressed&nbsp;himself against Drew. His&nbsp;shoulders sway in slow, deliberate circles, grinding against Drew's strong chest with a teasing intensity that sends a shock through both of them. Damian arched his back, pushing his&nbsp;butt into Drew's lap, feeling the heat of his body through the thin fabric of their clothes. Every movement is intentional, every roll of his hips designed to draw Drew deeper into his rhythm. Drew is fixed like a log.</p>
-<p>Damian's hands snake up behind him, fingers tangling in Drew's hair as he pulls him closer, They descend down Drew's naeck and carress it. Frustrated with Drew's idleness, he Damian presses his back harder, and his movements become more insistent, grinding against him with a slow, dirty rhythm until he feels Drew&rsquo;s bulge hardening in his pants, thudding against his tailbone. Damian shivers&nbsp;as he feels Drew&rsquo;s fingers sliding under his shirt feeling his smooth, soft, puffy tummy.&nbsp;His hands slide&nbsp;down Damian's&nbsp;sides, tracing the curve of his waist, the touch quite possessive and invasive. Drew, in his trance, wasn&rsquo;t fully aware of what he was doing.</p>
+<p>Damian's hands snake up behind him, fingers tangling in Drew's hair as he pulls him closer, They descend down Drew's naeck and carress it. Frustrated with Drew's idleness, Damian presses his back harder, and his movements become more insistent, grinding against Drew with a slow, dirty rhythm until he feels Drew&rsquo;s bulge hardening in his pants, thudding against his tailbone. Damian shivers&nbsp;as he feels Drew&rsquo;s fingers sliding under his shirt feeling his smooth, soft, tummy.&nbsp;His hands slide&nbsp;down Damian's&nbsp;sides, tracing the curve of his waist, the touch quite possessive and invasive. Drew, in his trance, wasn&rsquo;t fully aware of what he was doing.</p>
 <p>When your ego is broken you, you are set free from many things that were holding you back.</p>
 <p>Your brain goes on a masochistic high until it adjusts. You are carnal until you rebuild your ego again. That&rsquo;s why you can&rsquo;t stop your hands and knees from shaking, because you&rsquo;re not used to things being so real.</p>
 <p>There is serenity after turbulence. First you were eager, then you were obsessed, then you were cucked.</p>
 <p>You are high as fuck. Drew was high on his release from his life-long obsession with Jaime. The nerves in his ears, his skin, the wires in his brain were unlocked to accept pleasure from other sources. Other than his blurry vision, his senses were heightened. He could feel the music and the touch and taste of Damian&rsquo;s skin as if he hadn&rsquo;t felt for a long time&nbsp;<br>but have only been fantasizing about feeling.</p>
 <p>This pleasure coursing through him was unfamiliar yet satisfyingly real.</p>
 <p>Drew didn&rsquo;t know what he was doing. He would have not allowed himself to feel up a boy so sensually. But in the sensfulness temporarily filling his hollow ego, it felt good to grind the itch in his cock against Damian&rsquo;s tailbone. It felt good to grasp his neck and it felt extremely good to kiss it on the back.</p>
-<p>And then it was as if fireworks were shot in Damian&rsquo;s brain.&nbsp;He teases Drew, pulling away just enough to create space. Drew desperately follows, his body arching to contain Damian as his hands wrap before sliding back against him with a force that&nbsp;rocks them both. Drew wraps him tight but Damian, a fleeting pleasure, slides down his arms, his hips rolling in a figure 8 as Drew's bulge massages accross his back. Drew siezes him by his hair and pulls him to his feet. Damian slides his way up, pressed up against Drew, shrugs, yielding to Drew. Drew hooks him by his shorts and makes sure they're inseperable. Drawn by Damian's rhythm, he thrusts against him, their hips moving synchronously. Drew's hands unconsciously seeks groping between Damian's legs.&nbsp;Damian tenses up and his hand immediately blocks Drew. Drew&nbsp;kisses the back of Damian's, the heat of his breath lingering on Damian's skin. Damian loosens up at Drew's touch but&nbsp;protects what's between his legs as if it was the most precious thing in the world. Drew's desire boils.</p>
+<p>And then it was as if fireworks were shot in Damian&rsquo;s brain.&nbsp;He teases Drew, pulling away just enough to create space. Drew desperately follows, his body folding to contain Damian as his hands wrap him, just as Damian slides back against him with a force that&nbsp;rocks them both. Drew wraps him tight but Damian, a fleeting pleasure, slides down his arms, his hips rolling in a figure 8 as Drew's bulge massages accross his back. Drew siezes him by his hair and pulls him to his feet. Damian slides his way up, pressed up against Drew, shrugs, yielding to Drew. Drew hooks him by the leghole of his shorts and makes sure they're inseperable. Drawn by Damian's rhythm, he thrusts against him, their hips moving synchronously. Drew's hands unconsciously seeks groping between Damian's legs.&nbsp;Damian tenses up and his hand immediately blocks Drew. Drew&nbsp;kisses the back of Damian's neck, the heat of his breath lingering on Damian's skin. Damian loosens up at Drew's touch but&nbsp;protects what's between his legs as if it was the most precious thing in the world. Drew's desire boils.</p>
 <p>Their dance becomes a game, a push and pull of dominance and submission, Damian clearly outdoing Drew in seductive display.&nbsp;The crowd around them fades into the background, the music and lights all but forgotten as they lose themselves in the physicality of their connection. Every grind, every thrust is a silent communication, a conversation spoken in the language of bodies rather than words.</p>
-<p>Drew wanted to hold onto Damian desperately. But then as the beat changed to a new song, Drew and Damian were no longer shadows in the flickering lights</p>
-<p>of the nightclub. The light had uniformed again and they</p>
-<p>were now exposed to everyone around them, who distanced themselves from the couple in disgust.</p>
-<p>As the song reaches its climax, so too does their dance. Damian turns to face Drew, his body still pressed tightly against Drew's, his eyes locking with Drew's in a challenging gaze. He straddles Drew's thigh and grinds it sensually with his hand still between his legs, forbidding Drew any touch with his genitals. The song ends and the lights restore consistency.</p>
+<p>The beat changed to a new song, Drew and Damian were no longer shadows in the flickering lights of the nightclub. The light had uniformed again and they were now exposed to everyone around them, who distanced themselves from the couple in disgust.</p>
+<p>As the song reaches its climax, so too does their dance. Damian turns to face Drew, his body still pressed tightly against Drew's, his eyes locking with Drew's in a challenging gaze. He straddles Drew's thigh and grinds it sensually with his hand still between his legs, forbidding Drew any touch with his genitals. The song ends, the lights restore consistency, and they're still in their own world.</p>
 <p>A guy suddenly approaches them and shouts. <strong>&ldquo;What the FUCK are you doing, faggots?&rdquo;</strong></p>
 <p><span class="PAF-Drew">&ldquo;What the fuck did you just call him?&rdquo;</span> Drew roared back at him, seeing Damian&rsquo;s face fall. The guy hesitated, intimidated by Drew&rsquo;s rage, but Drew attacked anyway.</p>
 <p>Without warning, Drew choked the man and swept his legs out from underneath him, raining punches on his face.</p>
@@ -835,20 +841,20 @@ ${appendLink('Kicked out...', 'section13')}
 const section13 = newSection(13);
 const row13 = storyRow('13', 'EXT. DARK ALLEY - NIGHT', 
 `
-${storyImage('alley')}
+${storyImageNonAnimate('alley')}
 <p>Malik kicked Drew and Damian out of the club. <span class="PAF-Malik">&ldquo;The boss won&rsquo;t be happy,&rdquo;</span> He muttered, shaking his head.</p>
 <p>Drew shrugged and asked for drinks.</p>
 <p>They sat in a dark alley next to the club. Damian lit a cigarette, offered one to Drew.</p>
 <p><span class="PAF-Drew">&ldquo;You smoke?&rdquo;</span> Drew asked.</p>
-<p><span class="PAF-Damian">&ldquo;I&rsquo;ve been smoking since I was a fetus, I think.&rdquo;</span> Damian replied.</p>
+<p><span class="PAF-Damian">&ldquo;I&rsquo;ve been smoking since I was a fetus, I think,&rdquo;</span> Damian replied.</p>
 <p><span class="PAF-Drew">&ldquo;Bad mother?&rdquo;</span></p>
 <p><span class="PAF-Damian">&ldquo;Lovely woman.&rdquo;</span></p>
 <p>By the time they finished their cigarettes, the bouncer had returned with four bottles of beer. Damian thanked him heartily, but Malik&rsquo;s response was a cold shoulder as he walked away.</p>
 <p>Damian took a sip of his beer. <span class="PAF-Damian">&ldquo;So, what are we gonna do now?&rdquo;</span></p>
 <p>Drew scoffed and downed the rest of his beer in one go before tossing the bottle aside.</p>
 <p><span class="PAF-Drew">&ldquo;Just sit back and enjoy the view,&rdquo;</span> he replied lazily, while sprawling out on the ground. He stared at the clear night sky before him.</p>
-<p>They sat in silence for a while until Damian broke it. <span class="PAF-Drew">&ldquo;So...&rdquo;</span> he trailed off.</p>
-<p><span class="PAF-Drew">&ldquo;I&rsquo;m horny as hell right now,&rdquo;</span> He stated bluntly, taking another sip from his bottle.</p>
+<p>They sat in silence for a while until Damian broke it. <span class="PAF-Damian">&ldquo;So...&rdquo;</span> he trailed off.</p>
+<p><span class="PAF-Damian">&ldquo;I&rsquo;m horny as hell right now,&rdquo;</span> He stated bluntly, taking another sip from his bottle.</p>
 <p><span class="PAF-Drew">&ldquo;I&rsquo;m horny too.&rdquo;</span> Drew replied. <span class="PAF-Drew">&ldquo;Wanna go get some women?&rdquo;</span></p>
 <p>He gazed at Damian with a serious look on his face.</p>
 <p><span class="PAF-Damian">&ldquo;How?&rdquo;</span></p>
@@ -865,13 +871,13 @@ ${storyImage('alley')}
 <p><span class="PAF-Drew">&ldquo;So you&rsquo;re a proud cocksucker but you&rsquo;re not gay,&rdquo;</span> Drew said sarcastically.</p>
 <p><span class="PAF-Damian">&ldquo;You&rsquo;re only gay if you want to fuck with men. I don&rsquo;t wanna go anywhere near a man&rsquo;s asshole and I don&rsquo;t want anyone to touch mine, that&rsquo;s all.&rdquo;</span></p>
 <p><span class="PAF-Drew">&ldquo;But you&rsquo;re a cocksucker,&rdquo;</span> Drew prodded relentlessly.</p>
-<p>&ldquo;Why are you so cruel?&rdquo; Damian suddenly snapped, jumping on top of Drew and gripping his shirt tightly in anger.</p>
+<p><span class="PAF-Damian">&ldquo;Why are you so cruel?&rdquo;</span> Damian suddenly snapped, jumping on top of Drew and gripping his shirt tightly in anger.</p>
 <p><span class="PAF-Damian">&ldquo;Do you think I wanted be like this?</span></p>
-<p><span class="PAF-Damian">Do you think I wanted to be forced to dress like a girl as a child, locked in chsatity cages before my dick even grew, taught to worship my stepfather&rsquo;s big black cock, suck for a living?</span></p>
+<p><span class="PAF-Damian">Do you think I wanted to be forced to dress like a girl as a child, locked in chsatity cages before my dick even grew, taught to worship my stepfather&rsquo;s big black cock, suck strangers for money?</span></p>
 <p><span class="PAF-Damian">Think I wanted that?</span></p>
 <p><span class="PAF-Damian">Huh?</span></p>
 <p><span class="PAF-Damian">HUH?&rdquo;</span></p>
-<p>Damian&rsquo;s scream pierced the air, yet Drew lay motionless, his arm behind his head, staring coldly at th boy siting on top of him.</p>
+<p>Damian&rsquo;s scream pierced the air, yet Drew lay motionless, his arm behind his head, staring coldly at the boy siting on top of him.</p>
 <p><span class="PAF-Damian">&ldquo;I don&rsquo;t understand you. If you hate gay people so much. Why did you touch me and kiss me so-&rdquo;</span></p>
 <p><span class="PAF-Drew">&ldquo;I didn&rsquo;t mean to. I was thinking of someone else,&rdquo;</span> Drew whispered.</p>
 <p><span class="PAF-Damian">&ldquo;It's ok. I understand that. I relate to that.&nbsp;Did she&nbsp;hurt you?&rdquo;</span> Damian questioned softly. <span class="PAF-Damian">&ldquo;Is that why you want to run away?&rdquo;</span></p>
@@ -891,7 +897,7 @@ ${storyImage('alley')}
 <p><span class="PAF-Damian">&ldquo;Can you please do me a favor, Drew?&rdquo;</span></p>
 <p>Drew sat up slowly, until their faces were only inches apart. He opened his mouth and involuntarily tasted the salt in Damian's tears on his lips.</p>
 <p><span class="PAF-Drew">&ldquo;Damian, I&rsquo;m not running away. It was just a fleeting thought.&rdquo;</span></p>
-${storyEndButton('To be continued...')}
+${storyEndButton('Chapter 3')}
 `
 )
 
@@ -936,7 +942,6 @@ for(let i=1; i<83; i++) {
 
 // const section3 = newSection(3, '');
 
-// // activateAppendLink(section2, section3,); 
 
 // const row4 = storyRow('1a', 'INT. HALL - MORNING', 
 // `
@@ -976,3 +981,15 @@ for(let i=1; i<83; i++) {
 
     
     // activateEndButton();
+
+function playJaimeMoans() {
+    currentAudioNode = section10.querySelector('#audio')
+    
+    playAudio();
+}
+
+function playAudioClub() {
+    currentAudioNode = row12.querySelector('#audio')
+    
+    playAudio();
+}

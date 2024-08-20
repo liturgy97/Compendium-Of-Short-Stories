@@ -230,7 +230,7 @@ const startGame = function() {
     ssSwiper();
 
     if(!data.StoryObj["Elf"].isComplete) {
-
+      console.log("new save")
       openStory(data.StoryObj["Elf"]);
 
     }

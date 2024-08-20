@@ -60,7 +60,7 @@ menu(row1.querySelector('.rowContent'), [
     
 const row2 = storyRow('2', 'INT. BEDROOM - EARLY MORNING', 
 `
-${storyImage(2)}
+${storyImageNonAnimate(2)}
 <p>I looked at myself in the mirror, examining my figure, voluptuous, curvaceous, with breasts that defied gravity. It had been ages since I&rsquo;d received a genuine compliment from Henry. Sure, he&rsquo;d mutter something nice before sex, but we hadn&rsquo;t had sex in two months. I had grown cold toward it lately. My skin was blemishing, and wrinkles were creeping onto my forehead. I looked old.</p>
 ${storyCenterImage(3)}
 <p>I descended the stairs to our grand hall. While this house and its inhabitants reeked of pretentiousnes, Emma stood there looking like innocence itself. She was just a simple maid, yet I wondered if she was the most stunning woman to have ever set foot here. My heart burnt with jealousy.</p>
@@ -97,8 +97,12 @@ menu(row2.querySelector('.rowContent'), [
 row3 = storyRow('3', ' ', 
 `
 <p><span class="E-Henry">&ldquo;Good morning, my sweet wife.&rdquo;</span></p>
-<p>Emma and I separated at hearing Henry&rsquo;s deep morning voice echoing around as he descended the steps to the main hall. Henry came down the stairs and kissed me on the mouth. A routine of his every morning.</p>
-<p><span class="E-Emma">&ldquo;Good morning, sir,&rdquo;</span> Emma greeted her lord. Eyes and head bowing submissively. Henry ignored her completely, like she did not exist before him. He left me to the maid and walked into his study. He left me to the maid and walked into his study. Lord Henry did not acknowledge courtesies from a servant, a&nbsp;particularity well-known in his household.</p>
+<p>Emma and I separated at hearing Henry&rsquo;s deep morning voice echoing around as he descended the steps to the main hall. 
+Startled, Emma and I instinctively reached for our gowns, my hands fluttering to smooth the fabric that was already perfectly arranged, while Emma's 
+moved quickly to her apron, ensuring it was properly tied, though it hadn’t come undone.
+
+Henry came down the stairs and kissed me on the mouth. A routine of his every morning.</p>
+<p><span class="E-Emma">&ldquo;Good morning, sir,&rdquo;</span> Emma greeted her lord. Eyes and head bowing submissively. Henry ignored her completely, like she did not exist before him. He left me to the maid and walked into his study. Lord Henry did not acknowledge courtesies from a servant, a&nbsp;particularity well-known in his household.</p>
 <p>Emma shrank, embarrassed at the cold reception. She should have known better, but she had grown accustomed to the liberties I allowed her.</p>
 
 `);
@@ -146,7 +150,7 @@ const section3 = newSection(3);
 
 
 
-section3. innerHTML += `${storyWideImage('garden')}`;
+section3. innerHTML += `${storyWideImage('garden', false)}`;
 
 const row5 = storyRow('5', 'INT. LIVING ROOM - AFTERNOON', 
 `
@@ -180,7 +184,7 @@ const section4 = newSection(4);
 const row6 = storyRow('6', 'INT. HALL - MORNING', 
 `
 <p>Day by day, my paranoia grew and grew. One morning, I confronted Emma in the hallway. My eyes must've been blazing with suspicion.</p>
-${storyCenterImage(4)}
+${storyCenterImage(4, false)}
 <p><span class="E-Arabella">&ldquo;Have you been trying to seduce my husband?&rdquo;</span> I asked out of the blue, my voice trembling with jealousy and fear.</p>
 <p>Emma&rsquo;s eyes widened in shock, her cheeks flushing with their consistent crimson rise.</p>
 <p><span class="E-Emma">&ldquo;No, ma&rsquo;am. I would never do such a thing,&rdquo;</span> she replied earnestly, almost whisperingly.</p>
@@ -261,7 +265,7 @@ menu(row6.querySelector('.rowContent'), [
 
 row7 = storyRow('7', 'INT. LIVING ROOM - AFTERNOON', 
 `
-${storyImage(9)}
+${storyImageNonAnimate(9)}
 <p>Henry&rsquo;s friend, Major Gregory, had returned from the front lines and came in for a visit. A man of high rank and higher ego, he strutted into our home with all the bravado of a peacock. The gathering at our house had to be perfect, a showcase of wealth and status that would make even the most jaded of society pause. As we prepared for the small afternoon party, my mind buzzed with a cruel plan to put Emma in her place.</p>
 <p>The guests arrived, filling the&nbsp;sitting room&nbsp;and the grand hall with their laughter and clinking glasses. Henry was in his element, his arm around Gregory, regaling him with tales of business and estate. I played the dutiful wife, painted a smile on my face, and exchanged pleasantries with the wives and daughters of our esteemed guests.</p>
 ${storyImage(10)}

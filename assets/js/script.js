@@ -1,5 +1,13 @@
 function devLoad() {
+
 }
+var currentAudio;
+
+var currentAudioNode;
+
+var audioPlaying = false;
+
+
 
 
 const siteBody = document.querySelector('body');
@@ -18,6 +26,8 @@ const typography = {
 var sections;
 
 var rows;
+
+var parts;
 
 var setChapterIndex = ()=>{}
 
@@ -164,8 +174,32 @@ function showIntroBanner() {
 
 
 function saveCleanup() {
+  for (let ach in data.AchievementObj) {
+    
+    ['dateStr','filename','hasVariants','isPatreon','legacy','postDescription','preDescription','rarity','requirement','variantEarned','variants'].forEach(
+      name=>{
+
+      if (data.AchievementObj[ach].hasOwnProperty(name)) {
+        
+        delete data.AchievementObj[ach][name]
+      } 
+    }) 
+
+    
+      
+    if ((typeof data.AchievementObj[ach].date === "string")) data.AchievementObj[ach].date = new Date(data.AchievementObj[ach].date)
+
+    
+      if (!achievementNames.includes(ach)) {
+        delete data.AchievementObj[ach]
+        
+      } 
+    }
+    AutoSave();
   storyNames.forEach( storyName => {
     const story = data.StoryObj[storyName]; 
+    
+    if (!story.hasOwnProperty('vars')) story.vars = {};
     if (story.hasOwnProperty('CurrentChapter')) delete story.CurrentChapter;
     if (story.hasOwnProperty('currentSectionID')) delete story.currentSectionID;
     if (!story.hasOwnProperty('currentChapter')) story.currentChapter = story.chapters[0];

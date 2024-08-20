@@ -1,6 +1,5 @@
 function loadAchievementsPage() {
     const container2= document.getElementById("AchievementsPage")
-  
     container2.innerHTML = `
 
     
@@ -16,11 +15,11 @@ function loadAchievementsPage() {
         <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6.44034 1.30863C6.65095 0.81617 7.34905 0.81617 7.55966 1.30863L8.7415 4.07207C8.82954 4.27793 9.02349 4.41884 9.24647 4.43895L12.2399 4.709C12.7733 4.75712 12.989 5.42106 12.5858 5.77354L10.3228 7.75149C10.1542 7.89883 10.0801 8.12683 10.1299 8.34512L10.7981 11.2755C10.9172 11.7977 10.3524 12.208 9.89253 11.9334L7.31209 10.3924C7.11986 10.2776 6.88014 10.2776 6.68791 10.3924L4.10747 11.9334C3.64762 12.208 3.08285 11.7977 3.20192 11.2755L3.8701 8.34512C3.91988 8.12683 3.8458 7.89883 3.67722 7.75149L1.41424 5.77354C1.01096 5.42106 1.22669 4.75712 1.76013 4.709L4.75353 4.43895C4.97651 4.41884 5.17046 4.27793 5.2585 4.07207L6.44034 1.30863Z" stroke="var(--color-gray-9)" stroke-width="1.2"/>
         </svg></div>
-        <div class="AchBoxVal font-size-14" style="color: ${(earnedAchievements().length==achievementNames.length)? 
+        <div class="AchBoxVal font-size-14" style="color: ${(earnedAchievements().length==getTotalNumOfAchievements())? 
           `var(--color-gray-9)` 
           :
           `var(--color-gray-14)`
-        }">${earnedAchievements().length}/${achievementNames.length}</div>
+        }">${earnedAchievements().length}/${getTotalNumOfAchievements()}</div>
       </div>
     </div>
 
@@ -42,6 +41,7 @@ function loadAchievementsPage() {
   
   ach.forEach(element => {
   var x= data.AchievementObj[element];
+  var y = achievements[x.name]
 
       const achievementItem= document.createElement("div");
   
@@ -49,21 +49,21 @@ function loadAchievementsPage() {
 
     //<img class="Achievementpic marginless padless" style="width: 100%; height: auto; object-fit: contain; border-radius: 5px; " src="assets/images/achievements/${element}.png" />
     var desc = "";
+    var str1 ='';
     if (x.isEarned) {
-      desc = x.postDescription;
+      desc = y.postDescription;
+      str1 = getDateStr(x.date);
     } else {
-      desc = x.preDescription;
+      desc = y.preDescription;
+      str1 = "Unearned";
     }
     var base = "base";
     if (!x.isEarned) base = "sil";
 
-    const imgurl = `assets/images/achievements/` + x.num + "-" + x.filename + "/" + base + ".png";
+    const imgurl = `assets/images/achievements/` + x.num + "-" + y.filename + "/" + base + ".png";
 
-    var str1 = x.dateStr;
 
-    if (!x.dateStr) {
-      str1 = "Unearned";
-    }
+
 
     // button.innerHTML = `
 
@@ -87,7 +87,7 @@ function loadAchievementsPage() {
           
             <span class="AchievementTitle gray9 font-weight-500 line-height-1 uppercase">#${x.num} - ${x.name}</span>
             <br>
-            <span class="gray14 font-size-14 uppercase">${str1} - ${x.rarity}</span>
+            <span class="gray14 font-size-14 uppercase">${str1} - ${y.rarity}</span>
             ${(desc)? 
               
               `<br>

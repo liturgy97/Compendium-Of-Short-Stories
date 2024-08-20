@@ -206,7 +206,8 @@ function saveCleanup() {
 
     story.chapters.forEach(ch=> {
       if (origin.subtitle == "Coming Soon" || origin.subtitle == "Patreon Exclusive") chapterStars.isUnlocked = false;
-
+      if (!ch.isRead) story.isRead= false;
+      if (!ch.isComplete) story.isComplete= false;
 
       if (ch.hasOwnProperty('CurrentSection')) {
         delete ch.CurrentSection;

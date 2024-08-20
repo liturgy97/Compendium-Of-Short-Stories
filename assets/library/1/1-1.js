@@ -480,7 +480,7 @@ ${storyImageNonAnimate(3, fig='<span class="GMD-Bailey">Better than ever...</spa
     const section6 = newSection(6);
     
     
-    const row6 = storyRow('5', 'INT. BATHROOM EVENING"', 
+    const row6 = storyRow('5', 'INT. BATHROOM<br>EVENING', 
     `
 <p>The faucet squeaked and Bailey dipped her head into the sink, letting the cold water drench her hair. Two minutes of icy clarity later, she rose and faced her reflection. Red eyes stared back,<span class="GMD-Bailey">"We are soooo very drunk right now, Jake,"</span> she slurred to herself. Her hand slid down, caressing the faint bruise on her thigh, right where Jake's fingers had dug in, trying to pry her open. Why did he want to see her cock so badly?</p>
 <p>She took her dress and underwear off and stood naked in front of the mirror, gazing at her her newly earned penis and testicles.</p>

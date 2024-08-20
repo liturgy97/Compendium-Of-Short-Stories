@@ -67,7 +67,7 @@ class Story {
   
   
         this.isUnlocked = false;
-        if (this.num == 1) {
+        if (this.num == 1 && origin.subtitle != "Coming Soon" && origin.subtitle != "Patreon Exclusive") {
         this.isUnlocked = true;
         }
         this.isSeen = false;

@@ -641,6 +641,8 @@
   font-weight: 400;
   word-wrap: break-word;
   text-align: left;
+  display: flex;
+  align-items: center;
 }
 
 .ChapterDuration {

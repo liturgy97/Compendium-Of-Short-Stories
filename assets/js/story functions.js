@@ -57,7 +57,7 @@ function unhiddenStories() {
 
 
 function availableStories() {
-    return arrayDifference(unhiddenStories(), lockedStories());
+    return   arrayDifference(arrayDifference(arrayDifference(unhiddenStories(), lockedStories()), completeStories()), conceptStories());
 }
 
 function availableUnreadStories() {
@@ -70,6 +70,16 @@ function completeStories() {
         const story = data.StoryObj[storyName];
         if (story.isComplete) arr.push(storyName);
     })
+    return arr;
+}
+
+function conceptStories() {
+    var arr = [];
+    storyNames.forEach(storyName => {
+        console.log(stories[storyName].genre, stories[storyName].genre.includes('Concept'))
+        if (stories[storyName].genre.includes('Concept')) arr.push(storyName);
+    })
+    console.log(arr)
     return arr;
 }
 

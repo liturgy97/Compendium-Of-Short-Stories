@@ -81,7 +81,7 @@ stories["Growing Mommy's Dick"]= {
   num: 1,
   overview: "Your mom complains from the hardships of life so you tell her to suck it up and grow some balls. Next day she goes under surgery. Now it's your fault she has a dick and you have to nurture the tiny little thing until it grows into a healthy, full-fledged, throbbing cock.",
   severity: "D",
-  genre: ["Transexual", "Virtual Pet"],
+  genre: ["Transexual",],
   characters: ["Bailey", "Jake" ],
   chapters: [
        {
@@ -104,7 +104,7 @@ stories["Mr. Wolf"] = {
     overview: "Mr. Wolf meets a little girl in the woods.",
     severity: "D",
     background: "rgba(81, 108, 41, 0.14)",
-    genre: ["Parody", ],
+    genre: ["Concept", "Parody", ],
     characters: ["Mr. Wolf", "Girl in the woods" ],
     chapters: [
          {
@@ -125,7 +125,7 @@ stories["Mr. Wolf"] = {
     overview: "A dad-daughter conundrum.",
     severity: "D",
     background: "rgba(216, 140, 140, 0.14)",
-    genre: ["Incest", "Ageplay", "Mostly Text",],
+    genre: ["Concept", "Incest", "Ageplay",],
     characters: ["Joshua", "Birdie", "Teddy"],
     chapters: [
         {
@@ -143,7 +143,7 @@ stories["Mr. Wolf"] = {
     overview: "I joined Mom and Dad's stupid game for once.",
     severity: "D",
     background: "rgba(41, 108, 103.98, 0.14)",
-    genre: ["Incest",],
+    genre: ["Concept", "Incest"],
     characters: [],
     chapters: [
         {
@@ -188,7 +188,7 @@ stories["Mr. Wolf"] = {
     background: "white",
     textColor: "black",
     fontWeight: 400,
-    genre: ["Religion", "Corruption", "Strategy"],
+    genre: ["Concept", "Religion", "Corruption",],
     characters: ["Alistair Everhart", "Pristine Rivers", "Father Gregory" ],
     chapters: [
         {
@@ -206,7 +206,7 @@ stories["Mr. Wolf"] = {
     overview: "Cum... That's lots of cum. Wait. Did I just cum?!!!!",
     severity: "D",
     background: '#da504d',
-    genre: ["Lustcraze", "Sissification"],
+    genre: ["Concept", "Lustcraze",],
     characters: [],
     chapters: [
         {
@@ -270,7 +270,7 @@ stories["Mr. Wolf"] = {
     textColor: 'black',
     font: 'Space Grotesk',
     fontWeight: 400,
-    genre: [ "Abuse", "Text Only",],
+    genre: ["Text Only",],
     characters: [],
     chapters: [
         {

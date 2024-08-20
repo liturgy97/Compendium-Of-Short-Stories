@@ -16,7 +16,6 @@ function loadStoryList() {
     </div>`;
 
     MainPageFilters.forEach(filter => {
-
       const curentFilterID = MainPageFiltersID[filter];
 
       const container = document.getElementById(curentFilterID);
@@ -287,15 +286,15 @@ function filterMainPageStoryButtons(filter) {
     case "Available":
       StoriesToShow = availableStories(); 
       break;
-    case "Unread":
-      StoriesToShow = availableUnreadStories(); 
+    case "Complete":
+      StoriesToShow =  arrayDifference(completeStories(), lockedStories()); 
       break;
     case "Favorites":
        StoriesToShow = favoriteStories(); 
 
       break;
-    case "Hidden":
-      StoriesToShow = hiddenStories(); 
+    case "Concepts":
+      StoriesToShow = conceptStories(); 
       break;
     case "All Stories":
       StoriesToShow = storyNames;

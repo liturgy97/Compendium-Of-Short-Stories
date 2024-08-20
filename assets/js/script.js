@@ -1,5 +1,5 @@
 function devLoad() {
-
+console.log(data.StoryObj['The Hanging Man'])
 }
 var currentAudio;
 
@@ -90,7 +90,7 @@ var currentPage = "MainPage";
 
 const isPatreonVersion = version.includes("P");
 
-const MainPageFilters = ["Available", "Unread", "Favorites", "Hidden", "All Stories"];
+const MainPageFilters = ["Available", "Complete", "Favorites", "Concepts", "All Stories"];
 
 
 const totalSavesCount = 6;
@@ -104,9 +104,9 @@ var Swipers = {};
 
 const MainPageFiltersID = {
   "Available" : "Available-Stories", 
-  "Unread": "Unread-Stories", 
+  "Complete": "Complete-Stories", 
   "Favorites": "Favorite-Stories", 
-  "Hidden": "Hidden-Stories", 
+  "Concepts": "Concept-Stories", 
   "All Stories": "All-Stories",
 }
 
@@ -198,6 +198,7 @@ function saveCleanup() {
     AutoSave();
   storyNames.forEach( storyName => {
     const story = data.StoryObj[storyName]; 
+    if (story.isLocked) {story.isRead =false; story.isComplete = false;}
     
     if (!story.hasOwnProperty('vars')) story.vars = {};
     if (story.hasOwnProperty('CurrentChapter')) delete story.CurrentChapter;
@@ -205,6 +206,9 @@ function saveCleanup() {
     if (!story.hasOwnProperty('currentChapter')) story.currentChapter = story.chapters[0];
 
     story.chapters.forEach(ch=> {
+      if (origin.subtitle == "Coming Soon" || origin.subtitle == "Patreon Exclusive") chapterStars.isUnlocked = false;
+
+
       if (ch.hasOwnProperty('CurrentSection')) {
         delete ch.CurrentSection;
 

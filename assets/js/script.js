@@ -1,5 +1,4 @@
 function devLoad() {
-console.log(data.StoryObj['The Hanging Man'])
 }
 var currentAudio;
 

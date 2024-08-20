@@ -76,10 +76,8 @@ function completeStories() {
 function conceptStories() {
     var arr = [];
     storyNames.forEach(storyName => {
-        console.log(stories[storyName].genre, stories[storyName].genre.includes('Concept'))
         if (stories[storyName].genre.includes('Concept')) arr.push(storyName);
     })
-    console.log(arr)
     return arr;
 }
 

@@ -24,7 +24,7 @@
 var stories = {};
 
 
-const storyNames= ["Elf", "Growing Mommy's Dick", "Mr. Wolf", "Daddy I'm Scawwed", "Game Night", "Emma", "Nungerie", "God Bless Estrogen Pills",
+const storyNames= ["Elf", "Growing Mommy's Dick", "Mr. Wolf", "Daddy I'm Scawwed", "Game Night", "Emma", "Boyhood", "Nungerie", "God Bless Estrogen Pills",
   "Protecting A Femboy", "Hammer", "The Hanging Man", 
 ];
 
@@ -79,7 +79,7 @@ stories["Elf"]= {
 
 stories["Growing Mommy's Dick"]= {
   num: 1,
-  overview: "Your mom complains from the hardships of life so you tell her to suck it up and grow some balls. Next day she goes under surgery. Now it's your fault she has a dick and you have to nurture the tiny little thing until it grows into a healthy, full-fledged, throbbing cock.",
+  overview: "Your mom complains from the hardships of life so you tell her to suck it up and grow some balls. Next day she goes under surgery. Now it&rsquo;s your fault she has a dick and you have to nurture the tiny little thing until it grows into a healthy, full-fledged, throbbing cock.",
   severity: "D",
   genre: ["Transexual",],
   characters: ["Bailey", "Jake" ],
@@ -140,7 +140,7 @@ stories["Mr. Wolf"] = {
   
   stories["Game Night"] = {
     num: 12,
-    overview: "I joined Mom and Dad's stupid game for once.",
+    overview: "I joined Mom and Dad&rsquo;s stupid game for once.",
     severity: "D",
     background: "rgba(41, 108, 103.98, 0.14)",
     genre: ["Concept", "Incest"],
@@ -158,7 +158,7 @@ stories["Mr. Wolf"] = {
   
   stories["Emma"] = {
     num: 14,
-    overview: "The grand entrance hall of the Hastings estate was a testament to Lady Arabella Hastings' refined tastes and the family's wealth. Tall windows with heavy velvet drapes let in slivers of the late afternoon sun, casting long shadows across the marbled floor. Arabella stood near the grand staircase, her dark eyes assessing the young woman who had just been shown in by the butler.",
+    overview: "The grand entrance hall of the Hastings estate was a testament to Lady Arabella Hastings&rsquo; refined tastes and the family&rsquo;s wealth. Tall windows with heavy velvet drapes let in slivers of the late afternoon sun, casting long shadows across the marbled floor. Arabella stood near the grand staircase, her dark eyes assessing the young woman who had just been shown in by the butler.",
     severity: "D",
     genre: ["Female Cuckoldery", ],
     characters: ["Arabella", "Emma", "Henry" ],
@@ -176,6 +176,80 @@ stories["Mr. Wolf"] = {
           wordCount: 5798,
           index: true,
       }, 
+    ]
+  
+  
+  };
+
+  stories["Boyhood"] = {
+    num: 16,
+    overview: "Story of the original outsiders.",
+    severity: "B",
+    subtitle: "Coming Soon",
+    genre: ["Coming Of Age", "Romance", "Slowcore",],
+    characters: ["Michael Alexander", "Griffith Tartaglia", "Marley Brinx" ],
+    chapters: [
+{
+name: "Justateen (turned 18)",
+num : 1,
+wordCount: 0,
+subtitle: "Coming Soon"
+}, 
+{
+name: "Growing Up A Mormon",
+num : 2,
+wordCount: 0,
+subtitle: "Coming Soon"
+}, 
+{
+name: "French Girl",
+num : 3,
+wordCount: 0,
+subtitle: "Coming Soon"
+}, 
+
+{
+name: "You&rsquo;re such a tease",
+num : 4,
+wordCount: 0,
+subtitle: "Coming Soon"
+}, 
+{
+name: "Lauren",
+num : 5,
+wordCount: 0,
+subtitle: "Coming Soon"
+}, 
+{
+name: "Second Happiness",
+num : 6,
+wordCount: 0,
+subtitle: "Coming Soon"
+}, 
+{
+name: "You&rsquo;re such a flirt",
+num : 7,
+wordCount: 0,
+subtitle: "Coming Soon"
+}, 
+{
+name: "Our First Date",
+num : 8,
+wordCount: 0,
+subtitle: "Coming Soon"
+}, 
+{
+name: "Birthday Girl",
+num : 9,
+wordCount: 0,
+subtitle: "Coming Soon"
+}, 
+{
+name: "Theater",
+num : 10,
+wordCount: 0,
+subtitle: "Coming Soon"
+}, 
     ]
   
   
@@ -203,7 +277,7 @@ stories["Mr. Wolf"] = {
   
   stories["God Bless Estrogen Pills"] = {
     num: 18,
-    overview: "Cum... That's lots of cum. Wait. Did I just cum?!!!!",
+    overview: "Cum... That&rsquo;s lots of cum. Wait. Did I just cum?!!!!",
     severity: "D",
     background: '#da504d',
     genre: ["Concept", "Lustcraze",],
@@ -263,7 +337,7 @@ stories["Mr. Wolf"] = {
   
   stories["Hammer"] = {
     num: 20,
-    overview: "On my knees<br />In the dry puddle of my tears</br>On the floor<br/>His fingers pierce my scalp and his thumbs gouge my eyes",
+    overview: "On my knees<br>In the a puddle of my tears</br>On the floor<br/>His fingers pierce my scalp and his thumbs gouge my eyes",
     buttonStyle: "",
     severity: "B",
     background: '#f5f5ef',
@@ -348,10 +422,16 @@ function initStory(storyName) {
 
 function checkForUpdates() {
   checkForNewAchievements();
+
   storyNames.forEach(storyName => {
-    if (!data.StoryObj[storyName]) {
+    if (!(storyName in data.StoryObj)) {
       initStory(storyName);
   }
+});
+
+storyNames.forEach(storyName => {
+
+
   // check for errors, reset stroy
   if (data.StoryObj[storyName].chapters.length > stories[storyName].chapters.length) initStory(storyName);
   const story = data.StoryObj[storyName];

@@ -67,6 +67,7 @@ function availableUnreadStories() {
 function completeStories() {
     var arr = [];
     storyNames.forEach(storyName => {
+        console.log(storyName)
         const story = data.StoryObj[storyName];
         if (story.isComplete) arr.push(storyName);
     })

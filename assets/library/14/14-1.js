@@ -10,11 +10,11 @@ loadPage = function() {
 <p><span class="E-Emma">&ldquo;Emma, ma&rsquo;am,&rdquo;</span> the maid replied softly, her voice trembling slightly.</p>
 <p><span class="E-Arabella">&ldquo;Emma,&rdquo;</span> I repeated, testing the name on my tongue. <span class="E-Arabella">&ldquo;My previous maid, Sarah, was a gem. Irreplaceable, really. I have high standards, and I expect them to be met.&rdquo;</span></p>
 <p><span class="E-Emma">&ldquo;Of course, ma&rsquo;am. I will do my best to serve you well,&rdquo;</span> Emma said, her sincerity evident.</p>
-<p>She was young, fresh off the farm or some godforsaken place. I didn&rsquo;t trust her. Not one bit. I decided to grill her,<span class="E-Arabella"> &ldquo;Do you now? You seem very young. </span><br /><span class="E-Arabella">How much experience could you possibly have?&rdquo;</span></p>
+<p>She was young, fresh off the farm or some godforsaken place. I didn&rsquo;t trust her. Not one bit. I decided to grill her,<span class="E-Arabella"> &ldquo;Do you now? You seem very young. </span><br><span class="E-Arabella">How much experience could you possibly have?&rdquo;</span></p>
 <p><span class="E-Emma">&ldquo;I&rsquo;ve worked in service since I was fourteen, ma&rsquo;am,&rdquo;</span> Emma responded quietly. <span class="E-Emma">&ldquo;I&rsquo;m nineteen now.&rdquo;</span></p>
 <p><span class="E-Arabella">&ldquo;Only five years,&rdquo;</span> I muttered, more to myself than to Emma. <span class="E-Arabella">&ldquo;And you think that qualifies you to work here, in Lord Henry&rsquo;s house?&rdquo;</span></p>
 <p>Emma&rsquo;s cheeks flushed, but she held her head high. <span class="E-Emma">&ldquo;I believe so, ma&rsquo;am. I am diligent and eager to learn. I want to prove myself worthy of your trust.&rdquo;</span></p>
-<p>There was a pause between us. I studied the maid&rsquo;s face, looking for any sign of deceit or arrogance. Instead, I found only earnestness and a touch of <br />fear. My own initial aggression began to waver.</p>
+<p>There was a pause between us. I studied the maid&rsquo;s face, looking for any sign of deceit or arrogance. Instead, I found only earnestness and a touch of <br>fear. My own initial aggression began to waver.</p>
 <p><span class="E-Arabella">&ldquo;Very well,&rdquo;</span> I said, softening my tone slightly. <span class="E-Arabella">&ldquo;Tell me, can you cook?&rdquo;</span></p>
 <p><span class="E-Emma">&ldquo;Yes, ma&rsquo;am, I can cook. I can also sew, clean, and tend to the garden. I am skilled in many household tasks.&rdquo;</span></p>
 <p>I nodded slowly. Sarah before her couldn&rsquo;t cook. It was not expected of her since we had speciallized cooks, but I had been annoyed having to ask the cooks for snacks. <span class="E-Arabella">&ldquo;I see. And why did you leave your last position?&rdquo;</span></p>
@@ -244,7 +244,7 @@ ${storyCenterImage(8, false)}
 <p><span class="E-Emma">&ldquo;For a handsome and gentle man, my lady,&rdquo;</span> She purred softly, eyelids flickering nervously.</p>
 <p><span class="E-Arabella">&ldquo;Handsome and gentle? That sounds exactly like Henry to me.&rdquo;</span></p>
 <p><span class="E-Emma">&ldquo;No, ma&rsquo;am!&rdquo;</span> She closed her eyes, shaking her head nervously. I found myself increasing the pressure of my two fingers against her pussy. Emma&rsquo;s legs tightened and instinctually closed, hugging my fingers more and accidentally trapping them in the heat between her legs. I felt a rush of ecstasy. Pulling my fingers out from between her legs, I got up and leaned forward, whispering in Emma&rsquo;s ear.</p>
-<p><span class="E-Arabella">&ldquo;I will not allow another woman in this house to desire my husband. If you wish to stay in this household, then you must part with these ugly shorts, and in fact <br />all underwear too. That should serve as a weak punishment for a maiden like you. Disobey me and my resolve will not be so merciful.&rdquo;</span></p>
+<p><span class="E-Arabella">&ldquo;I will not allow another woman in this house to desire my husband. If you wish to stay in this household, then you must part with these ugly shorts, and in fact <br>all underwear too. That should serve as a weak punishment for a maiden like you. Disobey me and my resolve will not be so merciful.&rdquo;</span></p>
 <p>Her white cotton shorts in hand, I ascended the stairs to my room, leaving poor Emma in tears.</p>
 
 ${appendLink(`Major Gregory's visit`, 'section5')}

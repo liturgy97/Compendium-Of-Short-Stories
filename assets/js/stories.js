@@ -183,10 +183,10 @@ stories["Mr. Wolf"] = {
 
   stories["Boyhood"] = {
     num: 16,
-    overview: "Story of the original outsiders.",
+    overview: "Backstory of the original Outsiders.",
     severity: "B",
     subtitle: "Coming Soon",
-    genre: ["Coming Of Age", "Romance", "Slowcore",],
+    genre: ["Coming Of Age", "Romance", "Slice of Life", "Slowcore",],
     characters: ["Michael Alexander", "Griffith Tartaglia", "Marley Brinx" ],
     chapters: [
 {
@@ -215,7 +215,7 @@ wordCount: 0,
 subtitle: "Coming Soon"
 }, 
 {
-name: "Lauren",
+name: "NXT&rsquo;s Finest",
 num : 5,
 wordCount: 0,
 subtitle: "Coming Soon"
@@ -239,7 +239,7 @@ wordCount: 0,
 subtitle: "Coming Soon"
 }, 
 {
-name: "Birthday Girl",
+name: "My Moon",
 num : 9,
 wordCount: 0,
 subtitle: "Coming Soon"
@@ -337,7 +337,7 @@ subtitle: "Coming Soon"
   
   stories["Hammer"] = {
     num: 20,
-    overview: "On my knees<br>In the a puddle of my tears</br>On the floor<br/>His fingers pierce my scalp and his thumbs gouge my eyes",
+    overview: "On my knees<br>In a dry puddle of my tears</br>On the floor<br/>His fingers pierce my scalp and his thumbs gouge my eyes",
     buttonStyle: "",
     severity: "B",
     background: '#f5f5ef',
@@ -455,6 +455,7 @@ storyNames.forEach(storyName => {
         story.isRead = false;
         story.isComplete = false;
       }
+      if (chapter.name!=chapterOrigin.name) chapter.name=chapterOrigin.name;
     }
     
 

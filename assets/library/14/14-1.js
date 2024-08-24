@@ -1,8 +1,8 @@
 loadPage = function() {
     prepareStory();
-    
+    if (!currentStory.vars.hasOwnProperty('kissType')) currentStory.vars.kissType = '';
     const section1 = newSection(1);
-    const row1 = storyRow('1', 'INT. HALL - AFTERNOON', 
+    const row1a = storyRow('1a', 'INT. HALL - AFTERNOON', 
         `
 <p>The new girl curtsied, her pale blue eyes meeting mine for the briefest moment before dropping demurely to the floor.</p>
 <p>She was a striking figure&mdash;blonde hair neatly pinned back, a slender frame accentuated by a narrow waist and a surprisingly full bosom. Her smooth skin glowed with youth and vitality. I had ordered for a new maid, not a new wife for my husband!</p>
@@ -27,38 +27,39 @@ loadPage = function() {
 <p><span class="E-Arabella">&ldquo;Very well, Emma,&rdquo;</span> I replied, warmth creeping into my voice. <span class="E-Arabella">&ldquo;Welcome to Hastings Hall. Let&rsquo;s see how well you manage. Your duties begin tomorrow.&rdquo;</span></p>
 <img class="portrait-right" src= "${baseImagesFolder}/1.jpg" data-animate-block>
 <p>Emma curtsied again. <span class="E-Emma">&ldquo;Thank you, ma&rsquo;am. I promise I&rsquo;ll work hard.&rdquo;</span></p>
+<div id='choices1a'>
+${appendLinkRow('Ask her to kiss your hand', '1b', false, "applyKissType('hand')")}
+${appendLinkRow('Ask her to kiss your cheek', '1b', false, "applyKissType('cheek')")}
+${appendLinkRow('Let her be', '1b', false, 'applyKissType()')}
+
+</div>
         `
     )
     
-    section1.appendChild(row1)
+    section1.appendChild(row1a)
 
-const choice1a = `
-<p>I extended my hand. <span class="E-Arabella">&ldquo;Kiss my hand, Emma. It&rsquo;s a sign of respect in this household.&rdquo;</span></p>
+const row1b = storyRow('1b', ' ', 
+`
+${storyPart('hand_kiss_text_1', `<p>I extended my hand. <span class="E-Arabella">&ldquo;Kiss my hand, Emma. It&rsquo;s a sign of respect in this household.&rdquo;</span></p>
 <p>The maid stepped closer hesitantly. Her cheeks flushed as she bent down, her lips brushing my knuckles. I felt a shiver run through me, the touch both soft, innocent and intimate. My mouth watered.</p>
 <p><span class="E-Arabella">&ldquo;Good. Now, remember to greet me this way every morning,&rdquo;</span> I said. Emma nodded, her eyes sparkling with a mix of nerves and admiration.</p>
-<p>I let her to her chores and went on with my day.</p>
-${appendLink('Almost a week later', 'section2')}`;
-const choice1b = `
-<p>I stepped closer to Emma. <span class="E-Arabella">&ldquo;Kiss my cheek, Emma. It&rsquo;s a sign of respect in this household.&rdquo;</span></p>
-<p>The maid froze, her hands trembling slightly as she failed to register my demand. Her cheeks flushed as&nbsp;I gracefully bent forward slightly, my lips grazing her rosy cheek. <span class="E-Arabella">&ldquo;Like this,&rdquo;</span> I iterated, and Emma hesitantly raised herself on her tiptoes, to plant an innocent kiss on my blemished cheek. I felt a shiver run through me, the touch of her lips unexpectedly soft and naturally wet. My mouth watered.</p>
-<p><span class="E-Arabella">&ldquo;Good. Now, remember to greet me this way every morning,&rdquo;</span> I said, my voice softer than I intended. Emma nodded. I left her to her chores and went on with my day.</p>
-${appendLink('Almost a week later', 'section2')}`;
-const choice1c = `<p>I let her to her chores and went on with my day.</p>
+`)}
 
+${storyPart('cheek_kiss_text_1', `<p>I stepped closer to Emma. <span class="E-Arabella">&ldquo;Kiss my cheek, Emma. It&rsquo;s a sign of respect in this household.&rdquo;</span></p>
+<p>The maid froze, her hands trembling slightly as she failed to register my demand. Her cheeks flushed as&nbsp;I gracefully bent forward slightly, my lips grazing her rosy cheek. <span class="E-Arabella">&ldquo;Like this,&rdquo;</span> I iterated, and Emma hesitantly raised herself on her tiptoes, to plant an innocent kiss on my blemished cheek. I felt a shiver run through me, the touch of her lips unexpectedly soft and naturally wet. My mouth watered.</p>
+<p><span class="E-Arabella">&ldquo;Good. Now, remember to greet me this way every morning,&rdquo;</span> I said, my voice softer than I intended. Emma nodded.`)}
+
+
+<p>I let her to her chores and went on with my day.</p>
 ${appendLink('Almost a week later', 'section2')}
-`;
+`
+)
 
 const section2 = newSection(2);
 
-menu(row1.querySelector('.rowContent'), [
-    ["Ask her to kiss your hand", ()=>{currentStory.vars.kissType = "hand"}, choice1a],
-    ["Ask her to kiss your cheek", ()=>{currentStory.vars.kissType = "cheek"}, choice1b],
-    ["Let her be", ()=>{currentStory.vars.kissType = ""}, choice1c],
-], ()=> {})
 
-// section2.innerHTML = storyWideImage(2);
     
-const row2 = storyRow('2', 'INT. BEDROOM - EARLY MORNING', 
+const row2a = storyRow('2a', 'INT. BEDROOM - EARLY MORNING', 
 `
 ${storyImage(2)}
 <p>I looked at myself in the mirror, examining my figure, voluptuous, curvaceous, with breasts that defied gravity. It had been ages since I&rsquo;d received a genuine compliment from Henry. Sure, he&rsquo;d mutter something nice before sex, but we hadn&rsquo;t even had sex in two months. I had grown cold toward it lately. My skin was blemishing, and wrinkles were creeping onto my forehead. I looked old.</p>
@@ -66,77 +67,66 @@ ${storyCenterImage(3)}
 <p>I descended the stairs to our grand hall. While this house and its inhabitants reeked of pretentiousnes, Emma stood there looking like innocence itself. She was just a simple maid, yet I wondered if she was the most stunning woman to have ever set foot here. My heart burnt with jealousy.</p>
 <p>Emma was the sun that broke my Saturday dawn. Usually, I had no reason to drag myself out of bed early, but she made me eager. Eager to find a fault in her, seeking an opportunity to scold and embarrass her. But every task I gave her, she performed flawlessly. Cooking, sewing, gardening&mdash;she excelled at it all. She never questioned why I asked for things beyond her duties. She didn&rsquo;t need to, she was an expert in everything. It&rsquo;s hard to school a maiden in an art if she knows it better than you. She listened patiently, using each opportunity to showcase her knowledge and expertise. More than once, I found myself on the brink of embarrassment, unable to keep up with her. Yet, gentle Emma never truly humiliated me. Still, I persisted, knowing I&rsquo;d get my chance to belittle her and put her in her place.</p>
 <p>It was difficult to corner the house&rsquo;s favorite with others around. My chances dwindled to moments when no one was watching, the early mornings, and not for long. Since Emma arrived, everyone in the house, even the butler and the rest of the staff, rose sooner. Her boundless energy seeped into every crevice, warming the place like nothing else ever had. New arrivals always brought change, but Emma was different. She lifted everyone&rsquo;s spirits, her charm infecting every soul. Guests at my afternoon parties commended Emma for her gentle and cheerful presence. Imagine that? A maid receiving more compliments than the hosts at a genteel gathering. Hell, even my soulless in-laws felt brighter around her.</p>
-<p><span class="E-Emma">&ldquo;Good Morning, Lady Arabella!&rdquo;</span> Emma chirped so sweetly. And a Good Morning it was. 
-${(currentStory.vars.kissType == "hand")? `She ran to me, kissed my hand.` : ``} 
+<p><span class="E-Emma">&ldquo;Good Morning, Lady Arabella!&rdquo;</span> Emma chirped so sweetly. And a Good Morning it was. </p>
 
-${(currentStory.vars.kissType == "cheek")? `She ran to me, pecked me on the cheek.` : ``} 
-
-</p>
+${storyPart('hand_kiss_text_2', `<p>She ran to me and kissed my hand.</p>`)}
+${storyPart('cheek_kiss_text_2', `<p>She ran to me and pecked me on the cheek.</p>`)}
+    
+<div id="choices2a">
+${appendLinkRow('Kiss her back', '2b', false, "secondChoice('kind')")}
+${appendLinkRow('Ask her why her uniform is not proper', '2b', false, "secondChoice('cruel')")}
+</div>
 `
 
 )
 
-section2.appendChild(row2);
+section2.appendChild(row2a);
 
-const choice2a = `<p>I found myself cupping her chin, returning the gesture with a kiss on her cheek. Our massive tits inadvertently squeezed against each other&rsquo;s.</p>
+const row2b = storyRow('2b', ' ', 
+`
+${storyPart('second_choice_kind', `<p>I found myself cupping her chin, returning the gesture with a kiss on her cheek. Our massive tits inadvertently squeezed against each other&rsquo;s.</p>
 <p><span class="E-Emma">&ldquo;Thank you, ma&rsquo;am, you&rsquo;re so kind,&rdquo;</span> she said, her eyes so bright. It was my pleasure, but I kept that to myself.</p>
 <p><span class="E-Henry">&ldquo;Good Morning, my sweet wife.&rdquo;</span></p>
 <p>Emma and I separated at hearing Henry&rsquo;s deep morning voice echoing around as he descended the steps to the main hall. 
 Startled, Emma and I instinctively reached for our gowns, my hands fluttering to smooth the fabric that was already perfectly arranged, while Emma's 
-moved quickly to her apron, ensuring it was properly tied, though it hadn’t come undone.</p>
-`;
+moved quickly to her apron, ensuring it was properly tied, though it hadn’t come undone.</p>`)}
 
-
-const choice2b = `<p><span class="E-Arabella">&ldquo;Emma, why isn&rsquo;t your uniform proper?&rdquo;</span></p>
+${storyPart('second_choice_cruel', `<p><span class="E-Arabella">&ldquo;Emma, why isn&rsquo;t your uniform proper?&rdquo;</span></p>
 <p><span class="E-Emma">&ldquo;It&rsquo;s proper to my knowledge, ma&rsquo;am,&rdquo;</span> Emma responded nervously.</p>
 <p><span class="E-Arabella">&ldquo;Come here,&rdquo;</span> I commanded with a firm voice. Emma stepped closer, her cheeks pink with shyness. I pulled her by her collar, our massive tits inadvertently squeezing against each other&rsquo;s as she closed the distance between us. I adjusted the maid&rsquo;s collar, and as my fingers brushed against her neck, I felt a rush of warmth.</p>
 <p><span class="E-Arabella">&ldquo;Your uniform must always be immaculate,&rdquo;</span> I said. <span class="E-Arabella">&ldquo;You represent this household.&rdquo;</span></p>
 <p>Emma nodded, her blue eyes wide and sincere. <span class="E-Emma">&ldquo;Yes, ma&rsquo;am. I understand.&rdquo;</span></p>
 <p><span class="E-Henry">&ldquo;Good Morning, my sweet wife.&rdquo;</span></p>
-<p>Emma and I separated at hearing Henry&rsquo;s deep morning voice echoing around as he descended the steps to the main hall.</p>
+<p>Emma and I separated at hearing Henry&rsquo;s deep morning voice echoing around as he descended the steps to the main hall.</p>`)}
 
-`;
-
-var row3;
-
-menu(row2.querySelector('.rowContent'), [
-    ["Kiss her back", ()=>{}, choice2a],
-    ["Ask her why her uniform is not proper", ()=>{}, choice2b],
-], ()=> {section2.appendChild(row3);})
-
-row3 = storyRow('3', ' ', 
-`
 <p>
 Henry came down the stairs and kissed me on the mouth. A routine of his every morning.</p>
 <p><span class="E-Emma">&ldquo;Good Morning, sir,&rdquo;</span> Emma greeted her lord. Eyes and head bowing submissively. Henry ignored her completely, like she did not exist before him. He left me to the maid and walked into his study. Lord Henry did not acknowledge courtesies from a servant, a&nbsp;particularity well-known in his household.</p>
 <p>Emma shrank, embarrassed at the cold reception. She should have known better, but she had grown accustomed to the liberties I allowed her.</p>
 
-`);
+<div id="choices2a2">
+${appendLinkRow('Apologize for Henry&rsquo;s attitude', '2c', false, "thirdChoice('kind')")}
+${appendLinkRow('Reprimand her for speaking to her Lord uninvited', '2c', false, "thirdChoice('cruel')")}
+</div>
 
-row3.querySelector('.rowContent').style.marginTop = 0;
-
-const choice3a = `<p><span class="E-Arabella">&ldquo;Excuse him, Emma, he had not noticed,&rdquo;</span> I found myself apologizing to the maid.</p>
-<p><span class="E-Emma">&ldquo;Thank you, ma&rsquo;am,&rdquo;</span> Emma nodded. <span class="E-Emma">&ldquo;May I ask&nbsp;for his lordship's forgiveness?&rdquo;</span></p>
-<p>Her eyes were pointed to the floor. Henry had disappointingly left us and went to his study. The bastard hurt her feelings and left.</p>`;
+`
+)
 
 
-const choice3b = `<p><span class="E-Arabella">&ldquo;Emma,&rdquo;</span> I scolded her. She looked up, eyes wide with worry. <span class="E-Arabella">&ldquo;You know Lord Henry does not accept greetings from servants.&rdquo;</span></p>
+row2c = storyRow('2c', ' ', 
+`
+${storyPart('third_choice_cruel', `<p><span class="E-Arabella">&ldquo;Emma,&rdquo;</span> I scolded her. She looked up, eyes wide with worry. <span class="E-Arabella">&ldquo;You know Lord Henry does not accept greetings from servants.&rdquo;</span></p>
 <p><span class="E-Emma">&ldquo;I... I&rsquo;m sorry, Lady Arabella. I forgot,&rdquo;</span> she stammered.</p>
 <p><span class="E-Arabella">&ldquo;I understand you&rsquo;re used to a different way with me, but you must remember the rules of this house,&rdquo;</span> I continued. <span class="E-Arabella">&ldquo;Henry is not as lenient.&rdquo;</span></p>
 <p>She nodded, biting her lip. <span class="E-Emma">&ldquo;Yes, ma&rsquo;am. It won&rsquo;t happen again.&rdquo;</span></p>
 <p><span class="E-Arabella">&ldquo;Good,&rdquo;</span> I said, my eyes softening. <span class="E-Arabella">&ldquo;Just be more mindful in the future. You&rsquo;re still learning.&rdquo;</span></p>
 <p><span class="E-Emma">&ldquo;Thank you, Lady Arabella,&rdquo;</span> she murmured, evidently relieved. <span class="E-Emma">&ldquo;May I ask Lord&rsquo;s forgiveness.&rdquo;</span></p>
-<p>Her eyes were pointed to the floor. I was charmed by her innocence.</p>`;
+<p>Her eyes were pointed to the floor. I was charmed by her innocence.</p>`)}
 
-var row4;
-
-menu(row3.querySelector('.rowContent'), [
-    ["Apologize for Henry&rsquo;s attitude", ()=>{}, choice3a],
-    ["Reprimand her for speaking to her Lord uninvited", ()=>{}, choice3b],
-], ()=> {section2.appendChild(row4);})
-
-row4 = storyRow('4', ' ', 
-    `
+${storyPart('third_choice_kind', `
+    <p><span class="E-Arabella">&ldquo;Excuse him, Emma, he had not noticed,&rdquo;</span> I found myself apologizing to the maid.</p>
+<p><span class="E-Emma">&ldquo;Thank you, ma&rsquo;am,&rdquo;</span> Emma nodded. <span class="E-Emma">&ldquo;May I ask&nbsp;for his lordship's forgiveness?&rdquo;</span></p>
+<p>Her eyes were pointed to the floor. Henry had disappointingly left us and went to his study. The bastard hurt her feelings and left.</p>`)}
 <p>I wondered profusely how my husband could be so oblivious to her charm and beauty. He was the only one immune to Emma&rsquo;s striking allure. It seemed impossible that he could resist her so completely, even I found myself melting around her. Henry&rsquo;s felicity and self-respect were undeniable, but men are pigs, and that pig should have some feeling for her. If he had shown occasional kindness or admiration, I could have passed it off as natural. But his complete disregard was unnatural, unreal. I became suspicious of him.</p>
 <p>I grabbed Emma&rsquo;s hand and squeezed it gently. The maid raised her beautiful eyes to meet mine.</p>
 <p><span class="E-Arabella">&ldquo;Emma, would you bring Lord Hastings some tea?&rdquo;</span> My voice then lowered to a whisper, <span class="E-Arabella">&ldquo;Then you can ask him for forgiveness yourself.&rdquo;</span></p>
@@ -147,18 +137,18 @@ row4 = storyRow('4', ' ',
 <p>My heart twisted. I had hoped for a reaction, any sign of interest or guilt. Instead, I was left with my own swirling thoughts.</p>
 
 ${appendLink('Later that afternoon', 'section3')}
-    `
-)
+`);
 
-row4.querySelector('.rowContent').style.marginTop = 0;
+
+
 
 const section3 = newSection(3);
 
 
 
-section3. innerHTML += `${storyWideImage('garden', false)}`;
+section3. innerHTML += `${storyWideImage('garden')}`;
 
-const row5 = storyRow('5', 'INT. LIVING ROOM - AFTERNOON', 
+const row3a = storyRow('3a', 'INT. LIVING ROOM<br>AFTERNOON', 
 `
 <p>I watched from the sitting room window, my eyes narrowing as I observed my husband, esteemed Lord Henry Hastings, speaking with Emma in the garden.</p>
 <p>Their conversation seemed innocent enough. Suddenly, Henry pointed at a cluster of flowers by the side, the lavenders. He must have been telling her they were his favorites. Emma hopped towards them excitedly, bent over at the waist, so disgracefully and unladylike, flaunting her ass towards her master behind her, and turned her head to shoot him a smile before tilting her can to water his lavenders. From a distance, Henry seemed unimpressed, but my jealousy gnawed at me, imagining my husband&rsquo;s eyes lingering on Emma&rsquo;s butt.</p>
@@ -182,12 +172,12 @@ ${appendLink('Day by day...', 'section4')}
 `
 )
 
-section3.appendChild(row5);
+section3.appendChild(row3a);
 
 const section4 = newSection(4);
 
 
-const row6 = storyRow('6', 'INT. HALL - MORNING', 
+const row4a = storyRow('4a', 'INT. HALL - MORNING', 
 `
 <p>Day by day, my paranoia grew and grew. One morning, I confronted Emma in the hallway. My eyes must've been blazing with suspicion.</p>
 ${storyCenterImage(4, false)}
@@ -217,12 +207,17 @@ ${storyCenterImage(7)}
 <p>Suddenly, as I stroked a spot on her thigh that must&rsquo;ve grown sensitive with constant friciton with the cheap texture of her old shorts, Emma hummed softly at my touch. Her moan was so soft, I swear if my husband heard that his cock would spring up hard as a pole at the faintness of the sound alone.</p>
 <p>Emma immediately pulled my hand out of her short and kissed it on the back repeatedly, <span class="E-Emma">&ldquo;Ma&rsquo;am, I beg you! I desperately need this job and I swear&nbsp;I have not committed anything wrong or disrespectful towards you or Lord Hastings. Please don&rsquo;t embarrass me any further, I do not deserve this and I cannot bear it!&rdquo;</span>&nbsp;</p>
 <p>Her plead was followed by a turn of her head, while still in my embrace, she planted a warm kiss to my cheek. I stared at those wonderful wide begging eyes, contemplating how I should react.</p>
+
+${appendLinkRow('Be cruel', '4b', false, "setPath('cruel')")}
+<p>To be kind is nice sometimes (Perfume path unavailable)</p>
 `
 )
 
-section4.appendChild(row6);
+section4.appendChild(row4a);
 
-const choice4a = `<p><span class="E-Arabella">&ldquo;A seductress should not ask her mistress for forgiveness.&rdquo;</span></p>
+const row4b = storyRow('4b', ' ', 
+`
+<p><span class="E-Arabella">&ldquo;A seductress should not ask her mistress for forgiveness.&rdquo;</span></p>
 <p><span class="E-Emma">&ldquo;Ma&rsquo;am!&rdquo;</span></p>
 <p><span class="E-Arabella">&ldquo;Silence, girl! I'll conceal your scandalous acts as long as you listen to every word I tell you.&rdquo;</span></p>
 <p><span class="E-Emma">&ldquo;Please, ma&rsquo;am!&rdquo;</span> She kissed my cheek again. My heart melted but I retained my steel exterior.</p>
@@ -254,22 +249,12 @@ ${storyCenterImage(8, false)}
 <p>Her white cotton shorts in hand, I ascended the stairs to my room, leaving poor Emma in tears.</p>
 
 ${appendLink(`Major Gregory's visit`, 'section5')}
-`;
+`
+)
+const section5 = newSection(5);
 
 
-const choice4b = ``;
-
-var row7;
-
-const section5 = newSection(5, '');
-
-menu(row6.querySelector('.rowContent'), [
-    ["Be cruel", ()=>{}, choice4a],
-    ["To be kind is nice sometimes (Perfume path unavailable)", 'disable', choice4b],
-], ()=> {})
-
-
-row7 = storyRow('7', 'INT. LIVING ROOM - AFTERNOON', 
+row5a = storyRow('5a', 'INT. LIVING ROOM - AFTERNOON', 
 `
 ${storyImage(9)}
 <p>Henry&rsquo;s friend, Major Gregory, had returned from the front lines and came in for a visit. A man of high rank and higher ego, he strutted into our home with all the bravado of a peacock. The gathering at our house had to be perfect, a showcase of wealth and status that would make even the most jaded of society pause. As we prepared for the small afternoon party, my mind buzzed with a cruel plan to put Emma in her place.</p>
@@ -297,7 +282,7 @@ ${storyEndButton('Chapter 2')}
 `
 )
 
-section5.appendChild(row7)
+section5.appendChild(row5a)
 
 
 }
@@ -308,7 +293,7 @@ section5.appendChild(row7)
 
 
 
-storyLoad();
+
 
 setChapterIndex = ()=> {
     currentChapterIndex.innerHTML= '';
@@ -319,3 +304,35 @@ setChapterIndex = ()=> {
     addToChapterIndex('Section 4', 'section4') 
     addToChapterIndex('Section 5', 'section5') 
     }
+
+
+storyLoad();
+applyKissType();
+    function applyKissType(k=currentStory.vars.kissType) {
+        currentStory.vars.kissType = k;
+        updateStoryObj();
+        setPart(currentStory.vars.kissType=='hand', 'hand_kiss_text_1', '1b')
+        setPart(currentStory.vars.kissType=='cheek', 'cheek_kiss_text_1', '1b')
+        setPart(currentStory.vars.kissType=='hand', 'hand_kiss_text_2', '2a')
+        setPart(currentStory.vars.kissType=='cheek', 'cheek_kiss_text_2', '2a')
+        if (document.getElementById('choices1a')) document.getElementById('choices1a').innerHTML='';
+    }
+
+    function secondChoice(k='cruel') {
+        
+        setPart(k=='cruel', 'second_choice_cruel', '2b')
+        setPart(k=='kind', 'second_choice_kind', '2b')
+        if (document.getElementById('choices2a')) document.getElementById('choices2a').innerHTML='';
+    }
+
+    function thirdChoice(k='cruel') {
+        
+        setPart(k=='cruel', 'third_choice_cruel', '2c')
+        setPart(k=='kind', 'third_choice_kind', '2c')
+        if (document.getElementById('choices2a2')) document.getElementById('choices2a2').innerHTML='';
+    }
+
+    function setPath(k='cruel') {
+        if (k=='cruel') currentStory.vars.path= 'cruel_path'
+    }
+

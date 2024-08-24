@@ -125,7 +125,7 @@ function loadStory(storyName) {
       </div>
     `;
 
-    if (story.isLocked || story.isHidden || getStorySubtitle(story) == "Coming Soon") {
+    if (story.isLocked || story.isHidden || getStorySubtitle(story) == "Coming Soon"|| getStorySubtitle(story) == "Patreon Exclusive")  {
       const tempcontainer = document.getElementById("StoryPlayButton");
       if (!tempcontainer.classList.contains("GreyedOut")) tempcontainer.classList.add("GreyedOut");
 
@@ -203,23 +203,47 @@ function loadStory(storyName) {
   
   
     const ChapterContainer = document.getElementById('ChapterList');
-  
+    var isBoyhoodDemo = false;
+    if (isDemo()) isBoyhoodDemo = true;
     for (let i = 0; i < story.chapters.length; i++) {
+      
       const chapter = story.chapters[i];
-      const chdur = getChapterDuration(chapter);
+      var chdur = getChapterDuration(chapter);
+      var chnum = chapter.num;
+      var chname = chapter.name;
+      var chsub = getChapterSubtitle(chapter);
+      var chunlocked = chapter.isUnlocked;
+      var chcomplete = chapter.isComplete; 
+      var chread = chapter.isRead;
+      if (story.name=='Boyhood' && isBoyhoodDemo) {
+        chdur = wordCountToDuration(5667)
+        chnum = 0;
+        chname = 'Justateen (Demo)'
+        chsub = '';
+        chunlocked = true;
+        if (data.hasOwnProperty('boyhood_demo_complete')) {
+          if (data.boyhood_demo_complete) {
+            chcomplete = true;
+            chread = true;
+          }
+
+        }
+        isBoyhoodDemo = false;
+        i=-1;
+      }
       const button = document.createElement('div');
       button.className = 'Chapter';
-      if (chapter.isUnlocked) button.className = 'Chapter unlockedChapter';
+      if (chunlocked) button.className = 'Chapter unlockedChapter';
       button.innerHTML = `
             <div class="chapter-row-left-side">
               <div class="position-relative gray14 Satoshi font-weight-400 flex-centered padless transition03s" style="font-size: 1.6rem; width: 4.2rem; height: 4.2rem">
-              <span class="Chapternum position-absolute-centered transition03s">${chapter.num}</span>
+              <span class="Chapternum position-absolute-centered transition03s">${chnum}</span>
               <svg style="width:1.5rem; height: 1.6rem;" class="StoryPlayIcon position-absolute-centered transition03s" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="transition03s" d="M13.094 6.52922C14.3508 7.25486 14.3508 9.06895 13.094 9.79459L3.19636 15.509C1.93952 16.2346 0.368469 15.3276 0.368469 13.8763L0.36847 2.44751C0.36847 0.996234 1.93952 0.0891892 3.19636 0.814827L13.094 6.52922Z" fill="var(--color-2-light)"/>
               </svg></div>
-              <div class="Chaptername ${!getChapterSubtitle(chapter)? `flex-centered`: ``} truncate-ellipse gray9 Satoshi font-weight-400 flex-column padless">
-                <span class="gray9 font-weight-400 font-size-16" style="line-height: 1.6;">${chapter.name}</span>
-                ${getChapterSubtitle(chapter)? `<span class="truncate-ellipse gray14 font-weight-300 font-size-14" style="line-height: 1.6; ">${getChapterSubtitle(chapter)}</span>`: ``}
+              <div class="Chaptername ${!chsub? `flex-centered`: ``} truncate-ellipse gray9 Satoshi font-weight-400 flex-column padless">
+                <span class="gray9 font-weight-400 font-size-16" style="line-height: 1.6;">${chname}</span>
+                ${chsub? `<span class="truncate-ellipse gray14 font-weight-300 font-size-14" style="line-height: 1.6; ">${chsub}</span>`: ``}
                 
                 
             </div>
@@ -231,7 +255,7 @@ function loadStory(storyName) {
               ${(chdur === 0) ? `NA` : `${Math.floor(chdur / 3600) > 0 ? Math.floor(chdur / 3600) + ':' + Math.floor((chdur % 3600) / 60).toString().padStart(2, '0') + ':' : Math.floor(chdur / 60) + ':'}${(chdur % 60).toString().padStart(2, '0')}`}
               </div>
               <div class="BigIcon">
-              ${(!chapter.isUnlocked) ?
+              ${(!chunlocked) ?
               `
                 <svg class="LockIcon" style="width: 2rem; height: 2.5rem; " width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3.80477 8.5979C3.80477 8.5979 2.65242 1.49731 9.95141 1.49731C17.2504 1.49731 16.0981 8.5979 16.0981 8.5979" stroke="var(--color-gray-14)" stroke-width="1.77515"/>
@@ -239,14 +263,14 @@ function loadStory(storyName) {
                   <circle cx="9.95142" cy="16.5861" r="2.66272" stroke="var(--color-gray-14)" stroke-width="1.77515"/>
                 </svg>
               ` : ``}
-              ${(chapter.isRead && !chapter.isComplete) ?
+              ${(chread && !chcomplete) ?
               `<div class="BigIcon">
                 <svg class="ReadIcon" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.49188 5.72673L6.87187 11.1067L16.7352 1.24341" stroke="var(--color-gray-14)" stroke-width="2.02" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
     
               ` : ``}
-              ${chapter.isComplete ?
+              ${chcomplete ?
               `
                 <svg style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 2rem; height: 2rem;" class="CompleteIcon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="11.4054" cy="11.4919" r="11" fill="var(--color-2-light)"/>
@@ -266,7 +290,7 @@ function loadStory(storyName) {
             
             
         `;
-        if (chapter.isUnlocked) button.addEventListener('click', ()=>{
+        if (chunlocked) button.addEventListener('click', ()=>{
           story.currentChapter = chapter; 
           updateChapterObj(chapter);
           openStory(story);

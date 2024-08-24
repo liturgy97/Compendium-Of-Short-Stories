@@ -847,7 +847,7 @@ const row1b = storyRow('1b', ' ',
     ${storyImage('S/37')}
     <p>He had lasted a little over a minute in her mouth but to him it felt like an hour. He couldn&rsquo;t hold it anymore.</p>
     <p>He grabbed her head and pulled her to him. His cock nudged a thread&rsquo;s width further into her throat and the again nudged a little bit more...</p>
-    ${storyVideo('S/38', true, false, true, true, true)}
+    ${storyVideo('S/38')}
     <p>And then he came... He unloaded his cum right into her throat to the most nerve-shattering orgasm he&rsquo;s ever had.</p>
     <p>Sherrie&rsquo;s throat tightened around his cock as she tried to contain all his cum. He came a good fucking lot, it was too much for her and she choked. He pulled his cock out a little bit and the remainder of his shot was enough to give Sherrie a mouthful.</p>
     ${storyImage('S/39')}

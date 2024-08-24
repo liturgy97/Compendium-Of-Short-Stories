@@ -94,6 +94,8 @@
         ssMasonry();
 
 
+        if(!data.hasOwnProperty('patreonCode')) data.patreonCode = '';
+
         if (resetGame) {
 
             removeAllSaves();
@@ -102,10 +104,14 @@
 
             activateTrialButton();
 
+        } else if (data.patreonCode.toLowerCase() != 's44ugq3dnibp08242024') {
+            console.log('button', )
+            activateTrialButton();
         } else {
 
             updateGameStartButton();
         }
+
 
 
         ssPhotoswipe();

@@ -9,7 +9,7 @@ function loadSavesPage() {
     
   for (let i = 0; i < totalSavesCount; i++) {
     
-    var saveslot = JSON.parse(localStorage.getItem("data" + i)) ;
+    var saveslot = JSON.parse(localStorage.getItem(savePrefix + i)) ;
   
     var y = document.createElement('div');
     y.className = "row";
@@ -112,7 +112,7 @@ function loadSaveButtons() {
 
     
 
-    const saveExists = localStorage.getItem("data" + i);
+    const saveExists = localStorage.getItem(savePrefix + i);
 
 
     
@@ -121,7 +121,7 @@ function loadSaveButtons() {
     saveButtonBox.addEventListener('click', ()=> {
       hideAllSaveTempAreas()
 
-      if(localStorage.getItem("data" + i)) {
+      if(localStorage.getItem(savePrefix + i)) {
         const area = document.getElementById("SavesButtonTempArea" + i);
 
 
@@ -200,7 +200,7 @@ function loadSaveButtons() {
     copyButtonBox.addEventListener('click', ()=> {
       hideAllSaveTempAreas();
 
-      if(localStorage.getItem("data" + i)) {
+      if(localStorage.getItem(savePrefix + i)) {
         
 
 
@@ -214,7 +214,7 @@ function loadSaveButtons() {
         
         alertBox.innerHTML =`Save ${i} copied to clipboard.<span class="alert-box__close"></span>`;
 
-        const savetext = ObjectToEncryptedJSON(JSON.parse(localStorage.getItem("data" + i))) ;
+        const savetext = ObjectToEncryptedJSON(JSON.parse(localStorage.getItem(savePrefix + i))) ;
 
         if(!savetext) {
           alertBox.className = "alert-box alert-box--error"; 
@@ -244,7 +244,7 @@ function loadSaveButtons() {
     pasteButtonBox.addEventListener('click', ()=> {
       hideAllSaveTempAreas();
       currentSave = i;
-      if(localStorage.getItem("data" + i)) {
+      if(localStorage.getItem(savePrefix + i)) {
         const area = document.getElementById("SavesButtonTempArea" + i);
 
 
@@ -405,7 +405,7 @@ const ssFormSubmission = function(customForm, onCompletion) {
           const tempData = encryptedJSONToObject(field.value);
           if (tempData) {
               const i = currentSave;
-              localStorage.setItem("data" + i, JSON.stringify(tempData))
+              localStorage.setItem(savePrefix + i, JSON.stringify(tempData))
               return;
            }
           
@@ -487,7 +487,6 @@ const ssFormSubmission = function(customForm, onCompletion) {
 
 const onSuccussfulPaste = function() {
   var i = currentSave;
-  startGame();
   loadSavesPage();
   const area = document.getElementById("SavesButtonTempArea" + i);
   area.innerHTML = "";

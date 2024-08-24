@@ -306,23 +306,23 @@ function AutoSave() {
 }
 
 function Save(num) {
-    localStorage.setItem("data" + num, JSON.stringify(data));
+    localStorage.setItem(savePrefix + num, JSON.stringify(data));
 
 }
 
 function loadSave(num) {
 
-    data = JSON.parse(localStorage.getItem("data"+num));
+    data = JSON.parse(localStorage.getItem(savePrefix+num));
 }
 
 function removeSave(i) {
-    localStorage.removeItem("data" + i);
+    localStorage.removeItem(savePrefix + i);
 
 }
 
 function removeAllSaves() {
     for (let i=0; i < totalSavesCount; i++) {
-        localStorage.removeItem("data" + i);
+        localStorage.removeItem(savePrefix + i);
     }
     
 

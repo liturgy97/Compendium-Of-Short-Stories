@@ -446,13 +446,14 @@ storyNames.forEach(storyName => {
     } else {
       
       const chapterOrigin = getChapterOrigin(chapter);
-      if (chapter.subtitle == "Coming Soon" && (!chapterOrigin.hasOwnProperty('subtitle') || chapterOrigin.subitle!="Coming Soon")) {
+      if ((chapter.subtitle == "Coming Soon" || chapter.subtitle == "Patreon Exclusive") && (!chapterOrigin.hasOwnProperty('subtitle') || chapterOrigin.subitle!=chapter.subtitle)) {
         chapter = new Chapter(story.name, chapterOrigin);
         console.log("New Chapter Added, ", chapter)
         story.chapters[chapter.num] = chapter;
         story.isSeen = false;
         story.isRead = false;
         story.isComplete = false;
+        if (chapter.num>1 && story.chapters[num-2].isRead) chapter.isUnlocked=true;
       }
       if (chapter.name!=chapterOrigin.name) chapter.name=chapterOrigin.name;
     }

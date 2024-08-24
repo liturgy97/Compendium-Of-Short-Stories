@@ -18,7 +18,7 @@ function lockedStories() {
     var arr = [];
     storyNames.forEach(storyName => {
         const story = data.StoryObj[storyName];
-        if (story.isLocked || getStorySubtitle(story) == "Coming Soon") arr.push(storyName);
+        if (story.isLocked || getStorySubtitle(story) == "Coming Soon" || (isDemo() && getStorySubtitle(story) == "Patreon Exclusive")) arr.push(storyName);
     })
     return arr;
 }
@@ -121,7 +121,7 @@ function getChapterOrigin(datach) {
 }
 
 function getChapterDuration(datach) {
-    
+        
     return wordCountToDuration(getChapterOrigin(datach).wordCount)
   }
 
@@ -426,7 +426,7 @@ function endChapter(chapter=currentChapter) {
     clearLoadedScripts();
 
     
-    if (nextChapter(chapter)) {
+    if (nextChapter(chapter) && isChapterAvailable(nextChapter(chapter))) {
         
         switchToNextChapter(chapter);
     } else {
@@ -502,7 +502,7 @@ function isChapterAvailable(chapter=currentChapter) {
     const origin = getChapterOrigin(chapter);
     var subtitle = "";
     if(origin.hasOwnProperty('subtitle')) subtitle = getChapterSubtitle(chapter);
-    if (subtitle != 'Coming Soon' && subtitle != 'Patreon exclusive') return true;
+    if (subtitle != 'Coming Soon' && (!isDemo() || subtitle != 'Patreon exclusive') ) return true;
     return false;
 }
 

@@ -7,7 +7,9 @@ const section1 = newSection(1);
 const row1 = storyRow('1', ' ', 
     
     `
-
+<h3><strong>Note:<br>Unless otherwise mentioned, all characters in all stories are above 18.</strong></h3>
+<h3></h3>
+<h3></h3>
 <p><span class="ELF-Elf">Elf:</span> &ldquo;Ahoy there, young wanderer!&rdquo;</p>
 <p><span class="ELF-You">You:</span> &ldquo;Ahoy?&rdquo;</p>
 <p><span class="ELF-Elf">Elf:</span> &ldquo;You&rsquo;ve released me from my confinement in the lamp, so I&rsquo;m obliged to grant you three wishes. Consider them carefully, for&mdash;&rdquo;</p>

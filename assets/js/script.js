@@ -1,4 +1,5 @@
 function devLoad() {
+
 }
 var currentAudio;
 
@@ -27,6 +28,8 @@ var sections;
 var rows;
 
 var parts;
+
+var savePrefix = "data"
 
 var setChapterIndex = ()=>{}
 
@@ -58,13 +61,15 @@ var data = {};
 
 var gameLoaded = false;
 
-const version = "24.07a";
+const version = "08.24.2024";
+
+if (version.toLowerCase().includes('demo')) savePrefix = 'datademo'
 
 data.version = version;
 
 data.patreonCodes =  {};
 
-data.patreonCodes.patreonCode2407a =  "";
+data.patreonCode =  "";
 
 var resetGame = true;
 
@@ -72,13 +77,12 @@ var currentHeaderMode = "Old";
 
 var hideLogoUponScroll = true;
 
-if (localStorage.getItem("data0")) {
-
+if (localStorage.getItem(savePrefix + "0")) {
+  console.log(savePrefix + "0")
   resetGame = false;
 
-  data = JSON.parse(localStorage.getItem("data0")) ;
+  data = JSON.parse(localStorage.getItem(savePrefix + "0")) ;
 
-  if (data.patreonCodes.patreonCode2407a != "patreontrial0707") resetGame = true;
 
 }
 
@@ -197,15 +201,15 @@ function saveCleanup() {
     AutoSave();
   storyNames.forEach( storyName => {
     const story = data.StoryObj[storyName]; 
-    if (story.isLocked) {story.isRead =false; story.isComplete = false;}
+    if (getStorySubtitle=='Patreon Exclusive') story.isLocked = true;
     
     if (!story.hasOwnProperty('vars')) story.vars = {};
     if (story.hasOwnProperty('CurrentChapter')) delete story.CurrentChapter;
     if (story.hasOwnProperty('currentSectionID')) delete story.currentSectionID;
     if (!story.hasOwnProperty('currentChapter')) story.currentChapter = story.chapters[0];
-
+    if (story.name=='Boyhood' && story.chapters[0].name.includes('Demo')) story = new Story('Boyhood')
     story.chapters.forEach(ch=> {
-      if (origin.subtitle == "Coming Soon" || origin.subtitle == "Patreon Exclusive") chapterStars.isUnlocked = false;
+      if (!isChapterAvailable(ch)) ch.isUnlocked = false;
       if (!ch.isRead) story.isRead= false;
       if (!ch.isComplete) story.isComplete= false;
 
@@ -269,4 +273,9 @@ function loadMainPageBricks() {
     </div> <!-- end brick-->
     `
   }
+}
+
+
+function isDemo() {
+  return version.toLowerCase().includes('demo')
 }

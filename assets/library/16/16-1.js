@@ -128,7 +128,7 @@ const row1b = storyRow('1b', ' ',
     <p>I watched my sister wilt, embarrassment and sadness pooling in her eyes. I almost felt sorry for her. Almost.</p>
     <p>I looked away, my voice softening with pity.</p>
     <p><span class="Kelsi">&ldquo;Sorry, baby girl. I don&rsquo;t have any money.&rdquo;</span></p>
-    <p>Her voice hardenned suddenly, sharply cutting through my morning haze.</p>
+    <p>Her voice hardened suddenly, sharply cutting through my haze.</p>
     <p><span class="Kenzie">&ldquo;The heroine business isn&rsquo;t going well, huh?&rdquo;</span></p>
     <p>My hand snapped up, covering Kenzie&rsquo;s mouth before she could say another word.</p>
     <p><span class="Kelsi">&ldquo;Shh-shhhh. What the fuck? Are you crazy?&rdquo;</span></p>

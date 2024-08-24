@@ -31,7 +31,7 @@ const activateTrialButton = function() {
         trialFormSubmission(form, ()=> {
 
           data.patreonCode = valEntered;
-          AutoSave();
+          
           startGame();
         });
 
@@ -242,6 +242,8 @@ const startGame = function() {
     devLoad();
 
     saveCleanup();
+
+    earnAchievement('Player One')
 
   }
 

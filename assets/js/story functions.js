@@ -67,7 +67,6 @@ function availableUnreadStories() {
 function completeStories() {
     var arr = [];
     storyNames.forEach(storyName => {
-        console.log(storyName)
         const story = data.StoryObj[storyName];
         if (story.isComplete) arr.push(storyName);
     })
@@ -388,18 +387,22 @@ function menu(container, choiceList, func) {
 }
 
 function storyWideImage(filename, animate=true,  extension='jpg') {
+    animate=true;
     return `<img src="${baseImagesFolder}/${filename}.${extension}" class="lg-12" ${animate? `data-animate-block` : ``} >`;
 }
 
 function storyLeftImage(filename, animate=true) {
+    animate=true;
     return `<img class="portrait-left" src= "${baseImagesFolder}/${filename}.jpg" ${animate? `data-animate-block` : ``} >`;
 }
 
 function storyRightImage(filename, animate=true) {
+    animate=true;
     return `<img class="portrait-right" src= "${baseImagesFolder}/${filename}.jpg" ${animate? `data-animate-block` : ``} >`;
 }
 
 function storyCenterImage(filename, animate=true, extension='jpg') {
+    animate=true;
     return `<img class="portrait-center" src= "${baseImagesFolder}/${filename}.${extension}" ${animate? 'data-animate-block' : ''} >`;
 }
 
@@ -554,23 +557,25 @@ function switchToSection(sectionID) {
     
     
     const container=document.getElementById('story-content');
-    fadeTransition(document.getElementById('MainSection'), timeout=300, func =()=> {
-        clearNode(container);
-        
-        moveToIDInstantly('story-content')
+    clearNode(container);
+    window.scrollTo(0, 0);
+    fadeTransition(document.getElementById('MainSection'), timeout=1000, func =()=> {
+
         container.appendChild(sections[sectionID])
+        sections[sectionID].innerHTML = sections[sectionID].innerHTML;
         currentChapter.currentSectionID = sectionID;
         if (!currentChapter.hasOwnProperty('sections')) {
             currentChapter.sections = {};
             currentChapter.sections['section1'] = true;
         }
         currentChapter.sections[sectionID] = true;
-        if(sections[sectionID].querySelector('#audio')) playStoryAudio();
         setChapterIndex();
         updateChapterObj();
         ssMoveTo();
-
         animateOnScrollStory();
+        moveToID('story-content')
+        if(sections[sectionID].querySelector('#audio')) playStoryAudio();
+
     })
     
 
@@ -581,14 +586,16 @@ function switchToRow(rowID, isSwitch=false) {
     if (!currentChapter.currentSectionID) console.log(currentChapter.currentSectionID)
     const container=document.getElementById(currentChapter.currentSectionID);
     if(isSwitch) {
-         
-        fadeTransition(document.getElementById('MainSection'), timeout=300, func =()=> {
-            clearNode(container); 
+        
+        clearNode(container); 
+        window.scrollTo(0, 0);
+        fadeTransition(document.getElementById('MainSection'), timeout=1000, func =()=> {
             
+            rows[rowID].innerHTML = rows[rowID].innerHTML;
             container.appendChild(rows[rowID])
             ssMoveTo();
             animateOnScrollStory();
-            moveToID(rowID)  
+            moveToID(rowID)              
             if(rows[rowID].querySelector('#audio')) playStoryAudio();
             
 
@@ -599,6 +606,7 @@ function switchToRow(rowID, isSwitch=false) {
         rows[rowID].innerHTML = rows[rowID].innerHTML;
         ssMoveTo();
         animateOnScrollStory();
+        
         moveToID(rowID)
         if(rows[rowID].querySelector('#audio')) playStoryAudio();
     }
@@ -670,15 +678,15 @@ function assignChoice(attribute, func) {
 
 }
 
-function storyVideo(src, isanimate= true, iscontrols= true, isloop= false, isautoplay= false) {
+function storyVideo(src, isanimate= true, iscontrols= true, isloop= false, isautoplay= false, ismute=false) {
     return `
-    <video class="story-vid"  ${iscontrols? `controls` : ``} ${isloop? `loop` : ``} ${isautoplay? `autoplay` : ``} ${isanimate? `data-animate-block` : ``}>
+    <video class="story-vid"  ${iscontrols? `controls` : ``} ${isloop? `loop` : ``} ${isautoplay? `autoplay` : ``} ${ismute? `mute` : ``} ${isanimate? `data-animate-block` : ``}>
         <source src="${baseImagesFolder}/${src}.webm" type="video/webm">
         Your browser does not support the video tag.
     </video>`;
 }
 
-function storyAudio(src, id='audio', isLoop=true) {
+function storyAudio(src, isLoop=true,  id='audio') {
     return `
     <audio id="${id}" src="${baseImagesFolder}/${src}.mp3" ${isLoop? 'loop' : ''}></audio>
     `;
@@ -734,6 +742,8 @@ function storyLoad() {
     ssMoveTo();
 
     animateOnScrollStory();
+
+    if(document.querySelector('#audio')) playStoryAudio();
 
 }
 

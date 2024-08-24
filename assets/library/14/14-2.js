@@ -172,7 +172,7 @@ section3.appendChild(row3);
 const section4 = newSection(4);
 
 const row4 = storyRow('4',' ', 
-    `${storyImageNonAnimate(6)}
+    `${storyImage(6)}
     <p>I let Henry's slip of tongue slide for the moment, saving my wrath for later. As he commanded, I made my way to the couch and straddled him eagerly.</p>
 <p><span class= "E-Emma">&ldquo;Master, be careful. That&rsquo;s the wrong hole!&rdquo;</span> Emma gasped, taken aback by the sight of her lord&rsquo;s cock going towards my anus.</p>
 <p><span class= "E-Henry">&ldquo;Don&rsquo;t worry about her,&rdquo;</span> Henry reassured her with a sly grin. <span class= "E-Henry">&ldquo;She&rsquo;s quite accustomed to taking it there.&rdquo;</span></p>
@@ -274,7 +274,7 @@ section9.appendChild(row9);
 const section10 = newSection(10);
 
 const row10 = storyRow('10',' ', 
-    `${storyImageNonAnimate(7)}
+    `${storyImage(7)}
     <p><span class= "E-Arabella">"Put it in her ass, Henry,"</span> I sneered, feeling a surge of power as I watched him hesitate.</p>
 <p><span class= "E-Emma">"No, no, no!"</span> Emma cried out, covering her asshole with her hand. "Don't sodomize me, Lord Henry."</p>
 <p><span class= "E-Henry">"Shhhh. Relax, Emma,"</span> Henry hissed as he pinned her hand down. <span class= "E-Henry">"You're in good hands."</span></p>

@@ -184,16 +184,15 @@ stories["Mr. Wolf"] = {
   stories["Boyhood"] = {
     num: 16,
     overview: "Backstory of the original Outsiders.",
-    severity: "B",
-    subtitle: "Coming Soon",
+    severity: "D",
     genre: ["Coming Of Age", "Romance", "Slice of Life", "Slowcore",],
     characters: ["Michael Alexander", "Griffith Tartaglia", "Marley Brinx" ],
     chapters: [
 {
 name: "Justateen (turned 18)",
 num : 1,
-wordCount: 0,
-subtitle: "Coming Soon"
+wordCount: 13930,
+index: true,
 }, 
 {
 name: "Growing Up A Mormon",

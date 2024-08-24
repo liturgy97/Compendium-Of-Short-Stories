@@ -80,7 +80,7 @@ ${appendLink('Section 2 - Memories', 'section2')}
 const row2 = storyRow('2', 'Memories', 
     
     `
-${storyImageNonAnimate(2)}
+${storyImage(2)}
 <p>The room was silent, save for the occasional tick of the clock on the mantelpiece. Bailey glanced over at the empty armchair, once her husband&rsquo;s favorite spot, and felt a pang of guilt. The house felt hollow without his presence, yet she knew the emptiness had started long before he physically left.</p>
 <p>For years, Bailey had felt the walls closing in around her, her husband James&rsquo; stern gaze and controlling demeanor stifling her every move.</p>
 <p>He dictated what she wore, where she went, and who she spoke to. It was as if she lived in a cage, beautiful but suffocating.</p>
@@ -136,7 +136,7 @@ ${appendLink('Section 3 - Essence Replacement Therapy', 'section3')}
     
     `
     
-${storyImageNonAnimate(3, fig='<span class="GMD-Bailey">Better than ever...</span>')}
+${storyImage(3, fig='<span class="GMD-Bailey">Better than ever...</span>')}
 
 <p><span class="GMD-Bailey">&ldquo;I was already seeing a therapist for a number of years now and she was supporting me in the idea, pushing me for it even. And then one day, I just did it.&rdquo;</span></p>
 <p><span class="GMD-Jake">&ldquo;Are things going well?&rdquo;</span></p>

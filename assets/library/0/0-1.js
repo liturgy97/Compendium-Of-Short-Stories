@@ -1,6 +1,6 @@
 loadPage = function() {
     if(!currentStory.isComplete) hideNav();
-
+    document.getElementById('intro-button').href = '#section1'
     prepareStory();
 
 const section1 = newSection(1);
@@ -104,5 +104,5 @@ storyLoad();
 
 function end1() {
     showNav(); 
-    earnAchievement("Founder");
 }
+

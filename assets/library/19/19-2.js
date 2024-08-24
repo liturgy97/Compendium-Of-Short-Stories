@@ -82,7 +82,7 @@ const section3 = newSection(3, '');
 
     const row3a = storyRow('3a', 'JAIME', 
 `
-${storyImageNonAnimate('Jaime/1')}
+${storyImage('Jaime/1')}
 <p>Light of his day, the face that sets him on fire.</p>
 <p>Her face. Delicate, refined, graceful.</p>
 <p>Skin like alabaster. Smooth. Flawless. Almost translucent in the right light. High cheekbones. Enigmatic air.</p>
@@ -180,7 +180,7 @@ const section4 = newSection(4, '');
 
     const row4a = storyRow('4a', `INT. SAM'S SHOP - NIGHT`, 
 `
-${storyImageNonAnimate('Buck/shop_interior')}
+${storyImage('Buck/shop_interior')}
 <p>The dull hum of flickering fluorescent lights, illuminating a cluttered yet oddly inviting convenience store.</p>
 <p>Sam leans against the counter, an old man with a rugged face that tells stories he never will. He&rsquo;s rocking a tracksuit that&rsquo;s seen better days and a gold chain that probably hasn&rsquo;t. Next to him, his daughter Shamika, a 12-year-old with attitude, sits on a stool, lazily painting her nails. She&rsquo;s half-listening to her dad ramble about school, her oversized hoodie swallowing her frame.</p>
 <p><strong>BAM!</strong> The door crashes open. Enter Tyrone, Jax, and Rico&mdash;Sam's boys, and they&rsquo;re a mess. Bloodied everywhere and looking like they'd lost a bar brawl. Tyrone and Jax are barely holding it together.</p>
@@ -483,7 +483,7 @@ const section8 = newSection(8);
 <p>Drew and Jaime&rsquo;s bond had grown stronger recently.</p>
 <p>She started complaining more often about Mom and Dad&rsquo;s lewdness, probably due to her own pent up frustrations, and Drew shared her sentiments. They began talking more frequently than they ever had before.</p>
 <p>They would scheme ways to pressure Mom and Dad into stopping their madness, or fantasize together about ways of humiliating them for it.</p>
-${storyImageNonAnimate('jaime_fuck1/j5')}
+${storyImage('jaime_fuck1/j5')}
 <p><span class="PAF-Jaime">JAIME</span><br>Holy shit, Drew. You&rsquo;re an artist? Get outta here!</p>
 
 <p>She&nbsp;was flipping through his notebook,&nbsp;eyes twinkling like someone who&rsquo;s just been told a secret.</p>
@@ -614,7 +614,7 @@ const section10 = newSection(10);
     const row10 = storyRow('10', `INT. DREW'S ROOM - EVENING`, 
 `
 ${storyAudio('jaime_fuck1/sound')}
-${storyImageNonAnimate('damian_chat')}
+${storyImage('damian_chat')}
 
 <p><span class="PAF-Damian">Damian says:</span><br>Hey you.</p>
 <p><span class="PAF-Damian">Damian says:</span><br>Asshole.</p>
@@ -758,7 +758,7 @@ ${appendLink(`Ricci's Club`, 'section12')}
 const section12 = newSection(12);
     const row12a = storyRow('12a', `EXT. RICCI's CLUB - EVENING`, 
 `
-${storyImageNonAnimate('nightclub2')}
+${storyImage('nightclub2')}
 <p>He was late.</p>
 <p>The neon sign of Ricci&rsquo;s Club buzzed and flickered, casting a jittery glow over the sidewalk. Drew stood there, hands in pockets, tapping his foot to the deep thrum of the club&rsquo;s music vibrating through the walls. Damian approached, wearing makeup, a shoulderless crop top, jean shorts, and fishnet leggings.</p>
 ${storyCenterImage('damian_club')}
@@ -851,7 +851,7 @@ ${appendLink('Kicked out...', 'section13')}
 const section13 = newSection(13);
 const row13 = storyRow('13', 'EXT. DARK ALLEY - NIGHT', 
 `
-${storyImageNonAnimate('alley')}
+${storyImage('alley')}
 <p>Malik kicked Drew and Damian out of the club. <span class="PAF-Malik">&ldquo;The boss won&rsquo;t be happy,&rdquo;</span> He muttered, shaking his head.</p>
 <p>Drew shrugged and asked for drinks.</p>
 <p>They sat in a dark alley next to the club. Damian lit a cigarette, offered one to Drew.</p>

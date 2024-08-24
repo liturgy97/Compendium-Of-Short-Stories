@@ -60,13 +60,13 @@ menu(row1.querySelector('.rowContent'), [
     
 const row2 = storyRow('2', 'INT. BEDROOM - EARLY MORNING', 
 `
-${storyImageNonAnimate(2)}
-<p>I looked at myself in the mirror, examining my figure, voluptuous, curvaceous, with breasts that defied gravity. It had been ages since I&rsquo;d received a genuine compliment from Henry. Sure, he&rsquo;d mutter something nice before sex, but we hadn&rsquo;t had sex in two months. I had grown cold toward it lately. My skin was blemishing, and wrinkles were creeping onto my forehead. I looked old.</p>
+${storyImage(2)}
+<p>I looked at myself in the mirror, examining my figure, voluptuous, curvaceous, with breasts that defied gravity. It had been ages since I&rsquo;d received a genuine compliment from Henry. Sure, he&rsquo;d mutter something nice before sex, but we hadn&rsquo;t even had sex in two months. I had grown cold toward it lately. My skin was blemishing, and wrinkles were creeping onto my forehead. I looked old.</p>
 ${storyCenterImage(3)}
 <p>I descended the stairs to our grand hall. While this house and its inhabitants reeked of pretentiousnes, Emma stood there looking like innocence itself. She was just a simple maid, yet I wondered if she was the most stunning woman to have ever set foot here. My heart burnt with jealousy.</p>
-<p>Emma was the sun that broke my Saturday dawn. Usually, I had no reason to drag myself out of bed early, but she made me eager. Eager to find a fault in her, seeking an opportunity to scold and embarrass her. But every task I gave her, she performed flawlessly. Cooking, sewing, gardening&mdash;she excelled at it all. She never questioned why I asked for things beyond her duties. She didn&rsquo;t need to, she was an expert in everything. It&rsquo;s hard to school a maiden in an art if the maiden knows it better than you. She listened patiently, using each opportunity to showcase her knowledge and expertise. More than once, I found myself on the brink of embarrassment, unable to keep up with her. Yet, gentle Emma never truly humiliated me. Still, I persisted, knowing I&rsquo;d get my chance to belittle her and put her in her place.</p>
+<p>Emma was the sun that broke my Saturday dawn. Usually, I had no reason to drag myself out of bed early, but she made me eager. Eager to find a fault in her, seeking an opportunity to scold and embarrass her. But every task I gave her, she performed flawlessly. Cooking, sewing, gardening&mdash;she excelled at it all. She never questioned why I asked for things beyond her duties. She didn&rsquo;t need to, she was an expert in everything. It&rsquo;s hard to school a maiden in an art if she knows it better than you. She listened patiently, using each opportunity to showcase her knowledge and expertise. More than once, I found myself on the brink of embarrassment, unable to keep up with her. Yet, gentle Emma never truly humiliated me. Still, I persisted, knowing I&rsquo;d get my chance to belittle her and put her in her place.</p>
 <p>It was difficult to corner the house&rsquo;s favorite with others around. My chances dwindled to moments when no one was watching, the early mornings, and not for long. Since Emma arrived, everyone in the house, even the butler and the rest of the staff, rose sooner. Her boundless energy seeped into every crevice, warming the place like nothing else ever had. New arrivals always brought change, but Emma was different. She lifted everyone&rsquo;s spirits, her charm infecting every soul. Guests at my afternoon parties commended Emma for her gentle and cheerful presence. Imagine that? A maid receiving more compliments than the hosts at a genteel gathering. Hell, even my soulless in-laws felt brighter around her.</p>
-<p><span class="E-Emma">&ldquo;Good morning, Lady Arabella!&rdquo;</span> Emma chirped so sweetly. And a good morning it was. 
+<p><span class="E-Emma">&ldquo;Good Morning, Lady Arabella!&rdquo;</span> Emma chirped so sweetly. And a Good Morning it was. 
 ${(currentStory.vars.kissType == "hand")? `She ran to me, kissed my hand.` : ``} 
 
 ${(currentStory.vars.kissType == "cheek")? `She ran to me, pecked me on the cheek.` : ``} 
@@ -79,13 +79,23 @@ ${(currentStory.vars.kissType == "cheek")? `She ran to me, pecked me on the chee
 section2.appendChild(row2);
 
 const choice2a = `<p>I found myself cupping her chin, returning the gesture with a kiss on her cheek. Our massive tits inadvertently squeezed against each other&rsquo;s.</p>
-<p><span class="E-Emma">&ldquo;Thank you, ma&rsquo;am, you&rsquo;re so kind,&rdquo;</span> she said, her eyes so bright. It was my pleasure, but I kept that to myself.</p>`;
+<p><span class="E-Emma">&ldquo;Thank you, ma&rsquo;am, you&rsquo;re so kind,&rdquo;</span> she said, her eyes so bright. It was my pleasure, but I kept that to myself.</p>
+<p><span class="E-Henry">&ldquo;Good Morning, my sweet wife.&rdquo;</span></p>
+<p>Emma and I separated at hearing Henry&rsquo;s deep morning voice echoing around as he descended the steps to the main hall. 
+Startled, Emma and I instinctively reached for our gowns, my hands fluttering to smooth the fabric that was already perfectly arranged, while Emma's 
+moved quickly to her apron, ensuring it was properly tied, though it hadn’t come undone.</p>
+`;
+
 
 const choice2b = `<p><span class="E-Arabella">&ldquo;Emma, why isn&rsquo;t your uniform proper?&rdquo;</span></p>
 <p><span class="E-Emma">&ldquo;It&rsquo;s proper to my knowledge, ma&rsquo;am,&rdquo;</span> Emma responded nervously.</p>
 <p><span class="E-Arabella">&ldquo;Come here,&rdquo;</span> I commanded with a firm voice. Emma stepped closer, her cheeks pink with shyness. I pulled her by her collar, our massive tits inadvertently squeezing against each other&rsquo;s as she closed the distance between us. I adjusted the maid&rsquo;s collar, and as my fingers brushed against her neck, I felt a rush of warmth.</p>
 <p><span class="E-Arabella">&ldquo;Your uniform must always be immaculate,&rdquo;</span> I said. <span class="E-Arabella">&ldquo;You represent this household.&rdquo;</span></p>
-<p>Emma nodded, her blue eyes wide and sincere. <span class="E-Emma">&ldquo;Yes, ma&rsquo;am. I understand.&rdquo;</span></p>`;
+<p>Emma nodded, her blue eyes wide and sincere. <span class="E-Emma">&ldquo;Yes, ma&rsquo;am. I understand.&rdquo;</span></p>
+<p><span class="E-Henry">&ldquo;Good Morning, my sweet wife.&rdquo;</span></p>
+<p>Emma and I separated at hearing Henry&rsquo;s deep morning voice echoing around as he descended the steps to the main hall.</p>
+
+`;
 
 var row3;
 
@@ -96,13 +106,9 @@ menu(row2.querySelector('.rowContent'), [
 
 row3 = storyRow('3', ' ', 
 `
-<p><span class="E-Henry">&ldquo;Good morning, my sweet wife.&rdquo;</span></p>
-<p>Emma and I separated at hearing Henry&rsquo;s deep morning voice echoing around as he descended the steps to the main hall. 
-Startled, Emma and I instinctively reached for our gowns, my hands fluttering to smooth the fabric that was already perfectly arranged, while Emma's 
-moved quickly to her apron, ensuring it was properly tied, though it hadn’t come undone.
-
+<p>
 Henry came down the stairs and kissed me on the mouth. A routine of his every morning.</p>
-<p><span class="E-Emma">&ldquo;Good morning, sir,&rdquo;</span> Emma greeted her lord. Eyes and head bowing submissively. Henry ignored her completely, like she did not exist before him. He left me to the maid and walked into his study. Lord Henry did not acknowledge courtesies from a servant, a&nbsp;particularity well-known in his household.</p>
+<p><span class="E-Emma">&ldquo;Good Morning, sir,&rdquo;</span> Emma greeted her lord. Eyes and head bowing submissively. Henry ignored her completely, like she did not exist before him. He left me to the maid and walked into his study. Lord Henry did not acknowledge courtesies from a servant, a&nbsp;particularity well-known in his household.</p>
 <p>Emma shrank, embarrassed at the cold reception. She should have known better, but she had grown accustomed to the liberties I allowed her.</p>
 
 `);
@@ -265,7 +271,7 @@ menu(row6.querySelector('.rowContent'), [
 
 row7 = storyRow('7', 'INT. LIVING ROOM - AFTERNOON', 
 `
-${storyImageNonAnimate(9)}
+${storyImage(9)}
 <p>Henry&rsquo;s friend, Major Gregory, had returned from the front lines and came in for a visit. A man of high rank and higher ego, he strutted into our home with all the bravado of a peacock. The gathering at our house had to be perfect, a showcase of wealth and status that would make even the most jaded of society pause. As we prepared for the small afternoon party, my mind buzzed with a cruel plan to put Emma in her place.</p>
 <p>The guests arrived, filling the&nbsp;sitting room&nbsp;and the grand hall with their laughter and clinking glasses. Henry was in his element, his arm around Gregory, regaling him with tales of business and estate. I played the dutiful wife, painted a smile on my face, and exchanged pleasantries with the wives and daughters of our esteemed guests.</p>
 ${storyImage(10)}

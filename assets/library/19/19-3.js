@@ -196,7 +196,7 @@ const section3 = newSection(3);
 
 const row3a = storyRow('3a', ' ', 
 `
-${storyImageNonAnimate('Jaime/10')}
+${storyImage('Jaime/10')}
 <p>When Dad finished with Jaime, he asked Vince if he wanted to swap.</p>
 <p><span class="PAF-Jaime">&ldquo;I&rsquo;m not comfortable with this,&rdquo;</span> Jaime whispered, panicking.</p>
 <p><span class="PAF-Dean">&ldquo;Get up,&rdquo;</span> Dad said firmly, dragging Jaime by the elbow to Mom&rsquo;s side. <span class="PAF-Dean">&ldquo;I want to see him inside you.&rdquo;</span></p>
@@ -403,7 +403,7 @@ const section5 = newSection(5);
 
 const row5a = storyRow('5a', 'EXT. CITY CENTER<br>EVENING', 
 `
-${storyImageNonAnimate('twilight')}
+${storyImage('twilight')}
 <p>On Oct 13, 2002, Carolinia City saw its sexiest twilight. At the center of its busiest spot, Jax towered like a black titan, arms spreading wide. He dared a motherfucker to step up and interfere, while he urged Drew to get the fuck on with his goodbye.</p>
 <p>Drew stood high and commanding. His hands were calm and limp by his sides, chin held high, legs planted in a wide stance reminiscent of a Greek god's.</p>
 <p>Beneath him was Damian, on his knees,&nbsp;back arched and rosy ass cheeks spread wide, eagerly bobbing on Drew&rsquo;s rigid cock while stroking it with one hand.</p>
@@ -491,7 +491,7 @@ const row5c = storyRow('5c', 'Bloodbath on the 13th',
 
 const row5cnews = storyRow('5cnews', ' ', 
     `
-    ${storyImageNonAnimate('bloodbath')}
+    ${storyImage('bloodbath')}
     ${storyEndButton()}
     `
     )
@@ -762,7 +762,7 @@ const section8 = newSection(8);
 
 const row8a = storyRow('8a', 'INT. DAMIAN&rsquo;S ROOM<br>NIGHT', 
 `
-${storyImageNonAnimate('damian4')}
+${storyImage('damian4')}
 <p>Damian walked into the room wearing nothing but a towel around his waist and a mischievous smile on his lips, smelling like fragrant lavender soap. He was in a mood. He moved with deliberate grace, his muscles rippling beneath his smooth skin as he crossed the room to his dresser. With a deep, almost sensual sigh, he let the towel drop. Drew&rsquo;s eyes, traced the lines of Damian&rsquo;s back. His skin was smooth, moist after the shower, with a subtle, inviting glow from that highlights his softness, while his shoulders tapered down to a narrow waist, the gentle slope of his spine creating a delicate yet striking silhouette. The muscles in his back were lean and toned, defined, a reminder of his supple strength. His back, from the elegant sweep of his neck down to the small of his back, displayed androgynous beauty at its finest. Damian&rsquo;s beauty was not the kind Drew was looking for, yet slowly but surely, he would be enamored with. Drew swiftly caught himself looking and felt slightly ashamed. He averted his eyes away.</p>
 <p>Damian turned, one hand covering his crotch and a playful glint in his eyes as he sauntered over to the bed where Drew lay.</p>
 <p><span class="PAF-Damian">&ldquo;Hey,&rdquo;</span> he purred seductively, <span class="PAF-Damian">&ldquo;does a gangster know how to pick a lock?&rdquo;</span></p>
@@ -948,10 +948,10 @@ const section9 = newSection(9);
 const row9a = storyRow('9a', 'Old Boy', 
 `
 ${storyAudio('you-and-whose-army')}
-${storyImageNonAnimate('blinds')}
+${storyImage('blinds')}
 <p>Drew wakes up to the light slicing through the blinds, glancing over at Damian, still spread-eagled on the bed, oblivious and exposed. He carefully slips out of bed, grabs Damian&rsquo;s keys, and heads out.</p>
 <p>The morning streets are eerily quiet today, the air thick with the impending doom he feels rising in his gut.</p>
-${storyImageNonAnimate('gas_station')}
+${storyImage('gas_station')}
 <p>The gas station is a ghost town. The only movement is the slow drip of gasoline into the plastic containers. Drew grabs two. He walks back to Damian&rsquo;s house, the fuel sloshes in the container as memories of Damian and their last night together breeze in his mind.</p>
 <p>As he opens the door, the house is silent. Things feel&hellip;too silent. He smells it&mdash;acrid, like burning chemicals. He sees the smoke next, a lazy curl of blue, hanging in the air like a ghost. His heart stops.</p>
 <p>Damian&rsquo;s on the floor, body jerking like a marionette with cut strings, blue-tinged blood leaking from his nose, his ears. Drew&rsquo;s breath catches in his throat, his pulse skyrocketing. He drops the gas cans; the clatter echoes like gunshots.</p>
@@ -988,7 +988,7 @@ section9.appendChild(row9a);
 
 const row9b = storyRow('9b', 'Blaze (Part 1)', 
 `
-${storyImageNonAnimate('arsonist1', '', '', '', 'png')}
+${storyImage('arsonist1', '', '', '', 'png')}
 
 ${appendLinkRow('Blaze (Part 2)', '9c')}
 `

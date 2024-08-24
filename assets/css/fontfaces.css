@@ -166,3 +166,17 @@
   font-weight: 100 900;
   src: url('../fonts/PlaywriteArgentina.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('../fonts/LeagueSpartan.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'StickbarMetal';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('../fonts/StickbarMetal.otf') format('opentype');
+}

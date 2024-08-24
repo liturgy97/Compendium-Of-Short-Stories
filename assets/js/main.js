@@ -85,7 +85,7 @@
    /* Initialize
     * ------------------------------------------------------ */
     (function ssInit() {
-
+        loadMainPageBricks();
         ssPreloader();
         ssParallax();
         ssMenuOnScrolldown();
@@ -119,7 +119,7 @@
 
         window.addEventListener('resize', setLandingpageIntroHeight);
 
-
+        
 
     })();
     

@@ -231,3 +231,42 @@ function saveCleanup() {
     updateStoryObj(story);
   })
 }
+
+
+function loadMainPageBricks() {
+  const container = document.getElementById('main-page-bricks')
+  const storyList = arrayDifference(storyNames, ['Elf'])
+  const no_desc = arrayDifference(storyList, ['The Hanging Man'])
+  for(let i=0; i<storyList.length; i++) {
+    
+    const storyName = storyList[i]
+    const storyOrigin= stories[storyName]
+    var desc = storyOrigin.overview
+    if (storyName in no_desc) desc = ''
+    var str = '4-5'
+    if (i%6 == 0) str = '4-5';
+    if (i%6 == 1) str = '1-1';
+    if (i%6 == 2) str = '1-1';
+    if (i%6 == 3) str = '1-1';
+    if (i%6 == 4) str = '4-5';
+    if (i%6 == 5) str = '1-1';
+    container.innerHTML += `
+      <div class="brick folio-item"   data-animate-el>
+
+        <div class="folio-item__thumb">
+            <a class="folio-item__thumb-link" href="assets/images/stories/${storyOrigin.num}/base/cover3-2.jpg" Title="${storyName}" data-size="1050x700">
+                <img src="assets/images/stories/${storyOrigin.num}/base/cover${str}.jpg">
+            </a>
+        </div>
+        <div class="folio-item__info">
+            <div class="folio-item__cat">Story #${storyOrigin.num}</div>
+            <h4 class="folio-item__title">${storyName}</h4>
+        </div>
+        <div class="folio-item__caption">
+            <p>${desc}</p>
+        </div>
+        
+    </div> <!-- end brick-->
+    `
+  }
+}

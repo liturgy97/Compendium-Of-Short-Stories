@@ -398,8 +398,15 @@ const row1b = storyRow('1b', ' ',
     <p>Milena glanced around, her eyes widening as she spotted her. <span class="Milena">&ldquo;Oh, oh, she&rsquo;s coming.&rdquo;</span></p>
     ${storyImage('kelsi_cropped')}
     <p>Michael followed her gaze, and there she was, striding towards them in an elegant but menacing stride, with an air of authority that made the hallway part before her like the Red Sea.</p>
-    <p>She was the most popular girl in school. Every teacher&rsquo;s pet, every simp&rsquo;s queen, every bully&rsquo;s nightmare, and the angel&rsquo;s wet dream... The enforcer of our schoolyards... The undisputed ruler of the top of the pyramid.</p>
-    ${storyCenterImage('kelsi_hall')}
+    <p>She was the most popular girl in school. Every teacher&rsquo;s pet, every simp&rsquo;s queen, every bully&rsquo;s nightmare, and the angel&rsquo;s wet dream... The enforcer of our schoolyards... The undisputed ruler of the top of the ${appendLinkRowInline('pyramid', '4b2')}.</p>
+    
+    `
+    )
+
+    const row4b2 = storyRow('4b2', ' ', 
+        `
+        
+        ${storyCenterImage('kelsi_hall')}
     <p>Kelsi.</p>
     <p>Kelsi was Michael&rsquo;s twin sister, though you&rsquo;d never know it by the way she carried herself. They were nothing alike. She was always quick to remind him that she&rsquo;d come out of the womb first, always calling him her &lsquo;little brother&rsquo; with a mocking sneer.</p>
     <p>Kelsi was the queen bee of our school. Michael remembered the days when she&rsquo;d bully anyone who dared cross her, even the biggest jocks. Her reputation as an extraordinary fighter was known all over the school&mdash;no, the whole town. But it wasn&rsquo;t just the fact that she could break an arm in the flash of an eye that scared people of her... It was her flair for humiliation.</p>
@@ -427,8 +434,8 @@ const row1b = storyRow('1b', ' ',
     <p><span class="Milena">&ldquo;Well, you just became public enemy number one,&rdquo;</span> she said, her tone almost sympathetic as she tapped his chest a couple of times. <span class="Milena">&ldquo;You just pushed us to the bottom of the ladder, big man.&rdquo;</span></p>
     <p>As the school alarm blared, Milena grabbed Michael&rsquo;s arm, pulling him along. They hurried to class, Michael&rsquo;s mind spinning with the consequences of his sister&rsquo;s wrath.</p>
     ${appendLinkRow('Go to class', '4c', true)}
-    `
-    )
+        `
+        )
     
     section4.appendChild(row4b);
     

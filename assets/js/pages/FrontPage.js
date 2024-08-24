@@ -30,7 +30,7 @@ const activateTrialButton = function() {
       
         trialFormSubmission(form, ()=> {
 
-          data.patreonCode = "s44ugq3dnibp08242024";
+          data.patreonCode = valEntered;
           AutoSave();
           startGame();
         });
@@ -71,7 +71,9 @@ const trialFormSubmission = function(customForm, onCompletion) {
 
         if (field.value.length == 0) return 'Please enter your Patreon code.'; 
   
-        if (field.value.toLowerCase() == "s44ugq3dnibp08242024") return;
+        if (field.value.toLowerCase() == "s44ugq3dnibp08242024" || field.value.toLowerCase() == "patreontrial0707") {
+          valEntered = field.value.toLowerCase();
+          return;}
   
         
         // If all else fails, return a generic catchall error

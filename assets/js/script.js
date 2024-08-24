@@ -25,6 +25,7 @@ const typography = {
 
 var sections;
 
+var valEntered;
 var rows;
 
 var parts;
@@ -78,7 +79,6 @@ var currentHeaderMode = "Old";
 var hideLogoUponScroll = true;
 
 if (localStorage.getItem(savePrefix + "0")) {
-  console.log(savePrefix + "0")
   resetGame = false;
 
   data = JSON.parse(localStorage.getItem(savePrefix + "0")) ;

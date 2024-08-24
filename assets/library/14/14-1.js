@@ -307,7 +307,15 @@ setChapterIndex = ()=> {
 
 
 storyLoad();
-applyKissType();
+applyKissTypeInit();
+function applyKissTypeInit(k=currentStory.vars.kissType) {
+    currentStory.vars.kissType = k;
+    updateStoryObj();
+    setPart(currentStory.vars.kissType=='hand', 'hand_kiss_text_1', '1b')
+    setPart(currentStory.vars.kissType=='cheek', 'cheek_kiss_text_1', '1b')
+    setPart(currentStory.vars.kissType=='hand', 'hand_kiss_text_2', '2a')
+    setPart(currentStory.vars.kissType=='cheek', 'cheek_kiss_text_2', '2a')
+}
     function applyKissType(k=currentStory.vars.kissType) {
         currentStory.vars.kissType = k;
         updateStoryObj();

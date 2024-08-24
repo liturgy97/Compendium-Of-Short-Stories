@@ -397,9 +397,7 @@ function switchToPageSlow(id2) {
             }
         })
 
-        if (version == "24.07a" && data.StoryObj["Elf"].isComplete) {
-            earnAchievement("Founder");
-        }
+        
           
 
     }, 1200);

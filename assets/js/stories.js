@@ -197,8 +197,8 @@ index: true,
 {
 name: "Growing Up A Mormon",
 num : 2,
-wordCount: 0,
-subtitle: "Coming Soon"
+wordCount: 8248,
+index: true, 
 }, 
 {
 name: "French Girl",

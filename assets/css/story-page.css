@@ -190,6 +190,24 @@ ul.disc.custom-timeline-GMD li::before {
     font-weight: var(--story-char-weight-2) !important;
 }
 
+.Jenny {
+    color: #FF9090 !important;
+    font-weight: var(--story-char-weight-2) !important;
+}
+
+.Colette {
+    color: #0033FF !important;
+    font-weight: var(--story-char-weight-2) !important;
+}
+
+.Adrian {
+	color: transparent;
+	-webkit-text-stroke: 1px yellow;
+    text-shadow: 0 0 0 #fff;
+}
+
+
+
 .Kelsi-Scream {
     color: #0033FF !important;
     font-weight: var(--story-char-weight-2) !important;

@@ -934,7 +934,7 @@ const row1b = storyRow('1b', ' ',
     <p>Sherrie cleaned his wounds and placed ice on the bruises that mottled his face and chest.<br />He kissed her and promised to come to her right after school, trying to sound like the man he wanted to be.</p>
     <p>After Sherrie left, Michael took a long, hot shower, the water washing away the blood but not the humiliation. He went through his morning routine, careful to avoid any encounter with Kelsi just like every day, but extra careful this morning.</p>
     <p>When he was ready he headed to school.</p>
-    ${storyEndButton('To be continued...')}
+    ${storyEndButton('Chapter 2')}
     `
     )
     

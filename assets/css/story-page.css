@@ -206,13 +206,46 @@ ul.disc.custom-timeline-GMD li::before {
     text-shadow: 0 0 0 #fff;
 }
 
+.Robin {
+    color: #f79c2a !important;
+    font-weight: var(--story-char-weight-2) !important;
+}
 
-
+.Calvert {
+    color: #b700ff !important;
+    font-weight: var(--story-char-weight-2) !important;
+}
+.ticker-taker1 {
+    color: #41ae3d !important;
+    font-weight: var(--story-char-weight-2) !important;
+}
+.June {
+    color: #ffa233 !important;
+    font-weight: var(--story-char-weight-2) !important;
+}
+.Lauren {
+    color: #ff6600 !important;
+    font-weight: var(--story-char-weight-2) !important;
+}
+.James {
+    color: #c99a00 !important;
+    font-weight: var(--story-char-weight-2) !important;
+}
+.Aaliyah {
+    color: #ff335f !important;
+    font-weight: var(--story-char-weight-2) !important;
+}
 .Kelsi-Scream {
     color: #0033FF !important;
     font-weight: var(--story-char-weight-2) !important;
     font-size: 7rem;
     font-family: 'StickbarMetal', sans-serif !important;
+}
+
+
+.Boyhood-Fitness {
+    color: #ff6347 !important;
+    font-weight: var(--story-char-weight-2) !important;
 }
 
 

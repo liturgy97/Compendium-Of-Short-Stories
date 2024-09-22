@@ -113,6 +113,7 @@ function openStory(story) {
         
     const storyIndexTitle = document.createElement('div');
     storyIndexTitle.className = 'row';
+    storyIndexTitle.id= 'index-title-head'
     storyIndexTitle.innerHTML =`
 
                     <div class="lg-12 column">

@@ -1,8 +1,9 @@
 loadPage = function() {
     prepareStory();
+    Emma1StartAudio();
     if (!currentStory.vars.hasOwnProperty('kissType')) currentStory.vars.kissType = '';
     const section1 = newSection(1);
-    const row1a = storyRow('1a', 'INT. HALL - AFTERNOON', 
+    const row1a = storyRow('1a', 'INT. HALL<br>AFTERNOON', 
         `
 <p>The new girl curtsied, her pale blue eyes meeting mine for the briefest moment before dropping demurely to the floor.</p>
 <p>She was a striking figure&mdash;blonde hair neatly pinned back, a slender frame accentuated by a narrow waist and a surprisingly full bosom. Her smooth skin glowed with youth and vitality. I had ordered for a new maid, not a new wife for my husband!</p>
@@ -59,11 +60,11 @@ const section2 = newSection(2);
 
 
     
-const row2a = storyRow('2a', 'INT. BEDROOM - EARLY MORNING', 
+const row2a = storyRow('2a', 'INT. BEDROOM<br>EARLY MORNING', 
 `
 ${storyImage(2)}
 <p>I looked at myself in the mirror, examining my figure, voluptuous, curvaceous, with breasts that defied gravity. It had been ages since I&rsquo;d received a genuine compliment from Henry. Sure, he&rsquo;d mutter something nice before sex, but we hadn&rsquo;t even had sex in two months. I had grown cold toward it lately. My skin was blemishing, and wrinkles were creeping onto my forehead. I looked old.</p>
-${storyCenterImage(3)}
+${storyImageCenter(3)}
 <p>I descended the stairs to our grand hall. While this house and its inhabitants reeked of pretentiousnes, Emma stood there looking like innocence itself. She was just a simple maid, yet I wondered if she was the most stunning woman to have ever set foot here. My heart burnt with jealousy.</p>
 <p>Emma was the sun that broke my Saturday dawn. Usually, I had no reason to drag myself out of bed early, but she made me eager. Eager to find a fault in her, seeking an opportunity to scold and embarrass her. But every task I gave her, she performed flawlessly. Cooking, sewing, gardening&mdash;she excelled at it all. She never questioned why I asked for things beyond her duties. She didn&rsquo;t need to, she was an expert in everything. It&rsquo;s hard to school a maiden in an art if she knows it better than you. She listened patiently, using each opportunity to showcase her knowledge and expertise. More than once, I found myself on the brink of embarrassment, unable to keep up with her. Yet, gentle Emma never truly humiliated me. Still, I persisted, knowing I&rsquo;d get my chance to belittle her and put her in her place.</p>
 <p>It was difficult to corner the house&rsquo;s favorite with others around. My chances dwindled to moments when no one was watching, the early mornings, and not for long. Since Emma arrived, everyone in the house, even the butler and the rest of the staff, rose sooner. Her boundless energy seeped into every crevice, warming the place like nothing else ever had. New arrivals always brought change, but Emma was different. She lifted everyone&rsquo;s spirits, her charm infecting every soul. Guests at my afternoon parties commended Emma for her gentle and cheerful presence. Imagine that? A maid receiving more compliments than the hosts at a genteel gathering. Hell, even my soulless in-laws felt brighter around her.</p>
@@ -164,9 +165,8 @@ const row3a = storyRow('3a', 'INT. LIVING ROOM<br>AFTERNOON',
 <p><span class="E-Arabella">&ldquo;Henry, for all I&rsquo;m worth, you spoke a total of two words to this maid. How did you learn about her expertise so quickly?&rdquo;</span> I asked.</p>
 <p>He stopped, turned halfway to face me again, and shrugged. <span class="E-Henry">&ldquo;You don&rsquo;t need to talk for long to know that someone loves what they&rsquo;re doing. The way this girl tends to flowers is a sight to see if you ask me.&rdquo;</span></p>
 <p>A sight to see?!!!</p>
-<p><span class="E-Henry">&ldquo;Besides... What are you talking about? I&rsquo;ve talked to Emma a couple of times before. The girl&rsquo;s a pleasure to talk to! Ahahaha.&rdquo;</span></p>
-<p>What? Where? How? I&rsquo;ve been keeping my eyes on her all the time! When did he get the chance to have the &ldquo;pleasure&rdquo; of talking to her?</p>
-<p>Henry&rsquo;s laugh echoed in the living room as he walked out, leaving me to my burning thoughts.</p>
+
+<p>Henry just patted me on the shoulder and walked out, leaving me to my burning thoughts.</p>
 
 ${appendLink('Day by day...', 'section4')}
 `
@@ -177,10 +177,10 @@ section3.appendChild(row3a);
 const section4 = newSection(4);
 
 
-const row4a = storyRow('4a', 'INT. HALL - MORNING', 
+const row4a = storyRow('4a', 'INT. HALL<br>MORNING', 
 `
 <p>Day by day, my paranoia grew and grew. One morning, I confronted Emma in the hallway. My eyes must've been blazing with suspicion.</p>
-${storyCenterImage(4, false)}
+${storyImageCenter(4, false)}
 <p><span class="E-Arabella">&ldquo;Have you been trying to seduce my husband?&rdquo;</span> I asked out of the blue, my voice trembling with jealousy and fear.</p>
 <p>Emma&rsquo;s eyes widened in shock, her cheeks flushing with their consistent crimson rise.</p>
 <p><span class="E-Emma">&ldquo;No, ma&rsquo;am. I would never do such a thing,&rdquo;</span> she replied earnestly, almost whisperingly.</p>
@@ -191,17 +191,17 @@ ${storyCenterImage(4, false)}
 <p><span class="E-Arabella">&ldquo;Are you aware of our undergarment rules?&rdquo;</span></p>
 <p><span class="E-Emma">&ldquo;Yes, ma&rsquo;am. Knee high socks and white underwear. The custom of every decent household.&rdquo;</span></p>
 <p><span class="E-Arabella">&ldquo;Show me.&rdquo;</span></p>
-${storyCenterImage(5)}
+${storyImageCenter(5)}
 <p>The girl lifted her skirt. My stomach flipped when I saw her pink, creamy smooth, glowing thigh.</p>
 <p><span class="E-Arabella">&ldquo;And your underpants?&rdquo;</span></p>
-${storyCenterImage(6)}
+${storyImageCenter(6)}
 <p>Reluctantly, Emma complied with my implied demand, lifting her skirt to reveal her plain, practical shorts.</p>
 <p><span class="E-Arabella">&ldquo;Why are you wearing those?&rdquo;</span> I asked, with a mixture of disdain and curiosity.</p>
 <p>Emma&rsquo;s eyes met mine, her voice soft as ever. <span class="E-Emma">&ldquo;These are what farm girls wear, ma&rsquo;am. I am not a lady, and this is what is expected of me.&rdquo;</span></p>
 <p><span class="E-Arabella">&ldquo;Is that even cotton?&rdquo;</span></p>
 <p><span class="E-Emma">&ldquo;Yes, ma&rsquo;am, England&rsquo;s finest.&rdquo;</span></p>
 <p><span class="E-Arabella">&ldquo;No way. Turn around!&rdquo;</span></p>
-${storyCenterImage(7)}
+${storyImageCenter(7)}
 <p>I stepped closer, turned her around by the waist and began feeling her undershorts from behind, while demanding she stays still and keeps her skirt up. I couldn&rsquo;t resist slipping my fingers under the shorts&rsquo; legholes, feeling those blood filled heavenly thighs and soft underbuttocks and watching their reaction to my gentle touch.</p>
 <p><span class="E-Arabella">&ldquo;Cotton? Do you even call that cotton? Emma those shorts are old and worn,&rdquo;</span> I scolded her as I slipped my hand under the shorts strap, feeling her understomach, and the fold of her thigh with her crotch, as I hugged her from behind. <span class="E-Arabella">&ldquo;It must be very irritating and uncomfortable to walk in those!&rdquo;</span></p>
 <p>Suddenly, as I stroked a spot on her thigh that must&rsquo;ve grown sensitive with constant friciton with the cheap texture of her old shorts, Emma hummed softly at my touch. Her moan was so soft, I swear if my husband heard that his cock would spring up hard as a pole at the faintness of the sound alone.</p>
@@ -224,7 +224,7 @@ const row4b = storyRow('4b', ' ',
 <p><span class="E-Arabella">&ldquo;If you were so pure as you claim, why is your underwear wet?&rdquo;</span></p>
 <p><span class="E-Emma">&ldquo;I move a lot, ma&rsquo;am. Its purpose is to collect the moisture. That&rsquo;s what underwear is for.&rdquo;</span></p>
 <p><span class="E-Arabella">&ldquo;The moisture between yourt sexy legs?!&rdquo;</span> I blurted out, revealing my most current thought. Emma&rsquo;s spine shriveled as she let out a fearful, guilty, but also sweet gasp. I angrily ducked, pulling her undershorts off, <span class="E-Arabella">&ldquo;Take it off immediately,&rdquo;</span> I stopped myself from using the word whore, <span class="E-Arabella">&ldquo;Take it off! Take it off now, Emma!&rdquo;</span> I demanded as she shyly raised her feet off the ground so I could slip the dirty shorts off.</p>
-${storyCenterImage(8, false)}
+${storyImageCenter(8, false)}
 <p><span class="E-Arabella">&ldquo;Oh, look how wet they are!&rdquo;</span> I exclaimed as I crumbled the thing in my hand.</p>
 <p><span class="E-Emma">&ldquo;That must be sweat, my lady.&rdquo;</span></p>
 <p><span class="E-Arabella">&ldquo;Sweat?! Don&rsquo;t take me for a fool, young maiden! I know me a womanly scent!&rdquo;</span> I excitedly declared, while sniffing the curled shorts in my palm. My knees weekened and I felt dizzy imagining my husband&rsquo;s ecstatic face as he fills his lungs with Emma&rsquo;s natural enchanting smell. Swiftly restoring my balance, I furiously demanded, <span class="E-Arabella">&ldquo;Lift your dress up high, Emma!&rdquo;</span></p>
@@ -254,7 +254,7 @@ ${appendLink(`Major Gregory's visit`, 'section5')}
 const section5 = newSection(5);
 
 
-row5a = storyRow('5a', 'INT. LIVING ROOM - AFTERNOON', 
+row5a = storyRow('5a', 'INT. LIVING ROOM<br>AFTERNOON', 
 `
 ${storyImage(9)}
 <p>Henry&rsquo;s friend, Major Gregory, had returned from the front lines and came in for a visit. A man of high rank and higher ego, he strutted into our home with all the bravado of a peacock. The gathering at our house had to be perfect, a showcase of wealth and status that would make even the most jaded of society pause. As we prepared for the small afternoon party, my mind buzzed with a cruel plan to put Emma in her place.</p>
@@ -289,7 +289,12 @@ section5.appendChild(row5a)
 
 
 
-
+function Emma1StartAudio() {
+    const x = document.createElement('div');
+    x.innerHTML = storyAudio('Jazz-Lounge');
+    document.querySelector('.s-intro').appendChild(x);
+    playStoryAudio();
+}
 
 
 

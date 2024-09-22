@@ -609,7 +609,7 @@ ${storyImage(3, fig='<span class="GMD-Bailey">Better than ever...</span>')}
 <p><span class="GMD-Bailey">"No, Jake, this is so wrong, we can't do this again."</span></p>
 <p><span class="GMD-Jake">"I see. Post-nut clarity it is."</span></p>
 <p><span class="GMD-Bailey">"What? No, Jake, I'm your mother, I'm not gonna have sex with you!"</span></p>
-<p><span class="GMD-Jake">"What? Mom, do you know how ridiculous you sound right now? you're literally turning yourself into a man. That's 10 times more wrong than incest in my book."</span></p>
+<p><span class="GMD-Jake">"Mom! Do you know how ridiculous you sound right now?! You're literally turning yourself into a man. That's 10 times more wrong than incest in my book!"</span></p>
 <p><span class="GMD-Bailey">"Shut up, Jake. You're drunk! Get Out. I can't stand looking at you,"</span> Bailey shouted, pointing at her bedroom door.</p>
 <p>Jake tried to rise, but his limbs were heavy, drained of all energy. He managed to prop himself up on his elbows, his eyes bloodshot and glassy. <span class="GMD-Jake">&ldquo;Where the hell am I supposed to go? I don&rsquo;t have a place to stay.&rdquo;</span></p>
 <p>He dropped back onto the mattress, sinking into it again.</p>

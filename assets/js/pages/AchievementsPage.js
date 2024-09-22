@@ -7,7 +7,7 @@ function loadAchievementsPage() {
     <div class="AchBoxes row padless lg-12">
       <div class="AchBox">
         <div class="AchBoxText font-size-14">Stories Completed</div>
-        <div class="AchBoxVal font-size-14" style="color: ${(completeStories().length==storyNames.length)? `var(--color-gray-9)` : `var(--color-gray-14)`}; font-size: 14px; ">${completeStories().length}/${storyNames.length}</div>
+        <div class="AchBoxVal font-size-14" style="color: ${(completeStories().length==arrayDifference(storyNames, lockedStories()).length)? `var(--color-gray-9)` : `var(--color-gray-14)`}; font-size: 14px; ">${completeStories().length}/${arrayDifference(storyNames, lockedStories()).length}</div>
       </div>
       <div class="AchBox">
         <div class="AchBoxText font-size-14">Achievements</div>

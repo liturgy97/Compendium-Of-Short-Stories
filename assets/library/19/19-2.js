@@ -116,17 +116,16 @@ ${storyImage('Jaime/12')}
 <p>It was no coincidence that when Drew urged for a girl in his hands, he dreamed of his sister. Jaime was his kind of girl, his definition of a woman, of beauty.</p>
 <p>He didn&rsquo;t want her presence in his mind while awkwardly playing with his dick, yet he would be lost in the pleasure of fantasizing about her voice and her touch.</p>
 <p>He wanted to stop, but it felt so unbelievably good.</p>
-${storyImage('Jaime/13')}
 <p>And as he touched himself, he couldn&rsquo;t help but imagine she was with him, all alone, undressing and teasing him until he couldn&rsquo;t take it anymore.</p>
 <p>And that&rsquo;s how he was set over the edge for the first time and unloaded over his stomach in the bathtub.</p>
 <p>He would love to believe it was his first and last time.</p>
 <p>Other than the first time, Drew never admitted to himself to having masturbated to Jaime again.</p>
 <p>Yet, every time he scanned through a porn magazine, every girl he kissed, every whore he slept with, nothing could compare to the intense arousal he felt whenever he thought of Jaime.</p>
-${storyCenterImage('Jaime/9', true, 'png')}
+${storyImageCenter('Jaime/9', true, 'png')}
 <p>She was the forbidden fruit that he couldn't resist. As much as he tried to push those awful thoughts away, they inevitably crept back into his mind every time he sought pleasure from other women.</p>
 <p>She was his ultimate fantasy, always lingering at the edge of his consciousness, tempting him with her angelic figure and seductive gaze.</p>
 <p>He&rsquo;d deny it for his life, but fact of the matter is, Drew had never climaxed unless her name passed through his lips first.</p>
-${storyCenterImage('Jaime/8')}
+${storyImageCenter('Jaime/8')}
 <p>Jaime was four years his senior. She'd always held the impression Drew was a shy and timid child and they didn't spend much time together.</p>
 <p>Drew was a boy of peculiar inclinations, a creature of solitude who savored the quietude that others found oppressive. 
 He cherished being alone and spoke only to shut people up, and that made him a target for bullies, who wanted to demistify his enigmatic presence.</p>
@@ -281,7 +280,7 @@ ${appendLink('Tiptoeing...', 'section5')}
 const section5 = newSection(5);
     const row5 = storyRow('5', 'Tiptoeing', 
 `
-${storyCenterImage('jaime_gallery/1', false, 'jpeg')}
+${storyImageCenter('jaime_gallery/1', false, 'jpeg')}
 <p>Suddenly, Jaime enters the room, on her tiptoes. In steps light and seductive, she struts in wearing only sheer black lingerie and panties.</p>
 ${storyImage('jaime_gallery/j1')}
 <p>Dad&rsquo;s eyes narrow in anger as he remembers telling her not to prance around the house naked or else he would fuck her. Jaime leans against the wall, crosses her arms in front of her definatly, challenging him to do something about it.</p>
@@ -761,7 +760,7 @@ const section12 = newSection(12);
 ${storyImage('nightclub2')}
 <p>He was late.</p>
 <p>The neon sign of Ricci&rsquo;s Club buzzed and flickered, casting a jittery glow over the sidewalk. Drew stood there, hands in pockets, tapping his foot to the deep thrum of the club&rsquo;s music vibrating through the walls. Damian approached, wearing makeup, a shoulderless crop top, jean shorts, and fishnet leggings.</p>
-${storyCenterImage('damian_club')}
+${storyImageCenter('damian_club')}
 <p>Drew blinked, trying to process. <span class="PAF-Drew">&ldquo;You look... queer.&rdquo;</span></p>
 <p>Damian raised an eyebrow, his lips curved in a playful smile. <span class="PAF-Damian">&ldquo;Weird?&rdquo;</span></p>
 <p><span class="PAF-Drew">&ldquo;No, I said queer,&rdquo;</span> Drew reiterated, a touch more forceful.</p>
@@ -769,7 +768,7 @@ ${storyCenterImage('damian_club')}
 <p>Drew smirked, a half-laugh escaping him. <span class="PAF-Drew">&ldquo;Weird it is.&rdquo;</span></p>
 <p>Drew grabbed Damian&rsquo;s hand and pulled him towards the entrance roughly.</p>
 <p><span class="PAF-Damian">&ldquo;Whoa, Drew! Easy!&rdquo;</span> Damian laughed, stumbling slightly, surprised by Drew&rsquo;s dominance.</p>
-${storyCenterImage('malik')}
+${storyImageCenter('malik')}
 <p>The bouncer, a hulking figure with a scowl etched into his face, nodded at Drew but put a hand on Damian&rsquo;s chest before he stepped into the club. <span class="PAF-Malik">&ldquo;Where the hell do you think you're going?&rdquo;</span></p>
 <p>Damian opened his mouth, but words failed him. Malik&rsquo;s eyes narrowed. <span class="PAF-Malik">&ldquo;Fags aren&rsquo;t allowed.&rdquo;</span></p>
 <p>Drew stepped between them. <span class="PAF-Drew">&ldquo;He&rsquo;s with me. You got a problem?&rdquo;</span></p>
@@ -874,7 +873,7 @@ ${storyImage('alley')}
 <p><span class="PAF-Damian">&ldquo;N-no... whores turn me off.&rdquo;</span></p>
 <p><span class="PAF-Drew">&ldquo;Why? Are you gay or something?&rdquo;</span> Drew asked dissmissively, earning a laugh from Damian.</p>
 <p><span class="PAF-Damian">&ldquo;Jeez, no! I like women too... sometimes,&rdquo;</span> Damian clarified awkwardly.</p>
-<p><span class="PAF-Drew">&ldquo;Seriously?&rdquo;</span> Drew snickered.<span class="PAF-Drew"> &ldquo;So why do you dress like a girl? And why were you caught kissing a boy at school?&rdquo;</span> he prodded relentlessly.</p>
+<p><span class="PAF-Drew">&ldquo;Seriously?&rdquo;</span> Drew snickered.<span class="PAF-Drew"> &ldquo;So why do you dress like a girl? And why were you caught kissing a boy at school?&rdquo;</span></p>
 <p><span class="PAF-Damian">&ldquo;It&rsquo;s complicated,&rdquo;</span> Damian sighed. <span class="PAF-Damian">&ldquo;I just like dressing femininely and sometimes I like kissing boys. But that doesn&rsquo;t make me gay.&rdquo;</span></p>
 <p><span class="PAF-Drew">&ldquo;Do you suck cock?&rdquo;</span></p>
 <p><span class="PAF-Damian">&ldquo;Well...I mean&hellip;Yes, I do like sucking cock,&rdquo;</span> Damian admitted sheepishly.</p>

@@ -5,7 +5,7 @@ loadPage = function() {
     section1.style.paddingTop = '6.4rem';
     const row1a = storyRow('1a', 'fullRow', 
     
-    `${storyLeftImage(1)}
+    `${storyImageLeft(1)}
 <p></p>
 <p>Cum...</p>
 <p>That's lots of cum.</p>

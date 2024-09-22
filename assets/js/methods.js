@@ -296,7 +296,7 @@ function AutoSave() {
     data.dateStr = getDateStr(data.date);
     data.timeStr = getTimeStr(data.date);
 
-    data.TotalNumOfStories = storyNames.length;
+    data.TotalNumOfStories = arrayDifference(storyNames, lockedStories()).length;
 
     
     data.StoriesCompletedNum = completeStories().length;
@@ -958,3 +958,6 @@ function playAudio(audio=currentAudioNode) {
 
 
 
+function removeStoryName(str) {
+    storyNames = arrayDifference(storyNames, [str])
+}

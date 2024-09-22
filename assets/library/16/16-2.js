@@ -5,7 +5,7 @@ loadPage = function() {
 const section1 = newSection('1');
 const row1a = storyRow('1a', 'INT. 2ND MAIN HALL<br />EARLY MORNING', 
 `
-${storyRightImage('milena_hall')}
+${storyImageRight('milena_hall')}
 <p>Milena sauntered over to Michael, her voice light but with an undercurrent of curiosity.</p>
 <p><span class="Milena">Milena:</span> Hey.</p>
 <p><span class="Michael">Michael:</span> Hey, what&rsquo;s up?</p>
@@ -33,7 +33,7 @@ const row1b = storyRow('1b', 'INT. SCHOOL HALL<br />MOMENTS LATER',
 ${storyImage('school_hall')}
 <p>Crowds. The usual shuffle of feet and chatter, everyone rushing to class like they actually care. Michael, moving through the throng, bumped into someone&mdash;books flew everywhere.</p>
 <p><span class="Michael">Michael:</span> You okay?</p>
-${storyRightImage('jenny_hall')}
+${storyImageRight('jenny_hall')}
 <p>Jenny, poor Jenny. She was trembling like she was about to fall apart, already on the ground, gathering her scattered books like they were preciou. She didn&rsquo;t answer him, just moved like a mouse under a broom.</p>
 <p>Michael&rsquo;s guilt was instant. He crouched down to help.</p>
 <p>He grabbed one of her notebooks, and that&rsquo;s when Jenny froze. She washolding a book, about to put it in her bag, but the second she saw him with her stuff, she just stopped. Dropped the book like it was hot, stood abruptly and stepped back. Like she was allergic to human interaction.</p>
@@ -76,7 +76,7 @@ ${storyRightImage('jenny_hall')}
 <p><span class="Michael">Michael:</span> Don&rsquo;t I deserve an apology too?</p>
 <p><span class="Jenny">Jenny:</span> I&rsquo;m sorry. I&rsquo;m sorry. I&rsquo;m sorry.</p>
 <p>He wished she&rsquo;d asked him why he made her apologize, like a normal person would&mdash;so he could tease her a little bit longer. He wouldn&rsquo;t have had time to do that if she gave him the chance.</p>
-${storyLeftImage('kelsi_hall')}
+${storyImageLeft('kelsi_hall')}
 <p><span class="Kelsi">Kelsi:</span> What the hell do you think you&rsquo;re doing?</p>
 <p>Kelsi appeared suddenly and she was pissed. Michael, absorbed in teasing Jenny, failed to notice her approach. Swiftly, he positioned Jenny between himself and Kelsi, using her like a shield.</p>
 <p>Jenny, taken aback, offered no resistance, only a timid whimper escaping her lips.</p>
@@ -98,7 +98,7 @@ ${storyLeftImage('kelsi_hall')}
 ${storyImage('school_hall')}
 <p><span style='font-size: 30px' class="Colette">&ldquo;What is going on here? When did my school become a circus? Everybody to their classes!&rdquo;</span></p>
 <p>A teacher had to stop this mess sooner or later. But in a school that had only female teachers, only one woman was strong enough to control this chaos.</p>
-${storyCenterImage('colette_hall')}
+${storyImageCenter('colette_hall')}
 <p>Principal Colette.</p>
 
 ${appendLinkRow('Go to class', '1c', true)}
@@ -119,7 +119,7 @@ ${appendLinkRow('Skip to the end of the day', '1d', true)}
 
 const row1d = storyRow('1d', 'INT. 1ST MAIN HALL<br />AFTERNOON', 
 `
-${storyRightImage('milena_hall')}
+${storyImageRight('milena_hall')}
 <p><span class="Milena">Milena:</span> Hey you.</p>
 <p><span class="Michael">Michael:</span> Hey.</p>
 <p><span class="Milena">Milena:</span> So what happened to you last night? I&rsquo;m dying to know.</p>
@@ -148,7 +148,7 @@ ${storyImage('S/0')}
 
 const row1f = storyRow('1f', 'INT. BEDROOM<br>AFTERNOON', 
 `
-${storyRightImage('sherrie_room')}
+${storyImageRight('sherrie_room')}
 <p><span class="Sherrie">Sherrie:</span> Yes, master, did you need me?</p>
 <p><span class="Michael">Michael:</span> Sherrie, do you remember what we talked about yesterday?</p>
 <p><span class="Sherrie">Sherrie:</span> Yes, sir. I believe you wanted to use my pussy for your enjoyment.</p>
@@ -179,7 +179,7 @@ ${appendLinkRow('Set her free', '1g')}
 
 const row1g = storyRow('1g', ' ', 
 `
-${storyRightImage('sherrie_room')}
+${storyImageRight('sherrie_room')}
 <p><span class="Michael">Michael:</span> You&rsquo;re free.</p>
 <p>Sherrie stared at him in silence.</p>
 <p><span class="Michael">Michael:</span> I&rsquo;m not a slavemaster. I don&rsquo;t own you and I don&rsquo;t wish to own anybody in my life. You&rsquo;re free to leave this house and live your own life from now on. Sherrie, you&rsquo;re free.</p>
@@ -215,7 +215,7 @@ ${storyImage('S/1')}
 <p>Sherrie didn&rsquo;t answer him. Talked like she was in a trance.</p>
 ${storyImage('S/3')}
 <p><span class="Sherrie">Sherrie:</span> I was raised a Mormon. I was very religious when I was young and I would have loved to live a religious life, but my mother and I weren&rsquo;t really embraced by the people in the church, because of our Asian blood. My mother came from East Asia she only converted her religion to marry Dad, she didn&rsquo;t care about religion, all she wanted was to fit in this society. I cared in the beginning, but the Mormon Church didn&rsquo;t.</p>
-${storyCenterImage('S/4')}
+${storyImageCenter('S/4')}
 <p><span class="Sherrie">Sherrie:</span> I still grew up a fairly typical teenager. I started dating in high school, and just like all the other girls, I would go out with a boy and make out with him and let him touch me, but always pull out at the last second, before either of us was really satisfied.</p>
 <p><span class="Sherrie">Sherrie:</span> It&rsquo;s something that all the girls my age did at the time. I dated a good bunch throughout high school. I was a very smart and popular girl in high school. I had my way easy because I was a lot smarter than my age, and I was very good at manipulating people, especially the horny boys.</p>
 ${storyImage('S/1')}
@@ -237,11 +237,11 @@ ${storyImage('S/6')}
 ${storyImage('S/8')}
 <p><span class="Sherrie">Sherrie:</span> William, Adrian, and I quickly became friends. I tried many many times to get your father to look at me as more than just a friend, but no matter how charming or beautiful or sexy or naughty I tried to be in front of him, I could never get him to take me as a love interest. I could get any man in this college under my feet, no matter how young or old they were, how smart or stupid, ugly or fit they were. I could get anyone I wanted, except the one I wanted most.</p>
 <p><span class="Sherrie">Sherrie:</span> I couldn&rsquo;t get to your father&rsquo;s heart, so I decided to play with the only heart he trusted, his best friend Adrian.</p>
-${storyCenterImage('S/9')}
+${storyImageCenter('S/9')}
 <p><span class="Sherrie">Sherrie:</span> Adrian was extremely smart, but he was also a player. I teased him a couple of times and he understood the gestures quickly. He<br />asked me out once he noticed I had an interest in him, and we went on our first date.</p>
-<p>(Developer's Note: Sherrie and Adrian's first date is a replication of a scene from the masterpiece <em>Growing UP A Master</em> by MWTB, a nod to a story that affected me a lot during my youth.)</p>
+<p>(Developer's Note: Sherrie and Adrian's first date is a replication of a scene from the masterpiece <em>Growing UP A Master</em> by MWTB, a nod to a story that affected me a lot and inspired several aspects of this story.)</p>
 
-${storyCenterImage('S/10')}
+${storyImageCenter('S/10')}
 
 <p><span class="Sherrie">Sherrie:</span> We went to see a play, and as soon as we sat down, Adrian wrapped his arm around me, pulling me close. There was no hesitation, no testing the waters&mdash;just pure confidence. Other men would have been more cautious. They&rsquo;d slip their arm around me slowly, waiting for permission, easing me into their touch. Not Adrian. He knew what he wanted and took it without asking. I was startled at first, but I let him because it felt good.</p>
 ${storyImage('S/11')}
@@ -278,7 +278,7 @@ ${storyImage('S/11')}
 <p><span class="Sherrie">Sherrie:</span> You see, master. There are two kinds of people in this world. Those who are dominant and those who are submissive. I am of the submissive kind. I attribute that to my childhood and upbringing. I had no shame or guilt in whatever Adrian did to me because it wasn&rsquo;t really my choice. With time, our sex became harder and rougher.</p>
 ${storyImage('S/13')}
 <p>And one day, almost a year after we started dating, I woke up in Adrian&rsquo;s bed and found myself tied to his bed, stripped from all my clothes.</p>
-${storyRightImage('S/12')}
+${storyImageRight('S/12')}
 <p><span class="Adrian">Adrian:</span> Good morning, my Sherrie.</p>
 <p><span class="Sherrie">Sherrie:</span> Adrian, what&rsquo;s going on, babe, why am I tied?</p>
 <p>Then I saw Adrian grab a whip that he had put on a table in the room.</p>
@@ -304,7 +304,7 @@ ${storyImage('S/13')}
 <p>It was hard to keep the whip handle in my ass while Adrian pumped me.</p>
 <p><span class="Michael">Michael:</span> Sherrie, please.</p>
 <p><span class="Sherrie">Sherrie:</span> I tried to keep it in as best I could. I tried to stop myself from reaching orgasm because I knew all my muscles would let loose the handle would slip out, and I would be whipped to death. It was practically impossible to hold the whip handle inside my anus for the whole duration Adrian fucked me.</p>
-${storyCenterImage('S/15')}
+${storyImageCenter('S/15')}
 <p><span class="Sherrie">Sherrie:</span> I came a lot that day. I could keep the whip handle inside me while I came very few times, but most times it did slip out, and I was deservedly whipped for it. After whipping the entire front of my body, Adrian untied the rope from the bed, flipped me over on my stomach, then hogtied me, arms and legs, and whipped my whole back. After that, he shoved the whip handle in my destroyed pussy, and then drove his cock in my-</p>
 ${storyImage('S/1')}
 <p><span class="Michael">Michael:</span> Sherrie!</p>
@@ -331,7 +331,7 @@ ${storyImage('S/16')}
 <p>Your father was disappointed, I broke his heart. I quivered at his response. He was very angry, but he didn&rsquo;t shout at me or curse me, only turned around and left, without even saying goodbye. I quivered as he let my hand go.</p>
 <p><span class="Sherrie">Sherrie:</span> <cite>All who have loved passionately have quivered at least a little, at least once, when the object of desire has cast a stormy look your way; if you haven&rsquo;t, you haven&rsquo;t loved.</cite></p>
 <p><span class="Sherrie">Sherrie:</span> Adrian left your father&rsquo;s project too. Some animosity had grown between the two because of differences in their ideologies and methods. Adrian started his own research group and created his own lab where he worked on his own projects, powered and funded by his extremely powerful and wealthy family. I worked with him too.</p>
-${storyCenterImage('S/17')}
+${storyImageCenter('S/17')}
 <p><span class="Sherrie">Sherrie:</span> For four years we worked on various projects and created many inventions that contributed a lot to the technological leap in the late 90&rsquo;s and early 2000&rsquo;s.</p>
 <p>Some of our work, however, was kept secret. Adrian thought some things were too good for this world and he kept them for himself and his family. Your father did the same thing too, for different reasons, your father kept to himself what he thought could be misused to cause harm in this world. Your father&rsquo;s work, however, was 10 times more advanced than<br />Adrian&rsquo;s. Adrian and I hit multiple blocks and problems in our research that Adrian knew your father had solved already.</p>
 ${storyImage('S/16')}
@@ -366,13 +366,13 @@ ${storyImage('S/19')}
 <p>She wasn&rsquo;t exaggerating. While Michael was terribly excited for it, he was also anxious about having sex.</p>
 <p><span class="Michael">Michael:</span> We can do that tomorrow. You told me a lot of stuff and I need some time to digest it. Sherrie, you can leave the room now.</p>
 <p>That seemed to turn Sherrie off, but she didn&rsquo;t complain. She nodded, got up and left the room.</p>
-${storyLeftImage('S/20')}
+${storyImageLeft('S/20')}
 <p>Michael sprawled out in his bed, a prisoner to the sheets all day, half the night too. Sherrie&rsquo;s words bounced around his brain like a broken record. So Dad and Adrian tag-team Sherrie into submission and made a slave out of her. Was that right or wrong? Was she his victim now? Even if using her was wrong, did it mean anything after they messed her up all this long?</p>
 <p>He was utterly disgusted by Dad and the way he stole Sherrie from Adrian, who he didn&rsquo;t blame much. At least Adrian married himself to Sherrie for eternity. Nothing wrong with making your wife a slave! He thought...</p>
 <p>But even then how could a man sell his wife, especially one so skilled and mighty like Adrian?</p>
 ${storyImage('S/21')}
 <p>He couldn&rsquo;t get Adrian out of his head. The guy was so cool, to him. Michael felt a spark, a damn fire. Why couldn&rsquo;t that son of a bitch be his old man? Maybe he&rsquo;d be someone worth a damn by now.</p>
-${storyEndButton('To be continued...')}
+${storyEndButton('Chapter 3')}
 `
 )
 
@@ -404,5 +404,5 @@ setChapterIndex = ()=> {
 storyLoad();
 
 
-//${storyRightImage('milena_hall')}
+//${storyImageRight('milena_hall')}
 //${storyImage('S/0')}

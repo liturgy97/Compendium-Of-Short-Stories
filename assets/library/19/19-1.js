@@ -15,37 +15,37 @@ loadPage = function() {
 <p><span class="PAF-Jaime">Jaime:</span> <em>(deep breath, sighs)</em> What did you do today?</p>
 <p><span class="PAF-Drew">Drew:</span> Met this new boy- <em>(drops his fork suddenly, puts his face in his palm)</em></p>
 <p><span class="PAF-Jaime">Jaime:</span> Oh, come on, Dad! We said don't take it out on the table!</p>
-<p><span class="PAF-Dean">Dean:</span> Shut up, Jaime! Stay busy, slut! Come on, take it in, all in, there you go!</p>
+<p><span class="PAF-Dean">Dad:</span> Shut up, Jaime! Stay busy, slut! Come on, take it in, all in, there you go!</p>
 <p>Dad, standing, Mom's hair wrapped around his fist, yanks her head back, relieving his cock from the pressure of her mouth. Mom's mouth is open agape. Drool is falling off the corners of her mouth, sliding down her chin. She's dying for air. Mom always looks disgusting after a gag.Drew takes his head off his palm. He eyes the disgusting pigs in front of him with the most dreadful look on his face. Jaime strokes his thigh gently, soothing him.</p>
 <p><span class="PAF-Jaime">Jaime:</span> So you made friends today finally?</p>
 <p><span class="PAF-Drew">Drew:</span> Nah, it's just a- <em>(Glk glk glk in the background)...</em> this fucking slut, Jaime.</p>
-<p><span class="PAF-Vanessa">Vanessa:</span> Grrg Grrg Mmph Whee.</p>
+<p><span class="PAF-Vanessa">Mom:</span> Grrg Grrg Mmph Whee.</p>
 <p><span class="PAF-Jaime">Jaime:</span> I know. Just finish your food.</p>
-<p><span class="PAF-Dean">Dean:</span> You want more? Huh?</p>
-<p>The fucking slut doesn't respond. She claws Dad's naked butt and pulls his torso towards her, placing her closed lips on his shaft. Dad in turn grabs her head from behind her ears, poking those lips open with a slow deliberate thrust into his slut's mouth. She sucks his cock into her mouth like a spaghetti noodle, or a large banana if you ever saw someone trying to swallow a banana intact. She swallows Dad's cock into her mouth so smoothly, so perfectly, into her throat. It was their most impressive move. Everything else they did was batshit disgusting. Mom and Dad having sex on dinner, if you can call that sex, was nothing new. Watching them enter the bathroom and leave the door open wasn't either. If you saw Mom and Dad in the house, 6 times out of ten, one of them was on their knees sucking the other's sex parts in the most degrading way possible. 3 times out of 10, you'd cringe at the sight of Mom's ass railed violently or stretched agape to let the pain and cum out. There was a 10% chance you'd stumble into them acting like humans, having vaginal sex.</p>
+<p><span class="PAF-Dean">Dad:</span> You want more? Huh?</p>
+<p>The fucking slut doesn't respond. She claws Dad's naked butt and pulls his torso towards her, placing her closed lips on his shaft. Dad in turn grabs her head from behind her ears, poking those lips open with a slow deliberate thrust into his slut's mouth. She sucks his cock into her mouth like a spaghetti noodle, or a large banana if you ever saw anyone trying to swallow a banana intact. She swallows Dad's cock so smoothly, so perfectly, down her throat. It was their most impressive move. Everything else they did was batshit disgusting. Mom and Dad having sex on dinner, if you can call that sex, was nothing new. Them entering the bathroom and leaving the door open wasn't either. If you saw Mom and Dad at home, 6 times out of ten, one of them was on their knees sucking the other's sex parts in the most degrading way possible. 3 times out of 10, you'd cringe at the sight of Mom's ass being railed violently or stretched agape to let the pain and cum out. You had a 10% chance in catching them acting like humans, having vaginal sex.</p>
 <p>Slap!</p>
-<p>Mom was choking on Dad's cock for half a minute. He had pinched her nose, depraving her of breath, until he released her with a monstrous slap to her forehead. She's gasping for air. Head tilted back due to another strike to the forehead. Her back arches when he pulls her hair back and down. He spits in her mouth. She struggles to swallow it. Dad spits in her eye, then draws nearer to lick it off. The fucking slut angrily slaps Dad's balls. He lets out a scary moan. Mom clasps his cock around the shaft and strokes it 3 times swiftly, immediately releasing it. Dad arches back, letting out a not-so-scary moan this time, his cock throbbing, precum leaking. He's been edging for a while, that's why he stood and didn't keep his cock under the table as he promised before dinner. He needs to change positions or he'll cum. Mom slaps his balls again. Really fucking hard. Then pulls Dad by his balls, puts both of them in her mouth in one gobble, and does whatever the fuck she does to them with her teeth, tongue, and the inside of her cheeks. Dad slams his leg on the table, spreading himself for Mom to suck on his balls.</p>
+<p>Mom was choking on Dad's cock for half a minute now. He had pinched her nose, depraving her of breath, until he released her with a monstrous slap to her forehead. She's gasping for air. Head tilted back due to another strike to the forehead. Her back arches when he pulls her hair back and down. He spits in her mouth. She struggles to swallow it. Dad spits in her eye, then draws nearer to lick it off. The fucking slut angrily slaps Dad's balls. He lets out a scary moan. Mom clasps his cock around the shaft and strokes it 3 times swiftly, immediately releasing it. Dad arches back, letting out a not-so-scary moan this time, his cock throbbing, precum leaking. He's been edging for a while, that's why he stood and didn't keep his cock under the table like he promised before dinner. He needs to change positions or he'll cum. Mom slaps his balls again. Really fucking hard. Then pulls Dad by his balls, puts both of them in her mouth in one gobble, and does whatever the fuck she does to them with her teeth, tongue, and the inside of her cheeks. Dad slams his leg on the table, spreading himself for Mom to suck on his balls.</p>
 ${storyVideo(1)}
 <p>Drew didn't like calling his mom a fucking slut at first. But hearing Dad call her that so many times had imprinted it on him.</p>
 <p>He's trying to ignore them. Jaime and Drew made a deal with Mom and Dad not to have sex on dinner--at least hide themselves while they did it, but there you go, not one day had passed on their promise and they broke it. Jaime rubs his inner thigh again, gesturing she understands his pain.</p>
 <p><span class="PAF-Drew">Drew:</span> It's not a big deal. There was this guy slash girl at sch-</p>
 <p>(Phfft-Bllrrt)</p>
-<p><span class="PAF-Vanessa">Vanessa:</span> Ahahaha! Excuse me!</p>
-<p><span class="PAF-Dean">Dean:</span> Woah-ho-ho-ho. Good girl!</p>
+<p><span class="PAF-Vanessa">Mom:</span> Ahahaha! Excuse me!</p>
+<p><span class="PAF-Dean">Dad:</span> Woah-ho-ho-ho. Good girl!</p>
 <p><span class="PAF-Drew">Drew:</span> This a fucking disgrace!</p>
 <p>When Dad lifted Mom onto the table and she farted as he shoved his cock inside her ass, that was Drew's breaking point. Drew slammed his hand on the table, got up and stormed to his bedroom. Jaime protested.</p>
 <p><span class="PAF-Jaime">Jaime:</span> Dad! Mom! That's fucking awful! Please stop. That's enough!</p>
-<p><span class="PAF-Dean">Dean:</span> Shut up, Jaime.</p>
+<p><span class="PAF-Dean">Dad:</span> Shut up, Jaime.</p>
 <p><span class="PAF-Jaime">Jaime:</span> Shut up or what? You need to stop this, you're hurting us!</p>
 <p>The same fucking dialogue every day.</p>
-<p><span class="PAF-Vanessa">Vanessa:</span> Ah! Ah! Deeper, Dean, go deeper!</p>
+<p><span class="PAF-Vanessa">Mom:</span> Ah! Ah! Deeper, George, go deeper!</p>
 <p><span class="PAF-Jaime">Jaime:</span> Dad we said no fucking cock on the table!</p>
-<p><span class="PAF-Dean">Dean:</span> I'm not in the <em>(thrust)</em> best mind now, Jemz. <em>(thrust)</em> Put <em>(thrust)</em> yourself in my <em>(thrust)</em> place.</p>
+<p><span class="PAF-Dean">Dad:</span> I'm not in the <em>(thrust)</em> best mind now, Jemz. <em>(thrust)</em> Put <em>(thrust)</em> yourself in my <em>(thrust)</em> place.</p>
 <p><span class="PAF-Jaime">Jaime:</span> YOU PUT YOURSELVES IN OUR PLACES!</p>
-<p><span class="PAF-Dean">Dean:</span> And do what exactly? <em>(thrust thrust thrust)</em></p>
+<p><span class="PAF-Dean">Dad:</span> And do what exactly? <em>(thrust thrust thrust)</em></p>
 <p><span class="PAF-Jaime">Jaime:</span> How would you feel if I...started...fucking...masturbating everywhere, huh? I'll go grab a dildo right now! Tell me how that makes you feel.</p>
-<p><span class="PAF-Dean">Dean:</span> That-</p>
-<p><span class="PAF-Vanessa">Vanessa:</span> Don't pay her attention, Dean! Fuck me! Fuck me, harder!</p>
+<p><span class="PAF-Dean">Dad:</span> That-</p>
+<p><span class="PAF-Vanessa">Mom:</span> Don't pay her attention, George! Fuck me! Fuck me, harder!</p>
 <p>He fucks the slut harder.</p>
 <p><span class="PAF-Jaime">Jaime:</span> Oh you don't mind? What if I start walking naked around the house too? Maybe I will. Maybe I will. Ughhhh. Stooooop!</p>
 <p>She could walk off like Drew but she doesn't. Jaime whines as she watches Mom and Dad fuck on the table while eating as slowly as she can.</p>

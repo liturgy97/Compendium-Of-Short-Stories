@@ -96,21 +96,15 @@
 
         if(!data.hasOwnProperty('patreonCode')) data.patreonCode = '';
 
-        if (resetGame) {
+        if (true) {
 
             removeAllSaves();
 
             init();
 
-            activateTrialButton();
-
-        } else if (data.patreonCode.toLowerCase() != 's44ugq3dnibp08242024' &&  data.patreonCode.toLowerCase() != 'patreontrial0707') {
-            activateTrialButton();
-        } else {
-
-            updateGameStartButton();
+        
         }
-
+        updateGameStartButton();
 
 
         ssPhotoswipe();

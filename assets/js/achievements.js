@@ -1,4 +1,4 @@
-const achievementNames = ["Founder", "Player One", "Bloodbath", "Junkie"]
+const achievementNames = ["Player One", "Bloodbath", "Junkie"]
 
 var achievements = {};
 
@@ -20,7 +20,7 @@ achievements["Player One"] = {
     postDescription : "You were here when it started.",
     requirement : "Have a membership between 24 Aug and 23 Sep 2024",
     rarity : "Rare",
-    isHidden: false,
+    isHidden: true,
 
 
 };

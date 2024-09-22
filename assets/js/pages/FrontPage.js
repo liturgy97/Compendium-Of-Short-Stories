@@ -71,10 +71,7 @@ const trialFormSubmission = function(customForm, onCompletion) {
 
         if (field.value.length == 0) return 'Please enter your Patreon code.'; 
   
-        if (field.value.toLowerCase() == "s44ugq3dnibp08242024" || field.value.toLowerCase() == "patreontrial0707") {
-          valEntered = field.value.toLowerCase();
-          return;}
-  
+        
         
         // If all else fails, return a generic catchall error
         return 'Incorrect code';
@@ -236,14 +233,16 @@ const startGame = function() {
       openStory(data.StoryObj["Elf"]);
 
     }
+
+    if (!(data.patreonCode in BSideCodes)) {
+      
+    }
     
     
 
     devLoad();
 
     saveCleanup();
-
-    earnAchievement('Player One')
 
   }
 

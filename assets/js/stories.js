@@ -24,7 +24,7 @@
 var stories = {};
 
 
-const storyNames= ["Elf", "Growing Mommy's Dick", "Mr. Wolf", "Daddy I'm Scawwed", "Game Night", "Emma", "Boyhood", "Nungerie", "God Bless Estrogen Pills",
+var storyNames= ["Elf", "Growing Mommy's Dick", "Emma", "Boyhood",
   "Protecting A Femboy", "Hammer", "The Hanging Man", 
 ];
 
@@ -203,20 +203,21 @@ index: true,
 {
 name: "French Girl",
 num : 3,
-wordCount: 0,
-subtitle: "Coming Soon"
+wordCount: 8137,
+index: true,
 }, 
 
 {
 name: "You&rsquo;re such a tease",
 num : 4,
-wordCount: 0,
-subtitle: "Coming Soon"
+wordCount: 9340,
+index: true,
 }, 
 {
 name: "NXT&rsquo;s Finest",
 num : 5,
-wordCount: 0,
+wordCount: 6785,
+index: true,
 subtitle: "Coming Soon"
 }, 
 {
@@ -435,9 +436,10 @@ storyNames.forEach(storyName => {
   if (data.StoryObj[storyName].chapters.length > stories[storyName].chapters.length) initStory(storyName);
   const story = data.StoryObj[storyName];
   const current_total_chapters_num = stories[story.name].chapters.length
+  const old_total_chapters_num = story.chapters.length
   for(let i =0; i< current_total_chapters_num; i++) {
     const chapter = story.chapters[i];
-    if (i+1 > story.chapters.length) {
+    if (i+1 > old_total_chapters_num) {
       story.chapters.push(new Chapter(story.name, stories[story.name].chapters[i]));
       story.isSeen = false;
       story.isRead = false;
@@ -448,7 +450,6 @@ storyNames.forEach(storyName => {
       const chapterOrigin = getChapterOrigin(chapter);
       if ((chapter.subtitle == "Coming Soon" || chapter.subtitle == "Patreon Exclusive") && (!chapterOrigin.hasOwnProperty('subtitle') || chapterOrigin.subitle!=chapter.subtitle)) {
         chapter = new Chapter(story.name, chapterOrigin);
-        console.log("New Chapter Added, ", chapter)
         story.chapters[chapter.num] = chapter;
         story.isSeen = false;
         story.isRead = false;
@@ -456,6 +457,11 @@ storyNames.forEach(storyName => {
         if (chapter.num>1 && story.chapters[num-2].isRead) chapter.isUnlocked=true;
       }
       if (chapter.name!=chapterOrigin.name) chapter.name=chapterOrigin.name;
+    }
+
+    if (i > 0 && story.chapters[i-1].isRead && isChapterAvailable(story.chapters[i])) {
+      story.chapters[i].isUnlocked = true;
+      story.currentChapter = story.chapters[i];
     }
     
 

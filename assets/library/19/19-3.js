@@ -258,7 +258,7 @@ const section4 = newSection(4);
 
 const row4a = storyRow('4a', 'EXT. FRONT PORCH<br>LATE AFTERNOON', 
 `
-${storyCenterImage('damian1', false)}
+${storyImageCenter('damian1', false)}
 <p>There she stood&mdash;a girl shy and sweet, a stark contrast to the harshness that had filled the room moments ago. Drew&nbsp;raised an eyebrow, wondering what she wanted.</p>
 <p>She looked up at him,</p>
 <p><span class="PAF-Damian">&ldquo;Hey you...&rdquo;</span></p>
@@ -283,7 +283,7 @@ section4.appendChild(row4a);
 
 const row4b = storyRow('4b', 'EXT. STREETS<br>LATE AFTERNOON', 
 `
-${storyRightImage('city', false)}
+${storyImageRight('city', false)}
 
 <p>They walked through the city, the weight of Damian&rsquo;s confession hanging between them like a dark cloud. Drew&rsquo;s mind was racing, trying to make sense of it. Damian had been expelled from school. Drew did something reckless and got&nbsp;away with a suspension that he knew his parents could talk their way out of while Damian was immediately expelled for something simple.</p>
 <p><span class="PAF-Drew">&ldquo;Why?&rdquo;</span> Drew&rsquo;s voice was edged with disbelief.</p>
@@ -315,7 +315,7 @@ ${storyRightImage('city', false)}
 
 const row4c = storyRow('4c', 'EXT. CITY CENTER<br>BEFORE SUNSET', 
 `
-${storyCenterImage('jax_city', false)}
+${storyImageCenter('jax_city', false)}
 <p><span class="PAF-Jax">&ldquo;You ain&rsquo;t built for this life, kid,&rdquo;</span> Jax muttered, shaking his head. <span class="PAF-Jax">&ldquo;But fine, listen up. You gotta take the train west, head to Lindenport.&rdquo;</span></p>
 <p><span class="PAF-Damian">DAMIAN</span> (confused)<br> Lindenport? But why there?&nbsp;</p>
 <p><span class="PAF-Jax">JAX</span><br>There&rsquo;s a safe house&nbsp;there run&nbsp;by the Ricci family. They got good relations with Sam&rsquo;s gang. We go way back.</p>
@@ -337,7 +337,7 @@ ${storyCenterImage('jax_city', false)}
 <p><span class="PAF-Damian">DAMIAN</span><br>No, I wouldn&rsquo;t ask you that while sober. It&rsquo;s much simpler but it would mean the world to me.</p>
 <p><span class="PAF-Drew">DREW</span><br>Sure.</p>
 <p><span class="PAF-Damian">DAMIAN</span> (stepping closer)<br>Kiss me.</p>
-${storyCenterImage('damian2')}
+${storyImageCenter('damian2')}
 <p><span class="PAF-Drew">DREW</span> (raising an eyebrow)<br>Kiss you?</p>
 <p><span class="PAF-Damian">DAMIAN</span><br>Yes, kiss me, here, on the lips. Kiss me good and hard, like I&rsquo;m your kind of girl.</p>
 ${appendLinkRow('Kiss him', '4d', true, 'setKiss(true)')}
@@ -365,7 +365,7 @@ ${storyPart('first-kiss-accepted',
 <p><span class="PAF-Drew">&ldquo;You can&rsquo;t fucking seduce me, slut,&rdquo;</span> Drew growled roughly in Damian&rsquo;s ear, but made no move to pull away. His mind whirled, caught between the sensation of Damian&rsquo;s touch and the awareness of the crowd around them. The attention of so many people, their potential disgust, his desire to shield Damian from them, only added to the conflict in his mind.</p>
 <p><span class="PAF-Damian">&ldquo;When I saw you pull that knife on Dan, I was so scared I almost pissed myself,&rdquo;</span> Damian confessed, his words in a rush as his lips continued their journey down Drew&rsquo;s body. <span class="PAF-Damian">&ldquo;When you beat those guys at the club, my heart almost stopped. But then I realized, I crave that feeling.&rdquo;</span></p>
 <p>Damian&rsquo;s hands moved with a fevered urgency, pulling off his wig, eyelashes, and skirt, leaving him standing half-naked in the street, lower-body covered only in sheer black panties. <span class="PAF-Damian">&ldquo;I crave being in danger around you, so you can protect me,&rdquo;</span> Damian admitted, his eyes locked on Drew&rsquo;s with a challenge that made Drew&rsquo;s blood run hot.</p>
-${storyCenterImage('damian3')}
+${storyImageCenter('damian3')}
 <p>Drew&rsquo;s breath came hard and fast, his heart hammering in his chest as he stared at Damian. <span class="PAF-Drew">&ldquo;You crazy little slut!&rdquo;</span> he barked in Damian&rsquo;s face, who tweaked in fear and shame, his fists clenched by his sides, fighting the instinct to cover himself.</p>
 
     `
@@ -383,7 +383,7 @@ ${storyPart('first-kiss-declined',
 <p><span class="PAF-Drew">&ldquo;You can&rsquo;t fucking seduce me, slut,&rdquo;</span> Drew growled roughly in Damian&rsquo;s ear, but made no move to pull away. His mind whirled, caught between the sensation of Damian&rsquo;s touch and the awareness of the crowd around them. The attention of so many people, their potential disgust, his desire to shield Damian from them, only added to the conflict in his mind.</p>
 <p><span class="PAF-Damian">&ldquo;When I saw you pull that knife on Dan, I was so scared I almost pissed myself,&rdquo;</span> Damian confessed, his words in a rush as his lips continued their journey down Drew&rsquo;s body. <span class="PAF-Damian">&ldquo;When you beat those guys at the club, my heart almost stopped. And I realized, I crave that feeling.&rdquo;</span></p>
 <p>Damian&rsquo;s hands moved with a fevered urgency, pulling off his wig, eyelashes, and skirt, leaving him standing half-naked in the street, lower-body covered only in sheer black panties. <span class="PAF-Damian">&ldquo;I crave being in danger around you, so you can protect me,&rdquo;</span> Damian admitted, his eyes locked on Drew&rsquo;s with a challenge that made Drew&rsquo;s blood run hot.</p>
-${storyCenterImage('damian3')}
+${storyImageCenter('damian3')}
 <p>Drew&rsquo;s breath came hard and fast, his heart hammering in his chest as he stared at Damian. <span class="PAF-Drew">&ldquo;You crazy little slut!&rdquo;</span> he barked in Damian&rsquo;s face, who tweaked in fear and shame, his fists clenched by his sides, fighting the instinct to cover himself.</p>
 <p><span class="PAF-Damian">&ldquo;Kiss me now or I&rsquo;ll take all my clothes off!&rdquo;</span> Damian screamed, his eyes blazing wildly.</p>
 `)}
@@ -537,14 +537,14 @@ const row6b = storyRow('6b', 'My Daughter&rsquo;s World (Part 1)',
 `
 <p>The first video opened with Damian on his bed, wearing nothing but a sports bra and black panties.</p>
 ${storyVideoCenter('mydaughtersworld/vid1/1', false)}
-${storyRightImage('mydaughtersworld/vid1/2')}
+${storyImageRight('mydaughtersworld/vid1/2')}
 <p>A seductive female voice came from behind the camera, Damian&rsquo;s mom, introducing the video as a special birthday gift. It was time to unlock his chastity cage after 4 months without release.</p>
 <p>She had a little conversation with Damian, who squirmed nervously, unable to control himself as he squeezed his cock and balls between his legs desperately. His mom explained he wasn&rsquo;t allowed to touch himself yet. But Damian was dying to touch himself, saying his balls were so full, his cum was about to spill on its own. His mother scolded him with bizarre viciousness, swearing to lock him up for a full year if he dared to &lsquo;squirt&rsquo; without her permission.</p>
 <p>Damian freaked out. He promised he wouldn&rsquo;t squirt unless she allowed him.</p>
 <p>In between their conversation, it was evident that some parts were scripted while others were natural. Damian&rsquo;s mom asked if he was excited to turn 18, to which he replied that it didn&rsquo;t matter because he had been a slut for a long time already. She faked laughs and teased him about playing with his &ldquo;clit-dick,&rdquo; causing Damian to bob his head, his body shrinking in an attempt to rub his genitals without using his hands.&nbsp;</p>
-${storyCenterImage('mydaughtersworld/vid1/3')}
+${storyImageCenter('mydaughtersworld/vid1/3')}
 <p><span class="PAF-Alison">&ldquo;She&rsquo;s insatiable like a bitch, always horny. Aren&rsquo;t you, honey? If we didn&rsquo;t keep her locked up, she&rsquo;d be milking herself in every corner of the house,&rdquo; Damian's mother told the camera.</span></p>
-${storyCenterImage('mydaughtersworld/vid1/4')}
+${storyImageCenter('mydaughtersworld/vid1/4')}
 <p>Damian sobbed and nodded in agreement, desperately squeezing himself, writhing.</p>
 <p><span class="PAF-Alison">&ldquo;How could you be so horny all the time?&rdquo;</span> His mother asked. <span class="PAF-Alison">&ldquo;It&rsquo;s unbelievable!&rdquo;</span></p>
 <p><span class="PAF-Damian">&ldquo;Because I can&rsquo;t stop thinking about cocks,&rdquo;</span> Damian whined.</p>
@@ -554,7 +554,7 @@ ${storyCenterImage('mydaughtersworld/vid1/4')}
 <p><span class="PAF-Damian">&ldquo;I want a big black cock,&rdquo;</span> Damian moaned.</p>
 <p><span class="PAF-Alison">&ldquo;A real man&rsquo;s cock, that&rsquo;s what she wants,&rdquo;</span> his mother chimed in. <span class="PAF-Alison">&ldquo;She can&rsquo;t help it. She&rsquo;s like a horny dog, always needing to be fucked.&rdquo;</span></p>
 <p>Damian&rsquo;s eyes widened at the thought. His head flickered left and right nervously.</p>
-${storyLeftImage('mydaughtersworld/vid1/5')}
+${storyImageLeft('mydaughtersworld/vid1/5')}
 <p><span class="PAF-Alison">&ldquo;Aww, she&rsquo;s so scared of getting fucked,&rdquo;</span> His mother continued. <span class="PAF-Alison">&ldquo;She never lets us go near her virgin asshole. But if you&rsquo;re not gonna let the black cock fuck you, why do you think of them?&rdquo;</span></p>
 <p><span class="PAF-Damian">&ldquo;I want to suck them.&rdquo;</span></p>
 <p><span class="PAF-Alison">&ldquo;You want their milk all over you?&rdquo;</span></p>
@@ -567,7 +567,7 @@ ${storyLeftImage('mydaughtersworld/vid1/5')}
 <p><span class="PAF-Alison">&ldquo;We&rsquo;ll see about that, my viewers. How many big things can she take in her mouth? We&rsquo;ll show you that in a minute, but why not let her play with her clit-thing first.&rdquo;</span></p>
 <p><span class="PAF-Damian">&ldquo;Yes, please.&rdquo;</span></p>
 <p><span class="PAF-Alison">&ldquo;Okay, take it out. Show them your clit.&rdquo;</span></p>
-${storyRightImage('mydaughtersworld/vid1/6')}
+${storyImageRight('mydaughtersworld/vid1/6')}
 <p>Damian&rsquo;s mom cringed as soon as Damian whipped out his penis. She would degrade and humiliate him for his size, saying it was no bigger than a clit compared to a black man&rsquo;s cock.</p>
 <p><span class="PAF-Alison">&ldquo;Look at that pathetic thing. It&rsquo;s so pathetically small, like all white clit-things. I can&rsquo;t understand why people wanted to see your clitty so much, it&rsquo;s so disgustingly tiny. I get a lot of messages about it. &lsquo;Show us her cock&rsquo;, &lsquo;Make her jerk her dick off&rsquo;, ugh.</span></p>
 <p><span class="PAF-Alison">My viewer, if it&rsquo;s less than 7 inches, is it even a cock? No! It&rsquo;s closer to the size of a clit than a black man&rsquo;s penis for sure!&rdquo;</span></p>
@@ -576,11 +576,11 @@ ${storyRightImage('mydaughtersworld/vid1/6')}
 ${storyVideoCenter('mydaughtersworld/vid1/3',)}
 <p>Damian eagerly played with his penis, stroking it rapidly. Once his cock got hard, his mother told him to stop.</p>
 <p>They would talk for a while and then she&rsquo;d allow him to touch his cock again. When he was close to the edge she stopped him again.</p>
-${storyCenterImage('mydaughtersworld/vid1/7')}
+${storyImageCenter('mydaughtersworld/vid1/7')}
 <p><span class="PAF-Damian">&ldquo;No, please, please, please. I wanna cum!&rdquo;</span> Damian begged to let him come.</p>
 <p><span class="PAF-Alison">&ldquo;No, don&rsquo;t you dare wet yourself. (gasp) Did you just squirt?!!&rdquo;</span> His mother screamed.</p>
 <p>Damian panicked and quickly released his cock, spreading his legs wide. His body tweaked as he used all his power to curb the desperate urge to cum. With a great display of self-control he managed to hold himself, without leaking, earning praises from his mother.</p>
-${storyCenterImage('mydaughtersworld/vid1/8')}
+${storyImageCenter('mydaughtersworld/vid1/8')}
 ${storyVideoCenter('mydaughtersworld/vid1/4')}
 <p>They would repeat that game in multiple rounds throughout the video. In the end, Damian&rsquo;s mother locked him up in his chastity cage again.</p>
 ${appendLinkRow('Check other videos', '6c', true)}
@@ -598,7 +598,7 @@ ${storyVideoCenter('mydaughtersworld/vid3')}
 <p>They had crafted a narrative where Damian was banned from leaking pleasure outside of their videos as well. The more videos they made, the more desperate and needy Damian seemed, while his mom became increasingly harsh and dominant. Their signature style included constant banter between them and the camera, and Damian teasingly displaying his aroused cock in various poses.</p>
 ${storyVideoCenter('mydaughtersworld/vid4')}
 <p>Drew noticed how whenever Damian was particularly agitated or excited, he would curl and flex his feet just like Jaime always did, and it made him even more adorable.</p>
-${storyCenterImage('mydaughtersworld/11')}
+${storyImageCenter('mydaughtersworld/11')}
 <p>Their videos boasted Damian in different wigs, costumes, and lingerie.</p>
 ${storyVideoCenter('mydaughtersworld/moon', true, false, true, true)}
 <p>But it was Damian&rsquo;s mother that Drew really craved to see, who hadn&rsquo;t appeared in any of the scenes yet.</p>
@@ -611,7 +611,7 @@ ${storyVideoCenter('mydaughtersworld/vid5')}
 <p>when he was extremely horny and frustrated, only to lighten up with a blush spreading across his face. He loved every little reaction he made, some even passing those ideals he&rsquo;d seen in Jaime. It drove Drew crazy to see how much Damian was denied pleasure when he deserved it most, yet it only hooked him up more to the videos.</p>
 ${storyVideoCenter('mydaughtersworld/vid6')}
 <p>In one scene, Damian edged himself so hard that precum spilled out in a glistening pool.</p>
-${storyCenterImage('mydaughtersworld/12')}
+${storyImageCenter('mydaughtersworld/12')}
 
 <p>His mother flipped but Damian begged for forgiveness and insisted it was just precum. His mom got up and dipped the tip of her finger in the pool Damian dropped, feeling the texture, confirming to the camera it was just thin fluid.</p>
 ${storyVideoCenter('mydaughtersworld/vid7')}
@@ -636,7 +636,7 @@ const row6e = storyRow('6e', 'My Daughter&rsquo;s World (Part 4)',
 <p>In the later videos, the tension between Damian and his mother would to an extreme, making them unwatchable with how thick and ugly the air between them was. She consistently questioned about Damian&rsquo;s ass and if he was ready for anal play. Damian was reluctant. His mother would ask him how much he needed to be explored and destroyed from the inside by a black man. Damian had no desire in anyone touching his ass but his attempts at fighting against it would be shunned, his mother insisting it was the only way to satiate his doggy hunger and promised to free his cock for a week after he&rsquo;s fucked. At the start and end of those videos, the camera would show a black X-tape on Damian&rsquo;s butthole.</p>
 ${storyVideoCenter('mydaughtersworld/vid8', false)}
 <p>In one of these videos, Damian and his mom lay in bed, locked in a conversation. Their conversation was mostly innocent. They talked about Damian&rsquo;s life, school, favorite kinds of clothes, soap preferences, how sensitive his nipples and chest were, and how he had recently discovered a fondness for playing with. His mother would use that as leverage to coerce Damian to play with his ass but he refused because the idea makes him feel violated.</p>
-${storyCenterImage('mydaughtersworld/14')}
+${storyImageCenter('mydaughtersworld/14')}
 <p>And then suddenly without a warning, a large black man appeared behind Damian, climbed on the bed, lay his extremely large cock across Damian&rsquo;s face, and parted his hanging balls to cover each of Damian&rsquo;s eyes. He landed with his weight on Damian&rsquo;s head, suffocating him. The video ended abruptly without explanation.</p>
 <p>Just like Damian&rsquo;s mother, the video did not show the black man&rsquo;s face.</p>
 <p>Drew repeated the last part of the video many times. That look of fear and defeat on Damian&rsquo;s face at the end fueled the fire in him that ended up burning this very house.</p>

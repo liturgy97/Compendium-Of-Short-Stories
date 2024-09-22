@@ -48,7 +48,7 @@ const row1b = storyRow('1b', ' ',
     <p>I fumbled for my phone, the numbers blurring, my fingers shaking as I tried to call her again.</p>
     ${storyImage('K/2')}
     <p>Still no answer.</p>
-    ${storyRightImage('K/2_1')}
+    ${storyImageRight('K/2_1')}
     <p>I was starting to think she gave me the wrong number on purpose. I let it drop and buried my hand back into my pocket. The temperature wasn&rsquo;t that low but I&rsquo;d been cursed with this persistent feeling of cold since that night.</p>
     <p><span class="Cherie">&ldquo;Ugh, you&rsquo;re till wearing that?&rdquo;</span> Her voice cut through the wind like a blade. <span class="Cherie">&ldquo;You look hideous in black.&rdquo;</span></p>
     <p>I looked up, and there she was. Bruised but still stunning, her hair wild in the wind, she had come again for the third morning in a row, bringing those colorful flowers for the graves.</p>
@@ -61,7 +61,7 @@ const row1b = storyRow('1b', ' ',
     <p><span class="Cherie">&ldquo;You can&rsquo;t do it alone.&rdquo;</span></p>
     <p><span class="Kelsi">&ldquo;Then join me,&rdquo;</span> I whispered, desperation clawing at my voice. <span class="Kelsi">&ldquo;We&rsquo;ll end them together.&rdquo;</span></p>
     <p>I had no right to ask her that after I kicked her out. But she was the only good fighter I knew, other than Tiffany. I&rsquo;d learned to appreciate Cherie&rsquo;s powers, she was the only one to survive the hangman after all, and I was willing to beg for her help if had to.</p>
-    ${storyRightImage('K/3')}
+    ${storyImageRight('K/3')}
     <p><span class="Kelsi">&ldquo;Ma ch&eacute;rie, my darling...&rdquo;</span>
     <p>She shook her head, a sad smile playing on her lips. <span class="Cherie">&ldquo;I don&rsquo;t wanna die, Kelsi. There are too many joys in this life I don&rsquo;t want to miss.&rdquo;</span></p>
     <p>Her eyes sparked with a memory I couldn&rsquo;t share. Someone she loved. <span class="Cherie">&ldquo;I don&rsquo;t want you to die either,&rdquo;</span> she continued.</p>
@@ -182,7 +182,7 @@ const row1b = storyRow('1b', ' ',
         `
         ${storyAudio('audio/Night-on-the-Docks')}
     <p>The morning fog clung to the gravestones like a shroud, making the place feel even colder than it already was. I stood there, hands deep in my coat pockets, staring at the names etched in stone. Cherie was beside me, her face set in that easy, carefree expression she always wore.</p>
-    ${storyRightImage('K/3')}
+    ${storyImageRight('K/3')}
     <p><span class="Kelsi">&ldquo;Goodbye, outsider,&rdquo;</span> I said, my voice flat and devoid of emotions.</p>
     <p>She smirked, that same playful glint in her eyes. <span class="Cherie">&ldquo;I&rsquo;m still gonna be in town. Call me whenever you need me. Hey, I&rsquo;ll make you a new costume. Do you want it to be red this time?&rdquo;</span></p>
     <p>Red.</p>
@@ -196,11 +196,11 @@ const row1b = storyRow('1b', ' ',
     <p>We tried to ditch her more than once. Jade, especially, wasn&rsquo;t shy about letting Cherie know she wasn&rsquo;t welcome, and was quite cruel to her. But Darling kept coming back, kept trying to be part of our little gang.</p>
     <p>Cherie wasn&rsquo;t the superwoman she pretended to be, but she&rsquo;s super selfish. Cherie does whatever Cherie wants, no matter what or who is involved. She sees what she wants to see and hears what she wants to hear. You couldn&rsquo;t tell her no; you just had to go along with it.</p>
     <p>I&rsquo;ll admit it, though&mdash;I was always glad to see her. She brought life to our little crew, even if her antics annoyed the hell out of Jade. Life of the party I used to call her. The way she Nyah&rsquo;ed and Ooh&rsquo;ed her way through waves of villains and mafia henchmen cracked me up every time. Jade, on the other hand, just rolled her eyes.</p>
-    ${storyLeftImage('K/11_1')}
+    ${storyImageLeft('K/11_1')}
     <p>Eventually, Cherie proved herself, and we let her into the Dinos for real, and immediately she decided to change the name of the group. How dare she? Heroines? Who does she think she is?</p>
     <p>But, as always, we went along with it. New girls joined later, handpicked by Jade and me. We trained them, taught them everything we knew. Cherie learned on the fly, the hard way. But she still found time to make all the costumes. Hell, without those outfits, we wouldn&rsquo;t have convinced a single one of those girls to join us. The costumes made them feel like they could take on the world. Cherie designed all our costumes, sewed them all, even named a handful of them. She did all that with so much care and love, I never heard a heroine complain about a costume&mdash;they wouldn&rsquo;t dare anyway. I&rsquo;d have knocked some sense into a heroine who did less than rain Cherie with compliments for her work.</p>
     <p>She gave each girl one, maybe two costumes. But she had plenty for herself. Before Cherie, we were just two punks fighting the system. With her, we became the mighty Heroines. Good times. It&rsquo;s all gone now.</p>
-    ${storyRightImage('K/3')}
+    ${storyImageRight('K/3')}
     <p>I snapped back to the present. <span class="Kelsi">&ldquo;I&rsquo;ll think about it,&rdquo;</span> I told her.</p>
     <p>She grinned, that same irritating, knowing grin. <span class="Cherie">&ldquo;I think it&rsquo;s goodbye then.&rdquo;</span></p>
     <p>She pulled me into a hug, tight enough that I could feel the steel in her muscles. <span class="Cherie">&ldquo;Good luck with your revenge against the mafia,&rdquo;</span> she whispered. Then, with a voice as cold as the morning air and as dangerous as a loaded gun, she added, <span class="Cherie">&ldquo;But if you break my toy, I WILL KILL YOU!&rdquo;</span></p>
@@ -233,7 +233,7 @@ const row1b = storyRow('1b', ' ',
     `
     ${storyAudio('audio/Shadow-Of-A-Doubt', false)}
     <p><span class="Michael">MICHAEL</span> (sauntering into the kitchen, tipping an invisible hat)<br />Morning, m&rsquo;Lady.</p>
-    ${storyRightImage('mom')}
+    ${storyImageRight('mom')}
     <p><span class="Lena">MOM</span> (soft chuckle)<br />Good Morning, honey. Today&rsquo;s a special day for you, and I&rsquo;m so happy!</p>
     <p><span class="Michael">MICHAEL</span> (with a smirk)<br />And why&rsquo;s that? It&rsquo;s just the first day of school. Big deal. You&rsquo;re always so excited about everything.</p>
     <p>Mom pulled out a party blower and gave it a playful toot.</p>
@@ -301,7 +301,7 @@ const row1b = storyRow('1b', ' ',
     
     <p><em>I&rsquo;ll break some hearts alright,</em> the thought crossed his mind as he stepped into the school hall.</p>
     <p>First days usually got his nerves going, but not today. Today, he wasn&rsquo;t nervous&mdash;just irritated by the chaos around him. His eyes scanned the crowd, searching for a familiar face. He walked down the long main hall, and then... he saw her.</p>
-    ${storyLeftImage('gina_hall')}
+    ${storyImageLeft('gina_hall')}
     <p>Gina. The hottest girl in school&mdash;and probably the universe, he thought to himself.</p>
     <p>His heart sped up, sweat beading on his brow. She was heading his way, and for once, he didn&rsquo;t want to look away. Normally, he&rsquo;d wimp out, but today, she looked hotter than ever. Mom&rsquo;s words echoed in his mind, the memory of her kiss lingering on his neck. He&rsquo;d wanted to talk to Gina for years but never had the courage. Today, he decided, will be different.</p>
     <p><em>Let&rsquo;s break a heart today.</em></p>
@@ -311,7 +311,7 @@ const row1b = storyRow('1b', ' ',
     <p><span class="Michael">&ldquo;I&rsquo;m Michael,&rdquo;</span> he stammered, clearing his throat, <span class="Michael">&ldquo;we were in the same class last year.&rdquo;</span></p>
     <p>Her eyes narrowed slightly, sizing him up with a slow, dismissive once-over. <span class="Gina">&ldquo;I don&rsquo;t remember you. What do you want, bozo?&rdquo;</span></p>
     <p>Michael&rsquo;s heart plummeted and his confidence shattered. He opened his mouth to speak, but before he could muster a response, Rick Davidson&mdash;towering, intimidating, and every bit fit to be the school&rsquo;s alpha male&mdash;stepped in, positioning himself between Michael and Gina.</p>
-    ${storyRightImage('rick_hall')}
+    ${storyImageRight('rick_hall')}
     <p><span class="Rick">&ldquo;Speak up, man,&rdquo;</span> Rick taunted. <span class="Rick">&ldquo;She can&rsquo;t understand you. What do you want from her?&rdquo;</span></p>
     <p>Michael&rsquo;s temper flared. <span class="Michael">&ldquo;I didn&rsquo;t speak to you, Rick. Mind your own fucking business.&rdquo;</span></p>
     <p>He shoved Rick aside, harder than he intended. Gina screamed as Rick stumbled, almost crashing into her. Panic flared in Michael&rsquo;s chest&mdash;what if she got hurt? But Rick quickly regained his balance, and his face twisted into a sneer. Without warning, he grabbed Michael by the collar and slammed him against a locker, his forearm pressing hard against Michael&rsquo;s throat.</p>
@@ -331,7 +331,7 @@ const row1b = storyRow('1b', ' ',
     <p>Michael didn&rsquo;t answer, just glared at Rick, venom in his eyes. Rick stepped back, releasing him, then awkwardly patted Michael&rsquo;s shoulder, trying to play off his sudden fear. He even pulled Michael&rsquo;s collar and straightened his shirt for him.</p>
     <p><span class="Rick">&ldquo;Sorry, man, didn&rsquo;t know who you were. No hard feelings, huh?&rdquo;</span> Rick extended his fist for a bump, but Michael ignored it, shoving past him. Disappointed groans rippled through the crowd as they realized there would be no fight.</p>
     <p>Michael made a beeline for his next class. He barely took two steps and an angel had stuck beside him. <span class="Milena">&ldquo;Yo,&rdquo;</span> she called out.</p>
-    ${storyLeftImage('milena_hall')}
+    ${storyImageLeft('milena_hall')}
     <p><span class="Michael">&ldquo;What&rsquo;s up?&rdquo;</span> he muttered without turning, still fuming.</p>
     <p><span class="Milena">&ldquo;You should&rsquo;ve told me you were gonna pick a fight. I wouldn&rsquo;t have missed that for the world,&rdquo;</span> Milena laughed, lunging to match Michael's pace.</p>
     <p><span class="Michael">&ldquo;So, Gina and Rick are dating now?&rdquo;</span></p>
@@ -366,7 +366,7 @@ const row1b = storyRow('1b', ' ',
     <p>But she wasn&rsquo;t fazed by Michael. Initially, she suspected it was all a ploy, thinking he&rsquo;d faked unconsciousness just to talk to her. She found the notion both hilarious and pathetic. He insisted it was her fault, claiming their brief eye contact they had before the accident distracted him. She felt no remorse whatsoever and actually found it amusing that her presence had momentarily scared him. The whole thing was very funny to her.</p>
     <p>And ever since, it became a running joke between them that he called her an angel.</p>
     <p>But that small accident wasn&rsquo;t the reason she stuck with him. Why would an angel fall from the sky and be his buddy, you might ask? Well, it&rsquo;s because she wanted to get closer to...</p>
-    ${storyRightImage('ned_hall')}
+    ${storyImageRight('ned_hall')}
     <p><span class="Ned">&ldquo;Hey, guys. I want a high five too.&rdquo;</span></p>
     <p>Ned approached them with an eager smile, a bit too wide-eyed, like a lost puppy hoping to be adopted.</p>
     <p>Milena gave Ned a high five, nudging him to turn towards Michael, so he gestured for another high five. Michael&rsquo;s expression darkened, and in one swift move, he grabbed Ned by the shirt, yanking him closer. The suddenness of it made Ned whimper, his eyes now wide with fear.</p>
@@ -406,7 +406,7 @@ const row1b = storyRow('1b', ' ',
     const row4b2 = storyRow('4b2', ' ', 
         `
         
-        ${storyCenterImage('kelsi_hall')}
+        ${storyImageCenter('kelsi_hall')}
     <p>Kelsi.</p>
     <p>Kelsi was Michael&rsquo;s twin sister, though you&rsquo;d never know it by the way she carried herself. They were nothing alike. She was always quick to remind him that she&rsquo;d come out of the womb first, always calling him her &lsquo;little brother&rsquo; with a mocking sneer.</p>
     <p>Kelsi was the queen bee of our school. Michael remembered the days when she&rsquo;d bully anyone who dared cross her, even the biggest jocks. Her reputation as an extraordinary fighter was known all over the school&mdash;no, the whole town. But it wasn&rsquo;t just the fact that she could break an arm in the flash of an eye that scared people of her... It was her flair for humiliation.</p>
@@ -430,7 +430,7 @@ const row1b = storyRow('1b', ' ',
     <p><span class="Kelsi">&ldquo;Everybody, I&rsquo;ll make an announcement. This is my little brother. I&rsquo;ll have you know that I&rsquo;m not gonna protect him under any circumstances. If anybody wants to destroy this bitch&rsquo;s asshole, he&rsquo;s all yours.&rdquo;</span></p>
     <p>The crowd erupted in cheers, a wicked excitement buzzing through them. Michael felt the walls closing in, the predatory stares of the other students making him feel like prey.</p>
     <p>Kelsi strode off without a backward glance. As she disappeared, Milena stepped up beside him, her expression a mix of concern and exasperation.</p>
-    ${storyLeftImage('milena_hall')}
+    ${storyImageLeft('milena_hall')}
     <p><span class="Milena">&ldquo;Well, you just became public enemy number one,&rdquo;</span> she said, her tone almost sympathetic as she tapped his chest a couple of times. <span class="Milena">&ldquo;You just pushed us to the bottom of the ladder, big man.&rdquo;</span></p>
     <p>As the school alarm blared, Milena grabbed Michael&rsquo;s arm, pulling him along. They hurried to class, Michael&rsquo;s mind spinning with the consequences of his sister&rsquo;s wrath.</p>
     ${appendLinkRow('Go to class', '4c', true)}
@@ -441,7 +441,7 @@ const row1b = storyRow('1b', ' ',
     
     const row4c = storyRow('4c', 'INT. CLASS 12A<br>EARLY MORNING', 
     `
-    ${storyRightImage('jen_class')}
+    ${storyImageRight('jen_class')}
     <p>Michael couldn&rsquo;t believe his luck. Another year with Roberts as his math teacher. She was as stunning as ever, a walking distraction he couldn&rsquo;t get enough of. His mind drifted off into places it shouldn&rsquo;t as he sat in the classroom, pretending to focus on the lecture.</p>
     <p>He let his gaze trail over her, drinking in every detail&mdash;the delicate hands, the flawless skin, the way her blouse clung just right to her toned body, hinting at curves he&rsquo;d only ever fantasized about. Those legs, God, those legs&hellip; He&rsquo;d do anything just to see where they ended.</p>
     <p>As the minutes ticked by, Michael&rsquo;s mind wandered further, lost in a haze of fantasies about her, completely detached from the calculus she was explaining.</p>
@@ -476,7 +476,7 @@ const row1b = storyRow('1b', ' ',
     
     const row4e = storyRow('4e', 'INT. SECOND MAIN HALL<br>AFTERNOON', 
     `
-    ${storyLeftImage('milena_hall')}
+    ${storyImageLeft('milena_hall')}
     <p>The final bell rang, and Michael found himself lingering in the hallway with Milena, stalling before heading to Roberts&rsquo; office. He noticed a couple of jocks loitering near the school doors, one of them glaring at him with clear intent.</p>
     <p><span class="Michael">&ldquo;I think I should hide,&rdquo;</span> he muttered. <span class="Michael">&ldquo;Somebody&rsquo;s looking to pick a fight.&rdquo;</span></p>
     <p><span class="Milena">&ldquo;More than one actually,&rdquo;</span> Milena said. <span class="Milena">&ldquo;It&rsquo;s like you have a target on your back.&rdquo;</span></p>
@@ -515,56 +515,56 @@ const row1b = storyRow('1b', ' ',
     
     const row5 = storyRow('5', 'INT. ROBERT&rsquo;S OFFICE<br>AFTERNOON', 
     `
-    ${storyCenterImage('J/0')}
+    ${storyImageCenter('J/0')}
     <p>Michael entered the office, his heart thudding in his chest as he faced Roberts. Her eyes locked onto his, a mix of frustration and something else he couldn&rsquo;t quite place polling in them.</p>
-    ${storyCenterImage('J/1')}
+    ${storyImageCenter('J/1')}
     <p><span class="Jen">&ldquo;Michael,&rdquo;</span> she began, her voice smooth yet stern. <span class="Jen">&ldquo;I&rsquo;m glad you&rsquo;re finally here. Sit down.&rdquo;</span></p>
-    ${storyCenterImage('J/2')}
+    ${storyImageCenter('J/2')}
     <p>He obeyed, the chair feeling uncomfortably firm beneath him as he watched her move to perch on the edge of her desk. Roberts released a heavy sigh.</p>
     <p><span class="Jen">&ldquo;Michael,&rdquo;</span> she continued, her gaze not leaving his. <span class="Jen">&ldquo;I&rsquo;m truly disappointed. You were one of my best students, and now...&rdquo;</span> Her voice trailed off, leaving the accusation hanging in the air.</p>
     <p><span class="Michael">&ldquo;I&rsquo;m sorry, Ms. Roberts,&rdquo;</span> he mumbled, his voice barely audible.</p>
-    ${storyCenterImage('J/3')}
+    ${storyImageCenter('J/3')}
     <p>He swallowed hard, nerves prickling under his skin. There was something about her presence that always made him uneasy&mdash;maybe it was her undeniable allure, or perhaps the guilt for all these dirty thoughts he had for her while she held high in high regard?</p>
     <p>He doesn&rsquo;t know why. But at that moment her eyes weighed a ton upon his soul.</p>
-    ${storyCenterImage('J/4')}
+    ${storyImageCenter('J/4')}
     <p>Roberts leaned back slightly, a subtle shift that did nothing to ease his discomfort. <span class="Jen">&ldquo;Relax, Michael,&rdquo;</span> she said <span class="Jen">&ldquo;We&rsquo;re just talking. You&rsquo;re not in trouble... yet.&rdquo;</span></p>
     <p>He gulped, nodding. <span class="Michael">&ldquo;Yes, Ms. Roberts.&rdquo;</span></p>
-    ${storyCenterImage('J/5')}
+    ${storyImageCenter('J/5')}
     <p>Her lips curled into a small smile, and she let out a soft chuckle. <span class="Jen">&ldquo;It&rsquo;s very hot today, don&rsquo;t you think?&rdquo;</span></p>
     <p><span class="Michael">&ldquo;Y-yes, Ms. Roberts. Very hot,&rdquo;</span> he stammered, feeling the flush creep up his neck.</p>
-    ${storyCenterImage('J/6')}
+    ${storyImageCenter('J/6')}
     <p>She sighed, her eyes closing briefly before she opened them again, fixing him with a mischievous glance. <span class="Jen">&ldquo;You don&rsquo;t mind if I get a little bit more comfortable, do you, Michael?&rdquo;</span></p>
     <p>Michael watched as Roberts slowly removed her jacket, letting it slide off her shoulders. He forgot to answer her.</p>
-    ${storyCenterImage('J/7')}
+    ${storyImageCenter('J/7')}
     <p><span class="Jen">&ldquo;Here, that&rsquo;s better.&rdquo;</span></p>
-    ${storyCenterImage('J/8')}
+    ${storyImageCenter('J/8')}
     <p><span class="Jen">&ldquo;Michael, I know how talented you are in mathematics. I&rsquo;m not going to let that talent go to waste.&rdquo;</span></p>
-    ${storyCenterImage('J/9')}
+    ${storyImageCenter('J/9')}
     <p>Her words were firm, yet there was a teasing lilt in her voice as she stood and began to walk slowly towards him. <span class="Jen">&ldquo;You must know that I take this very seriously. It saddens me to see someone with so much potential... wasting it.&rdquo;</span></p>
-    ${storyCenterImage('J/10')}
+    ${storyImageCenter('J/10')}
     <p>He nodded, his heart pounding louder in his ears as she stopped just inches away from his chair.</p>
     <p><span class="Jen">&ldquo;I will make it my personal goal,&rdquo;</span> she whispered, leaning down slightly, <span class="Jen">&ldquo;to turn you into the top student in my class this term. You don&rsquo;t know how important this is to me, Michael. You don&rsquo;t know how far I&rsquo;m willing to go to motivate you.&rdquo;</span></p>
     <p><span class="Michael">&ldquo;Yes, Ms. Roberts,&rdquo;</span> he breathed, his eyes wide as she straightened up.</p>
     <p><span class="Jen">&ldquo;Call me Jen, sweetheart,&rdquo;</span> she purred. <span class="Jen">&ldquo;We&rsquo;re going to get a lot closer over the next few months.&rdquo;</span></p>
     <p><span class="Michael">&ldquo;Y-yes, Ms. Jen,&rdquo;</span> he stuttered, the words stumbling out of his mouth.</p>
-    ${storyCenterImage('J/11')}
+    ${storyImageCenter('J/11')}
     <p>She chuckled again, a low, throaty sound that sent shivers down his spine. <span class="Jen">&ldquo;Ah, Michael,&rdquo;</span> she said, tracing a hand slowly up her leg. <span class="Jen">&ldquo;Your problem is that you&rsquo;re easily distracted. But that&rsquo;s just how youth is today, isn&rsquo;t it? Always distracted...&rdquo;</span></p>
-    ${storyCenterImage('J/12')}
+    ${storyImageCenter('J/12')}
     <p><span class="Jen">&ldquo;...by fantasies...&rdquo;</span></p>
-    ${storyCenterImage('J/13')}
+    ${storyImageCenter('J/13')}
     <p>Her hand slowly and sensually swiped over her thigh, rolling her skirt up. She paused, her eyes narrowing as she watched him squirm. <span class="Jen">&ldquo;But if you focus, really focus, Michael... maybe your dreams could come true.&rdquo;</span></p>
     <p>Roberts ran her hands on her thigh, massaging herself, still keeping full eye contact with him. He struggled to keep his eyes on hers, with eyes insisting on falling to her beautiful legs.</p>
     <p>He fidgeted in his seat.</p>
     <p>His cock was erecting in his pants.</p>
     <p>Her words hung in the air as she snapped her fingers, jolting him back to reality. He looked up, meeting her gaze.</p>
     <p><span class="Michael">&ldquo;Yes, ma&rsquo;am,&rdquo;</span> he replied, his voice trembling.</p>
-    ${storyCenterImage('J/14')}
+    ${storyImageCenter('J/14')}
     <p><span class="Jen">&ldquo;Maybe it&rsquo;s too difficult for you to follow my words. Let me show you with an illustration.&rdquo;</span></p>
     <p>Roberts rose from her seat, reaching up to retrieve a marker from a shelf above her desk. As she got up, her skirt rolled even more, revealing her ass and thighs, with only her pantyhose covering them.</p>
     <p>His cock got harder.</p>
     ${storyImage('J/15')}
     <p>Harder.</p>
-    ${storyCenterImage('J/16')}
+    ${storyImageCenter('J/16')}
     <p>Even harder.</p>
     ${storyImage('J/17')}
     <p>By the time Roberts reached her marker, he had got a full hard-on already. He should&rsquo;ve taken a moment to adjust his pants and hid his boner but he was too busy staring at Roberts&rsquo; wonderful ass curved before him.</p>
@@ -573,15 +573,15 @@ const row1b = storyRow('1b', ' ',
     ${storyImage('J/18')}
     <p><span class="Michael">&ldquo;I&rsquo;ll get it for you, Ms. Roberts,&rdquo;</span> he offered, quickly bending down to retrieve it.</p>
     <p><span class="Jen">&ldquo;You stay right where you are! Don&rsquo;t you move a muscle, I&rsquo;ll get it myself.&rdquo;</span></p>
-    ${storyCenterImage('J/19')}
+    ${storyImageCenter('J/19')}
     <p>He leaned back in his chair watching Roberts get up and straighten her skirt, scowling at him with disgust, sizing up if he deserved the sneak peek he stole and contemplating scolding him and punishing him for it. But her eyes revealed a different desire in the mix, the suspicion of which would have been enough to get him off.</p>
     <p>As she bent down with deliberate slowness to retrieve her pen, his breath quickened and his heart raced. Her eyes remained fixed on his, never leaving him for a moment. It was difficult to maintain eye contact with her, especially when he was so aroused by her close proximity.</p>
-    ${storyCenterImage('J/20')}
+    ${storyImageCenter('J/20')}
     <p>He couldn&rsquo;t fight it anymore. He glanced at her legs and his cock throbbed at the flash of red emanating from between them. She was so close to him, she caught all that, and he knew it.</p>
-    ${storyCenterImage('J/21')}
+    ${storyImageCenter('J/21')}
     <p>Roberts immediately closed her legs tightly and his eyes quickly returned to where they should&rsquo;ve been.</p>
     <p>She squinted at him, trapping his nerves under the mercy of her suspicious gaze.</p>
-    ${storyCenterImage('J/22')}
+    ${storyImageCenter('J/22')}
     <p><span class="Jen">&ldquo;I think this may not be the best time for our conversation. You can leave now and we&rsquo;ll talk again later, Michael.&rdquo;</span></p>
     <p>He was relieved to be let go of her weighing presence and left her office as quickly as possible, awkwardly hiding his erection in his pants.</p>
     ${storyImage('empty_school_hall')}
@@ -663,7 +663,7 @@ const row1b = storyRow('1b', ' ',
     <p><span class="Sherrie">&ldquo;...that I can...&rdquo;</span></p>
     ${storyImage('S/19')}
     <p><span class="Sherrie">&ldquo;...assist you with?&rdquo;</span></p>
-    ${storyLeftImage('S/20')}
+    ${storyImageLeft('S/20')}
     <p>Michael's cock throbbed in his pants. Sherrie could sense his nervousness, the way he shifted on his feet, the way his hands fidgeted, pulling his shirt down and forward, as if he was hiding a bulge in his stomach. It was clear to her that something was on his mind, something he was struggling to say.</p>
     <p>Taking a deep breath, Michael gathered his courage. <span class="Michael">&ldquo;Well, yes... there is something, something that only you can help me with. But it has to stay between us.&rdquo;</span></p>
     <p>Her face expression fluttered as if her heart skipped a beat at his words, curiosity and a hint of excitement mixing in her guise. <span class="Sherrie">&ldquo;What is it, Master Michael?&rdquo;</span> she asked, her voice laced with intrigue.</p>
@@ -732,7 +732,7 @@ const row1b = storyRow('1b', ' ',
     <p>Sherrie and Michael approached Dad&rsquo;s office. The door, usually closed and imposing, stood silent as a tomb. Sherrie moved to knock, but Michael gently stopped her. He took a deep breath and knocked twice.</p>
     <p>No one answered.</p>
     <p>Sherrie, positioned just behind Michael, stepped forward and knocked again&mdash;five sharp, distinct taps. Ten seconds later, the door creaked open.</p>
-    ${storyRightImage('dad')}
+    ${storyImageRight('dad')}
     <p>Dad swung the door open, His eyes scanning Michael and Sherrie with a look that was more disappointment than surprise.</p>
     <p><strong>DAD</strong><br />What do you want?</p>
     <p><span class="Michael">MICHAEL</span><br />Sherrie and I... um, we need to talk to you about something.</p>
@@ -763,7 +763,7 @@ const row1b = storyRow('1b', ' ',
     <p><strong>DAD</strong><br />Right... wait here.</p>
     ${storyImage('office_door')}
     <p>Dad disappeared into his office, slamming the door behind Him. A minute later, He returned, holding a package, which He handed to Michael.</p>
-    ${storyCenterImage('dad')}
+    ${storyImageCenter('dad')}
     <p><strong>DAD</strong><br />This is for you. A gift for your birthday. I don&rsquo;t believe in birthdays&mdash;they&rsquo;re a waste of time&mdash;but your mother&rsquo;s been nagging me about it for weeks. And I&rsquo;ve arranged for you to have an audition with a local wrestling promotion next Saturday. They&rsquo;ll sign you part-time if you&rsquo;re good enough, but not full-time until you finish college. Not that you&rsquo;ll need higher education with that brain of yours.</p>
     ${storyImage('fighting_gear')}
     <p>Michael stared at the package, bewildered.</p>
@@ -775,7 +775,7 @@ const row1b = storyRow('1b', ' ',
     <p><strong>DAD</strong><br />Ah, damn it, why do I have so many kids?</p>
     ${storyImage('office_door')}
     <p>Dad stomped back into his office, returning moments later.</p>
-    ${storyCenterImage('dad')}
+    ${storyImageCenter('dad')}
     <p><strong>&ldquo;Right. This one&rsquo;s for your sister&mdash;brother&mdash;whatever they want to be called. And this is yours.&rdquo;</strong></p>
     <p>Dad switched packages with Michael.</p>
     ${storyImage('camera')}
@@ -783,7 +783,7 @@ const row1b = storyRow('1b', ' ',
     <p>Michael screamed in his mind like a fucking Mark. He was stunned, not sure how to react. Didn&rsquo;t really know what to feel, either. On one hand, Dad just called him stupid and talked shit about Mom in front of him. On the other hand, he gave him the best two gifts he&rsquo;d ever received, Sherrie and his first camera. He was torn between two emotions inside of him. He wanted to hug Dad and thank him for his gifts. And he also wanted to kick the old man in the teeth. He wanted to get abck at him, for neglecting him all these years, for looking down on him.</p>
     <p>Michael stared at the box containing the camera, his mouth agape in great disbelief. Dad&rsquo;s impatience was palpable as He extended the box towards him, eager to end this unneeded interaction with His son. Michael accepted it with slow, deliberate movements, as if handling something incredibly delicate, fragile, no, in his eyes it was sacred. Dad didn&rsquo;t care. Michael hated how He looked at him at that moment like He pitied him. It hurt. He contemplated throwing it back in His face and cursing Him. But if he were to refuse the camera, would he return Sherrie to Him too? For what?</p>
     <p>Dad took a step back and was about to close the door in their faces for the last time that day.</p>
-    ${storyRightImage('dad')}
+    ${storyImageRight('dad')}
     <p><span class="Michael">MICHAEL</span><br />Dad, wait... I need to say something. I won&rsquo;t bother you again, I promise, at least I hope I won&rsquo;t have to, just as I hope this gift didn&rsquo;t cost you too much time or trouble. I... Thank you so much for this. It means everything to me. I&rsquo;ve always dreamed of being a photographer.</p>
     <p><strong>&ldquo;A photographer, huh?&rdquo;</strong></p>
     ${storyImage('office_door')}

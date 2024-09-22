@@ -96,7 +96,7 @@
 
         if(!data.hasOwnProperty('patreonCode')) data.patreonCode = '';
 
-        if (true) {
+        if (resetGame) {
 
             removeAllSaves();
 

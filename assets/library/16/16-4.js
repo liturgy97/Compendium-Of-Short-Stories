@@ -115,11 +115,11 @@ ${storyCenterImageRecurring('ned_hall')}
 <p><span class="Michael">MICHAEL</span><br />What are you... (slaps the back of Ned&rsquo;s head powerfully... fucking eavesdropping on us?!!</p>
 <p>Ned whimpered and cowered, hand covering his ringing ear. Milena stood up for him.</p>
 ${storyImageRecurring('milena_ned_hall')}
-<p>MILENA<br />No, he was standing with me while you were talking to Gina. We were both listening to you.</p>
+<p><span class="Milena">MILENA</span><br />No, he was standing with me while you were talking to Gina. We were both listening to you.</p>
 <p><span class="Michael">MICHAEL</span>(turning to Ned)<br />How do you know where she lives? Are you stalking her?</p>
-<p>MILENA<br />He&rsquo;s a nerd, Michael. He knows everything.</p>
+<p><span class="Milena">MILENA</span><br />He&rsquo;s a nerd, Michael. He knows everything.</p>
 <p><span class="Michael">MICHAEL</span><br />He&rsquo;s not a nerd, he&rsquo;s a piece of shit.</p>
-<p>MILENA<br />He was trying to help.</p>
+<p><span class="Milena">MILENA</span><br />He was trying to help.</p>
 <p><span class="Michael">MICHAEL</span><br />Just let him talk for himself for a second, will you? Why do you have to be such a square about everything? Wow, a square and a circle. You two fit each other perfectly.</p>
 <p><span class="Ned">NED</span><br />What kind of logic is that?</p>
 <p>Milena and Michael burst into laughter. It was their thing, throwing out random lines like that. Seeing Ned so offended by that was hilarious. After a good laugh, Michael turned around and walked towards the school door. Milena quickly followed, and Ned waddled ${appendLinkRowInline('behind them', '1d')}.</p>
@@ -130,14 +130,14 @@ ${storyImageRecurring('milena_ned_hall')}
 const row1d = storyRow('1d', 'INT. 1ST MAIN HALL<br>AFTERNOON', 
 `
 ${storyImageRecurring('school_hall')}
-<p>MILENA<br />How are you gonna study with her with that small brain of yours? I guess Gina will do all the work.</p>
+<p><span class="Milena">MILENA</span><br />How are you gonna study with her with that small brain of yours? I guess Gina will do all the work.</p>
 <p><span class="Michael">MICHAEL</span><br />Fuck the assignment, I&rsquo;m taking her out.</p>
-<p>MILENA<br />Take her out where?</p>
+<p><span class="Milena">MILENA</span><br />Take her out where?</p>
 <p><span class="Michael">MICHAEL</span><br />I&rsquo;ll take her to the cinema. Remember the movie I told you about? Whiplash 2? It&rsquo;s coming out tonight. I bought tickets<br />a while ago and I can&rsquo;t wait to see it. I&rsquo;ll ask her out after we study and we&rsquo;ll go together.</p>
-<p>MILENA<br />Dude, you&rsquo;re crazy. She has a boyfriend!</p>
+<p><span class="Milena">MILENA</span><br />Dude, you&rsquo;re crazy. She has a boyfriend!</p>
 <p><span class="Michael">MICHAEL</span><br />I&rsquo;m a better man than he is.</p>
 <p>Milena was intimated by Michael&rsquo;s rising aggression.</p>
-<p>MILENA<br />Ummm...</p>
+<p><span class="Milena">MILENA</span><br />Ummm...</p>
 <p><span class="Ned">NED</span><br />Gina likes action movies.</p>
 <p><span class="Michael">MICHAEL</span><br />What? Are you even listening, man? I already said I bought the movie tickets. We&rsquo;re gonna watch what I want.</p>
 <p><span class="Michael">MICHAEL</span> (switching attention to Milena)<br />You know what? Fine by me. You wanna spend time with Ned? Go ahead, but I&rsquo;m not gonna hang around you if you do. Bye, Milena!</p>
@@ -422,7 +422,7 @@ ${storyImageRight('13')}
 <p><span class="Rick">RICK</span><br />Pfft. What kind of human garbage are you, man?</p>
 <p>Rick raised his leg, ready to strike again. Michael flinched, but Rick only snickered. With a cruel smirk, he tore the tickets in half and hurled them, along with Michael&rsquo;s wallet, at his face.</p>
 ${storyImage('8')}
-Then, without a backward glance, Rick and Gina walked into her house, slamming the door shut in Michael&rsquo;s ${appendLinkRowInline('face', '4e', false, emptyFuncStr, 'section4.appendChild(rows[4f])')}.
+Then, without a backward glance, Rick and Gina walked into her house, slamming the door shut in Michael&rsquo;s ${appendLinkRowInline('face', '4e')}.
 
 `
 )
@@ -727,7 +727,7 @@ ${storyImage(30)}
 <p>Michael pulled his finger out. Sherrie&rsquo;s head thrown back trying to catch her breath. He observed her spasms and shakes. He didn&rsquo;t know but he thought was trying to suppress an orgasm from going through. Michael understood Sherrie liked being controlled but there was no way she was enjoying herself now. This was the opposite of pleasure. He, however, was enjoying myself in a way he hadn&rsquo;t felt before. He needed more of this.</p>
 ${storyImage(31)}
 <p>He left Sherrie on the couch and went upstairs straight to his room, ignoring her calls.</p>
-${storyEndButton('To be continued...')}
+${storyEndButton('Chapter 5')}
 `
 )
 

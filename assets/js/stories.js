@@ -218,25 +218,25 @@ name: "NXT&rsquo;s Finest",
 num : 5,
 wordCount: 6785,
 index: true,
-subtitle: "Coming Soon"
+index: true,
+
 }, 
 {
 name: "Second Happiness",
 num : 6,
-wordCount: 0,
-subtitle: "Coming Soon"
+wordCount: 3730,
+index: true,
 }, 
 {
 name: "You&rsquo;re such a flirt",
 num : 7,
-wordCount: 0,
-subtitle: "Coming Soon"
+wordCount: 1355,
 }, 
 {
 name: "Our First Date",
 num : 8,
-wordCount: 0,
-subtitle: "Coming Soon"
+wordCount: 15846,
+index: true,
 }, 
 {
 name: "My Moon",
@@ -466,6 +466,7 @@ storyNames.forEach(storyName => {
     
 
   }
+
   updateStoryObj(story);
 });
 }
